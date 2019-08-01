@@ -1,8 +1,7 @@
-*.md text eol=lf
-*.xml text eol=lf
-*.js text eol=lf
+* text=auto
 *.sh text eol=lf
-*.json text eol=lf
+hooks/* text eol=lf
 
 *.png binary
 *.ico binary
+

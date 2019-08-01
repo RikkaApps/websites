@@ -28,7 +28,7 @@ http.createServer(function(req, res) {
             return
         }
 
-        let child = spawn('sh', ['../build.sh'])
+        let child = spawn('git', ['pull'])
         child.stdout.on('data', function(data) {
             res.write(data)
         })
