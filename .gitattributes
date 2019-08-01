@@ -1,0 +1,8 @@
+*.md text eol=lf
+*.xml text eol=lf
+*.js text eol=lf
+*.sh text eol=lf
+*.json text eol=lf
+
+*.png binary
+*.ico binary
