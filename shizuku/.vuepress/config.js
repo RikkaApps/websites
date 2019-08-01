@@ -98,8 +98,8 @@ module.exports = {
     serviceWorker: {
       updatePopup: true
     },
-    repo: 'https://github.com/RikkaApps/Shizuku',
-    docsDir: 'docs',
+    repo: 'https://github.com/RikkaApps/websites',
+    docsDir: 'shizuku',
     editLinks: true
   }
 }

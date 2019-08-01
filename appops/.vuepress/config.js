@@ -90,10 +90,10 @@ module.exports = {
     sidebarDepth: 2,
     serviceWorker: {
       updatePopup: true
-    }/*,
-    repo: 'https://github.com/RikkaApps/Shizuku',
-    docsDir: 'docs',
-    editLinks: true*/
+    },
+    repo: 'https://github.com/RikkaApps/websites',
+    docsDir: 'appops',
+    editLinks: true
   }
 }
 
