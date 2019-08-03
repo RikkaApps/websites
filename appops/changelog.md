@@ -1,3 +1,7 @@
+## 3.1.1 (2019-08-03)
+
+- Fix can't modify template
+
 ## 3.1.0 (2019-08-02)
 
 - Provide more obvious warnings when doing operations on system apps
