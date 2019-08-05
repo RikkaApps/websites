@@ -1,10 +1,14 @@
 # 如何使用 Shizuku（開發者）
 
 ::: tip
-下面的內容請結合 sample 閱讀。
+下面的內容請結合 [sample](https://github.com/RikkaApps/Shizuku/tree/master/sample) 閱讀。
 :::
 
 1. 新增依賴
+   
+   ```
+   maven { url 'https://dl.bintray.com/rikkaw/Shizuku' }
+   ```
    
    ```
    implementation 'moe.shizuku.privilege:api:3.0.0-alpha10'

@@ -7,6 +7,10 @@ Please read the following content in conjunction with [sample](https://github.co
 1. Add dependency
 
    ```
+   maven { url 'https://dl.bintray.com/rikkaw/Shizuku' }
+   ```
+   
+   ```
    Implementation 'moe.shizuku.privilege:api:3.0.0-alpha10'
    ```
 
