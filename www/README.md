@@ -13,7 +13,7 @@ apps:
     link: https://sr.rikka.app/download.html
     text: Download
 - title: App Ops
-  details: Control the hidden appops conveniently with App Ops app. Works without root.
+  details: Control the hidden appops conveniently with App Ops app. Works without root.<br><small>* Requires adb if not rooted</small>
   icon: https://appops.rikka.app/logo.png
   secondaryAction:
     link: https://appops.rikka.app
