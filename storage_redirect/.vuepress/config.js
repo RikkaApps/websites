@@ -121,6 +121,7 @@ function getSidebar(prefix, basicTitle, workingModeTitle) {
       collapsable: false,
       sidebarDepth: 0,
       children: [
+        `compatibility/samsung`,
         `compatibility/huawei`
       ]
     }]
