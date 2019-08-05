@@ -101,7 +101,11 @@ module.exports = {
     repo: 'https://github.com/RikkaApps/websites',
     docsDir: 'shizuku',
     editLinks: true
-  }
+  },
+  'sitemap': {
+    hostname: 'https://shizuku.rikka.app',
+    exclude: ['/404.html']
+  },
 }
 
 function getSidebar() {

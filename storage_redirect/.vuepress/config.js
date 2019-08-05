@@ -96,7 +96,11 @@ module.exports = {
     repo: 'https://github.com/RikkaApps/websites',
     docsDir: 'storage_redirect',
     editLinks: true
-  }
+  },
+  'sitemap': {
+    hostname: 'https://sr.rikka.app',
+    exclude: ['/404.html']
+  },
 }
 
 function getSidebar(prefix, basicTitle, workingModeTitle) {

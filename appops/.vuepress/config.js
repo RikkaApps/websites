@@ -94,6 +94,12 @@ module.exports = {
     repo: 'https://github.com/RikkaApps/websites',
     docsDir: 'appops',
     editLinks: true
+  },
+  plugins: {
+    'sitemap': {
+      hostname: 'https://appops.rikka.app',
+      exclude: ['/404.html']
+    },
   }
 }
 
