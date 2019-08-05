@@ -122,7 +122,7 @@ export default {
 	 h1, .description
       margin 0 auto 1rem
     .description
-      font-weight 100
+      font-weight 300
       max-width 35rem
       font-size 1.6rem
       line-height 1

@@ -97,10 +97,12 @@ module.exports = {
     docsDir: 'storage_redirect',
     editLinks: true
   },
-  'sitemap': {
-    hostname: 'https://sr.rikka.app',
-    exclude: ['/404.html']
-  },
+  plugins: {
+    'sitemap': {
+      hostname: 'https://sr.rikka.app',
+      exclude: ['/404.html']
+    },
+  }
 }
 
 function getSidebar(prefix, basicTitle, workingModeTitle) {

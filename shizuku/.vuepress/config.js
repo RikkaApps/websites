@@ -103,10 +103,12 @@ module.exports = {
     docsDir: 'shizuku',
     editLinks: true
   },
-  'sitemap': {
-    hostname: 'https://shizuku.rikka.app',
-    exclude: ['/404.html']
-  },
+  plugins: {
+    'sitemap': {
+      hostname: 'https://shizuku.rikka.app',
+      exclude: ['/404.html']
+    },
+  }
 }
 
 function getSidebar() {

@@ -4,15 +4,15 @@ module.exports = {
   head: [
     ['link', {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap'
+      href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,700i&display=swap'
     }],
     ['link', {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,500,700&display=swap'
+      href: 'https://fonts.googleapis.com/css?family=Noto+Sans+SC:300,400,500,700&display=swap'
     }],
     ['link', {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700&display=swap'
+      href: 'https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700&display=swap'
     }],
     /*['link', { rel: 'apple-touch-icon', size: '57x57', href: '/icon/apple-icon-57x57.png' }],
     ['link', { rel: 'apple-touch-icon', size: '60x60', href: '/icon/apple-icon-60x60.png' }],
