@@ -56,7 +56,7 @@ module.exports = {
           }
         },
         sidebar: getSidebar("/guide/", "Basic", "Compatibility"),
-        nav: getNavbar('/', 'Guide', 'Download'),
+        nav: getNavbar('/', 'Guide', 'Download', 'Changelog'),
         lastUpdated: 'Last Updated'
       },
       '/zh-hans/': {
@@ -70,7 +70,7 @@ module.exports = {
           }
         },
         sidebar: getSidebar("/zh-hans/guide/", "基础", "兼容性"),
-        nav: getNavbar('/zh-hans/', '指南', '下载'),
+        nav: getNavbar('/zh-hans/', '指南', '下载', 'Changelog'),
         lastUpdated: '最后更新'
       },
       '/zh-hant/': {
@@ -84,7 +84,7 @@ module.exports = {
           }
         },
         sidebar: getSidebar("/zh-hant/guide/", "基礎", "相容性"),
-        nav: getNavbar('/zh-hant/', '指南', '下載'),
+        nav: getNavbar('/zh-hant/', '指南', '下載', 'Changelog'),
         lastUpdated: '最後更新'
       }
     },
@@ -128,9 +128,10 @@ function getSidebar(prefix, basicTitle, workingModeTitle) {
   return res
 }
 
-function getNavbar(prefix, guide, download) {
+function getNavbar(prefix, guide, download, changelog) {
   return [
     { text: guide, link: `${prefix}guide/` },
     { text: download, link: `${prefix}download.html` },
+    { text: changelog, link: `${prefix}changelog.html` },
   ]
 }
