@@ -93,7 +93,7 @@ module.exports = {
     serviceWorker: {
       updatePopup: true
     },
-    repo: 'https://github.com/RikkaApps/websites',
+    docsRepo: 'https://github.com/RikkaApps/websites',
     docsDir: 'storage_redirect',
     editLinks: true
   },
