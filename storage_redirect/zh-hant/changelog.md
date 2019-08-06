@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.7.5 (2019-08-06)
+
+- 修復「同步資料夾」功能壞掉
+
 ## 1.7.4 (2019-08-05)
 
 - 在 Android Q 上使用 `FLAG_PERMISSION_SYSTEM_FIXED` 來固定權限

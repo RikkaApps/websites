@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.7.5 (2019-08-06)
+
+- Fix "Synced folder" feature is broken
+
 ## 1.7.4 (2019-08-05)
 
 - Use `FLAG_PERMISSION_SYSTEM_FIXED` to fix permission on Android Q
