@@ -43,8 +43,8 @@
 3. 可选，下载 [检测 app for Riru v19.4](https://github.com/RikkaApps/Riru/releases/download/v19.4/app-release.apk) 来检查 Riru 是否正常工作
 
 ### Magisk v19+
-* Install **Riru - Core** from **Magisk Manager**
-* Install **Riru - Storage Redirect** from **Magisk Manager**
+
+直接从 **Magisk Manager** 下载。
 
 ### Magisk v17-v18.1
 * [Riru - Core v19.4](https://github.com/RikkaApps/Riru/releases/download/v19.4/magisk-v17-riru-core-v19.4.zip)
