@@ -34,10 +34,13 @@
         v-for="(app, index) in data.apps"
         :key="index"
       >
-        <img class="icon" v-if="app.icon" :src="$withBase(app.icon)"></img>
+        
         <div class="text">
-          <h2>{{ app.title }}</h2>
-          <span class="summary" v-html="app.details"/>
+          <div>
+          <img class="icon" align="middle" v-if="app.icon" :src="$withBase(app.icon)"></img>
+          <span class="title">{{ app.title }}</span>
+          </div>
+          <span class="details" v-html="app.details"/>
         </div>
 
         <div class="actions">
@@ -145,19 +148,22 @@ export default {
     padding 1.5rem 3rem
     &:hover
       background-color lighten($textColor, 90%)
-    h2
-      margin 0 0 0.5rem
+    .title
+      vertical-align middle
+      margin 0 1rem 0
       font-size 1.4rem
       font-weight 500
       border-bottom none
       padding-bottom 0
       color lighten($textColor, 10%)
-    .summary
+    .details
+      display inline-block      
       line-height 1.3
+      margin 1rem 0 0
       color lighten($textColor, 25%)
     .icon
-      max-width 4.5rem
-      margin 0 1rem 0
+      vertical-align middle
+      max-width 2rem
     .text
       flex 1
       align-self center
@@ -212,10 +218,9 @@ export default {
       max-width 100%
       padding 1.5rem 10%
       .icon
-        //margin 0 1rem 0
         max-width 2rem
       .text
-        margin 1rem 1rem 1rem
+        margin 0 1rem 1rem
         flex auto
     .hero
       text-align center
@@ -251,7 +256,7 @@ export default {
         padding 0.6rem 1.2rem
     .app
       padding 1.5rem 5%
-      h2
+      .title
         font-size 1.25rem
       .action-button
         font-size 1rem
