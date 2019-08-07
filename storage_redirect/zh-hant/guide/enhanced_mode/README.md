@@ -39,12 +39,12 @@
 ### Magisk 模組
 
 1. 在 **Magisk Manager** 中下載安裝 **Riru - Core**
-2. 下載 **Riru - Storage Redirect** 並在 **Magisk Manager** 中安裝
+2. 在 **Magisk Manager** 中下載安裝 **Riru - Storage Redirect**
 3. 可選，下載 [檢測 app for v19.4](https://github.com/RikkaApps/Riru/releases/download/v19.4/app-release.apk) 來檢查 Riru 是否正常工作
 
 ### Magisk v19+
 * Install **Riru - Core** from **Magisk Manager**
-* [Riru - Storage Redirect v19.6](https://github.com/RikkaApps/StorageRedirect-assets/releases/download/assets/magisk-riru-storage-redirect-v19.6.zip)
+* Install **Riru - Storage Redirect** from **Magisk Manager**
 
 ### Magisk v17-v18.1
 * [Riru - Core v19.4](https://github.com/RikkaApps/Riru/releases/download/v19.4/magisk-v17-riru-core-v19.4.zip)

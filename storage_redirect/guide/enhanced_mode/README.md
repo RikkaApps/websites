@@ -39,12 +39,12 @@ From v19.6, the version of Storage Redirect will be checked on installation, so 
 ### Magisk modules
 
 1. Download and install **Riru - Core** in **Magisk Manager**
-2. Download **Riru - Storage Redirect** and install in **Magisk Manager**
-4. Optionally, download [check app for Riruv19.4](https://github.com/RikkaApps/Riru/releases/download/v19.4/app-release.apk) to check if Riru works
+2. Download and install **Riru - Storage Redirect** in **Magisk Manager**
+4. Optionally, download [check app for Riru v19.4](https://github.com/RikkaApps/Riru/releases/download/v19.4/app-release.apk) to check if Riru works
 
 ### Magisk v19+
 * Install **Riru - Core** from **Magisk Manager**
-* [Riru - Storage Redirect v19.6](https://github.com/RikkaApps/StorageRedirect-assets/releases/download/assets/magisk-riru-storage-redirect-v19.6.zip)
+* Install **Riru - Storage Redirect** from **Magisk Manager**
 
 ### Magisk v17-v18.1
 * [Riru - Core v19.4](https://github.com/RikkaApps/Riru/releases/download/v19.4/magisk-v17-riru-core-v19.4.zip)
