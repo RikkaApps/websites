@@ -88,10 +88,10 @@ module.exports = {
     search: false,
     docsRepo: 'https://github.com/RikkaApps/websites',
     docsDir: 'storage_redirect',
-    editLinks: true
+    editLinks: false
   },
   'sitemap': {
     hostname: 'https://sr.rikka.app',
-    exclude: ['/404.html']
+    exclude: ['/404.html', '/zh-hans/transfer_china.md']
   },
 }
