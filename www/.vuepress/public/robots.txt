@@ -1,0 +1,3 @@
+User-Agent: *
+
+Disallow: /zh-hans/transfer_china.html
