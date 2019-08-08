@@ -1,3 +1,4 @@
 User-Agent: *
 
 Disallow: /zh-hans/transfer_china.html
+Disallow: /zh-hans/use_google_play.html

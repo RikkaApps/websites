@@ -92,6 +92,6 @@ module.exports = {
   },
   'sitemap': {
     hostname: 'https://sr.rikka.app',
-    exclude: ['/404.html', '/zh-hans/transfer_china.md']
+    exclude: ['/404.html', '/zh-hans/transfer_china.md', '/zh-hans/use_google_play.md']
   },
 }
