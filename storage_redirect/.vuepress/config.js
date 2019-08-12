@@ -111,9 +111,10 @@ function getSidebar(prefix, basicTitle, advancedTitle, enhancedModeTitle, compat
     {
       title: basicTitle,
       collapsable: true,
-      sidebarDepth: 0,
+      sidebarDepth: 1,
       children: [
-        ''
+        '',
+        'tutorial'
       ]
     },
     {
@@ -135,7 +136,7 @@ function getSidebar(prefix, basicTitle, advancedTitle, enhancedModeTitle, compat
     {
       title: compatibilityTitle,
       collapsable: true,
-      sidebarDepth: 1,
+      sidebarDepth: 0,
       children: [
         `compatibility/`,
         `compatibility/samsung`,
