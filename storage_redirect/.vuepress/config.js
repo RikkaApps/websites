@@ -148,6 +148,7 @@ function getSidebar(prefix, basicTitle, advancedTitle, enhancedModeTitle, compat
       collapsable: true,
       sidebarDepth: 0,
       children: [
+        `faq/cant_find_app`,
         `faq/how_to_log`,
         `faq/how_to_document`,
         `faq/share_helper`,
