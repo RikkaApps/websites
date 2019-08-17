@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.8.0 (2019-08-17)
+
+- When choosing "Accessible folders", multiply templates and custom can be chosen at the same time
+- Add "Folders analysis", learn the size of folders in isolated storage
+- Automatic create folders in "Accessible folders" if not exists
+- Some UI improve and bug fix
+
 ## 1.7.5 (2019-08-06)
 
 - Fix "Synced folder" feature is broken
