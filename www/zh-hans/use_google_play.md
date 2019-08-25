@@ -20,5 +20,5 @@ navbar: false
 
 ```
 主题：[应用名称] 转 Google Play 兑换码
-正文：[订单号] 转 Google Play，我已阅读说明并确认转换后无法转回。
+正文：[订单号]
 ```
