@@ -45,7 +45,7 @@ From v19.6, the version of Storage Redirect will be checked on installation, so 
 
 ### Magisk v19+
 
-Download from **Magisk Manager** directly or [GitHub](https://github.com/RikkaApps/StorageRedirect-assets).
+Download from **Magisk Manager** directly or [GitHub](https://github.com/RikkaApps/StorageRedirect-assets/releases/tag/assets).
 
 ### Magisk v17-v18.1
 

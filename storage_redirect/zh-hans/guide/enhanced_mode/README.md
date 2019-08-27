@@ -45,7 +45,7 @@
 
 ### Magisk v19+
 
-直接从 **Magisk Manager** 下载或 [GitHub](https://github.com/RikkaApps/StorageRedirect-assets)。
+直接从 **Magisk Manager** 下载或 [GitHub](https://github.com/RikkaApps/StorageRedirect-assets/releases/tag/assets)。
 
 ### Magisk v17-v18.1
 
