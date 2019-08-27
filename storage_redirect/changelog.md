@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.8.2 (2019-08-27)
+
+- Handle special system apps (appId < 10000 or appId > 19999, appId = uid % 100000)
+- Don't fix permission for special system apps
+- Other bug fixes and UI improvements
+
+## 1.8.1 (2019-08-26)
+
+- Improve the process of selecting "Accessible folders"
+- Directly choose apps of "Accessible folders template"
+- Fix the problem that running apps with storage isolation enabled will be invalid when service start on Android Q 
+- Fix high CPU usage if start in the app for long
+- Fix other apps using API (not published yet) will crash
+- Other bug fixes and UI improvements
+
 ## 1.8.0 (2019-08-17)
 
 - When choosing "Accessible folders", multiply templates and custom can be chosen at the same time
