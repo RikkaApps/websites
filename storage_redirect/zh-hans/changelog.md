@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.9.0 (2019-09-08)
+
+- 增强模式 v20.0：修复使用 [Adoptable Storage](https://source.android.com/devices/storage/adoptable) 时安装在外置存储卡的应用无效的问题
+- 增强模式 v20.0：更改“修复应用间交互”功能的实现方法，不再会被“Xposed Taichi”破坏，同时也可能会解决一些其他的问题
+- 增强模式 v20.0：“修复应用间交互”可单独为每个应用开关
+- 修复备份功能不能还原部分配置的问题
+- 在 Android Q 上自动允许 `OP_REQUEST_INSTALL_PACKAGES`（因为其发生变化时会触发系统重新挂载）
+
 ## 1.8.3 (2019-08-30)
 
 - 修复一些 UI bug

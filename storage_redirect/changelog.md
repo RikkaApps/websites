@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.9.0 (2019-09-08)
+
+- Enhanced mode v20.0: Fix the problem that redirection not work for apps installed in external storage card when using [Adoptable Storage](https://source.android.com/devices/storage/adoptable)
+- Enhanced mode v20.0: Change the implementation of "Fix app interaction", no longer be break by "Xposed Taich", it may also solve some other problems
+- Enhanced mode v20.0: "Fix app interaction" can be switched individually for each app
+- Fix the problem that some configs can't be restored by backup feature
+- Allow `OP_REQUEST_INSTALL_PACKAGES` automatically on Android Q (since the change of it will trigger remount by the system)
+
 ## 1.8.3 (2019-08-30)
 
 - Fix some UI bugs

@@ -28,13 +28,14 @@ We **temporarily** only provide [Magisk](https://forum.xda-developers.com/apps/m
 
 | App    | Riru - Storage Redirect | Riru - Core |
 |--------|-------------------------|-------------|
+| 1.9.0+ | v20.0+                  | v19+        |
 | 1.8.2+ | v19.7+                  | v19+        |
 | 1.6.9+ | v19.6                   | v19+        |
 
 ::: tip
 **Tip**
 
-From v19.6, the version of Storage Redirect will be checked on installation, so the only thing you need to do is **always use the latest app** and **do not downgrade app with newer module installed**.
+From v19.6, the version of Storage Redirect will be checked on installation, so the only thing you need to do is **always use the latest app** and **NEVER downgrade app**.
 :::
 
 ### Magisk modules
@@ -50,4 +51,4 @@ Download from **Magisk Manager** directly or [GitHub](https://github.com/RikkaAp
 ### Magisk v17-v18.1
 
 * [Riru - Core v19.4](https://github.com/RikkaApps/Riru/releases/download/v19.4/magisk-v17-riru-core-v19.4.zip)
-* [Riru - Storage Redirect v19.7](https://github.com/RikkaApps/StorageRedirect-assets/releases/download/assets/riru-storage-redirect-v19.7-magisk-v17.zip)* [Riru - Storage Redirect v19.6](https://github.com/RikkaApps/StorageRedirect-assets/releases/download/assets/riru-storage-redirect-v19.6-magisk-v17.zip)
+* [Riru - Storage Redirect](https://github.com/RikkaApps/StorageRedirect-assets/releases/tag/assets)

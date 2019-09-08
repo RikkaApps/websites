@@ -28,13 +28,14 @@
 
 | App    | Riru - Storage Redirect | Riru - Core |
 |--------|-------------------------|-------------|
+| 1.9.0+ | v20.0+                  | v19+        |
 | 1.8.2+ | v19.7+                  | v19+        |
 | 1.6.9+ | v19.6                   | v19+        |
 
 ::: tip
 **提示**
 
-從 v19.6 起，安裝時儲存重新導向版本會受到檢查，因此你只需要**總是使用最新版程式**和**安裝了新版本模組時不要降級程式**。
+從 v19.6 起，安裝時儲存重新導向版本會受到檢查，因此你只需要**總是使用最新版程式**和**不要降級程式**。
 :::
 
 ### Magisk 模組
@@ -50,4 +51,4 @@
 ### Magisk v17-v18.1
 
 * [Riru - Core v19.4](https://github.com/RikkaApps/Riru/releases/download/v19.4/magisk-v17-riru-core-v19.4.zip)
-* [Riru - Storage Redirect v19.7](https://github.com/RikkaApps/StorageRedirect-assets/releases/download/assets/riru-storage-redirect-v19.7-magisk-v17.zip)* [Riru - Storage Redirect v19.6](https://github.com/RikkaApps/StorageRedirect-assets/releases/download/assets/riru-storage-redirect-v19.6-magisk-v17.zip)
+* [Riru - Storage Redirect](https://github.com/RikkaApps/StorageRedirect-assets/releases/tag/assets)
