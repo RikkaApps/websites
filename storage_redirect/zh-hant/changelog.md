@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.9.1 (2019-09-09)
+
+- 修復「修復程式間互動」可能沒有工作的問題
+- 增加半透明狀態列及導航欄選項
+- 修復數個 UI bug
+
 ## 1.9.0 (2019-09-08)
 
 - 增強模式 v20.0：修復使用 [Adoptable Storage](https://source.android.com/devices/storage/adoptable) 時安裝在外接儲存卡的應用無效的問題

@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.9.1 (2019-09-09)
+
+- Fix the problem that "Fix app interaction" may not work
+- Add an option to use status bar & navigation bar
+- Fix several UI bugs
+
 ## 1.9.0 (2019-09-08)
 
 - Enhanced mode v20.0: Fix the problem that redirection not work for apps installed in external storage card when using [Adoptable Storage](https://source.android.com/devices/storage/adoptable)

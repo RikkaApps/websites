@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.9.1 (2019-09-09)
+
+- 修复“修复应用间交互”可能没有工作的问题
+- 增加半透明状态栏及导航栏选项
+- 修复数个 UI bug
+
 ## 1.9.0 (2019-09-08)
 
 - 增强模式 v20.0：修复使用 [Adoptable Storage](https://source.android.com/devices/storage/adoptable) 时安装在外置存储卡的应用无效的问题
