@@ -36,5 +36,14 @@ apps:
   primaryAction:
     link: https://play.google.com/store/apps/details?id=rikka.nopeeking
     text: 下載
+- title: WADB
+  details: 從快速設定開關「網路 adb」。<br><small>* 需要 root</small>
+  icon: /logo_wadb.png
+  secondaryAction:
+    link: https://github.com/RikkaApps/WADB
+    text: 瞭解更多
+  primaryAction:
+    link: https://play.google.com/store/apps/details?id=moe.haruue.wadb
+    text: 下載
 footer: Copyright © 2019 RikkaApps
 ---

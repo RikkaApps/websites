@@ -36,5 +36,14 @@ apps:
   primaryAction:
     link: https://play.google.com/store/apps/details?id=rikka.nopeeking
     text: Download
+- title: WADB
+  details: Toggle "adb over network" from Quick Settings.<br><small>* Requires root</small>
+  icon: /logo_wadb.png
+  secondaryAction:
+    link: https://github.com/RikkaApps/WADB
+    text: Learn more
+  primaryAction:
+    link: https://play.google.com/store/apps/details?id=moe.haruue.wadb
+    text: Download
 footer: Copyright © 2019 RikkaApps
 ---
