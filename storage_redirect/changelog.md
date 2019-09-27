@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.0.1 (2019-09-27)
+
+- Fix "Shared folder" rules not work
+
 ## 2.0.0 (2019-09-27)
 
 - Check the "Shared folder" and "Sync folder" rules (the problematic rules will be deleted or disabled), and the next version will provide more detailed tips and tutorials for this issue
