@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.0.0 (2019-09-27)
+
+- Check the "Shared folder" and "Sync folder" rules (the problematic rules will be deleted or disabled), and the next version will provide more detailed tips and tutorials for this issue
+- Fixed several issues with the "Sync folder" rule
+- Fixed separate "Fix app interaction" switch broken
+- Enhanced mode v20.1: Fixed an issue with the "Fix app interaction" feature on OnePlus Android 10 (and possibly others)
+- Lots of UI improvements
+
 ## 1.9.1 (2019-09-09)
 
 - Fix the problem that "Fix app interaction" may not work
