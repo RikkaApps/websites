@@ -56,7 +56,11 @@ The steps for enabling Developer Options on different devices may vary, please s
 
 #### 3.1. MIUI device
 
+_"It's 2019, garbage MIUI still breaks Android features."_
+
 If you use MIUI, you also need to enable "USB Debug (Security options)".
+
+If you use MIUI 11, MIUI 11 breaks custom permission (user apps cannot request for custom permission, please refer [this issue](https://github.com/RikkaApps/Shizuku/issues/45) and [this issue](https://github.com/android-in-china/Compatibility/issues/16)), so you must grant permission for user apps in Shizuku app.
 
 ### 4. Start Shizuku
 

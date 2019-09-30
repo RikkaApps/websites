@@ -55,7 +55,11 @@ Android 除錯橋 (`adb`) 是一個通用命令列工具，其允許您與模擬
 
 #### 3.1. MIUI 裝置
 
+_"It's 2019, garbage MIUI still breaks Android features."_
+
 如果你使用 MIUI，你還需要開啟「USB 除錯（安全設定）」。
+
+如果你使用 MIUI 11，MIUI 11 破壞了自訂權限（使用者程式無法請求自定義權限，參考 [這個 issue](https://github.com/RikkaApps/Shizuku/issues/45) 和 [這個 issue](https://github.com/android-in-china/Compatibility/issues/16)），你必須在 Shizuku app 內授予使用者程式權限。
 
 ### 4. 啟動 Shizuku
 

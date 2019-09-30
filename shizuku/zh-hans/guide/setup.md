@@ -55,7 +55,11 @@ Android 调试桥 (`adb`) 是一个通用命令行工具，其允许您与模拟
 
 #### 3.1. MIUI 设备
 
+_“9012 年，辣鸡 MIUI 还是会破坏 Android 的特性（”_
+
 如果你使用 MIUI，你还需要开启“USB 调试（安全设置）”。
+
+如果你使用 MIUI 11，MIUI 11 破坏了自定义权限（使用者应用无法请求自定义权限，参考 [这个 issue](https://github.com/RikkaApps/Shizuku/issues/45) 和 [这个 issue](https://github.com/android-in-china/Compatibility/issues/16)），你必须在 Shizuku app 内授予使用者应用权限。
 
 ### 4. 启动 Shizuku
 
