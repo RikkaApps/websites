@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.0 (2019-10-22)
+
+- Simplify the process of allowing access for files belonging to other apps, now all files created by other apps can be chosen from "Folders belonging to other apps"
+- Check and grant permissions every time when app starts, the could solve the problem caused by MIUI 11 random tampering permissions
+- Bypassing the problem of core processes being killed when using built-in su on Meizu devices
+- Temporarily remove "modify file path" feature in "Fix app interaction" because this feature can cause problems in app that use plug-in or hot fix technology (common in apps from mainland China), and currently mainstream apps should have switched to Content Provider to sharing files, removing this feature should have little effect
+- Other bug fixes and lots of UI improvements
+
 ## 2.0.1 (2019-09-27)
 
 - Fix "Shared folder" rules not work
