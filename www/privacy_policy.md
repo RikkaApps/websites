@@ -45,6 +45,6 @@ Link to privacy policy of third party service providers used by the app:
 * Google image search
 * Firebase
 
-### Bridge / Shizuku / SMS Code Helper
+### Bridge / Shizuku / SMS Code Helper / WADB
 
 Do not collect any of information.
