@@ -1,9 +1,13 @@
 # Changelog
 
+## 2.1.1 (2019-10-23)
+
+- 修復如果核心程序啟動晚於啟用的應用程式則該應用程式可能無法啟動的問題
+
 ## 2.1.0 (2019-10-22)
 
 - 簡化允許訪問來自其他程式的檔案流程，現在只要是由其他程式建立的檔案都可以在「屬於其他程式的資料夾」中選擇
-- 在每次程式啟動時檢查並授予許可權，這可能解決由 MIUI 11 隨機篡改許可權造成的問題
+- 在每次程式啟動時檢查並授予權限，這可能解決由 MIUI 11 隨機篡改權限造成的問題
 - 繞過在 Meizu 裝置上使用內建 su 時核心工作程序會被殺死的問題
 - 臨時移除「修復程式間互動」中的修改傳遞的檔案路徑功能，因為這個功能在使用 plug-in 或 hot fix 技術的程式（常見於來自中國大陸地區的程式）中會產生問題，且目前主流程式應該都已使用 Content Provider 與其他程式共享檔案，移除此功能應該影響不大
 - 其他 BUG 修復與大量 UI 改進
@@ -78,13 +82,13 @@
 - Fix "Code 5"
 - Other bug fix
 
-### 1.7.0
+## 1.7.0
 
 * Basic mode now works on Android Q beta 4
 * Correctly handle hide/unhide (commonly used by "Freeze" apps)
 * Change target SDK version to 29 (Android Q)
 
-### 1.6.12
+## 1.6.12
 
 * Fix app list not refreshed after restoring backup
 * Use a more reliable method to monitor app install/uninstall
@@ -93,35 +97,35 @@
 * Other bug fix
 * UI improve
 
-### 1.6.9
+## 1.6.9
 
 * Fix Enhanced mode not work for apps starts early than core service
 
-### 1.6.8
+## 1.6.8
 
 * Fix apps not starting on new users
 * Support Android Q beta 3 (including Enhanced mode)
 * Remove the ability to choose "Android/sandbox" as isolated storage path since from Q beta 3 the system sandbox is only used for apps which declared support the sandbox
 
-### 1.6.7
+## 1.6.7
 
 * Clear config (app info - storage - clear/manage data) feature dose clear all configs now
 * Filter duplicates or incorrect mounts in the final stage to avoid problems from user misuse
 * Fix "Fix app interaction issues" may incorrectly handle files in `Android/data(media, obb)/package`
 
-### 1.6.6
+## 1.6.6
 
 * Fix app interaction issues (Enhanced mode): Grant content uri permission
 * UI improve
 
-### 1.6.4
+## 1.6.4
 
 * Fix app interaction issues (Enhanced mode): Always convert file uri to content uri on Android Q
 * Enhanced mode: remove disable file uri expose check since it is meaningless
 * Allow choosing "Android/sandbox" as isolated storage path on Android Q
 * Other bug fix
 
-### 1.6.3
+## 1.6.3
 
 * Enhanced mode works on Android Q
 * Enhanced mode: force disable file uri expose check for Android Q system ui
@@ -129,29 +133,29 @@
 * Try fix config lost (should be extremely rare), add "Debug info" for users to investigate this problem
 * Fix storage permission can't be revoked if redirect is already disabled
 
-### 1.6.2
+## 1.6.2
 
 * Add "View gallery as this app", you can learn which photos the app can access
 * Bug fix & UI improve
 
-### 1.6.0
+## 1.6.0
 
 * Works on Android Q DP2 (enhanced mode not supported yet)
 * Change behavior, mount Android/media/xxx & Android/obb/xxx by default
 * Huge UI improve
 * Fix "Fix app interaction issues" never worked on some devices
 
-### 1.5.7
+## 1.5.7
 
 * Continue fixing bugs caused by "Fix app interaction issues"
 * Continue renaming options
 
-### 1.5.6
+## 1.5.6
 
 * Fix new storage permission method breaks on MIUI
 * Fix "Fix app interaction issues" feature causes app breaks on some situations (if extra contains Parcelables from non-BootClassloader)
 
-### 1.5.5
+## 1.5.5
 
 * (Android 6.0-7.1) Fix "Fix app interaction issues" feature cause app crash or all media not shown
 * Continue renaming options, app name would even change in the future
@@ -162,7 +166,7 @@
   * Enforce storage permission with API (do not need check everytime), save average 0.04s
   * (only on 7.0+) Limit "File monitor" hook target, save average 0.1s
   
-### 1.5.3
+## 1.5.3
 
 * Enhancement module v19, please upgrade as soon as possible
 
@@ -170,7 +174,7 @@
   * "Fix app interaction issues": fix some media are filtered incorrectly (app 1.5.1, v19)
   * "Fix app interaction issues": fix app may crash when "Access files from other redirected app" rules enabled (v18.1)
 
-### 1.5.0
+## 1.5.0
 
 * New Enhancement module v18
   
@@ -179,17 +183,17 @@
 * UI change
 * Rename some options, reduce the understanding difficulty
 
-### 1.4.9
+## 1.4.9
 
 * Fix "Synced folders" feature is broken in 1.4.8
 
-### 1.4.8
+## 1.4.8
 
 * Fix regex check of "Synced folders" rules is not proceed when enabling the rule
 * Revoke app storage permission automatically when disabling redirect
 * Other bug fix
 
-### 1.4.7
+## 1.4.7
 
 * Fix Enhancement module installation error reporting
 * Fix Google purchase issue reporting
@@ -198,26 +202,26 @@
 * Correctly report some type of error on start
 * Other bug fix
 
-### 1.4.6
+## 1.4.6
 
 * Improve Enhancement module installation detection and provide solution
 * Improve "Invalid license" page
 * Bug fix
 
-### 1.4.4
+## 1.4.4
 
 * Bug fix
 
-### 1.4.2
+## 1.4.2
 
 * Report Enhancement module not correctly installed
 * Improve home
 
-### 1.4.1
+## 1.4.1
 
 * Fix license check
 
-### 1.4.0
+## 1.4.0
 
 * New home page
 * Rename/re-layout options, reduce the understanding difficulty
@@ -228,11 +232,11 @@
 * New Enhancement module v17, not more "I can't open redirected apps"
 * Fix tons of bugs
 
-### 1.3.3
+## 1.3.3
 
 * Fix bug of Enhance module v16
 
-### 1.3.2
+## 1.3.2
 
 * Enhance module v16, fix a problem related to passing file uri
   (Example: can't open a received file in WeChat)
@@ -240,13 +244,13 @@
 * Fix bugs related to link feature
 * Other minor bug fix
 
-### 1.2.2
+## 1.2.2
 
 * Fix mask template for link rule editor
 * Add "Link function only" filter in "Logcat"
 * Minor bug fix
 
-### 1.2.1
+## 1.2.1
 
 * Add "Kill Media Storage on start" option
   (on some devices, Media Storage can use all CPU on boot, kill it can solve the problem
@@ -255,7 +259,7 @@
 * Try to detect no log
 * Minor bug fix
 
-### 1.2.0
+## 1.2.0
 
 * Add "Shared folder" to solve the problem that files created by
   a redirected app can't be used by another redirected app
@@ -266,12 +270,12 @@
   (Example: bilibili can't save gif)
 * Minor bug fix
 
-### 1.1.4
+## 1.1.4
 
 * Enhanced "Non-redirect folders" template mechanism
 * Show conflicting rule info
 
-### 1.1.2
+## 1.1.2
 
 * Simplified detail UI
 * Try to support other su, confirmed support MagiskSU, SuperSU, LineageOS addonsu now
@@ -283,12 +287,12 @@
 * Improve File monitor
 * Add non standard behavior check (use file monitor data)
 
-### 1.0.2
+## 1.0.2
 
 * Fix UI not refreshed when add link rules online
 * Fix the problem that "You have already own this item" happens on some Google Play users
 
-### 1.0.0
+## 1.0.0
 
 * Add "Non-redirect folders" template, you can create different templates
   for different situations and apply them quickly
@@ -296,27 +300,27 @@
   some devices
 * Bug fix
 
-### 1.0.0-rc9
+## 1.0.0-rc9
 
 * New logcat UI
 * Fix unpaid state check
 * Migrate to AndroidX library
 
-### 1.0.0-rc8
+## 1.0.0-rc8
 
 * Improve user experience
 * Minor bug fix
 
-### 1.0.0-rc7
+## 1.0.0-rc7
 
 * Fix "Launch" button not work
 
-### 1.0.0-rc6
+## 1.0.0-rc6
 
 * Improve user experience
 * Bug fix
 
-### 1.0.0-rc5
+## 1.0.0-rc5
 
 * Add White / Light blue theme
 * Try to hide overlay packages
@@ -324,17 +328,17 @@
 * Fix some link rules can't be added
 * Bug fix
 
-### 1.0.0-rc4
+## 1.0.0-rc4
 
 * Add manually set /data/media path for some special devices
 * Bug fix
 
-### 1.0.0-rc3
+## 1.0.0-rc3
 
 * Fix Android/data can be chosen as a "Non-redirect folder"
 * Bug fix
 
-### 1.0.0-rc1
+## 1.0.0-rc1
 
 * New theme
 * New detail UI
@@ -343,11 +347,11 @@
 * Fix backup bug, but backup files created before 1.0.0-rc1 is unavailable
 * Try to detect real internal storage path
 
-### 0.18.2-beta
+## 0.18.2-beta
 
 * Fix bug
 
-### 0.18.0-beta
+## 0.18.0-beta
 
 * "Non-redirect folder" (old "Standard folder") is now customizable like "Redirect target folder"
 * Add Backup & restore
@@ -355,18 +359,18 @@
 * Fix crash when change filter in the main list
 * Fix redirected files may not be moved when change redirect target folder in some cases
 
-### 0.17.4-beta
+## 0.17.4-beta
 
 * Fix link feature not on some (old? special?) devices
 * Try to fix owner of linked files' is 0 on older Android system (chown ourselves)
 
-### 0.17.3-beta
+## 0.17.3-beta
 
 * Fix a critical bug that if an app's redirect target is set different
   from the default, it will not able to access files in public folders
 * Fix others bugs in 0.17.x
 
-### 0.17.1-beta
+## 0.17.1-beta
 
 * Add set redirect target folder (globally and pre-app)
 * Add app installed notification
@@ -374,7 +378,7 @@
 * Improved "Share helper"
 * Bug fix
 
-### 0.16.4-beta
+## 0.16.4-beta
 
 * Add file stat for Redirect storage viewer
 * Fix the problem that anyone is displayed as purchased
@@ -382,7 +386,7 @@
 * Try to "fix" IAP problem "You have already own this item"
 * Link files from target to source when enabling link rules
 
-### 0.16.2-beta
+## 0.16.2-beta
 
 * Enhanced File monitor: load more & filter by path / app
 * Force grant storage permission for redirected apps
@@ -393,7 +397,7 @@
 * Add more tips
 * Fix bugs in 0.16.1 / 0.16.2
 
-### 0.15.8-beta
+## 0.15.8-beta
 
 * Files downloaded by redirected apps can be managed in Android's Files (DocumentUI) app
 * Fix log parse (only some special ROM)
@@ -401,18 +405,18 @@
 * New app list style
 * In-app logcat now catches logs from more sources
 
-### 0.15.4-beta
+## 0.15.4-beta
 
 * Fix reboot when new file created in folders monitored by link function (only on 8.0)
 * Fix a bug of file monitoring function of the link function
 
-### 0.15.2-beta
+## 0.15.2-beta
 
 * Try to fix crash on boot (only some users)
 * Fix log parse (only some special ROM)
 * Auto shrink file monitor database file
 
-### 0.15.1-beta
+## 0.15.1-beta
 
 * Enhance module v12.1
 
@@ -420,18 +424,18 @@
 
 * Other minor changes
 
-### 0.15.0-beta
+## 0.15.0-beta
 
 * New Enhance module (check Settings and Help)
 * File monitor: monitor file access in public storage (requires "Enhance module")
 * Try to fix bugs in 0.14.3
 
-### 0.14.3-beta
+## 0.14.3-beta
 
 * Try to fix bugs in 0.14.1 / 0.14.2
 * Magisk module v10 (check Help & support)
 
-### 0.14.1-beta
+## 0.14.1-beta
 
 * Provide new Magisk module to solve the problem that redirected apps still create files sometimes, check Help & support for detail
 * New native daemon
@@ -439,66 +443,66 @@
 * Improve UI
 * App list will be loaded correctly now even if instant app is installed (Android 8.0's bug)
 
-### 0.12.13-beta
+## 0.12.13-beta
 
 * Link rule: fix the problem that some files are skipped
 
-### 0.12.12-beta
+## 0.12.12-beta
 
 * Fix the problem that some processes are ignored on **some special ROMs**
 * Link rule: ignore file which extension ends with _tmp_ or _temp_ by default
 
-### 0.12.11-beta
+## 0.12.11-beta
 
 * Some bug fix
 
-### 0.12.7-beta
+## 0.12.7-beta
 
 * Fix the problem that some process is not redirected (from 0.12.6)
 * Link rule: handle file downloaded notification by our app
 
-### 0.12.6-beta
+## 0.12.6-beta
 
 * Should work on Android P DP1
 * Link rules ignore .tmp / .temp by default
 * Some minor changes
 
-### 0.12.5-beta
+## 0.12.5-beta
 
 * Update Magisk module (download from Help & support)
 * Some minor changes
 
-### 0.12.4-beta
+## 0.12.4-beta
 
 * New link rules UI
 * Mark outdated (not exists in online configuration) link rules
 * Try to avoid some magic
 * Add "Share helper"
 
-### 0.12.3-beta
+## 0.12.3-beta
 
 * Add more log for starter
 * More core files to /data/adb
 * Try to avoid strange behavior on some devices when using Magisk module
 
-### 0.12.1-beta
+## 0.12.1-beta
 * **The core feature should works perfectly on all devices**
 * Provide Magisk module for starting before all apps (see Help & support)
 
-### 0.12.0-beta
+## 0.12.0-beta
 
 * Fix major issue on some devices
 * Add tip when log may be disabled
 * Linked files will only be deleted when redirected app is running in the foreground
 
-### 0.11.2-beta
+## 0.11.2-beta
 
 > Version 0.11.2 changed some implementation details, to avoid some magic problems on users who have problems using version 0.11.0
 
 * Should work on more devices now, to the user who still have problem, the problem should not break all things
 * Storage permission (both runtime permission and appops) will be automatically grant to redirected apps (to avoid magic problem)
 
-### 0.11.0-beta
+## 0.11.0-beta
 
 > In 0.11.0 and later version, we use a completely different method of implementation. The problem that hard-coded `/sdcard` cannot be redirected is solved.
 > If you have problem using the new version, please contact us for help.
