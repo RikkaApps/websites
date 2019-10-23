@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.3 (2019-10-23)
+
+- Bypassing the problem that using auto dark theme causing crash on OnePlus Android 10 (this problem is caused by OnePlus)
+
 ## 2.1.1 (2019-10-23)
 
 - Fix the problem that enabled app can't start if core process starts later than it
