@@ -68,7 +68,9 @@ http.createServer(function (req, res) {
 
         console.log("Calling git pull")
         let child = spawn('git', ['pull'])
-        child.stdout.on('data', function (data) {
+        res.statusCode = 200
+        res.end()
+        /*child.stdout.on('data', function (data) {
             res.write(data)
         })
         child.stderr.on('data', function (data) {
@@ -79,7 +81,7 @@ http.createServer(function (req, res) {
 
             res.statusCode = 200
             res.end()
-        })
+        })*/
 
         res.on('error', (err) => {
             console.error(err)
