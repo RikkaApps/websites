@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.1.4 (2019-10-29)
+
+- Fix some bugs
+
 ## 2.1.3 (2019-10-23)
 
 - Bypassing the problem that using auto dark theme causing crash on OnePlus Android 10 (this problem is caused by OnePlus)
