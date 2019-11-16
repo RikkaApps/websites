@@ -163,6 +163,6 @@ function getNavbar(prefix, guide, download, changelog, allRikkaApps) {
     { text: guide, link: `${prefix}guide/` },
     { text: download, link: `${prefix}download.html` },
     { text: changelog, link: `${prefix}changelog.html` },
-    { text: allRikkaApps, link: `https://preview.rikka.app${prefix}` },
+    { text: allRikkaApps, link: `https://rikka.app${prefix}` },
   ]
 }
