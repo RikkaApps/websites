@@ -128,9 +128,10 @@ function getSidebar(prefix, basicTitle, advancedTitle, enhancedModeTitle, compat
     {
       title: enhancedModeTitle,
       collapsable: true,
-      sidebarDepth: 1,
+      sidebarDepth: 0,
       children: [
         `enhanced_mode/`,
+        `enhanced_mode/install`,
       ]
     },
     {
