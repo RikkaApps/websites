@@ -4,13 +4,13 @@
 
 - Redesign multiple UI parts to reduce the difficulty of understanding
 - Refactor multiple UI related parts to make it more stable and smooth
-- Enhanced mode v21: Add "Block system remount" feature to avoid system triggered remount makes the isolation invalid (available on Android 9+)<sup>**[1]**</sup>
-- Enhanced mode: Bring back the feature of modifying file path in "Fix app interaction", but only `ACTION_VIEW` is handled<sup>**[2]**</sup> and it no longer use Storage Redirect app as the proxy<sup>**[3]**</sup>
+- Enhanced mode v21: Add "Block system remount" feature to avoid system triggered remount makes the isolation invalid (available on Android 9+)<sup>**〔1〕**</sup>
+- Enhanced mode: Bring back the feature of modifying file path in "Fix app interaction", but only `ACTION_VIEW` is handled<sup>**〔2〕**</sup> and it no longer use Storage Redirect app as proxy<sup>**〔3〕**</sup>
 - Redesigned online rule, making it more flexible
 
 <sub>**〔1〕** This feature should be necessary only on MIUI 11</sub>
-<br><sub>**[2]** Trigger deserialization of `extras` is dangerous</sub>
-<br><sub>**[3]** Even if we don’t do anything, the original behavior has already caused crash on Android 10, we don’t have to "fix problem" for "bad apps"</sub>
+<br><sub>**〔2〕** Trigger deserialization of `extras` is dangerous</sub>
+<br><sub>**〔3〕** Even if we don’t do anything, the original behavior has already caused crash on Android 10, we don’t have to "fix problem" for "bad apps"</sub>
 
 ## 2.1.5 (2019-10-30)
 
