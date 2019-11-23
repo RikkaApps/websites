@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.1.0 (2019-11-21)
+
+- Enhanced mode: "Fix app interaction" can handle requests of "Download Manager"
+- Fix the problem that storage permission may not granted correctly on Android 10
+- Other minor bug fix and UI improve
+
 ## 3.0.0 (2019-11-21)
 
 - Redesign multiple UI parts to reduce the difficulty of understanding
