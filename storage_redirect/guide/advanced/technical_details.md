@@ -12,7 +12,7 @@ At startup, two processes, `storage_redirect` and `storage_redirect_server`, are
 
 Storage permissions are granted and fixed ("Enforced by policy" in system permission management). The reason for the fix is that after app's storage permissions changed, the system will remount `/storage` for the app process (we can't monitor this change), which will cause the mounts we made to be lost.
 
-## Storage isolation (redirect)
+## Isolation (redirect)
 
 After the app process is created, enter the mount namespace of the app process to perform a series of bind mount.
 
@@ -24,9 +24,9 @@ The essence of the various rules set in "Accessible folders" is to add more bind
 
 When the enhanced mode is not used, `logcat`. When using enhanced mode, the app process will connect our `storage_redirect` process using socket.
 
-### "Synced Folders"
+### Export isolated files (Synced Folders)
 
-Implemented with inotify and hard links. In addition, inotify does not seem to properly monitor that files have been moved/moved in, so only builds and deletes can be handled correctly.
+Implemented with `inotify` and `hard link`.
 
 ## Enhanced mode
 
@@ -34,18 +34,17 @@ Enhanced mode implements app process injection with [Riru](https://github.com/Ri
 
 ### Fix interaction between apps
 
-Load our own dex in the redirected app process and add a dynamic proxy for `IActivityManager`.
-
-When start activity received or request to start other activity, file uri carried in intent will be modified, or converted to content uri (transfer via Storage Redirect app) if necessary.
-
-When you use Media Store, the results are modified based on the "Accessible Folders" setting.
-
-In Android P and above, for unlimited reflection, the hidden api check is forced to disable (modify `runtime_flags` of `nativeForkAndSpecialize`).
+* Hook `android.os.BinderProxy#transactNative` in app processes and handle `android.app.IActivityManager` `android.content.IContentProvider`
+* Modify `runtime_flags` of `nativeForkAndSpecialize` on Android P+ to disable hidden api check
 
 ### Fix rename
 
 By hooking `rename` within the app process, if -1 is returned and `errno == EXDEV` then copy and delete and modify the return value.
 
-### File Monitoring
+### File Monitor
 
 By hooking functions such as `open` within the app process and use socket to send to `storage_redirect` process.
+
+### Block system remount <Badge text="v21+"/>
+
+Hook `android.os.BinderProxy#transactNative` in `system_server` process and handle `android.os.IVold#remountUid`.

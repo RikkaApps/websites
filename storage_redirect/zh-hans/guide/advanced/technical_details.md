@@ -12,7 +12,7 @@
 
 存储权限会被强制授予并锁定（在系统权限管理中看到“由政策强制执行”）。锁定的原因在于，在应用的存储权限发生变化后，系统会重新为应用进程挂载 `/storage`（我们无法监控到这一变化），会导致我们所做的挂载丢失。
 
-## 存储空间隔离（重定向）
+## 隔离（重定向）
 
 在应用进程建立后，进入应用进程的挂载命名空间进行一系列的绑定挂载。
 
@@ -24,9 +24,9 @@
 
 在不使用增强模式时，`logcat`。使用增强模式时，由应用进程透过 socket 连接至我们的 `storage_redirect` 进程。
 
-### “同步文件夹”
+### 导出被隔离的文件（同步文件夹）
 
-借助 inotify 与硬链接实现。另外，inotify 似乎并不能正确监控到文件被移走/移入，所以只有建立和删除可以被正确处理。
+借助 `inotify` 与 `硬链接` 实现。
 
 ## 增强模式
 
@@ -34,13 +34,8 @@
 
 ### 修复应用间交互
 
-在被重定向应用进程中加载自己的 dex，会为 `IActivityManager` 套上动态代理。
-
-自己开启 activity 时，请求启动其他 activity 时对 intent 中携带的 file uri 进行修改，必要时转换成 content uri 经由存储重定向中转。
-
-使用媒体存储时，会根据“可访问文件夹”设置对结果进行修改。
-
-在 Android P 及以上，为了反射不受限，还会强行关闭 hidden api 检查（修改 `nativeForkAndSpecialize` 的 `runtime_flags`）。
+* 在应用进程内 hook `android.os.BinderProxy#transactNative`，并对 `android.app.IActivityManager` `android.content.IContentProvider` 进行处理
+* 在 Android P 及以上通过修改 `nativeForkAndSpecialize` 的 `runtime_flags` 关闭 hidden api 检查
 
 ### 修复 rename
 
@@ -49,3 +44,7 @@
 ### 文件监视
 
 通过在应用进程内 hook `open` 等函数并使用 socket 发送给 `storage_redirect` 进程。
+
+### 禁止系统重新挂载 <Badge text="v21+"/>
+
+在 `system_server` 进程内 hook `android.os.BinderProxy#transactNative` 并对 `android.os.IVold#remountUid` 进行处理。
