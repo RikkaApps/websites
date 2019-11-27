@@ -1,6 +1,10 @@
 # Installation
 
-We temporarily only provide [Magisk](https://github.com/topjohnwu/Magisk) modules, beacuse only Magisk can provide reliable boot script.
+Enhance module requires your device to install Magisk first since only Magisk can provide reliable boot script.
+
+Magisk is a powerful tool that provides not only root but the ability to modify the system without actually change system files and more.
+
+You can learn more about Magisk from [GitHub](https://github.com/topjohnwu/Magisk).
 
 ## Before you install
 

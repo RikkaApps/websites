@@ -1,6 +1,12 @@
 # Changelog
 
-## 3.1.0 (2019-11-21)
+## 3.1.3 (2019-11-24)
+
+- Try to avoid the problem of "Block system remount" may cause "reboot" on some devices (Note, new changes requires reboot to take effect)
+- Export isolated files (Synced folder) function now delete file with same name in target folder first, this is to avoid the problem of multiply rename/move may cause "wrong" file be exported
+- Add preset strings of local rules for the situations of online rules is disabled or network is unavailable
+
+## 3.1.0 (2019-11-23)
 
 - Enhanced mode: "Fix app interaction" can handle requests of "Download Manager"
 - Fix the problem that storage permission may not granted correctly on Android 10

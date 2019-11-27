@@ -1,6 +1,10 @@
 # 安装
 
-我们暂时只提供 [Magisk](https://github.com/topjohnwu/Magisk) 模块，因为只有 Magisk 可以提供**可靠的**开机时执行脚本。
+增强模块要求您的设备首先安装 Magisk，因为只有 Magisk 才能提供可靠的启动脚本。
+
+Magisk 是一个功能强大的工具，它不仅提供 root，而且提供不修改系统文件就修改系统等其他功能。
+
+您可以从 [GitHub](https://github.com/topjohnwu/Magisk) 了解有关 Magisk 的更多信息。
 
 ## 安装前须知
 

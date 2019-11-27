@@ -1,6 +1,10 @@
 # 安裝
 
-我們暫時只提供 [Magisk](https://github.com/topjohnwu/Magisk) 模組，因為只有 Magisk 可以提供**可靠的**開機時執行腳本。
+增強模組要求您的裝置首先安裝 Magisk，因為只有 Magisk 才能提供可靠的啟動指令碼。
+
+Magisk 是一個功能強大的工具，它不僅提供 root，而且提供不修改系統檔案就修改系統等其他功能。
+
+您可以從 [GitHub](https://github.com/topjohnwu/Magisk) 瞭解有關 Magisk 的更多資訊。
 
 ## 安裝前須知
 
