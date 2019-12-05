@@ -22,7 +22,7 @@
             class="action-button secondary"
             :item="secondaryActionLink"
           />
-        </div>
+      </div>
 	    
 	    <div
           class="action"
@@ -32,7 +32,7 @@
             class="action-button"
             :item="actionLink"
           />
-        </div>
+      </div>
 	  </div>
     </header>
 

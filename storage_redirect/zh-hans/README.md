@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /logo.png
-actionText: 立即下载
+actionText: 下载
 actionLink: /zh-hans/download.html
 secondaryActionText: 了解更多
 secondaryActionLink: /zh-hans/guide/

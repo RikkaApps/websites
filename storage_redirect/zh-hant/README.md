@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /logo.png
-actionText: 立即下載
+actionText: 下載
 actionLink: /zh-hant/download.html
 secondaryActionText: 瞭解更多
 secondaryActionLink: /zh-hant/guide/

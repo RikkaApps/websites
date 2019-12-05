@@ -2,7 +2,7 @@ const path = require('path')
 
 // Theme API.
 module.exports = (options, ctx) => ({
-  alias () {
+  alias() {
     const { themeConfig, siteConfig } = ctx
     // resolve algolia
     const isAlgoliaSearch = (
@@ -38,6 +38,11 @@ module.exports = (options, ctx) => ({
       defaultTitle: {
         '/zh/': '警告'
       }
+    }],
+    ['container', {
+      type: 'details',
+      before: info => `<details class="custom-block details">${info ? `<summary>${info}</summary>` : ''}\n`,
+      after: () => '</details>\n'
     }]
   ]
 })

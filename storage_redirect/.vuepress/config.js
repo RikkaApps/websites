@@ -31,17 +31,17 @@ module.exports = {
   locales: {
     '/': {
       lang: 'en',
-      description: 'Give apps an isolated storage (requires root)'
+      description: 'App storage isolation (requires root)'
     },
     '/zh-hans/': {
       lang: 'zh-Hans',
       title: '存储重定向',
-      description: '给应用相互隔离的存储空间（需要 root）'
+      description: '应用存储空间隔离（需要 root)'
     },
     '/zh-hant/': {
       lang: 'zh-Hant',
       title: '儲存重新導向',
-      description: '給應用程式相互隔離的儲存空間（需要 root）'
+      description: '應用程式儲存空間隔離（需要 root)'
     }
   },
   themeConfig: {
@@ -55,7 +55,7 @@ module.exports = {
             buttonText: "Refresh"
           }
         },
-        sidebar: getSidebar('/guide/', 'Basic', 'Advanced', 'Enhanced mode', 'Compatibility', 'FAQ'),
+        sidebar: getSidebar('/guide/', 'Guide', 'Advanced', 'Enhanced mode', 'Compatibility', 'FAQ'),
         nav: getNavbar('/', 'Guide', 'Download', 'Changelog', 'Rikka Apps'),
         lastUpdated: 'Last Updated'
       },
@@ -69,7 +69,7 @@ module.exports = {
             buttonText: "刷新"
           }
         },
-        sidebar: getSidebar('/zh-hans/guide/', '基础', '高级', '增强模式', '兼容性', 'FAQ'),
+        sidebar: getSidebar('/zh-hans/guide/', '指南', '高级', '增强模式', '兼容性', 'FAQ'),
         nav: getNavbar('/zh-hans/', '指南', '下载', 'Changelog', 'Rikka Apps'),
         lastUpdated: '最后更新'
       },
@@ -83,7 +83,7 @@ module.exports = {
             buttonText: "重新整理"
           }
         },
-        sidebar: getSidebar('/zh-hant/guide/', '基礎', '高級', '增強模式', '相容性', 'FAQ'),
+        sidebar: getSidebar('/zh-hant/guide/', '指南', '高級', '增強模式', '相容性', 'FAQ'),
         nav: getNavbar('/zh-hant/', '指南', '下載', 'Changelog', 'Rikka Apps'),
         lastUpdated: '最後更新'
       }

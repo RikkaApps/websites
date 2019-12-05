@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /logo.png
-actionText: Download Now
+actionText: Download
 actionLink: /download.html
 secondaryActionText: Learn more
 secondaryActionLink: /guide/

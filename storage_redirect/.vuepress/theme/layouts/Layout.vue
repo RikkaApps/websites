@@ -31,8 +31,6 @@
 
     <Home v-if="$page.frontmatter.home"/>
 
-    <Download v-if="$page.frontmatter.download"/>
-
     <Page
       v-else
       :sidebar-items="sidebarItems"
