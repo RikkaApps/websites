@@ -57,7 +57,7 @@ function collect(body) {
             let i = change.indexOf('/')
             if (i != -1) {
                 let target = change.substring(0, i)
-                if (target in sites && !target.startWith(".vuepress")) {
+                if (target in sites && !target.startsWith(".vuepress")) {
                     let url = change.substring(i + 1).replace("/README.md", "/").replace(".md", ".html")
                     targets.add(target)
                     urls.add(`https://${sites[target]}/${url}`)
