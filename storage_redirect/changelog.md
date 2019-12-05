@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.4 (2019-12-05)
+
+- Fix a problem of startup progress
+
 ## 3.1.3 (2019-11-24)
 
 - Try to avoid the problem of "Block system remount" may cause "reboot" on some devices (Note, new changes requires reboot to take effect)
