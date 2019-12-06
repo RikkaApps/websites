@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.1.5 (2019-12-06)
+
+- Revert some changes in 3.1.4 since it seems to cause problems on some other devices :(
+
 ## 3.1.4 (2019-12-05)
 
 - Fix a problem of startup progress
