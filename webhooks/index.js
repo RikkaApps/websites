@@ -8,6 +8,7 @@ const {
     spawn
 } = require('child_process')
 const fs = require('fs')
+const path = require('path')
 const vuepress = require('vuepress')
 
 console.log(`Port: ${port}`)
@@ -48,28 +49,45 @@ async function purgeCloudflareCache(urls) {
     }
 }
 
-function collect(body) {
+function collectTargets(body) {
     let targets = new Set()
-    let urls = new Set()
     body.commits.forEach(commit => {
         let changes = commit.added.concat(commit.removed).concat(commit.modified)
         changes.forEach(change => {
             let i = change.indexOf('/')
             if (i != -1) {
                 let target = change.substring(0, i)
-                if (target in sites && !target.startsWith(".vuepress")) {
-                    let url = change.substring(i + 1).replace("/README.md", "/").replace(".md", ".html")
+                if (target in sites) {
                     targets.add(target)
-                    urls.add(`https://${sites[target]}/${url}`)
                 }
             }
         })
     })
 
-    return {
-        targets: Array.from(targets),
-        urls: Array.from(urls)
+    return targets
+}
+
+function collectFiles(parent, files) {
+    fs.readdirSync(parent).forEach(file => {
+        var child = parent + path.sep + file;
+        if (fs.lstatSync(child).isDirectory()) {
+            collectFiles(child, files);
+        } else {
+            files.push(parent + path.sep + file);
+        }
+    });
+}
+
+function collectUrls(target, path) {
+    let urls = new Set()
+
+    let files = []
+    collectFiles(path, files)
+    for (const file of files) {
+        urls.add(`https://${sites[target]}/${file.replace(path, "").replace(/\\/g, "/").substring(1)}`)
     }
+
+    return urls
 }
 
 http.createServer(function (req, res) {
@@ -97,21 +115,17 @@ http.createServer(function (req, res) {
             }
         }
 
-        let info
+        let targets
         try {
-            info = collect(JSON.parse(body))
+            targets = collectTargets(JSON.parse(body))
         } catch (e) {
             console.log(e)
             res.write(e.toString())
             res.write('\n')
         }
-        info.targets.forEach(value => {
+        targets.forEach(value => {
             res.write(`Site https://${sites[value]} requires rebuild.\n`)
             console.log(`Site https://${sites[value]} requires rebuild`)
-        })
-        info.urls.forEach(value => {
-            res.write(`Url ${value} requires purge cache.\n`)
-            console.log(`Url ${value} requires purge cache`)
         })
 
         res.write("Calling git pull...\n")
@@ -132,11 +146,16 @@ http.createServer(function (req, res) {
             res.statusCode = 200
             res.end()
 
-            for (const target of info.targets) {
+            for (const target of targets) {
                 console.log(`vuepress build ../${target}...`)
                 await buildVuePress(`../${target}`)
                 console.log(`purge Cloudflare cache...`)
-                await purgeCloudflareCache(info.urls)
+
+                let urls = collectUrls(target, `../${target}/.vuepress/dist`)
+                urls.forEach(value => {
+                    console.log(`Url ${value} requires purge cache`)
+                })
+                await purgeCloudflareCache(urls)
             }
         })
     })
