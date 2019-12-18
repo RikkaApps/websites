@@ -4,10 +4,10 @@
 
 * 當你開啟你的檔案管理器或是將手機作為 U 盤使用時，你是否發現其中有大量你不知道的資料夾，你很難在其中找到自己想要找到的檔案；你是否想知道這些檔案由什麼應用程式建立，是否可以刪除。
 
-  ::: details 一個例子
-  <br>
-  <img :src="$withBase('/images/chaos_storage.png')" alt="一個例子">
-  :::
+::: details 例子
+<br>
+<img :src="$withBase('/images/chaos_storage.png')" alt="一個例子">
+:::
 
 * 當一個應用程式請求儲存權限時，你是否希望它只可以訪問特定的檔案。
 

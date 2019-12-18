@@ -1,5 +1,10 @@
 # Changelog
 
+## 3.2.0 (2019-12-18)
+
+- Fix a problem related to isolation for the app which starts very early (yeah, another problem caused by "changes for 💩 MIUI")
+- UI improve for almost every part
+
 ## 3.1.5 (2019-12-06)
 
 - Revert some changes in 3.1.4 since it seems to cause problems on some other devices :(

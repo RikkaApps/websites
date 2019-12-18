@@ -4,10 +4,10 @@ Before introducing "Storage Redirect", please see if you have the following prob
 
 * When you open your file manager or use your phone as a USB flash drive, do you find that there are a large number of folders that you don’t know, it is difficult to find files you want to find in them; do you want to know what app created the file and if it can be deleted.
 
-  ::: details an example
-  <br>
-  <img :src="$withBase('/images/chaos_storage.png')" alt="An example">
-  :::
+::: details Example
+<br>
+<img :src="$withBase('/images/chaos_storage.png')" alt="An example">
+:::
 
 * When an app requests storage permission, do you want let it access specific files only.
 

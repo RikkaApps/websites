@@ -4,10 +4,10 @@
 
 * 当你打开你的文件管理器或是将手机作为 U 盘使用时，你是否发现其中有大量你不知道的文件夹，你很难在其中找到自己想要找到的文件；你是否想知道这些文件由什么应用建立，是否可以删除。
 
-  ::: details 一个例子
-  <br>
-  <img :src="$withBase('/images/chaos_storage.png')" alt="一个例子">
-  :::
+::: details 例子
+<br>
+<img :src="$withBase('/images/chaos_storage.png')" alt="一个例子">
+:::
 
 * 当一个应用请求存储权限时，你是否希望它只可以访问特定的文件。
 

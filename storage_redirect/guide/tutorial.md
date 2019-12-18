@@ -6,12 +6,12 @@ For user files such as photos, pictures, and downloaded files, the Android syste
 
 ::: details All Shared folders
 * `Alarms`
-* `Pictures` (pictures)
-* `DCIM` (camera)
+* `Pictures`
+* `DCIM` (for photos taken by camera)
 * `Documents`
 * `Download`
 * `Movies`
-* `Music` (music)
+* `Music`
 * `Notifications`
 * `Ringtones`
 :::
