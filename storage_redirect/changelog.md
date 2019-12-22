@@ -1,5 +1,9 @@
 # Changelog
 
+## 3.2.2 (2019-12-22)
+
+- Fix a problem related to restoring the backup
+
 ## 3.2.0 (2019-12-18)
 
 - Fix a problem related to isolation for the app which starts very early (yeah, another problem caused by "changes for 💩 MIUI")
