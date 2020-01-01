@@ -1,4 +1,9 @@
 const path = require('path')
+const moment = require('moment')
+const langMap = {
+  "zh-Hans": "zh-cn",
+  "zh-Hant": "zh-tw"
+}
 
 // Theme API.
 module.exports = (options, ctx) => ({
@@ -43,6 +48,15 @@ module.exports = (options, ctx) => ({
       type: 'details',
       before: info => `<details class="custom-block details">${info ? `<summary>${info}</summary>` : ''}\n`,
       after: () => '</details>\n'
-    }]
+    }],
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          moment.locale(langMap[lang])
+          return moment(timestamp).format('lll')
+        }
+      }
+    ]
   ]
 })

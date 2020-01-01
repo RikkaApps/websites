@@ -14,7 +14,10 @@
   },
   "author": "Rikka",
   "dependencies": {
+    "esm": "^3.2.25",
+    "moment": "^2.24.0",
     "request-promise": "^4.2.5",
-    "vuepress": "^1.2.0"
+    "vuepress": "^1.2.0",
+    "vuepress-plugin-sitemap": "^2.3.1"
   }
 }
