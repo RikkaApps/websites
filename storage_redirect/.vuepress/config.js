@@ -1,3 +1,9 @@
+const moment = require('moment')
+const langMap = {
+  "zh-Hans": "zh-cn",
+  "zh-Hant": "zh-tw"
+}
+
 module.exports = {
   base: '/',
   title: 'Storage Redirect',
@@ -100,8 +106,16 @@ module.exports = {
   plugins: {
     'sitemap': {
       hostname: 'https://sr.rikka.app',
-      exclude: ['/404.html']
+      exclude: ['/404.html'],
+      dateFormatter: time => undefined
     },
+    '@vuepress/last-updated':
+    {
+      transformer: (timestamp, lang) => {
+        moment.locale(langMap[lang])
+        return moment(timestamp).format('lll') + " (GMT)"
+      }
+    }
   }
 }
 
