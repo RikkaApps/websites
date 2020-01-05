@@ -70,3 +70,9 @@ adb shell pm grant --user 0 rikka.appops android.permission.INTERACT_ACROSS_USER
 ::: tip
 目前只有 Island 3.8+ 支援多使用者
 :::
+
+### 4. 遇到問題？
+
+* 使用 Island 時出現 `Cannot request permission without a restrictions provider registered`
+
+  清除 Island 的快取（應用資訊 -> 儲存 -> 清除快取），後重新啟動 Island。

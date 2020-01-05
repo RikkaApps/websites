@@ -70,3 +70,9 @@ adb shell pm grant --user 0 rikka.appops android.permission.INTERACT_ACROSS_USER
 ::: tip
 Currently only Island 3.8+ supports multiple users
 :::
+
+### 4. Have trouble?
+
+* `Cannot request permission without a restrictions provider registered` when using Island
+
+  Clear cache of Island (App info -> Storage -> Clear cache) and restart Island.
