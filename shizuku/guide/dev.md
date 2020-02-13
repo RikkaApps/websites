@@ -11,10 +11,10 @@ Please read the following content in conjunction with [sample](https://github.co
    ```
    
    ```
-   Implementation 'moe.shizuku.privilege:api:3.0.0-alpha10'
+   implementation 'moe.shizuku.privilege:api:3.1.0-alpha2'
    ```
 
-   The version numbers can be found at <https://bintray.com/rikkaw/Shizuku/>.
+    [![Download](https://api.bintray.com/packages/rikkaw/Shizuku/api/images/download.svg)](https://bintray.com/rikkaw/Shizuku/api/_latestVersion)
 
    The permission declarations that need to be used later are included in the dependency, so you do not need to be add them manually.
    
@@ -75,13 +75,13 @@ Please read the following content in conjunction with [sample](https://github.co
 
 2. Android 9 hidden api problem
 
-   As of Android 9, the usage of the hidden APIs is limited for normal apps.
-
-   At the moment Shizuku is launched, it will try to use `setting put global hidden_api_blacklist_exemptions *`, but it not seems to work on some devices. Please use other methods (such as <https://github.com/tiann/FreeReflection>).
+   As of Android 9, the usage of the hidden APIs is limited for normal apps. Please use other methods (such as <https://github.com/tiann/FreeReflection>).
 
 3. SELinux issues
 
-   Currently, Shizuku running under root will set the context to be the same as adb shell (`u:r:shell:s0`).
+   Currently, Shizuku running under root will set the context to be the same as adb shell (`u:r:shell:s0`). This has no effect on apps that do not use "execute command directly".
+   
+   From v3.5.0, Shizku will not switch to shell context if su context is available. You can use `ShizukuService#getSELinuxContext` to get context of server process (if the user hasn't updated Shizuku, `ShizukuService#getSELinuxContext` will return null).
 
 4. Multi-process apps
 

@@ -11,12 +11,12 @@
    ```
    
    ```
-   implementation 'moe.shizuku.privilege:api:3.0.0-alpha10'
+   implementation 'moe.shizuku.privilege:api:3.1.0-alpha2'
    ```
 
-   版本號可在 <https://bintray.com/rikkaw/Shizuku/> 檢視。
+    [![Download](https://api.bintray.com/packages/rikkaw/Shizuku/api/images/download.svg)](https://bintray.com/rikkaw/Shizuku/api/_latestVersion)
 
-   後面需要用到的許可權宣告包含在依賴中，不需要手動新增。
+   後面需要用到的權限宣告包含在依賴中，不需要手動新增。
    
 2. 取得 binder
 
@@ -38,9 +38,9 @@
 
 3. 授權
 
-   在使用收到的 binder 之前先需要確認自身許可權。
+   在使用收到的 binder 之前先需要確認自身權限。
 
-   對 API 23 及以上，直接使用了[執行時許可權機制](https://developer.android.com/distribute/best-practices/develop/runtime-permissions)，只需要保證先取得 `moe.shizuku.manager.permission.API_V23` 許可權即可。
+   對 API 23 及以上，直接使用了[執行時權限機制](https://developer.android.com/distribute/best-practices/develop/runtime-permissions)，只需要保證先取得 `moe.shizuku.manager.permission.API_V23` 權限即可。
 
    對 API 23 以下，需要啟動 Shizuku app 取得 token，具體流程請參考 sample。
 
@@ -65,21 +65,21 @@
 
 ## 特別注意
 
-1. adb 許可權有限
+1. adb 權限有限
 
-   adb 所擁有的許可權有限，且不同系統版本也有所差別。adb 所擁有的許可權可以[在此](https://github.com/aosp-mirror/platform_frameworks_base/blob/master/packages/Shell/AndroidManifest.xml)查閱。
+   adb 所擁有的權限有限，且不同系統版本也有所差別。adb 所擁有的權限可以[在此](https://github.com/aosp-mirror/platform_frameworks_base/blob/master/packages/Shell/AndroidManifest.xml)查閱。
    
-   在呼叫 API 前，你可以先使用 `ShizukuService#getUid` 檢查 Shizuku 是否執行在 adb 使用者， `ShizukuService#checkPermission` 檢查是否有許可權。
+   在呼叫 API 前，你可以先使用 `ShizukuService#getUid` 檢查 Shizuku 是否執行在 adb 使用者， `ShizukuService#checkPermission` 檢查是否有權限。
 
 2. Android 9 hidden api 問題
 
-   從 Android 9 起，應用使用隱藏 API 受限。
-
-   目前啟動 Shizuku 時會嘗試使用 `setting put global hidden_api_blacklist_exemptions *`，但在部分裝置上似乎無效，請自行使用其他方式（如 <https://github.com/tiann/FreeReflection>）。
+   從 Android 9 起，應用使用隱藏 API 受限。請自行使用其他方式（如 <https://github.com/tiann/FreeReflection>）。
 
 3. SELinux 問題
 
-   目前執行在 root 下的 Shizuku 會將 context 設為與 adb shell 相同（`u:r:shell:s0`）。
+   目前執行在 root 下的 Shizuku 會將 context 設為與 adb shell 相同（`u:r:shell:s0`）。這對不使用「直接執行指令」功能的程式沒有影響。
+   
+   從 v3.5.0 起，如果檢測到 su context 可用，將不會切換到 shell 的 context。你可以使用 `ShizukuService#getSELinuxContext` 來取得服務程式的 context（若使用者尚未升級， `ShizukuService#getSELinuxContext` 會返回 null）。
 
 4. 多程序程式
 
@@ -87,7 +87,7 @@
 
 5. Android 8.0 & adb
 
-   目前 Shizuku v3 服務獲取應用程序建立的方式是組合 `IActivityManager#registerProcessObserver` 與 `IActivityManager#registerUidObserver`（26 及以上），可以保證應用程序啟動時會被傳送 binder。但在 API 26 上，adb 缺少許可權無法使用 `registerUidObserver`，因此如果你需要在可能不是由 Activity 啟動的程序中使用 Shizuku，建議使用啟動透明 Activity 的方式觸發傳送 binder。
+   目前 Shizuku v3 服務獲取應用程序建立的方式是組合 `IActivityManager#registerProcessObserver` 與 `IActivityManager#registerUidObserver`（26 及以上），可以保證應用程序啟動時會被傳送 binder。但在 API 26 上，adb 缺少權限無法使用 `registerUidObserver`，因此如果你需要在可能不是由 Activity 啟動的程序中使用 Shizuku，建議使用啟動透明 Activity 的方式觸發傳送 binder。
    
 5. 請勿濫用「直接執行指令」指令功能
 

@@ -11,10 +11,10 @@
    ```
 
    ```
-   implementation 'moe.shizuku.privilege:api:3.0.0-alpha10'
+   implementation 'moe.shizuku.privilege:api:3.1.0-alpha2'
    ```
 
-   版本号可在 <https://bintray.com/rikkaw/Shizuku/> 查看。
+    [![Download](https://api.bintray.com/packages/rikkaw/Shizuku/api/images/download.svg)](https://bintray.com/rikkaw/Shizuku/api/_latestVersion)
 
    后面需要用到的权限声明包含在依赖中，不需要手动添加。
    
@@ -73,13 +73,13 @@
 
 2. Android 9 hidden api 问题
 
-   从 Android 9 起，应用使用隐藏 API 受限。
-
-   目前启动 Shizuku 时会尝试使用 `setting put global hidden_api_blacklist_exemptions *`，但在部分设备上似乎无效，请自行使用其他方式（如 <https://github.com/tiann/FreeReflection>）。
+   从 Android 9 起，应用使用隐藏 API 受限。请自行使用其他方式（如 <https://github.com/tiann/FreeReflection>）。
 
 3. SELinux 问题
 
-   目前运行在 root 下的 Shizuku 会将 context 设为与 adb shell 相同（`u:r:shell:s0`）。
+   目前运行在 root 下的 Shizuku 会将 context 设为与 adb shell 相同（`u:r:shell:s0`）。这对不使用“直接运行指令”功能的应用没有影响。
+   
+   从 v3.5.0 起，如果检测到 su context 可用，将不会切换到 shell 的 context。你可以使用 `ShizukuService#getSELinuxContext` 来取得服务进程的 context（若用户尚未升级， `ShizukuService#getSELinuxContext` 会返回 null）。
 
 4. 多进程应用
 
