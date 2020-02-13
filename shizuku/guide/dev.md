@@ -11,7 +11,8 @@ Please read the following content in conjunction with [sample](https://github.co
    ```
    
    ```
-   implementation 'moe.shizuku.privilege:api:3.1.0-alpha2'
+   // replace <latest version> to the version below
+   implementation 'moe.shizuku.privilege:api:<latest version>'
    ```
 
     [![Download](https://api.bintray.com/packages/rikkaw/Shizuku/api/images/download.svg)](https://bintray.com/rikkaw/Shizuku/api/_latestVersion)
