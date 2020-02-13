@@ -56,7 +56,7 @@ The steps for enabling Developer Options on different devices may vary, please s
 
 #### 3.1. MIUI device
 
-_"It's 2019, garbage MIUI still breaks Android features."_
+> "It's <del>2019</del> 2020, 💩 MIUI still breaks Android features."
 
 If you use MIUI, you also need to enable "USB Debug (Security options)".
 
@@ -64,25 +64,23 @@ If you use MIUI 11, MIUI 11 breaks custom permission (user apps cannot request f
 
 ### 4. Start Shizuku
 
-::: danger
-This step needs to be re-executed each time the device is rebooted.
-:::
-
 Enter `adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/files/start.sh` in the terminal. If there is no problem, you will see that Shizuku has started successfully in Shizuku app.
 
-### 5. How to avoid Shizuku stop (even if there is no restart)
-
-::: danger
-Please follow the rules below, otherwise it will be stopped.
+::: warning
+This step needs to be re-executed each time the device is rebooted, please avoid power-off or reboot.
 :::
 
-1. Do not turn off "USB Debugging"
-2. Do not modify the USB usage mode after connecting the device to the computer (or change to "charge only" if not)
+### 5. Shizuku randomly stops?
 
-   After a security patch, if the USB usage mode is not "charge only", changing the USB usage mode will kill all processes of adb. **Therefore, be sure not to modify the USB usage mode after change to "charge only".** (This step may not be needed if your device has not received security patchs for a long time)
-
-   In addition, some manufacturers (such as Sony) added a dialog that will modify the USB usage mode when the computer is connected. Please don't click any dialog before disconnecting.
+1. Do not turn off "USB Debugging" and "Developer options"
+2. Do not modify the USB usage mode after connecting the device to the computer
+3. On Android 8, you can try to change "Select USB configuration" to "Charge only" in "Developer options"; on Android 9 and above, change "Default USB configuration" to "No data transfer" (If not work, try another options)
+4. If it still doesn't work, you can try starting Shizuku after enabling network adb (use the command `adb tcpip 5555`)
 
 #### 5.1. Huawei devices
 
-Turn on "Allow ADB Debugging Options in 'Charge Only' mode" in "Developer Options".
+Turn on "Allow ADB debugging options in 'Charge only' mode" in "Developer Options".
+
+#### 5.2 Sony device
+
+Don't click the dialog shows after connecting the USB.

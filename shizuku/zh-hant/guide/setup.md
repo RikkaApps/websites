@@ -55,7 +55,7 @@ Android 除錯橋 (`adb`) 是一個通用命令列工具，其允許您與模擬
 
 #### 3.1. MIUI 裝置
 
-_"It's 2019, garbage MIUI still breaks Android features."_
+> 「<del>2019</del> 2020 年，💩 MIUI 還是會破壞 Android 的特性」
 
 如果你使用 MIUI，你還需要開啟「USB 除錯（安全設定）」。
 
@@ -63,25 +63,23 @@ _"It's 2019, garbage MIUI still breaks Android features."_
 
 ### 4. 啟動 Shizuku
 
-::: warning
-此步驟需要每次重啟裝置後都要重新進行。
-:::
-
 在終端中輸入 `adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/files/start.sh`，如無問題你將會在 Shizuku 中看到已啟動成功。
 
-### 5. 如何避免失效（即使沒有重啟）
-
-::: danger
-請遵循以下規則，否則必然失效。
+::: warning
+重啟裝置後需要重新進行，因此請儘量避免關機和重新啟動。
 :::
 
-1. 不要關閉「USB 除錯」功能
-2. 連線裝置到電腦後不要修改 USB 使用模式（或調整為「僅充電」）
+### 5. Shizuku 隨機停止？
 
-   在某個安全修正檔後，如果 USB 使用模式不是「僅充電」，更改 USB 使用模式後就會殺死所有輸入 adb 的程序。**因此，改為僅充電後，務必不要修改 USB 使用模式。**（如果你的裝置長期沒有收到安全修正檔，此步驟可能不需要）
-
-   此外，部分廠商（如 Sony）增加了連線電腦後會彈出會修改 USB 使用模式的對話方塊。彈出任何對話方塊，在斷開連線前請不要點選。
+1. 不要關閉「USB 除錯」及「開發者選項」
+2. 連線裝置到電腦後不要修改 USB 使用模式
+3. 在 Android 8 上你可以嘗試在「開發者選項」中將「選擇 USB 配置」改為「僅充電」；在 Android 9 及以上則是將「預設 USB 配置」改為「不進行資料傳輸」（如果不行，請嘗試別的選項）
+4. 如果還是不行，你可以嘗試開啟網路 adb（使用指令 `adb tcpip 5555`）後再啟動 Shizuku
 
 #### 5.1. Huawei 裝置
 
 在「開發者選項」中開啟「僅充電模式下允許 ADB 除錯選項」。
+
+#### 5.2 Sony 裝置
+
+不要點選連線 USB 後彈出的對話方塊。
