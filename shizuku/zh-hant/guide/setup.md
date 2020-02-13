@@ -57,9 +57,13 @@ Android 除錯橋 (`adb`) 是一個通用命令列工具，其允許您與模擬
 
 > 「<del>2019</del> 2020 年，💩 MIUI 還是會破壞 Android 的特性」
 
-如果你使用 MIUI，你還需要開啟「USB 除錯（安全設定）」。
+如果你使用 MIUI，你還需要在「開發者選項」中開啟「USB 除錯（安全設定）」。
 
 如果你使用 MIUI 11，MIUI 11 破壞了自訂權限（使用者程式無法請求自定義權限，參考 [這個 issue](https://github.com/RikkaApps/Shizuku/issues/45) 和 [這個 issue](https://github.com/android-in-china/Compatibility/issues/16)），你必須在 Shizuku app 內授予使用者程式權限。
+
+#### 3.2. ColorOS（OPPO 裝置）
+
+如果你使用 ColorOS，你還需要在「開發者選項」中關閉「權限監控」。
 
 ### 4. 啟動 Shizuku
 
@@ -83,3 +87,7 @@ Android 除錯橋 (`adb`) 是一個通用命令列工具，其允許您與模擬
 #### 5.2 Sony 裝置
 
 不要點選連線 USB 後彈出的對話方塊。
+
+#### 5.3. Meizu 裝置
+
+在「開發者選項」中關閉「Flyme 支付保護」。

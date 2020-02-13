@@ -54,13 +54,17 @@ To use `adb` you first need to turn on USB debugging on your device, usually by 
 The steps for enabling Developer Options on different devices may vary, please search for yourself.
 :::
 
-#### 3.1. MIUI device
+#### 3.1. MIUI (Xiaomi devices)
 
 > "It's <del>2019</del> 2020, 💩 MIUI still breaks Android features."
 
-If you use MIUI, you also need to enable "USB Debug (Security options)".
+If you use MIUI, you also need to enable "USB Debug (Security options)" in "Developer settings".
 
 If you use MIUI 11, MIUI 11 breaks custom permission (user apps cannot request for custom permission, please refer [this issue](https://github.com/RikkaApps/Shizuku/issues/45) and [this issue](https://github.com/android-in-china/Compatibility/issues/16)), so you must grant permission for user apps in Shizuku app.
+
+#### 3.2. ColorOS (OPPO devices)
+
+If you use ColorOS, you also need to disable "Permission monitor" in "Developer settings".
 
 ### 4. Start Shizuku
 
@@ -79,8 +83,12 @@ This step needs to be re-executed each time the device is rebooted, please avoid
 
 #### 5.1. Huawei devices
 
-Turn on "Allow ADB debugging options in 'Charge only' mode" in "Developer Options".
+Enable "Allow ADB debugging options in 'Charge only' mode" in "Developer Options".
 
-#### 5.2 Sony device
+#### 5.2. Sony devices
 
 Don't click the dialog shows after connecting the USB.
+
+#### 5.3. Meizu devices
+
+Disable "Flyme payment protection" in "Developer Options".

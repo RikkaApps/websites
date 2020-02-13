@@ -53,13 +53,17 @@ Android 调试桥 (`adb`) 是一个通用命令行工具，其允许您与模拟
 不同设备开启“开发者选项”的步骤可能有所不同，请自己搜索。
 :::
 
-#### 3.1. MIUI 设备
+#### 3.1. MIUI（Xiaomi 设备）
 
-> “<del>9012</del> 0202 年，辣鸡 MIUI 还是会破坏 Android 的特性”
+> “<del>9012</del> 0202 年，💩 MIUI 还是会破坏 Android 的特性”
 
-如果你使用 MIUI，你还需要开启“USB 调试（安全设置）”。
+如果你使用 MIUI，你还需要在“开发者选项”中开启“USB 调试（安全设置）”。
 
 如果你使用 MIUI 11，MIUI 11 破坏了自定义权限（使用者应用无法请求自定义权限，参考 [这个 issue](https://github.com/RikkaApps/Shizuku/issues/45) 和 [这个 issue](https://github.com/android-in-china/Compatibility/issues/16)），你必须在 Shizuku app 内授予使用者应用权限。
+
+#### 3.2. ColorOS（OPPO 设备）
+
+如果你使用 ColorOS，你还需要在“开发者选项”中关闭“权限监控”。
 
 ### 4. 启动 Shizuku
 
@@ -80,6 +84,10 @@ Android 调试桥 (`adb`) 是一个通用命令行工具，其允许您与模拟
 
 在“开发者选项”中开启「“仅充电”模式下允许 ADB 调试选项」。
 
-#### 5.2 Sony 设备
+#### 5.2. Sony 设备
 
 不要点击连接 USB 后弹出的对话框。
+
+#### 5.3. Meizu 设备
+
+在“开发者选项”中关闭“Flyme 支付保护”。
