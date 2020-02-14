@@ -76,10 +76,15 @@ This step needs to be re-executed each time the device is rebooted, please avoid
 
 ### 5. Shizuku randomly stops?
 
-1. Do not turn off "USB Debugging" and "Developer options"
-2. Do not modify the USB usage mode after connecting the device to the computer
-3. On Android 8, you can try to change "Select USB configuration" to "Charge only" in "Developer options"; on Android 9 and above, change "Default USB configuration" to "No data transfer" (If not work, try another options)
-4. If it still doesn't work, you can try starting Shizuku after enabling network adb (use the command `adb tcpip 5555`)
+First, do not disable "USB debugging" and "Developer options".
+
+Then you need to ensure that the USB usage mode does not change while connecting to computer. The common practice is to change the USB usage mode to "Charge only" in the "Developer options". The option on Android 8 is "Select USB configuration" - "Charge only", on Android 9+ the option is "Default USB configuration" - "No data transfer".
+
+On some devices, such as Samsung, this may not work. At this point you need to check the notification that appears after connecting the computer to see the current USB usage mode, and change the mode in "Developer options" to that mode.
+
+If that doesn't work, you can try to open the network adb (using the command `adb tcpip 5555`) and then start Shizuku.
+
+In addition, if your system shows a dialog like "Allow accessing files" after connecting USB, please just ignore it, because the USB usage mode will change from that.
 
 #### 5.1. Huawei devices
 
