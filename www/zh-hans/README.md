@@ -3,7 +3,7 @@ home: true
 heroImage: /logo.png
 backgroundImage: /background.png
 apps:
-- title: 存储重定向
+- title: 存储空间隔离
   details: 让应用有隔离存储，再也不为设计不佳的应用创建的凌乱文件夹烦恼。<br><small>* 需要 root</small>
   icon: https://sr.rikka.app/logo.png
   secondaryAction:

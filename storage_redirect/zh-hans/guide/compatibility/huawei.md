@@ -1,6 +1,6 @@
 # 华为（无法动态修改 SELinux 规则）
 
-华为设备内核的实现只能载入一次 SELinux 规则，而修改 SELinux 规则对存储重定向是必要的。
+华为设备内核的实现只能载入一次 SELinux 规则，而修改 SELinux 规则对存储空间隔离是必要的。
 
 ## Magisk 官方方案
 
@@ -31,7 +31,7 @@ Magisk 已经官方支持 pre-init custom sepolicy patch。
 
 1. 如果你没有使用 Magisk，请参照 [Magisk 官方文档](https://topjohnwu.github.io/Magisk/) 安装 [Magisk](https://github.com/topjohnwu/Magisk)
 2. 下载 [我们的 Magisk](https://github.com/RikkaApps/magisk-custom-sepolicy-installer/releases/download/v0.1/Magisk-v19.4-9784353-R.zip)（基于 v19.4）
-3. 下载 [存储重定向 规则包](https://github.com/RikkaApps/magisk-custom-sepolicy-installer/releases/download/v0.1/magisk-custom-sepolicy-installer-for-storage-redirect.zip)
+3. 下载 [存储空间隔离 规则包](https://github.com/RikkaApps/magisk-custom-sepolicy-installer/releases/download/v0.1/magisk-custom-sepolicy-installer-for-storage-redirect.zip)
 4. 在 Magisk Manager 中使用「模块」-「从存储空间中安装」的方式安装以上 zip
 5. 如果你是 EdXposed 用户，还可以下载安装 [EdXposed 规则包](https://github.com/RikkaApps/magisk-custom-sepolicy-installer/releases/download/v0.1/magisk-custom-sepolicy-installer-for-edxposed.zip)
 6. 规则包需要在更新系统后重新安装

@@ -6,7 +6,7 @@ const langMap = {
 
 module.exports = {
   base: '/',
-  title: 'Storage Redirect',
+  title: 'Storage Isolation',
   head: [
     ['link', {
       rel: 'stylesheet',
@@ -37,17 +37,17 @@ module.exports = {
   locales: {
     '/': {
       lang: 'en',
-      description: 'App storage isolation (requires root)'
+      description: 'Elegantly solve the problem of "bad apps" abusing storage permissions'
     },
     '/zh-hans/': {
       lang: 'zh-Hans',
-      title: '存储重定向',
-      description: '应用存储空间隔离（需要 root)'
+      title: '存储空间隔离',
+      description: '优雅地解决“坏应用”滥用存储权限的问题'
     },
     '/zh-hant/': {
       lang: 'zh-Hant',
-      title: '儲存重新導向',
-      description: '應用程式儲存空間隔離（需要 root)'
+      title: '儲存空間隔離',
+      description: '優雅地解決「壞應用程式」濫用儲存權限的問題'
     }
   },
   themeConfig: {

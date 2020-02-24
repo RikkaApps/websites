@@ -3,7 +3,7 @@ home: true
 heroImage: /logo.png
 backgroundImage: /background.png
 apps:
-- title: 儲存重新導向
+- title: 儲存空間隔離
   details: 讓應用有隔離儲存，再也不為設計不佳的應用程式建立的凌亂資料夾煩惱。<br><small>* 需要 root</small>
   icon: https://sr.rikka.app/logo.png
   secondaryAction:

@@ -1,6 +1,8 @@
 # Introduction
 
-Before introducing "Storage Redirect", please see if you have the following problems ("Storage Redirect" is born to solve these problems).
+Before introducing "Storage Isolation", please see if you have the following problems ("Storage Isolation" is born to solve these problems).
+
+* When an app requests storage permission, do you want let it access specific files only.
 
 * When you open your file manager or use your phone as a USB flash drive, do you find that there are a large number of folders that you don’t know, it is difficult to find files you want to find in them; do you want to know what app created the file and if it can be deleted.
 
@@ -8,8 +10,6 @@ Before introducing "Storage Redirect", please see if you have the following prob
 <br>
 <img :src="$withBase('/images/chaos_storage.png')" alt="An example">
 :::
-
-* When an app requests storage permission, do you want let it access specific files only.
 
 ### Why is this so?
 
@@ -25,15 +25,13 @@ At the same time, you will find that some app says "require storage permission t
 <sub>**[1]** In fact, the Android system provides other ways to use storage, but few apps use it.</sub>
 <p><sup>**[2]** Uninstallation means that the user no longer wants to use the app, and files excluding saved intuitively by users should be deleted. Doing so will cause some files that will never be deleted to take up storage space.</sup>
 
-## "Storage Redirect"
-
-"Storage Redirect" app provides "Storage Isolation" feature, you can enable isolation for specified apps.
+## Storage Isolation
 
 With isolation enabled:
 * App can no longer use shared storage space arbitrarily while you can specify what folders it can use.
 * The files created by the app will be deleted after uninstalling, but useful files will be saved in the folder you specified.
 
-For how to use "Storage Redirect" app, please read the following documentation.
+For how to use "Storage Isolation" app, please read the following documentation.
 
 ### Requirements
 

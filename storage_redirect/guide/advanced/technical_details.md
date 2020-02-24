@@ -6,7 +6,7 @@ Note that this document does not mention all the details.
 
 Only the `/data/misc/storage_redirect` folder will be created for executable files and configuration files.
 
-At startup, two processes, `storage_redirect` and `storage_redirect_server`, are run. `storage_redirect` is responsible for the core functionality; `storage_redirect_server` will add a service to `ServiceManager`, which is responsible for communicating with Storage Redirect app.
+At startup, two processes, `storage_redirect` and `storage_redirect_server`, are run. `storage_redirect` is responsible for the core functionality; `storage_redirect_server` will add a service to `ServiceManager`, which is responsible for communicating with Storage Isolation app.
 
 ## About storage permissions
 

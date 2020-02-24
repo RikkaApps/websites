@@ -31,7 +31,7 @@ Magisk 已經官方支援 pre-init custom sepolicy patch。
 
 1. 如果你沒有使用 Magisk，請參照 [Magisk 官方文件](https://topjohnwu.github.io/Magisk/) 安裝 [Magisk](https://github.com/topjohnwu/Magisk)
 2. 下載 [我們的 Magisk](https://github.com/RikkaApps/magisk-custom-sepolicy-installer/releases/download/v0.1/Magisk-v19.4-9784353-R.zip)（基於 v19.4）
-3. 下載 [儲存重新導向 規則包](https://github.com/RikkaApps/magisk-custom-sepolicy-installer/releases/download/v0.1/magisk-custom-sepolicy-installer-for-storage-redirect.zip)
+3. 下載 [儲存空間隔離 規則包](https://github.com/RikkaApps/magisk-custom-sepolicy-installer/releases/download/v0.1/magisk-custom-sepolicy-installer-for-storage-redirect.zip)
 4. 在 Magisk Manager 中使用「模組」-「從儲存空間中安裝」的方式安裝以上 zip
 5. 如果你是 EdXposed 使用者，還可以下載安裝 [EdXposed 規則包](https://github.com/RikkaApps/magisk-custom-sepolicy-installer/releases/download/v0.1/magisk-custom-sepolicy-installer-for-edxposed.zip)
 6. 規則包需要在更新系統後重新安裝

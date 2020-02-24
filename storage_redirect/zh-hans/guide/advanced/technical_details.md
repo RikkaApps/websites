@@ -6,7 +6,7 @@
 
 只会建立 `/data/misc/storage_redirect` 文件夹用于存放可执行文件及配置文件。
 
-启动时，会运行两个进程，`storage_redirect` 和 `storage_redirect_server`。`storage_redirect` 负责核心功能；`storage_redirect_server` 会添加一个服务到 `ServiceManager`，负责与存储重定向应用通信。
+启动时，会运行两个进程，`storage_redirect` 和 `storage_redirect_server`。`storage_redirect` 负责核心功能；`storage_redirect_server` 会添加一个服务到 `ServiceManager`，负责与存储空间隔离应用通信。
 
 ## 关于存储权限
 

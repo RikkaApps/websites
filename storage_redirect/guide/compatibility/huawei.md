@@ -1,6 +1,6 @@
 #  Huawei (Unable to dynamically modify SELinux rules)
 
-The implementation of the Huawei device kernel can only load SELinux rules once. Modify SELinux rules is required by Storage Redirect.
+The implementation of the Huawei device kernel can only load SELinux rules once. Modify SELinux rules is required by Storage Isolation.
 
 ## Offical Magisk solution
 
@@ -30,8 +30,8 @@ Although it should not have problems, please be prepared to restore the original
 :::
 
 1. If you are not using Magisk, please refer to [Magisk Official Documentation](https://topjohnwu.github.io/Magisk/) to install [Magisk](https://github.com/topjohnwu/Magisk)
-2. Download [Our Magisk](https://github.com/RikkaApps/magisk-custom-sepolicy-installer/releases/download/v0.1/Magisk-v19.4-9784353-R.zip)
-3. Download [Storage Redirect Rules Pack](https://github.com/RikkaApps/magisk-custom-sepolicy-installer/releases/download/v0.1/magisk-custom-sepolicy-installer-for-storage-redirect.zip)
+2. Download [Our Magisk](https://github.com/RikkaApps/magisk-custom-sepolicy-installer/releases/download/v0.1/Magisk-v19.4-9784353-R.zip) (based on Magisk v19.4)
+3. Download [Storage Isolation Rules Pack](https://github.com/RikkaApps/magisk-custom-sepolicy-installer/releases/download/v0.1/magisk-custom-sepolicy-installer-for-storage-redirect.zip)
 4. Install the above zips in Magisk Manager using "Modules" - "Install from storage"
 5. If you are an EdXposed user, you can also download and install the [EdXposed Rules Pack](https://github.com/RikkaApps/magisk-custom-sepolicy-installer/releases/download/v0.1/magisk-custom-sepolicy-installer-for-edxposed.zip)
 6. The rule packs needs to be reinstalled after updating the system

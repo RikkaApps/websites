@@ -6,7 +6,7 @@
 
 只會建立 `/data/misc/storage_redirect` 資料夾用於存放可執行文件及配置文件。
 
-啓動時，會運行兩個行程，`storage_redirect` 和 `storage_redirect_server`。`storage_redirect` 負責核心功能；`storage_redirect_server` 會添加一個服務到 `ServiceManager`，負責與儲存重新導向應用程式通信。
+啓動時，會運行兩個行程，`storage_redirect` 和 `storage_redirect_server`。`storage_redirect` 負責核心功能；`storage_redirect_server` 會添加一個服務到 `ServiceManager`，負責與儲存空間隔離應用程式通信。
 
 ## 關於儲存權限
 

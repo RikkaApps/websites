@@ -6,11 +6,11 @@ actionLink: /download.html
 secondaryActionText: Learn more
 secondaryActionLink: /guide/
 features:
+- title: No more abusing
+  details: Enable isolation for specified apps, they will only have access to user-specified folders.
 - title: Bring back clean storage
-  details: Folders created by the specified app will only appear in its private storage space. You won't be annoyed by messy folders when browsing files or transferring data to PC.
-- title: Organizing files is easier
-  details: Save useful files, media, etc. to the standard folder according to user-defined rules. In addition, everyone can contribute their own rules and contribute to the experience of everyone.
+  details: Bad apps can never create tons of folders; useful files, media, etc. are saved to standard folders according to user-defined rules.
 - title: Monitor file operations
-  details: After enhance module is installed, file operations of apps can be monitored. For example, you can find out whether apps access public directories correctly or read users' private data.
-footer: Copyright © 2019 RikkaApps
+  details: Monitored file operations of apps, learn which file is used.
+footer: Copyright © 2020 RikkaApps
 ---
