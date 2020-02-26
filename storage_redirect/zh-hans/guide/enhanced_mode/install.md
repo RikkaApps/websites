@@ -11,19 +11,8 @@ Magisk 是一个功能强大的工具，它不仅提供 root，而且提供不�
 1. 请务必确认已经了解如何在无法进入系统时删除模块
 2. 以防万一，请先备份整个设备的数据
 
-## 版本对应
-
-**警告：你必须使用版本正确的模块，否则轻则功能不正常，重则无法开机。**
-
-| App    | Riru - Storage Redirect | Riru - Core |
-|--------|-------------------------|-------------|
-| 3.0.0+ | v21.1+                  | v19+        |
-| 2.0.0+ | v20.1+                  | v19+        |
-
 ## 下载
 
-在 **Magisk Manager** 中下载安装 **Riru - Core** 和 **Riru - Storage Redirect**。
+在 **Magisk Manager** 中下载安装 **Riru (Riru - Core)** 和 **Riru - Storage Redirect**。你可以在 Magisk Manager 中搜索“Riru”。
 
-::: tip
-Magisk 官方仓库更新通常晚于应用更新，若有需要，请直接[下载 zip](https://github.com/RikkaApps/StorageRedirect-assets/releases/tag/assets)。
-:::
+最新版本可能不会立即上传至 Magisk。你可以直接从 GitHub release 下载 [Riru](https://github.com/RikkaApps/Riru/releases) 及 [模块](https://github.com/RikkaApps/StorageRedirect-assets/releases/tag/assets)。
