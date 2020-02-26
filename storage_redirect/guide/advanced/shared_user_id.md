@@ -11,7 +11,7 @@ Isolation works at the process level. In versions prior to v4.0.0, only the pack
 
 ### Behavior change
 
-Suppose there are two apps `com.example`` com.example2`, and their Shared User ID is `example`.
+Suppose there are two apps `com.example` `com.example2`, and their Shared User ID is `example`.
 
 * They use the same settings (internally they are considered as one app)
 * The isolation storage location is located in `Android/data/shared-example`
