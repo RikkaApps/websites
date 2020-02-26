@@ -136,7 +136,8 @@ function getSidebar(prefix, basicTitle, advancedTitle, enhancedModeTitle, compat
       collapsable: true,
       sidebarDepth: 1,
       children: [
-        'advanced/technical_details'
+        'advanced/shared_user_id',
+        'advanced/technical_details',
       ]
     },
     {
