@@ -1,4 +1,4 @@
-#  Huawei (Unable to dynamically modify SELinux rules)
+#  Huawei
 
 The implementation of the Huawei device kernel can only load SELinux rules once. Modify SELinux rules is required by Storage Isolation.
 

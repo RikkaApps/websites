@@ -1,4 +1,4 @@
-# Huawei（無法動態修改 SELinux 規則）
+# Huawei
 
 Huawei 裝置內核的實現只能載入一次 SELinux 規則，而修改 SELinux 規則對儲存重新導向是必要的。
 
