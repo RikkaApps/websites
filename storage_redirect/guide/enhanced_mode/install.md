@@ -13,6 +13,6 @@ You can learn more about Magisk from [GitHub](https://github.com/topjohnwu/Magis
 
 ## Download
 
-Download and install **Riru (Riru - Core)** and **Riru - Storage Redirect** from **Magisk Manager**. You can search "Riru" in Magisk Manager.
+Download and install **Riru (Riru - Core)** and **Riru - Storage Redirect** from **Magisk Manager**. Note, please search "Riru" rather than full name in Magisk Manager.
 
 The latest version may not uploaded to Magisk immediately. You can download [Riru](https://github.com/RikkaApps/Riru/releases) and [module](https://github.com/RikkaApps/StorageRedirect-assets/releases/tag/assets) directly from GitHub release.

@@ -13,6 +13,6 @@ Magisk 是一個功能強大的工具，它不僅提供 root，而且提供不�
 
 ## 下載
 
-在 **Magisk Manager** 中下載安裝 **Riru (Riru - Core)** 和 **Riru - Storage Redirect**。你可以在 Magisk Manager 中搜索「Riru」。
+在 **Magisk Manager** 中下載安裝 **Riru (Riru - Core)** 和 **Riru - Storage Redirect**。注意，請在 Magisk Manager 中搜索「Riru」而非完整名稱。
 
 最新版本可能不會立即上傳至 Magisk。你可以直接從 GitHub release 下載 [Riru](https://github.com/RikkaApps/Riru/releases) 及 [模組](https://github.com/RikkaApps/StorageRedirect-assets/releases/tag/assets)。
