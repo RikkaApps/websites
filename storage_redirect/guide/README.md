@@ -1,40 +1,61 @@
 # Introduction
 
-Before introducing "Storage Isolation", please see if you have the following problems ("Storage Isolation" is born to solve these problems).
+### "Bad app" abuses storage permissions
 
-* When an app requests storage permission, do you want let it access specific files only.
+Currently, the design of the Android system's storage permissions is too simple, many "bad apps" are abusing storage permissions.
 
-* When you open your file manager or use your phone as a USB flash drive, do you find that there are a large number of folders that you don’t know, it is difficult to find files you want to find in them; do you want to know what app created the file and if it can be deleted.
+To explain this problem, we first need to introduce the design of the storage of the Android system.
 
-::: details Example
+
+The Android system has a beautiful design for storage:
+
+```
+/storage/emulated/0
+├───Android
+│ ├───data/com.example <---- No permission required
+│ ├───media/com.example <---- No permission required
+│ └───obb/com.example <---- No permission required
+├───DCIM
+├───Donwload
+├───Pictures
+└─── ...
+```
+
+* `DCIM` `Donwload` `Pictures` and other public folders
+   
+  Used to save pictures, downloaded files, etc., **requires** storage permissions, **can only be deleted by users**. Apps can also create their own folders if necessary.
+
+* Folders in `Android`
+
+  Used to save the app's own data and cache. **No permission** is required. **Deleted after clearing data or uninstalling.**
+
+However, the problem is that storage permissions can only be chosen to grant or deny. Once granted, the app can read and write to **all folders**.
+
+This has been abused by many "bad apps" and "bad SDKs". They ask for storage permissions and even refuse to run without permission. They need to keep the identity used to track users and **avoid being deleted after uninstallation**. In addition, multiple such apps can also share the identity. This is very common in apps from areas such as mainland China where users have a weak sense of privacy.
+
+As you can see in the example below, many "bad apps" create a bunch of weird folders, even naming them "SystemConfig" to make users think they are system files.
+
+::: details Example of abusing storage
 <br>
-<img :src="$withBase('/images/chaos_storage.png')" alt="An example">
+<img :src="$withBase('/images/chaos_storage.png')" alt="Example of abusing storage">
 :::
 
-### Why is this so?
+Many times users can only be forced to grant them storage permissions because they need to use features such as Send Pictures.
 
-To answer this question, we first need to introduce the storage and storage permissions of the Android system.
+<sub> **[1]** In addition, `/data/user` can be used save the apps' own data, but it has nothing to do with the theme, so it is not explained</sub>
+<p><sub> **[2]** The Android system provides other ways for users to grant the permission for specific files or folders, but few apps use them.</sub>
 
-* **Shared storage (requires storage permission):** Save user files such as photos and documents.
-* **App-specific storage (no permissions required):** Save the app's private data. Only accessible to the app itself, it will be deleted after uninstallation.
+### Storage Isolation
 
-From this you will find that the design of storage permissions in the Android system is too simple<Sup>**[1]**</sup>, users can only choose whether to grant permission to the entire shared storage. And if users need to use functions such as "send pictures", they can only choose to grant permissions.
+To solve this problem, we created this app — Storage Isolation.
 
-At the same time, you will find that some app says "require storage permission to save data" are actually deceiving you. It's actually to avoid being deleted after uninstallation. Note that is is wrong<sup>**[2]**</sup>. A common purpose is to persist and share the identity used to track users. This is very common in apps from areas such as mainland China where users are weakly aware of privacy.
+Users can enable isolation for specific apps, and apps will no longer be able to use real storage space.
 
-<sub>**[1]** In fact, the Android system provides other ways to use storage, but few apps use it.</sub>
-<p><sup>**[2]** Uninstallation means that the user no longer wants to use the app, and files excluding saved intuitively by users should be deleted. Doing so will cause some files that will never be deleted to take up storage space.</sup>
+```
+/ storage/emulated/0
+├───Android/data/com.example
+│ └───sdcard <---- App visible storage space
+└─── ...
+```
 
-## Storage Isolation
-
-With isolation enabled:
-* App can no longer use shared storage space arbitrarily while you can specify what folders it can use.
-* The files created by the app will be deleted after uninstalling, but useful files will be saved in the folder you specified.
-
-For how to use "Storage Isolation" app, please read the following documentation.
-
-### Requirements
-
-* Android 6.0 or above
-* root
-* Magisk (required by Enhanced mode)
+In addition, users can specify which folders the app can access. For specific usage, please read the subsequent documents.
