@@ -138,6 +138,7 @@ function getSidebar(prefix, basicTitle, advancedTitle, enhancedModeTitle, compat
       children: [
         'advanced/shared_user_id',
         'advanced/technical_details',
+        'advanced/technical_details_export_isolated_files',
       ]
     },
     {
