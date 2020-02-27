@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Source Code Pro BDC';
+    src: local('Source Code Pro'), local('SourceCodePro-Regular.ttf'), url('../fonts/SourceCodePro-BDC-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+	unicode-range: U+2500-259F;
+}

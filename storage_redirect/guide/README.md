@@ -12,9 +12,9 @@ The Android system has a beautiful design for storage:
 ```
 /storage/emulated/0
 ├───Android
-│   ├───data/com.example <---- No permission required
+│   ├───data/com.example  <---- No permission required
 │   ├───media/com.example <---- No permission required
-│   └───obb/com.example <---- No permission required
+│   └───obb/com.example   <---- No permission required
 ├───DCIM
 ├───Donwload
 ├───Pictures
