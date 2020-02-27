@@ -1,5 +1,17 @@
 # Changelog
 
+## 4.0.0 (2020-2-28)
+
+- Change app name to "Storage Isolation" since "redirect" is very easy to make people think that it is "redirect to SD card" in the old days
+- Correctly support the `SharedUserId` mechanism of the Android system (almost all parts need to be changed, and most of the time has been spent here since the last update)
+- Core services continue to function after an "abnormal restart"
+- Fixed an issue where storage permission was displayed as allowed but denied in fact on Android 10
+- AOSP apps is no longer considered as verified in online rule
+- If someone rename "Android" folder to "android", "Export isolated files" continue to function (Why there is people do this)
+- Enhanced mode v22: Start some of the core services earlier, this resolves the issue where enabling isolation for apps start very early may cause the system to fail to boot (yeah, another 💩 MIUI only problem)
+- The version of Enhanced mode and Riru will never show "unknown"
+- If you reinstall the app that has enabled isolation, the original settings will be restored correctly (the isolation still needs to be manually turned on)
+
 ## 3.2.2 (2019-12-22)
 
 - Fix a problem related to restoring the backup
