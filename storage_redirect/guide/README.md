@@ -12,9 +12,9 @@ The Android system has a beautiful design for storage:
 ```
 /storage/emulated/0
 ├───Android
-│ ├───data/com.example <---- No permission required
-│ ├───media/com.example <---- No permission required
-│ └───obb/com.example <---- No permission required
+│   ├───data/com.example <---- No permission required
+│   ├───media/com.example <---- No permission required
+│   └───obb/com.example <---- No permission required
 ├───DCIM
 ├───Donwload
 ├───Pictures
@@ -52,9 +52,9 @@ To solve this problem, we created this app — Storage Isolation.
 Users can enable isolation for specific apps, and apps will no longer be able to use real storage space.
 
 ```
-/ storage/emulated/0
+/storage/emulated/0
 ├───Android/data/com.example
-│ └───sdcard <---- App visible storage space
+│   └───sdcard <---- App visible storage space
 └─── ...
 ```
 

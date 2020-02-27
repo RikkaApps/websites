@@ -10,6 +10,14 @@ module.exports = {
   head: [
     ['link', {
       rel: 'stylesheet',
+      href: 'https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap'
+    }],
+    ['link', {
+      rel: 'stylesheet',
+      href: 'https://raw.rikka.app/css/SourceCodePro-BDC.css'
+    }],
+    ['link', {
+      rel: 'stylesheet',
       href: 'https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap'
     }],
     ['link', {
