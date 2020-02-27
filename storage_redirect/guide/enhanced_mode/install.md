@@ -1,6 +1,6 @@
 # Installation
 
-Enhance module requires your device to install Magisk first since only Magisk can provide reliable boot script.
+Enhancement module requires your device to install Magisk first since only Magisk can provide reliable boot script.
 
 Magisk is a powerful tool that provides not only root but the ability to modify the system without actually change system files and more.
 
@@ -13,6 +13,10 @@ You can learn more about Magisk from [GitHub](https://github.com/topjohnwu/Magis
 
 ## Download
 
-Download and install **Riru (Riru - Core)** and **Riru - Storage Redirect** from **Magisk Manager**. Note, please search "Riru" rather than full name in Magisk Manager.
+Download and install **Riru (Riru - Core)** and **Riru - Enhanced mode for Storage Isolation (Storage Redirect)** from Magisk Manager. Note, please **search "Riru" rather than full name** in Magisk Manager.
 
-The latest version may not be uploaded to Magisk immediately. You can download [Riru](https://github.com/RikkaApps/Riru/releases) and [module](https://github.com/RikkaApps/StorageRedirect-assets/releases/tag/assets) directly from GitHub release.
+The latest is usually uploaded to Magisk with a delay. If the latest version is not uploaded or you can get online module list in Magisk Manager, you can download the latest version of [Riru](https://github.com/RikkaApps/Riru/releases) and [Enhancement module](https://github.com/RikkaApps/StorageRedirect-assets/releases/tag/assets) directly from GitHub release.
+
+If the installation is successful, you should see the picture below:
+
+<img :src="$withBase('/images/magisk_modules.png')" alt="Successful installation">
