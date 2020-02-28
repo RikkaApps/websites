@@ -1,29 +1,6 @@
 # 快速上手
 
-## 基本知识
-
-首先我们需要介绍一些基本知识。
-
-```
-/storage/emulated/0
-├───Android <------------------ 由 Android 系统管理
-│   ├───data
-│   │   ├───com.example
-│   │   ├───com.example2
-│   │   └───com.example3
-│   ├───media
-│   │   ├───com.example
-│   │   ├───com.example2
-│   │   └───com.example3
-│   └───obb
-│       ├───com.example
-│       ├───com.example2
-│       └───com.example3
-├───DCIM
-└───Pictures
-```
-
-### 组织文件的方式
+## 组织文件的方式
 
 对于照片、图片、下载的文件等用户文件，Android 系统建议将它们存放至 **共享文件夹**。
 
