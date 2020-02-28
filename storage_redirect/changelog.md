@@ -4,7 +4,7 @@
 
 - To avoid problem, isolation for all non-regular app (uid < 10000) will be disabled on this upgrade (it's reported that isolate uid 1000 may cause problems on heavily modified system such as MIUI, OnePlus Oxygen OS, etc.)
 - Fix File monitor is breaking on last version
-- Fix possible configuration lost on last version
+- Fix possible configuration lose on last version
 
 ## 4.0.0 (2020-2-28)
 
