@@ -1,5 +1,18 @@
 # Changelog
 
+## 4.1.3 (2020-03-01)
+
+- Adjust the timing of starting part of the core service again (on MIUI and maybe other weird systems, too early or too late will cause problems, it's too difficult
+- Fix an issue about restoring backups
+
+## 4.1.2 (2020-02-29)
+
+- Fix random purchase information lost happened on some users introduced in v4.0.0
+- Add "Disable notifications from Export isolated files rules" option, because notifications don’t make sense after using "Fix app interaction" in enhanced mode (this option is only enabled by default for new users)
+- Fixed an issue with the "Export isolation file" feature when adding / updating / removing rules for an App group 
+- Fixed the problem that some apps cannot be restored when restoring a backup
+- Fix a few issues related to "Fix app interaction"
+
 ## 4.1.0 (2020-2-28)
 
 - To avoid problem, isolation for all non-regular app (uid < 10000) will be disabled on this upgrade (it's reported that isolate uid 1000 may cause problems on heavily modified system such as MIUI, OnePlus Oxygen OS, etc.)
