@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.1.4 (2020-03-03)
+
+- Fix the problem that "Block system remount" feature not working<sup>**〔1〕**</sup>
+
+<sub>**〔1〕** This feature should be necessary only on MIUI 11 (maybe China version only?)</sub>
+
 ## 4.1.3 (2020-03-01)
 
 - Adjust the timing of starting part of the core service again (on MIUI and maybe other weird systems, too early or too late will cause problems, it's too difficult
