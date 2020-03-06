@@ -174,7 +174,7 @@ function getSidebar(prefix, basicTitle, advancedTitle, enhancedModeTitle, compat
       sidebarDepth: 0,
       children: [
         `faq/cant_find_app`,
-        `faq/how_to_log`,
+        `faq/how_to_report_problems`,
         `faq/how_to_document`,
         `faq/share_helper`,
         `faq/purchase`,
