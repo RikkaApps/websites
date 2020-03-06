@@ -1,5 +1,13 @@
 # Changelog
 
+## 4.1.6 (2020-03-06)
+
+- Ability to use built-in logcat to get boot log (no longer clear logs on start & fix UI not responding)
+- "Export isolated files" rules for uninstalled apps are not used in conflict checking now
+- Fix "File monitor" is not refreshing once the user has entered other pages
+- Fix very few records are randomly not showing in "File monitor"
+- Fix isolated apps rarely not starting
+
 ## 4.1.5 (2020-03-04)
 
 - Completely solve the problem solved in the previous version
