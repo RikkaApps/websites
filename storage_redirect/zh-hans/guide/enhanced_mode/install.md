@@ -20,3 +20,20 @@ Magisk 是一个功能强大的工具，它不仅提供 root，而且提供不�
 若安装正常，你应该会看到下面的图：
 
 <img :src="$withBase('/images/magisk_modules.png')" alt="安装正常图示">
+
+## 故障排除
+
+* 无法进入系统（通常是由于隔离了系统组件）
+
+  你需要使用 adb 来禁用模块（这种情况下 adb 通常是可用的）。
+
+  ```
+  adb shell
+  su
+  touch /data/adb/modules/riru_storage_redirect/disable
+  reboot
+  ```
+
+  有关如何使用 adb，网络上有相当多的教程，在此我们不必赘述。
+
+  另外，如果你有意帮助解决问题，你可以执行 `adb logcat > 1.txt` 来保存 log 并将 log 发送至 [support@rikka.app](mailto://support@rikka.app)。
