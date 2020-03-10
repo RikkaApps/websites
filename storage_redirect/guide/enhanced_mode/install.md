@@ -23,17 +23,17 @@ If the installation is successful, you should see the picture below:
 
 ## Troubleshooting
 
-* Unable to enter the system (usually due to isolation of system components)
+### Unable to enter the system (usually due to isolation of system components)
 
-  You need to use adb to disable the module (adb is usually available in this case).
+You need to use adb to disable the module (adb is usually available in this case).
 
-  ```
-  adb shell
-  su
-  touch /data/adb/modules/riru_storage_redirect/disable
-  reboot
-  ```
+```
+adb shell
+su
+touch /data/adb/modules/riru_storage_redirect/disable
+reboot
+```
 
-  There are quite a lot of tutorials about how to use adb on the Internet, so we don't need to repeat them here.
+There are quite a lot of tutorials about how to use adb on the Internet, so we don't need to repeat them here.
 
-  Also, if you are willing to help us solving the problem, you can execute `adb logcat > 1.txt` to save the log and send the log to [support@rikka.app](mailto://support@rikka.app).
+Also, if you are willing to help us solving the problem, you can execute `adb logcat > 1.txt` to save the log and send the log to [support@rikka.app](mailto://support@rikka.app).
