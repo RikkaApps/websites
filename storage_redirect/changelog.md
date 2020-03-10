@@ -1,5 +1,12 @@
 # Changelog
 
+## 4.1.7 (2020-03-10)
+
+- "Export quarantined files" rule now participates in the calculation of "Fix app interaction" feature (Affected apps need to be restarted for changes to take effect)
+- Fixed an issue that modifying accessible folder templates would not take effect immediately
+- Fixed multi-user support broken due to system update
+- Add foolproof design to the process of isolating critical system apps and app groups
+
 ## 4.1.6 (2020-03-06)
 
 - Ability to use built-in logcat to get boot log (no longer clear logs on start & fix UI not responding)
