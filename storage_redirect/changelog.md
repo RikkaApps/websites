@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.2.0 (2020-03-14)
+
+- Enabling isolation for system apps which starts early will no longer cause problems (but, just in case, you still need to [be prepared](./guide/enhanced_mode/install.html#unable-to-enter-the-system-usually-due-to-isolation-of-system-components))
+- Completely fix problems related to restoring backups
+- Fix app not responding (white screen) under specific situations
+
 ## 4.1.7 (2020-03-10)
 
 - "Export isolated files" rule now participates in the calculation of "Fix app interaction" feature (Affected apps need to be restarted for changes to take effect)
