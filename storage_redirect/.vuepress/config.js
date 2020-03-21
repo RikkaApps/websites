@@ -69,7 +69,7 @@ module.exports = {
             buttonText: "Refresh"
           }
         },
-        sidebar: getSidebar('/guide/', 'Guide', 'Advanced', 'Enhanced mode', 'Compatibility', 'FAQ'),
+        sidebar: getSidebar('/guide/', 'Guide', 'Advanced', 'Enhanced mode', 'Issues caused by OMEs', 'FAQ'),
         nav: getNavbar('/', 'Guide', 'Download', 'Changelog', 'Rikka Apps'),
         lastUpdated: 'Last Updated'
       },
@@ -83,7 +83,7 @@ module.exports = {
             buttonText: "刷新"
           }
         },
-        sidebar: getSidebar('/zh-hans/guide/', '指南', '高级', '增强模式', '兼容性', 'FAQ'),
+        sidebar: getSidebar('/zh-hans/guide/', '指南', '高级', '增强模式', '厂商造成的问题', 'FAQ'),
         nav: getNavbar('/zh-hans/', '指南', '下载', 'Changelog', 'Rikka Apps'),
         lastUpdated: '最后更新'
       },
@@ -97,7 +97,7 @@ module.exports = {
             buttonText: "重新整理"
           }
         },
-        sidebar: getSidebar('/zh-hant/guide/', '指南', '高級', '增強模式', '相容性', 'FAQ'),
+        sidebar: getSidebar('/zh-hant/guide/', '指南', '高級', '增強模式', '廠商造成的問題', 'FAQ'),
         nav: getNavbar('/zh-hant/', '指南', '下載', 'Changelog', 'Rikka Apps'),
         lastUpdated: '最後更新'
       }
@@ -167,6 +167,7 @@ function getSidebar(prefix, basicTitle, advancedTitle, enhancedModeTitle, compat
         `compatibility/samsung`,
         `compatibility/huawei`,
         `compatibility/meizu`,
+        `compatibility/miui`,
       ]
     },
     {

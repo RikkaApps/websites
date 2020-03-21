@@ -1,8 +1,9 @@
 # 概覽
 
-* [Samsung 裝置](./samsung.html)
-* [Huawei 裝置](./huawei.html)
-* [Meizu 裝置](./meizu.html)
+* [Samsung](./samsung.html)
+* [Huawei](./huawei.html)
+* [Meizu](./meizu.html)
+* [Xiaomi (MIUI)](./miui.html)
 * 其他
 
   * log 被關閉問題
