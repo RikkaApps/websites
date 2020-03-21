@@ -1,5 +1,15 @@
 # Changelog
 
+## 4.2.1 (2020-03-21)
+
+- Change the implementation of "New app notification" and notifications of "Export isolated files" rules. The can workaround 💩 MIUI's system bug<sup>**〔1〕**</sup> and a minor historical issue<sup>**〔2〕**</sup>
+- The version of Enhancement module is now fetched online
+- The app list of "Accessible folders template" now support multi-user correctly
+- Add more foolproof design
+
+<sub>**〔1〕** In uncertain situations, MIUI will deserialize (`unparcel`) the `Bundle` in the `Intent` passed by `startActivity` in `system_server`. If the `Bundle` contains a non-system `Parcelable`, deserialization fails and the `Bundle` is broken forever, the app will only receive a blank `Bundle`.</sub>
+<br><sub>**〔2〕** If the data structure changes and the core service has not been updated after installing a new version of the app, the app will crash when showing notification.</sub>
+
 ## 4.2.0 (2020-03-14)
 
 - Enabling isolation for system apps which starts early will no longer cause problems (but, just in case, you still need to [be prepared](./guide/enhanced_mode/install.html#unable-to-enter-the-system-usually-due-to-isolation-of-system-components))
