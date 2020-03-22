@@ -1,9 +1,9 @@
 # 概览
 
-* [三星](./samsung.html)
-* [华为](./huawei.html)
-* [魅族](./meizu.html)
-* [小米（MIUI）](./miui.html)
+* [三星](./samsung.md)
+* [华为](./huawei.md)
+* [魅族](./meizu.md)
+* [小米（MIUI）](./miui.md)
 * 其他
 
   * log 被关闭问题
