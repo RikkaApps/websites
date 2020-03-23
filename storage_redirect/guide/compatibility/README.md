@@ -1,9 +1,9 @@
 # Overview
 
-* [Samsung](./samsung.html)
-* [Huawei](./huawei.html)
-* [Meizu](./meizu.html)
-* [Xiaomi (MIUI)](./miui.html)
+* [Samsung](./samsung.md)
+* [Huawei](./huawei.md)
+* [Meizu](./meizu.md)
+* [Xiaomi (MIUI)](./miui.md)
 * Other problems
 
   * log is disabled
