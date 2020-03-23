@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.2.2 (2020-03-22)
+
+- Fix the problem that, in the app settings, online rule loads before accessible folder causing bad experience under bad network
+
 ## 4.2.1 (2020-03-21)
 
 - Change the implementation of "New app notification" and notifications of "Export isolated files" rules. The can workaround 💩 MIUI's system bug<sup>**〔1〕**</sup> and a minor historical issue<sup>**〔2〕**</sup>
