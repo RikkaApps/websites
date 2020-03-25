@@ -1,5 +1,9 @@
 # Changelog
 
+## 4.2.3 (2020-03-24)
+
+- Solve problems when using with "Freezer" apps based on `setApplicationHiddenSettingAsUser`
+
 ## 4.2.2 (2020-03-22)
 
 - Fix the problem that, in the app settings, online rule loads before accessible folder causing bad experience under bad network
