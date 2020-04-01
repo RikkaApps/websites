@@ -26,7 +26,7 @@ Link to privacy policy of third party service providers used by the app:
 
 Link to privacy policy of third party service providers used by the app:
 
-* [Crashlytics from Fabric](https://docs.fabric.io/android/fabric/data-privacy.html)
+* [App Center from Microsoft](https://privacy.microsoft.com/en-us/privacystatement)
 
 ### Font Provider
 
