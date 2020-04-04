@@ -136,7 +136,8 @@ function getSidebar(prefix, basicTitle, advancedTitle, enhancedModeTitle, compat
       sidebarDepth: 1,
       children: [
         '',
-        'tutorial'
+        'tutorial',
+        'contribute',
       ]
     },
     {
