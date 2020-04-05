@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.3.1 (2020-04-05)
+
+- Add a simpler way to submit rules
+- Fix the problem that unable to add "Accessible folder" - "Folders from other apps" rule for non-primary user
+- Fix some UI bugs
+
 ## 4.2.3 (2020-03-24)
 
 - Solve problems when using with "Freezer" apps based on `setApplicationHiddenSettingAsUser`
