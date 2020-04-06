@@ -133,7 +133,7 @@ function getSidebar(prefix, basicTitle, advancedTitle, enhancedModeTitle, compat
     {
       title: basicTitle,
       collapsable: true,
-      sidebarDepth: 1,
+      sidebarDepth: 0,
       children: [
         '',
         'tutorial',
@@ -143,7 +143,7 @@ function getSidebar(prefix, basicTitle, advancedTitle, enhancedModeTitle, compat
     {
       title: advancedTitle,
       collapsable: true,
-      sidebarDepth: 1,
+      sidebarDepth: 0,
       children: [
         'advanced/shared_user_id',
         'advanced/technical_details',

@@ -6,7 +6,7 @@
 
 要解释清楚这个问题，我们首先需要介绍 Android 系统的存储空间的设计。
 
-Android 系统对于存储空间的设计很美好：
+Android 系统对于存储空间的设计很简单：
 
 ```
 /storage/emulated/0

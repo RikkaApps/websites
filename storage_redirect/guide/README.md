@@ -7,7 +7,7 @@ Currently, the design of the Android system's storage permissions is too simple,
 To explain this problem, we first need to introduce the design of the storage of the Android system.
 
 
-The Android system has a beautiful design for storage:
+The Android system has a simple design for storage:
 
 ```
 /storage/emulated/0

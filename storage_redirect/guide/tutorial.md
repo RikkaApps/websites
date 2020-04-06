@@ -1,10 +1,37 @@
-# Quick start
+# Tutorial
 
-## Learn how to organize your files
+## What happens when isolation is enabled?
 
-For user files such as photos, pictures, and downloaded files, the Android system recommends storing them in **Shared folders**.
+Suppose there is an application ExampleApp (package name is `com.example`). It uses an SDK that abuses storage (assuming it will create `bad_sdk` folder). Then after granting it storage permission, your storage space will look like this.
 
-::: details All Shared folders
+```
+/storage/emulated/0
+├───Android
+├───bad_sdk
+├───DCIM
+├───Donwload
+├───Pictures
+└───...
+```
+
+Now that we enable isolation for ExampleApp, the storage space available to it is actually a folder in `Android/data/com.example`. We call this folder "isolated storage".
+
+This app will only able to use the files in this folder, and the folders created by it will also be saved in this folder.
+
+```
+/storage/emulated/0
+├───Android/data/com.example
+│   └───sdcard       <---- ExampleApp can only see this folder
+│       └───bad_sdk
+└...
+```
+
+## Additional knowledge
+
+::: details <b>Recommended way to organize files</b>
+
+For user files such as photos, pictures, and downloaded files, the Android system providers a series of standard folders.
+
 * `Alarms`
 * `Pictures`
 * `DCIM` (for photos taken by camera)
@@ -14,92 +41,183 @@ For user files such as photos, pictures, and downloaded files, the Android syste
 * `Music`
 * `Notifications`
 * `Ringtones`
-:::
 
 Taking the most common `Pictures` as an example, it is common for each app to create its own folder in it. For example, Twitter saves pictures to `Pictures/Twitter`.
 
 Our recommendation is to organize the files saved by each app in the above way.
-
-## Clean up existing files (first use)
-
-If you are troubled by the problem like the example below, and if you are not sure whether there are important files in these folders, we suggest you take the following steps.
-
-::: details Example: A lot of unknown folders in the storage
-<br>
-<img :src="$withBase('/images/chaos_storage.png')" alt="example">
-
 :::
 
-1. Create a new folder and move all folders in it except **Standard folders** <sup>**[1]**</sup>
-2. Create a file named `.nomedia` in this folder to prevent the media files in it from being scanned
-3. After finishing all the settings and finding the important files, delete the folder
+::: details <b>How to clean/move existing files</b>
 
-<sub>**[1]** Standard folders: Android Alarms DCIM Documents Download Movies Music Notifications Pictures Ringtones</sub>
+Since the files in `/storage/emulated` do not have owner, we cannot automatically help you move or delete existing files.
 
-## How to properly set up isolation
+* User files, such as pictures
 
-After enabling isolation, you need to check the **Accessible folders** and **Export isolated files** options.
+  Organize as the recommendation above.
 
-### Accessible folders
+* Other
 
-With isolation enabled, you need to set folders the app can read and write. It's divided into two parts.
+  For most apps, deleting previous files will not cause problems. But just in case, we recommend that you follow the steps below.
 
-* **Shared folder**
-
-  Options that need to be set most of the time. For example, if you want the app to be able to use your photos, you need to select `DCIM`.
-
-  Note that we only recommend making limited folders accessible, otherwise the isolation will not make sense.
-
-* **Folders from other apps**
-
-  Options that are required in rare cases, please [see below](./tutorial.html#how-to-solve-problems-involving-multiple-apps).
-
-  Our advice for beginners is to choose the rule you need in **Import Online Rules**, and if you still have problems, try to write the rule yourself.
-
-### Export isolated files
-
-If the app saves important files to folders other than **Accessible folders**, those files are isolated. You need to use this to export these files.
-
-Our advice for beginners is to choose the rule you need in **Import Online Rules**, and if you still have problems, try to write the rule yourself.
-
-Note that we only recommend exporting user files (save file operations initiated by users, such as saving pictures, downloading files, etc.). Exporting private data files for the app is unnecessary and violates the purpose of using isolation.
-
-::: details Example
-WeChat saves images to `tencent/MicroMsg/WeChat`. Need to create a rule from `tencent/MicroMsg/WeChat` to` Pictures/WeChat`.
+  1. Create a temporary folder and move them into it.
+  2. Run all isolated app.
+  3. If there are some apps not work properly because of can't find previous files, you can learn folders were created by which app by using "View isolated storage" option. Then you can move those folders.
+  4. After all apps are working properly, delete the temporary folder.
 :::
 
-## Use Enhanced mode
+::: details <b>Use Enhanced mode</b>
 
 Enhanced mode is an very important part, [many problems](./enhanced_mode/) can only be solved in the case of using Enhanced mode.
 
 We recommend that you to try Enhanced mode when you are sure everything is OK (you can see how to use Enhanced mode in the app).
-
-## How to solve problems involving multiple apps
-
-**Note that this problem will only occur with low-quality apps that use legacy practices.**
-
-First you need to understand how the problem occurs.
-
-When the isolation is enabled, the storage visible to the isolated app changes.
-
-For example, app `com.example` try to save 1.txt to `test/1.txt`. In fact, the file will be saved to `Android/data/com.example/sdcard/test/1.txt` while the app itself still thought the file is located at `test/1.txt`. Therefore, if the app directly passes the path `test/1.txt` to another app (this approach should be abandoned after Android 4.4), because there is no file here at all, other apps obviously cannot find the file at `test/1.txt`.
-
-To solve such problems, you can first enable "Fix app interactions" in "Enhanced mode", which will solve the problem of using the standard file opening method of Android system.
-
-If you still have problems, you need to pick up the "weapon", "File monitor" (requires Enhanced mode). With the "File monitor" function, you can know the app is trying to access the file at which location. Usually you only need to create corresponding rules in **Accessible folders - Folders from other apps** to solve the problem.
-
-::: details Example
-QQInput has the function of sending pictures to QQ. This function cannot work when isolation is enabled. In "File Monitor" you can see that both QQ and QQInput are using `Tencent/QQInput/Exp/Temp`. Need to create a rule that shares `Tencent/QQInput/Exp/Temp` from QQInput to QQ.
-
-<small>* The Developer does not use QQInput, the example is written according to the rule provided by other users. </small>
 :::
 
-#### Involving the Xposed module
-   
-Some Xposed modules directly create files to save the configuration. You need to understand that enabling isolation for the Xposed module app itself is actually only enabling isolation for the interface that modifies the configuration, and the Xposed module will actually run in the app it injected.
+## Solutions for apps not working properly
 
-::: details Example
-A module modify WeChat named MDWeChat will create a folder named `mdwechat` to saving settings. After isolation is enabled for MDWeChat, `mdwechat` is saved in MDWeChat's isolated storage. The `mdwechat` folder is not included in WeChat's isolated storage, so the result must be "module not work". Need to create a rule to share the MDWeChat's `mdwechat` folder to WeChat.
+### App needs to access specific files
 
-<small>* The Developer does not use Xposed, the example is written according to the rule provided by other users. </small>
+Now ExampleApp has the function of sending pictures. But because of the isolation, you cannot find your picture in ExampleApp.
+
+To solve this problem, we only need to focus on the "Shared folders" section of the "Accessible folders" option. Assuming we selected folder `DCIM` and` Pictures`, then ExampleApp can access the files in these two folders.
+
+```
+/storage/emulated/0
+├───Android/data/com.example
+│   └───sdcard        <---- Isolated storage
+│       ├───bad_sdk
+│       ├───DCIM      <---- Real DCIM
+│       └───Pictures  <---- Real Pictures
+└...
+```
+
+For other cases, you only need to select the corresponding folder.
+
+Note, app can not only read but also write these folders.
+
+#### DO NOT abuse!
+
+We only recommend that the necessary folders be made accessible. If you make all folders accessible, isolation will be meaningless.
+
+### Can't find files saved by the app
+
+Now ExampleApp has the function of downloading pictures, and you use it to download `1.png`. Because it is isolated, `1.png` is saved to isolated storage, so you cannot see it in the album app.
+
+```
+/storage/emulated/0
+├───Android/data/com.example
+│   └───sdcard         <---- Isolated storage
+│       ├───bad_sdk
+│       ├───DCIM
+│       ├───images
+│       │   └───1.png
+│       └───Pictures
+└...
+```
+
+To solve this problem, we need to create an "Export isolated files" rule.
+
+```
+Source: images
+Target: Pictures/ExampleApp
+Add to Media Store: Yes
+```
+
+After creating this rules, you can see `1.png` in the album apps and `Pictures/ExampleApp`.
+
+```
+/storage/emulated/0
+├───Android/data/com.example
+│   └───sdcard               <---- Isolated storage
+│       ├───images
+│       │   └───1.png
+│       └───...
+├───Pictures
+│   └───ExampleApp
+│       └───1.png
+└...
+```
+
+Note that since the hard link is used, although the same file exists in two places, they will only occupy one storage space. For technical details on "Export isolated files", you can read it [here](./advanced/technical_details_export_isolated_files.md).
+
+#### Use online rules
+
+If there are already required rules in the online rule, you only need to add them directly. You only need to write your own rules when there are no rules or when there are errors of online rule. You can also submit your rules to the online rule library (via the "upload button").
+
+#### DO NOT abuse!
+
+The purpose of export is to export user files (save file operations initiated by users, such as saving pictures, downloading files, etc.).
+
+If the app saves user files to the private data folder (such as `Android/data/com.example/files`), this means that the app developer does not want users to use these files directly or they do something wrong. You should give up or ask the app developer to make changes.
+
+### Problems when cooperating with other apps
+
+#### Use other apps to view files (standard way, ACTION_VIEW)
+
+ExampleApp now has the ability to use other apps to open pictures. Unfortunately, ExampleApp directly passes the file path to other apps (this approach should be abandoned a few years ago!), You will find that other apps shows "file not found".
+
+ExampleApp does not know that it is isolated, it sees storage space like this.
+
+```
+/storage/emulated/0    <---- ExampleApp's view
+├───bad_sdk
+├───DCIM
+├───images
+│   └───1.png
+└───Pictures
+```
+
+Therefore ExampleApp will pass `/storage/emulated/0/example_app/1.png` to others. We all known that `1.png` is located at the isolated storage. Obviously, other apps cannot find this file.
+
+To solve this problem is simple, enable "Fix app interaction issued" in "Enhanced mode".
+
+#### Pass file path to other isolated apps with non-standard ways
+
+ExampleApp now adds the ability to share pictures to ExampleSocial (ExampleSocial is also an isolated app). Unfortunately, ExampleSocial requires the use of its SDK (this method should also be abandoned!), which means that the file path is passed directly, and we can’t change the file path through the "Fix app interaction issued" function.
+
+Suppose ExampleSocial's SDK works like this: save the picture to the `tmp` folder and pass the file path to ExampleSocial.
+
+```
+/storage/emulated/0
+├───Android/data/com.example
+│   └───sdcard    <---- ExampleApp's isolated storage
+│       └───tmp/shared_image
+└───Android/data/com.social.example
+│   └───sdcard    <---- ExampleSocial isolated storage
+│       └───...
+└...
+```
+
+To ExampleSocial, the `tmp` folder does not exist, so sharing will fail.
+
+To solve this problem, we need to create a "Accessible folder"-"Other application folder" rule.
+
+```
+Source app: ExampleApp
+Target app: ExampleSocial
+Folders: tmp
+```
+
+So that ExampleSocial can access the `tmp` folder from ExampleApp.
+
+#### How to create my own rule?
+
+you need to pick up your "weapon", "File monitor" (requires Enhanced mode).
+
+Continuing the above example, after the sharing of ExampleApp to ExampleSocial fails, you can see the records of `tmp` folder from ExampleApp and ExampleSocial in File monitor. This shows that you need to create the rule of accessing the `tmp` folder.
+
+#### Use online rules
+
+If there are already required rules in the online rule, you only need to add them directly. You only need to write your own rules when there are no rules or when there are errors of online rule. You can also submit your rules to the online rule library (via the "upload button").
+
+#### Additional
+
+::: details <b>Involving Xposed modules</b>
+
+First of all, you need to understand that the Xposed module includes not only run as the module apps itself, but also runs in other applications.
+
+For example, a module named ExampleXposedModule has the function of modifying ExampleApp, so it will run in ExampleApp. If ExampleXposedModule saves the settings by creating files, ExampleApp also needs to read the saved file. This is the same situation as ExampleApp sharing to ExampleSocial.
+
+What you need to do is to use "file monitoring" to monitor which files are used and create corresponding rules.
+
+**However, the most correct approach should be to ask Xposed module developers to make changes!** (Ask module developers to use `ContentProvider` to share the configuration, or directly save the configuration in the data folder of the target app.)
 :::
