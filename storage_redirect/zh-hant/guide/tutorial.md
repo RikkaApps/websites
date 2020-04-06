@@ -2,7 +2,7 @@
 
 ## 啟用隔離後會發生什麼？
 
-假設存在一個應用程式 ExampleApp（包名為 `com.example`），它使用了有濫用儲存空間行為的 SDK（假設它會建立 `bad_sdk` 資料夾）。那麼在授予它儲存權限後，你的儲存空間將會是這樣的。
+假設存在一個應用程式 ExampleApp（包名為 `com.example`），它使用了有濫用儲存空間行為的 SDK（假設它會建立 `bad_sdk` 資料夾）。那麼在授予 ExampleApp 儲存權限後，你的儲存空間將會是這樣的。
 
 ```
 /storage/emulated/0
@@ -16,7 +16,7 @@
 
 現在，我們對 ExampleApp 啟用隔離，它可用的儲存空間實際就成為了一個 `Android/data/com.example` 中的資料夾。我們稱該資料夾為「隔離儲存空間」。
 
-這個應用程式會只能使用該資料夾內的檔案，由它建立的資料夾也會保存於該資料夾。
+ExampleApp 會只能使用該資料夾內的檔案，由它建立的資料夾也會保存於該資料夾。
 
 ```
 /storage/emulated/0
@@ -26,7 +26,7 @@
 └...
 ```
 
-## 補充知識
+## 針對新使用者的知識
 
 ::: details <b>推薦的組織檔案的方式</b>
 
@@ -137,7 +137,7 @@
 └...
 ```
 
-注意，由於使用了 hard link，因此雖然在兩處存在相同的檔案，但是它們只會佔用一份儲存空間。有關「匯出被隔離的檔案」的技術細節，你可以在[這裡](./advanced/technical_details_export_isolated_files.md)閱讀。
+注意，由於使用了 hard link，因此雖然在兩處存在相同的檔案，**但是它們只會佔用一份儲存空間**。有關「匯出被隔離的檔案」的技術細節，你可以在[這裡](./advanced/technical_details_export_isolated_files.md)閱讀。
 
 #### 使用線上規則
 
@@ -157,16 +157,13 @@
 
 ExampleApp 自己並不會知道自己被隔離了，它所看到的儲存空間是這樣的。
 
-```
-/storage/emulated/0    <---- ExampleApp 的視角
-├───bad_sdk
-├───DCIM
-├───images
-│   └───1.png
-└───Pictures
-```
+因此，情況是這樣的。
 
-因此 ExampleApp 會將 `/storage/emulated/0/example_app/1.png` 傳遞給其他應用程式。我們都知道，`1.png` 實際位於隔離儲存空間中。顯然，其他應用程式無法找到這個檔案。
+> ExampleApp：給你， `example_app/1.png`。
+>
+> 圖片檢視器：讓我們看看試試開啟這個檔案... 誒~好像並沒有這個檔案誒！
+
+我們都知道檔案實際是位於 `/storage/emulated/0/Android/data/com.example/sdcard/images/1.png`。
 
 要解決這個問題很簡單，啟用「增強模式」中的「修復程式間互動」。
 
@@ -201,7 +198,7 @@ ExampleApp 自己並不會知道自己被隔離了，它所看到的儲存空間
 
 #### 如何建立自己的規則？
 
-你需要拿起你的「武器」——「檔案監視」（需要增強模式）。
+你需要拿起你的「武器」——「檔案監視」。檔案監視是增強模式的功能。
 
 繼續上面的例子，在 ExampleApp 分享到 ExampleSocial 失敗後，你可以在檔案監視中看到來自 ExampleApp 和 ExampleSocial 的 `tmp` 資料夾的記錄。由此可以知道，你需要建立訪問 `tmp` 資料夾的規則。
 

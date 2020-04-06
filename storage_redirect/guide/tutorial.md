@@ -2,7 +2,7 @@
 
 ## What happens when isolation is enabled?
 
-Suppose there is an application ExampleApp (package name is `com.example`). It uses an SDK that abuses storage (assuming it will create `bad_sdk` folder). Then after granting it storage permission, your storage space will look like this.
+Assuming there is an application called ExampleApp (the package name is `com.example`). It uses an SDK that abuses storage (assuming it will create `bad_sdk` folder). Then after granting ExampleApp storage permission, your storage space will look like this.
 
 ```
 /storage/emulated/0
@@ -16,7 +16,7 @@ Suppose there is an application ExampleApp (package name is `com.example`). It u
 
 Now that we enable isolation for ExampleApp, the storage space available to it is actually a folder in `Android/data/com.example`. We call this folder "isolated storage".
 
-This app will only able to use the files in this folder, and the folders created by it will also be saved in this folder.
+ExampleApp will only able to use the files in this folder, and the folders created by it will also be saved in this folder.
 
 ```
 /storage/emulated/0
@@ -26,7 +26,7 @@ This app will only able to use the files in this folder, and the folders created
 └...
 ```
 
-## Additional knowledge
+## Knowledge for new users
 
 ::: details <b>Recommended way to organize files</b>
 
@@ -122,7 +122,7 @@ Target: Pictures/ExampleApp
 Add to Media Store: Yes
 ```
 
-After creating this rules, you can see `1.png` in the album apps and `Pictures/ExampleApp`.
+After creating this rules, you will be able to see `1.png` in album apps and `Pictures/ExampleApp`.
 
 ```
 /storage/emulated/0
@@ -137,7 +137,7 @@ After creating this rules, you can see `1.png` in the album apps and `Pictures/E
 └...
 ```
 
-Note that since the hard link is used, although the same file exists in two places, they will only occupy one storage space. For technical details on "Export isolated files", you can read it [here](./advanced/technical_details_export_isolated_files.md).
+Note that since the hard link is used, although the same file exists in two places, **they only occupy one storage space**. For technical details on "Export isolated files", you can read it [here](./advanced/technical_details_export_isolated_files.md).
 
 #### Use online rules
 
@@ -145,7 +145,7 @@ If there are already required rules in the online rule, you only need to add the
 
 #### DO NOT abuse!
 
-The purpose of export is to export user files (save file operations initiated by users, such as saving pictures, downloading files, etc.).
+The purpose of export is to export user files (save file operations initiated by the user, such as saving pictures, downloading files, etc.).
 
 If the app saves user files to the private data folder (such as `Android/data/com.example/files`), this means that the app developer does not want users to use these files directly or they do something wrong. You should give up or ask the app developer to make changes.
 
@@ -166,15 +166,21 @@ ExampleApp does not know that it is isolated, it sees storage space like this.
 └───Pictures
 ```
 
-Therefore ExampleApp will pass `/storage/emulated/0/example_app/1.png` to others. We all known that `1.png` is located at the isolated storage. Obviously, other apps cannot find this file.
+Therefore, the situation is like this.
 
-To solve this problem is simple, enable "Fix app interaction issued" in "Enhanced mode".
+> ExampleApp: Here you are, `example_app/1.png`.
+>
+> Image viewer: Let's try opening this file... It seems not exists!
+
+We all know the file is located at `/storage/emulated/0/Android/data/com.example/sdcard/images/1.png`.
+
+To solve this problem is simple, enable "Fix app interaction issues" in "Enhanced mode".
 
 #### Pass file path to other isolated apps with non-standard ways
 
 ExampleApp now adds the ability to share pictures to ExampleSocial (ExampleSocial is also an isolated app). Unfortunately, ExampleSocial requires the use of its SDK (this method should also be abandoned!), which means that the file path is passed directly, and we can’t change the file path through the "Fix app interaction issued" function.
 
-Suppose ExampleSocial's SDK works like this: save the picture to the `tmp` folder and pass the file path to ExampleSocial.
+Assuming ExampleSocial's SDK works like this: save the picture to the `tmp` folder and pass the file path to ExampleSocial.
 
 ```
 /storage/emulated/0
@@ -201,9 +207,9 @@ So that ExampleSocial can access the `tmp` folder from ExampleApp.
 
 #### How to create my own rule?
 
-you need to pick up your "weapon", "File monitor" (requires Enhanced mode).
+You need to pick up your "weapon", "File monitor". File monitor is a function from "Enhanced mode".
 
-Continuing the above example, after the sharing of ExampleApp to ExampleSocial fails, you can see the records of `tmp` folder from ExampleApp and ExampleSocial in File monitor. This shows that you need to create the rule of accessing the `tmp` folder.
+Continuing the above example, after the sharing of ExampleApp to ExampleSocial fails, in File monitor, you will able to find records of `tmp` folder from both ExampleApp and ExampleSocial. This shows that you need to create the rule of accessing the `tmp` folder.
 
 #### Use online rules
 

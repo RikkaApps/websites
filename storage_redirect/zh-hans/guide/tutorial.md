@@ -2,7 +2,7 @@
 
 ## 启用隔离后会发生什么？
 
-假设存在一个应用 ExampleApp（包名为 `com.example`），它使用了有滥用存储空间行为的 SDK（假设它会创建 `bad_sdk` 文件夹）。那么在授予它存储权限后，你的存储空间将会是这样的。
+假设存在一个应用 ExampleApp（包名为 `com.example`），它使用了有滥用存储空间行为的 SDK（假设它会创建 `bad_sdk` 文件夹）。那么在授予 ExampleApp 存储权限后，你的存储空间将会是这样的。
 
 ```
 /storage/emulated/0
@@ -16,7 +16,7 @@
 
 现在，我们对 ExampleApp 启用隔离，它可用的存储空间实际就成为了一个 `Android/data/com.example` 中的文件夹。我们称该文件夹为“隔离存储空间”。
 
-这个应用会只能使用该文件夹内的文件，由它创建的文件夹也会保存于该文件夹。
+ExampleApp 会只能使用该文件夹内的文件，由它创建的文件夹也会保存于该文件夹。
 
 ```
 /storage/emulated/0
@@ -26,7 +26,7 @@
 └...
 ```
 
-## 补充知识
+## 针对新用户的知识
 
 ::: details <b>推荐的组织文件的方式</b>
 
@@ -137,7 +137,7 @@
 └...
 ```
 
-注意，由于使用了 hard link，因此虽然在两处存在相同的文件，但是它们只会占用一份存储空间。有关“导出被隔离的文件”的技术细节，你可以在[这里](./advanced/technical_details_export_isolated_files.md)阅读。
+注意，由于使用了 hard link，因此虽然在两处存在相同的文件，**但是它们只会占用一份存储空间**。有关“导出被隔离的文件”的技术细节，你可以在[这里](./advanced/technical_details_export_isolated_files.md)阅读。
 
 #### 使用在线规则
 
@@ -166,7 +166,13 @@ ExampleApp 自己并不会知道自己被隔离了，它所看到的存储空间
 └───Pictures
 ```
 
-因此 ExampleApp 会将 `/storage/emulated/0/example_app/1.png` 传递给其他应用。我们都知道，`1.png` 实际位于隔离存储空间中。显然，其他应用无法找到这个文件。
+因此，情况是这样的。
+
+> ExampleApp：给你， `example_app/1.png`。
+>
+> 图片查看器：让我们看看试试打开这个文件... 诶~好像并没有这个文件诶！
+
+我们都知道文件实际是位于 `/storage/emulated/0/Android/data/com.example/sdcard/images/1.png`。
 
 要解决这个问题很简单，启用“增强模式”中的“修复应用间交互”。
 
@@ -201,7 +207,7 @@ ExampleApp 自己并不会知道自己被隔离了，它所看到的存储空间
 
 #### 如何建立自己的规则？
 
-你需要拿起你的“武器”——“文件监视”（需要增强模式）。
+你需要拿起你的“武器”——“文件监视”。文件监视是增强模式的功能。
 
 继续上面的例子，在 ExampleApp 分享到 ExampleSocial 失败后，你可以在文件监视中看到来自 ExampleApp 和 ExampleSocial 的 `tmp` 文件夹的记录。由此可以知道，你需要建立访问 `tmp` 文件夹的规则。
 
