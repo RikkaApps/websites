@@ -219,9 +219,9 @@ If there are already required rules in the online rule, you only need to add the
 
 ::: details <b>Involving Xposed modules</b>
 
-First of all, you need to understand that the Xposed module includes not only run as the module apps itself, but also runs in other applications.
+First of all, you need to know that the Xposed module runs not only as the module apps itself, but also in other applications.
 
-For example, a module named ExampleXposedModule has the function of modifying ExampleApp, so it will run in ExampleApp. If ExampleXposedModule saves the settings by creating files, ExampleApp also needs to read the saved file. This is the same situation as ExampleApp sharing to ExampleSocial.
+For example, a module named ExampleXposedModule has the function of modifying ExampleApp, it will run in ExampleApp. If ExampleXposedModule saves settings by creating files, ExampleApp also needs to read the saved file. This is the same situation as ExampleApp sharing to ExampleSocial.
 
 What you need to do is to use "file monitoring" to monitor which files are used and create corresponding rules.
 
