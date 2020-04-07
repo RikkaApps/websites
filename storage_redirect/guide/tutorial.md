@@ -14,17 +14,22 @@ Assuming there is an application called ExampleApp (the package name is `com.exa
 └───...
 ```
 
-Now that we enable isolation for ExampleApp, the storage space available to it is actually a folder in `Android/data/com.example`. We call this folder "isolated storage".
+Now that we enable isolation for ExampleApp, the storage to it becomes a folder in its data folder. We call this folder "isolated storage".
 
 ExampleApp will only able to use the files in this folder, and the folders created by it will also be saved in this folder.
 
 ```
 /storage/emulated/0
-├───Android/data/com.example
-│   └───sdcard       <---- ExampleApp can only see this folder
+├───Android/data/com.example  <---- ExampleApp's data folder
+│   └───sdcard                <---- Isolated storage
 │       └───bad_sdk
 └...
 ```
+
+In addition, because of the data folder, we can also take these benefits:
+
+* These files will be deleted when uninstalling or clearing data
+* In system's app info, these files will also be counted as storage usage
 
 ## Knowledge for new users
 
@@ -47,7 +52,7 @@ Taking the most common `Pictures` as an example, it is common for each app to cr
 Our recommendation is to organize the files saved by each app in the above way.
 :::
 
-::: details <b>How to clean/move existing files</b>
+::: details <b>Clean/Move existing files</b>
 
 Since the files in `/storage/emulated` do not have owner, we cannot automatically help you move or delete existing files.
 
@@ -63,6 +68,22 @@ Since the files in `/storage/emulated` do not have owner, we cannot automaticall
   2. Run all isolated app.
   3. If there are some apps not work properly because of can't find previous files, you can learn folders were created by which app by using "View isolated storage" option. Then you can move those folders.
   4. After all apps are working properly, delete the temporary folder.
+:::
+
+::: details <b>Forget about "Cleaning app"</b>
+
+Some "Cleaning app" have the function of cleaning files created by specific apps (those files are not in data folder, they will not be deleted after uninstallation). This function cannot be used because file location changes after isolation.
+
+However, after isolation, files created by the app are stored in the isolated storage (located in its data folder). They will be deleted after uninstallation. In addition, you can set the location of the isolated storage to cache folder. Cache folder is automatically cleaned up by Android system.
+
+Forget about "Cleaning app", they are no longer meaningful. And they should not exist from the first day.
+:::
+
+::: details <b> "Backup app" are not affected (you can even backup more files)</b>
+
+"Backup app" could only backup files inside apps' data folders.
+
+After isolation, the files created by the app are saved its isolated storage (located in its data folder), so these files could also be backed up. Note, you may need to enable an option like "Backup external data" in your "Backup app".
 :::
 
 ::: details <b>Use Enhanced mode</b>
