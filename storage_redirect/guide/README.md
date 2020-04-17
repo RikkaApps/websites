@@ -7,7 +7,7 @@ Currently, the design of the Android system's storage permissions is too simple,
 To explain this problem, we first need to introduce the design of the storage of the Android system.
 
 
-The Android system has a simple design for storage:
+The Android system has a simple design for storage<sup>**[1]**</sup>:
 
 ```
 /storage/emulated/0
@@ -40,7 +40,7 @@ As you can see in the example below, many "bad apps" create a bunch of weird fol
 <img :src="$withBase('/images/chaos_storage.png')" alt="Example of abusing storage">
 :::
 
-Many times users can only be forced to grant them storage permissions because they need to use features such as Send Pictures.
+Many times users can only be forced to grant them storage permissions because they need to use features such as Send Pictures<sup>**[2]**</sup>.
 
 <sub> **[1]** In addition, `/data/user` can be used save the apps' own data, but it has nothing to do with the theme, so it is not explained</sub>
 <p><sub> **[2]** The Android system provides other ways for users to grant the permission for specific files or folders, but few apps use them.</sub>
