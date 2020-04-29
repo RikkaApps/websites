@@ -1,5 +1,18 @@
 # Changelog
 
+## 4.4.0 (2020-04-29)
+
+- Fix app interaction: Remove "startActivity hook"<sup>**〔1〕**</sup><sup>**〔2〕**</sup>
+- Fix change "Default isolated storage location" may wait forever on some situations
+- Correctly implement "Up" (the arrow in ActionBar)<sup>**〔3〕**</sup><sup>**〔4〕**</sup> (so sad even some system apps are not doing this right 😰)
+- Fix edge effects for all lists which shows below system bars (almost all apps not doing this right 😋)
+- Hide "View gallery" on Android R because it's broken
+
+<sub><b>〔1〕</b>It may cause problems.</sub>
+<br><sub><b>〔2〕</b>On Android 10+, exposing `file` uri will cause crash, garbage apps should have changed. We no longer need to "help" them.</sub>
+<br><sub><b>〔3〕</b>According to the <del>ancient</del> guideline, "Back" navigates to the previous screen but "Up" navigates to the logical up level. For example, enter a deep page of A from B, "Back" backs to B while "Up" goes to the upper page of A. (This also requires B doing right)</sub>
+<br><sub><b>〔4〕</b>On Android R Developer Preview, Google breaks this "nobody use thing", so "up" works as "back" until Google fix it.</sub>
+
 ## 4.3.1 (2020-04-05)
 
 - Add a simpler way to submit rules
