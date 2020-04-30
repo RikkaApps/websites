@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.4.1 (2020-05-01)
+
+- Fix "File monitor" page lag
+- Fix display issue of "Accessible folders" - "Files from other apps"
+
 ## 4.4.0 (2020-04-29)
 
 - Fix app interaction: Remove "startActivity hook"<sup>**〔1〕**</sup><sup>**〔2〕**</sup>
