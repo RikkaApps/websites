@@ -8,9 +8,8 @@
 
 [GitHub](https://github.com/RikkaApps/StorageRedirect-assets/releases)（全部架構，**Samsung 用戶請在這裏下載 arm 版本**）
 
-
 ::: warning
-**Sumsung 用戶**
+**Samsung 用戶**
 
-由於 Sumsung 裝置內核的一些不明原因，**Sumsung 裝置只能使用 arm 版本**。
+由於 Samsung 裝置內核的一些不明原因，**Samsung 裝置只能使用 arm 版本**。
 :::

@@ -9,7 +9,7 @@
 [GitHub](https://github.com/RikkaApps/StorageRedirect-assets/releases) (all architectures, **Samsung users please download arm version from here**)
 
 ::: warning
-**Sumsung users**
+**Samsung users**
 
-Due to some unknown reasons of the Sumsung device kernel, **Sumsung devices can only use arm version**.
+Due to some unknown reasons of the Samsung device kernel, **Samsung devices can only use arm version**.
 :::
