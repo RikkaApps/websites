@@ -180,9 +180,9 @@ If the app saves user files to a private folder (e.g., `Android/data/<package>/f
 
 If you find the save **user files** to private folders, you should ask the app developer to make changes.
 
-::: details Why you <b>MUST</b> ask the app developer to make changes?
+::: details Why you should ask the app developer to make changes?
 
-In Android 11, to apps which target API version is 30 (i.e., Android 11) <sup>**[1]**</sup>, `Android` folder is the real private folder. Even with storage permissions, apps can only access the part that belongs to it.
+In Android 11, `Android` folder is the real private folder. Even with storage permissions, apps can only access the part that belongs to it.
 
 ```
 /storage/emulated/0
@@ -199,10 +199,12 @@ In Android 11, to apps which target API version is 30 (i.e., Android 11) <sup>**
 Storing user files in private folders means except the app itself, **any other app, including file managers, cannot see the files**. This is obviously wrong. In addition, the files here will be deleted when the data is uninstalled or cleared. It is obviously inappropriate to save user files here.
 
 Note that for the scenario like "receiving files in a chat app", it is reasonable to store the files in a private folder first. Therefore, when giving feedback to the app developer, ask them to add a "Save to Download" function (moving the files in the private folder to the `Download` folder) instead of directly changing the location of the files.
-
-<sub>**[1]** Based on previous years’ experience, Google Play will force apps to upgrade the target API version to the latest version of the system one year after the new system is released (except for apps that have been published and not updated).</sub>
 :::
 
+::: details Another "solution"
+
+<https://github.com/RikkaApps/SaveCopy>
+:::
 
 ### Problems when cooperating with other apps
 
@@ -229,7 +231,10 @@ Therefore, the situation is like this.
 
 We all know the file is located at `/storage/emulated/0/Android/data/com.example/sdcard/images/1.png`.
 
-To solve this problem is simple, enable "Fix app interaction issues" in "Enhanced mode".
+::: tip No need to support this situation
+
+In Android 11, `Android` folder is the real private folder, this approach does not work. Apps doing this must make changes. Therefore, from v4.4.0, support for this situation has been removed.
+:::
 
 #### Pass file path to other isolated apps with non-standard ways
 
@@ -270,7 +275,7 @@ Continuing the above example, after the sharing of ExampleApp to ExampleSocial f
 
 If there are already required rules in the online rule, you only need to add them directly. You only need to write your own rules when there are no rules or when there are errors of online rule. You can also submit your rules to the online rule library (via the "upload button").
 
-#### Additional
+#### Bonus
 
 ::: details <b>Involving Xposed modules</b>
 
