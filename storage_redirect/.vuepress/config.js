@@ -69,7 +69,7 @@ module.exports = {
             buttonText: "Refresh"
           }
         },
-        sidebar: getSidebar('/guide/', 'Guide', 'Advanced', 'Enhanced mode', 'Issues caused by OMEs', 'FAQ'),
+        sidebar: getSidebar('/guide/', 'Guide', 'Advanced', 'Enhanced mode', 'Issues caused by OEMs', 'FAQ'),
         nav: getNavbar('/', 'Guide', 'Download', 'Changelog', 'Rikka Apps'),
         lastUpdated: 'Last Updated'
       },
