@@ -1,3 +1,7 @@
+---
+navbar: false
+---
+
 # Contribute translation
 
 The translation of RikkaApps is moving to Weblate, a translation platform that supports self-hosting.
