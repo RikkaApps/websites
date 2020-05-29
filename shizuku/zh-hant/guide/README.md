@@ -2,7 +2,7 @@
 
 Shizuku 可以幫助普通程式藉助一個由 app_process 啟動的 Java 程序直接以 adb 或 root 特權使用系統 API。
 
-Shizuku 這個名字來自[這裡](https://www.pixiv.net/member_illust.php?mode=medium&illust_id=75586127)。
+Shizuku 這個名字來自[這裡](https://www.pixiv.net/artworks/75508584)。
 
 ## Shizuku 為何而生？
 

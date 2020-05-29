@@ -1,11 +1,11 @@
 ---
 home: true
 heroImage: /logo.png
-actionText: 快速上手 →
+actionText: 瞭解更多
 actionLink: /zh-hant/guide/
 features:
 - title: 優雅地使用系統 API
-  details: 忘掉 root shell 吧，你可以直接「像系統程式一樣」直接使用系統 API。此外，使用 Shizuku 要快得多。
+  details: 忘掉 root shell 吧，你可以「直接使用」需要高權限的 API。此外，Shizuku 比 shell 要快得多。
 - title: 支援 adb 使用
   details: 如果你的「需要 root 的程式」只需要 adb 權限，則可以使用 Shizuku 輕鬆地擴大用戶羣體。
 - title: 節省時間
@@ -29,7 +29,6 @@ public static void grantRuntimePermission(String packageName, String permissionN
 ```
 
 ::: tip
-**注意**
 
 還有一些步驟要做，比如檢查權限或 Shizuku 是否正在執行。
 :::

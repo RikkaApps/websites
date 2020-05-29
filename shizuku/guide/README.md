@@ -2,7 +2,7 @@
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
 
-The name Shizuku coms from [a character](https://www.pixiv.net/member_illust.php?mode=medium&illust_id=75586127).
+The name Shizuku coms from [a character](https://www.pixiv.net/artworks/75508584).
 
 ## Why was Shizuku born?
 

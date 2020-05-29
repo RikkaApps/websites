@@ -54,9 +54,9 @@ module.exports = {
           }
         },
         sidebar: {
-          '/guide/': getSidebar()
+          '/guide/': getGuideSidebar()
         },
-        nav: getNavbar('/', 'Guide', 'Who\'s using', 'Download'),
+        nav: getNavbar('/', 'User guide', 'Apps using Shizuku', 'Download', 'Developer guide'),
         lastUpdated: 'Last Updated'
       }
       ,
@@ -71,9 +71,9 @@ module.exports = {
           }
         },
         sidebar: {
-          '/zh-hans/guide/': getSidebar()
+          '/zh-hans/guide/': getGuideSidebar()
         },
-        nav: getNavbar('/zh-hans/', '指南', '谁在用', '下载'),
+        nav: getNavbar('/zh-hans/', '用户指南', '使用 Shizuku 的应用', '下载', '开发者指南'),
         lastUpdated: '最后更新'
       },
       '/zh-hant/': {
@@ -87,9 +87,10 @@ module.exports = {
           }
         },
         sidebar: {
-          '/zh-hant/guide/': getSidebar()
+          '/zh-hant/guide/': getGuideSidebar(),
+          '/zh-hant/dev/': getDevSidebar()
         },
-        nav: getNavbar('/zh-hant/', '指南', '誰在用', '下載'),
+        nav: getNavbar('/zh-hant/', '使用者指南', '使用 Shizuku 的應用程式', '下載', '開發者指南'),
         lastUpdated: '最後更新'
       }
     },
@@ -111,14 +112,19 @@ module.exports = {
   }
 }
 
-function getSidebar() {
-  return ['', 'setup', 'dev']
+function getGuideSidebar() {
+  return ['', 'setup']
 }
 
-function getNavbar(prefix, guide, apps, download) {
+function getDevSidebar() {
+  return ['']
+}
+
+function getNavbar(prefix, guide, apps, download, dev) {
   return [
     { text: guide, link: `${prefix}guide/` },
-    { text: apps, link: `${prefix}apps.html` },
+    { text: dev, link: `https://github.com/RikkaApps/Shizuku/blob/master/README.md` },
     { text: download, link: `${prefix}download.html` },
+    { text: apps, link: `${prefix}apps.html` },
   ]
 }
