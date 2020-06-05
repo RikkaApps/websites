@@ -1,12 +1,69 @@
 # 如何启动 Shizuku
 
-## 设备已 root
+## 通过 root 启动
 
-对于已 root 设备，直接在 Shizuku 应用启动即可。
+对于已 root 设备，直接启动即可。
 
-## 设备未 root
+## 由厂商造成的问题（非 root 方式）
+
+### 1. MIUI（Xiaomi）💩
+
+你需要在“开发者选项”中开启“USB 调试（安全设置）”。
+
+对于 MIUI 11 及以上版本，你必须在 Shizuku 内授予使用者应用权限。这是因为自定义权限功能被破坏，参见 [Shizuku #45](https://github.com/RikkaApps/Shizuku/issues/45) 和 [android-in-china/Compatibility #16](https://github.com/android-in-china/Compatibility/issues/16)。
+
+### 2. ColorOS（OPPO）💩
+
+你需要在“开发者选项”中关闭“权限监控”。
+
+## 通过无线调试启动
+
+Android 11 添加了全新的无线调试功能，该功能位于“开发者设置”-“无线调试”。Shizuku v4.0.0 起支持此功能。
+
+::: tip 提示
+
+1. 设备重新启动后需要再次打开“无线调试”选项并重新启动 Shizuku。
+2. 无 WiFi 连接时无法启用“无线调试”（已启动的 Shizuku 不受影响）。
+3. 不可关闭“开发者选项”。
+:::
+
+### 1. 配对（只需进行一次）
+
+1. 启用“开发者选项”（在网络上有非常多的教程）
+2. 进入“无线调试”
+3. 启用系统的分屏功能，将 Shizuku 置于上方，“无线调试”置于下方
+4. 打开“无线调试”中的“使用配对码配对设备”
+5. 打开 Shizuku 中的“通过无线调试启动”，轻触“配对”
+6. 填入“配对码”及“端口号”后确定
+7. 如果配对成功，“无线调试”中的“已配对的设备”中会出现“shizuku”
+8. （未确认是否必要）打开“开发者设置”中的“停用 adb 授权超时功能”
+
+配对过程示意图：
+
+<img :src="$withBase('/images/wireless_adb_pairing.png')" alt="配对过程示意图" style="max-width:360px;width:100%">
+
+配对成功示意图：
+
+<img :src="$withBase('/images/wireless_adb_pairing_succeeded.png')" alt="配对成功示意图" style="max-width:360px;width:100%">
+
+### 2. 使用
+
+1. 打开 Shizuku 中的“通过无线调试启动”
+2. 填入“无线调试”中的端口号（此端口号会在每次启用“无线调试”时变化）
+
+端口号示意图：
+
+<img :src="$withBase('/images/wireless_adb_port.png')" alt="端口号示意图" style="max-width:360px;width:100%">
+
+## 通过连接电脑启动
 
 对于未 root 设备，需要借助 adb 启动。使用 adb 并不困难，请阅读下面的教程。
+
+::: tip 提示
+
+1. 设备重新启动后需要再次连接电脑。
+2. 在一些定制系统上 Shizuku 可能会随机停止。阅读最后的部分可以看到解决方案。
+:::
 
 ### 1. 什么是 `adb`？
 
@@ -19,15 +76,12 @@ Android 调试桥 (`adb`) 是一个通用命令行工具，其允许您与模拟
 #### 2.1. Windows
 
 1. 下载由 Google 提供的 [SDK Platform Tools](https://dl.google.com/android/repository/platform-tools-latest-windows.zip) 并解压至任意文件夹
-2. 使用资源管理器打开文件夹，按住 Shift 点击右键选择“在此处打开 PowerShell 窗口”（如果是 Windows 7 则是打开 CMD）
+2. 使用资源管理器打开文件夹，按住 Shift 点击右键选择“在此处打开 PowerShell 窗口”（如果是 Windows 7 则是“在此处打开命令行窗口”）
 3. 输入 `adb` 如果可以看到一长串内容而不是提示找不到 adb 则表示成功
 
-::: tip
-请不要关闭该窗口，后面提到的“终端”都是指此窗口（如果关闭请重新进行第 2 步）。
-:::
-
-::: tip
-如果使用 PowerShell，所有 `adb` 都要替换成 `./adb`。
+::: tip 提示
+1. 请不要关闭该窗口，后面提到的“终端”都是指此窗口（如果关闭请重新进行第 2 步）。
+2. 如果使用 PowerShell，所有 `adb` 都要替换成 `./adb`。
 :::
 
 #### 2.2. Linux / macOS
@@ -53,24 +107,31 @@ Android 调试桥 (`adb`) 是一个通用命令行工具，其允许您与模拟
 不同设备开启“开发者选项”的步骤可能有所不同，请自己搜索。
 :::
 
-#### 3.1. MIUI（Xiaomi 设备）
-
-> “<del>9012</del> 0202 年，💩 MIUI 还是会破坏 Android 的特性”
-
-如果你使用 MIUI，你还需要在“开发者选项”中开启“USB 调试（安全设置）”。
-
-如果你使用 MIUI 11，MIUI 11 破坏了自定义权限（使用者应用无法请求自定义权限，参考 [这个 issue](https://github.com/RikkaApps/Shizuku/issues/45) 和 [这个 issue](https://github.com/android-in-china/Compatibility/issues/16)），你必须在 Shizuku app 内授予使用者应用权限。
-
-#### 3.2. ColorOS（OPPO 设备）
-
-如果你使用 ColorOS，你还需要在“开发者选项”中关闭“权限监控”。
-
 ### 4. 启动 Shizuku
 
-在终端中输入 `adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/files/start.sh`，如无问题你将会在 Shizuku 中看到已启动成功。
+复制指令并粘贴到终端中，如无问题你将会在 Shizuku 中看到已启动成功。
 
-::: warning
-重启设备后需要重新进行，因此请尽量避免关机和重新启动。
+从 Shizuku v4.0.0 起，不同的 Android 版本有不同的指令。从 Shizuku 中复制指令是更好的选择。
+
+::: details 适用于 Shizuku v4.0.0+ 的指令
+Android 6.0:
+
+```
+adb shell sh /data/user/0/moe.shizuku.privileged.api/start.sh
+```
+
+Android 7.0+:
+
+```
+adb shell sh /data/user_de/0/moe.shizuku.privileged.api/start.sh
+```
+:::
+
+::: details 适用于 Shizuku v3.x 的指令
+
+```
+adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/files/start.sh
+```
 :::
 
 ### 5. Shizuku 随机停止？

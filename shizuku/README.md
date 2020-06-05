@@ -2,7 +2,7 @@
 home: true
 heroImage: /logo.png
 actionText: Learn more
-actionLink: /guide/
+actionLink: /introduction.html
 features:
 - title: Use system APIs elegantly
   details: Forget about root shell, you can use APIs with higher privileges "directly". Also, Shizuku is significantly faster than shell.

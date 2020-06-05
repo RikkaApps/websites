@@ -2,7 +2,7 @@
 home: true
 heroImage: /logo.png
 actionText: 了解更多
-actionLink: /zh-hans/guide/
+actionLink: /zh-hans/introduction.html
 features:
 - title: 优雅地使用系统 API
   details: 忘掉 root shell 吧，你可以「直接使用」需要高权限的 API。此外，Shizuku 比 shell 要快得多。

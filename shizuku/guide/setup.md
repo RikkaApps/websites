@@ -1,12 +1,69 @@
 # How to start Shizuku?
 
-## Device is rooted
+## Start with root
 
-For rooted devices, start Shizuku directly in Shizuku app.
+For rooted devices, just start directly.
 
-## Device is not rooted
+## Problems caused by manufacturers (non-root mode)
+
+### 1. MIUI (Xiaomi) 💩
+
+You need to enable "USB debugging (Security options)" in "Developer options".
+
+For MIUI 11 and above, you must grant permission to user apps in Shizuku. This is because the custom permission is broken by MIUI, see [Shizuku #45](https://github.com/RikkaApps/Shizuku/issues/45) and [android-in-china/Compatibility #16](https://github.com/android-in-china/Compatibility/issues/16).
+
+### 2. ColorOS (OPPO) 💩
+
+You need to disable "Permission monitoring" in "Developer options".
+
+## Start by wireless debugging
+
+Android 11 adds a new wireless debugging function, which is located in "Developer Settings"-"Wireless debugging". Shizuku v4.0.0 and above supports this feature.
+
+::: tip
+
+1. After the device restarts, you need to enable the "Wireless debugging" option again and restart Shizuku.
+2. "Wireless debugging" cannot be enabled when there is no WiFi connection (Shizuku already started is not affected).
+3. Do not disable "Developer options".
+:::
+
+### 1. Pairing (only need to be done once)
+
+1. Enable "Developer options" (there are many tutorials on the web)
+2. Enter "Wireless debugging"
+3. Enable the system's split screen function, place Shizuku at the top and "Wireless debugging" at the bottom
+4. Open "Pairing device using pairing code" in "Wireless debugging"
+5. Open "Start via wireless debugging" in Shizuku and touch "Pair"
+6. Fill in the "Pairing code" and "Port", confirm
+7. If the pairing is successful, "shizuku" will appear in "Paired devices" of "Wireless debugging”
+8. (Not confirmed whether it is necessary) Enable "Disable adb authorization timeout" in "Developer options"
+
+Pairing process:
+
+<img :src="$withBase('/images/wireless_adb_pairing.png')" alt="Pairing process" style="max-width:360px;width:100%">
+
+Successful pairing:
+
+<img :src="$withBase('/images/wireless_adb_pairing_succeeded.png')" alt="Picture of successful pairing" style="max-width:360px;width:100%">
+
+### 2. Use
+
+1. Open "Start via wireless debugging" in Shizuku
+2. Fill in the port in "Wireless debugging" (this port will change each time "Wireless debugging" is enabled)
+
+Port number:
+
+<img :src="$withBase('/images/wireless_adb_port.png')" alt="port number schematic" style="max-width:360px;width:100%">
+
+## Start by connecting to a computer
 
 For non rooted devices, you need to start Shizuku with `adb`. Using `adb` is not difficult, please read the tutorial below.
+
+::: tip
+
+1. After the device restarts, it needs to be connected to the computer again.
+2. Shizuku may stop randomly on some customized systems. Read the last part to see the solution.
+:::
 
 ### 1. What is `adb`?
 
@@ -19,15 +76,12 @@ See [Android Developer](https://developer.android.com/studio/command-line/adb) f
 #### 2.1. Windows
 
 1. Download the [SDK Platform Tools](https://dl.google.com/android/repository/platform-tools-latest-windows.zip) provided by Google and extract it to any folder
-2. Open the folder with Explorer,hold down Shift and right click, select "Open PowerShell Window here" (for Windows 7, select open CMD)
+2. Open the folder with Explorer,hold down Shift and right click, select "Open PowerShell Window here" (for Windows 7, select "Open command window here")
 3. Enter `adb`, if success, you can see a long list of content instead of the prompt not finding adb.
 
 ::: tip
-Please do not close this window. The "terminal" mentioned later refers to this window (if you closed the window, please go back to step 2)
-:::
-
-::: tip
-If you use PowerShell, all `adb` should be replaced with `./adb`
+1. Please do not close this window. The "terminal" mentioned later refers to this window (if you closed the window, please go back to step 2)
+2. If you use PowerShell, all `adb` should be replaced with `./adb`
 :::
 
 #### 2.2. Linux / macOS
@@ -54,24 +108,31 @@ To use `adb` you first need to turn on USB debugging on your device, usually by 
 The steps for enabling Developer Options on different devices may vary, please search for yourself.
 :::
 
-#### 3.1. MIUI (Xiaomi devices)
-
-> "It's <del>2019</del> 2020, 💩 MIUI still breaks Android features."
-
-If you use MIUI, you also need to enable "USB Debug (Security options)" in "Developer settings".
-
-If you use MIUI 11, MIUI 11 breaks custom permission (user apps cannot request for custom permission, please refer [this issue](https://github.com/RikkaApps/Shizuku/issues/45) and [this issue](https://github.com/android-in-china/Compatibility/issues/16)), so you must grant permission for user apps in Shizuku app.
-
-#### 3.2. ColorOS (OPPO devices)
-
-If you use ColorOS, you also need to disable "Permission monitor" in "Developer settings".
-
 ### 4. Start Shizuku
 
-Enter `adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/files/start.sh` in the terminal. If there is no problem, you will see that Shizuku has started successfully in Shizuku app.
+Copy the command and paste into the terminal. If there is no problem, you will see that Shizuku has started successfully in Shizuku app.
 
-::: warning
-This step needs to be re-executed each time the device is rebooted, please avoid power-off or reboot.
+Starting from Shizuku v4.0.0, the command is different on different Android versions. It's better to copy the command from Shizuku app.
+
+::: details Command for Shizuku v4.0.0+
+Android 6.0:
+
+```
+adb shell sh /data/user/0/moe.shizuku.privileged.api/start.sh
+```
+
+Android 7.0+:
+
+```
+adb shell sh /data/user_de/0/moe.shizuku.privileged.api/start.sh
+```
+:::
+
+::: details Command for Shizuku v3.x
+
+```
+adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/files/start.sh
+```
 :::
 
 ### 5. Shizuku randomly stops?
