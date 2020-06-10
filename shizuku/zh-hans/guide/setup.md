@@ -31,29 +31,19 @@ Android 11 添加了全新的无线调试功能，该功能位于“开发者设
 
 1. 启用“开发者选项”（在网络上有非常多的教程）
 2. 进入“无线调试”
-3. 启用系统的分屏功能，将 Shizuku 置于上方，“无线调试”置于下方
-4. 打开“无线调试”中的“使用配对码配对设备”
-5. 打开 Shizuku 中的“通过无线调试启动”，轻触“配对”
-6. 填入“配对码”及“端口号”后确定
-7. 如果配对成功，“无线调试”中的“已配对的设备”中会出现“shizuku”
-8. （未确认是否必要）打开“开发者设置”中的“停用 adb 授权超时功能”
+3. 启用系统的分屏（多窗口）功能（**必须，因为一旦离开“无线调试”，配对过程就会被停止**）
+4. 点按“无线调试”中的“使用配对码配对设备”
+5. 点按 Shizuku 中的“通过无线调试启动”，点按“配对”
+6. 填入“配对码”及“端口号”后确定<br><img :src="$withBase('/images/wireless_adb_pairing.png')" alt="配对过程示意图" style="max-width:320px;width:100%">
+7. 如果配对成功，“无线调试”中的“已配对的设备”中会出现“shizuku”<br><img :src="$withBase('/images/wireless_adb_pairing_succeeded.png')" alt="配对成功示意图" style="max-width:320px;width:100%">
+8. 如果你不希望重新进行此步骤，打开“开发者设置”中的“停用 adb 授权超时功能”
+9. 如果重新安装 Shizuku，则需要再次执行此步骤
 
-配对过程示意图：
-
-<img :src="$withBase('/images/wireless_adb_pairing.png')" alt="配对过程示意图" style="max-width:360px;width:100%">
-
-配对成功示意图：
-
-<img :src="$withBase('/images/wireless_adb_pairing_succeeded.png')" alt="配对成功示意图" style="max-width:360px;width:100%">
 
 ### 2. 使用
 
 1. 打开 Shizuku 中的“通过无线调试启动”
-2. 填入“无线调试”中的端口号（此端口号会在每次启用“无线调试”时变化）
-
-端口号示意图：
-
-<img :src="$withBase('/images/wireless_adb_port.png')" alt="端口号示意图" style="max-width:360px;width:100%">
+2. 填入“无线调试”中的端口号（此端口号会在每次启用“无线调试”时变化）<br><img :src="$withBase('/images/wireless_adb_port.png')" alt="端口号示意图" style="max-width:320px;width:100%">
 
 ## 通过连接电脑启动
 

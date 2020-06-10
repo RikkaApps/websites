@@ -31,29 +31,18 @@ Android 11 adds a new wireless debugging function, which is located in "Develope
 
 1. Enable "Developer options" (there are many tutorials on the web)
 2. Enter "Wireless debugging"
-3. Enable the system's split screen function, place Shizuku at the top and "Wireless debugging" at the bottom
-4. Open "Pairing device using pairing code" in "Wireless debugging"
-5. Open "Start via wireless debugging" in Shizuku and touch "Pair"
-6. Fill in the "Pairing code" and "Port", confirm
-7. If the pairing is successful, "shizuku" will appear in "Paired devices" of "Wireless debugging”
-8. (Not confirmed whether it is necessary) Enable "Disable adb authorization timeout" in "Developer options"
-
-Pairing process:
-
-<img :src="$withBase('/images/wireless_adb_pairing.png')" alt="Pairing process" style="max-width:360px;width:100%">
-
-Successful pairing:
-
-<img :src="$withBase('/images/wireless_adb_pairing_succeeded.png')" alt="Picture of successful pairing" style="max-width:360px;width:100%">
+3. Enable system's split-screen (multi-window) mode (**It's a must, because once you leave "Wireless debugging", the pairing process is stopped**)
+4. Tap "Pairing device using pairing code" in "Wireless debugging"
+5. Tap "Start via wireless debugging" in Shizuku and Tap "Pair"
+6. Fill in the "Pairing code" and "Port", confirm<br><img :src="$withBase('/images/wireless_adb_pairing.png')" alt="Pairing process" style="max-width:320px;width:100%">
+7. If the pairing is successful, "shizuku" will appear in "Paired devices" of "Wireless debugging”<br><img :src="$withBase('/images/wireless_adb_pairing_succeeded.png')" alt="Picture of successful pairing" style="max-width:320px;width:100%">
+8. If you don't want to repeat this step, enable "Disable adb authorization timeout" in "Developer options"
+9. If you reinstall Shizuku, you will need to do this step again
 
 ### 2. Use
 
-1. Open "Start via wireless debugging" in Shizuku
-2. Fill in the port in "Wireless debugging" (this port will change each time "Wireless debugging" is enabled)
-
-Port number:
-
-<img :src="$withBase('/images/wireless_adb_port.png')" alt="port number schematic" style="max-width:360px;width:100%">
+1. Tap "Start via wireless debugging" in Shizuku
+2. Fill in the port in "Wireless debugging" (this port will change each time "Wireless debugging" is enabled)<img :src="$withBase('/images/wireless_adb_port.png')" alt="port number schematic" style="max-width:320px;width:100%">
 
 ## Start by connecting to a computer
 

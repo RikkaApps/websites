@@ -1,6 +1,6 @@
 # 如何啟動 Shizuku
 
-## 通過 root 啟動
+## 透過 root 啟動
 
 對於已 root 裝置，直接啟動即可。
 
@@ -16,7 +16,7 @@
 
 你需要在「開發人員選項」中關閉「權限監控」。
 
-## 通過無線偵錯啟動
+## 透過無線偵錯啟動
 
 Android 11 添加了全新的無線偵錯功能，該功能位於「開發者設定」-「無線偵錯」。Shizuku v4.0.0 起支援此功能。
 
@@ -31,31 +31,20 @@ Android 11 添加了全新的無線偵錯功能，該功能位於「開發者設
 
 1. 啟用「開發人員選項」（在網路上有非常多的教程）
 2. 進入「無線偵錯」
-3. 啟用系統的分屏功能，將 Shizuku 置於上方，「無線偵錯」置於下方
-4. 開啟「無線偵錯」中的「使用配對碼配對裝置」
-5. 開啟 Shizuku 中的「通過無線偵錯啟動」，輕觸「配對」
-6. 填入「配對碼」及「通訊埠」後確定
-7. 如果配對成功，「無線偵錯」中的「已配對的裝置」中會出現「shizuku」
-8. （未確認是否必要）開啟「開發者設定」中的「停用 adb 授權超時功能」
-
-配對過程示意圖：
-
-<img :src="$withBase('/images/wireless_adb_pairing.png')" alt="配對過程示意圖" style="max-width:360px;width:100%">
-
-配對成功示意圖：
-
-<img :src="$withBase('/images/wireless_adb_pairing_succeeded.png')" alt="配對成功示意圖" style="max-width:360px;width:100%">
+3. 啟用系統的「分割畫面」（多視窗）功能（**必須，因為一旦離開「無線偵錯」，配對過程就會被停止**）
+4. 輕觸「無線偵錯」中的「使用配對碼配對裝置」
+5. 輕觸 Shizuku 中的「透過無線偵錯啟動」，輕觸「配對」
+6. 填入「配對碼」及「通訊埠」後確定<br><img :src="$withBase('/images/wireless_adb_pairing.png')" alt="配對過程示意圖" style="max-width:320px;width:100%">
+7. 如果配對成功，「無線偵錯」中的「已配對的裝置」中會出現「shizuku」<br><img :src="$withBase('/images/wireless_adb_pairing_succeeded.png')" alt="配對成功示意圖" style="max-width:320px;width:100%">
+8. 如果你不希望重新進行此步驟，開啟「開發者設定」中的「停用 adb 授權超時功能」
+9. 如果重新安裝 Shizuku，則需要再次執行此步驟
 
 ### 2. 使用
 
-1. 開啟 Shizuku 中的「通過無線偵錯啟動」
-2. 填入「無線偵錯」中的通訊埠（此通訊埠會在每次啟用「無線偵錯」時變化）
+1. 開啟 Shizuku 中的「透過無線偵錯啟動」
+2. 填入「無線偵錯」中的通訊埠（此通訊埠會在每次啟用「無線偵錯」時變化）<br><img :src="$withBase('/images/wireless_adb_port.png')" alt="通訊埠示意圖" style="max-width:320px;width:100%">
 
-通訊埠示意圖：
-
-<img :src="$withBase('/images/wireless_adb_port.png')" alt="通訊埠示意圖" style="max-width:360px;width:100%">
-
-## 通過連線電腦啟動
+## 透過連線電腦啟動
 
 對於未 root 裝置，需要藉助 adb 啟動。使用 adb 並不困難，請閱讀下面的教程。
 
