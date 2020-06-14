@@ -1,5 +1,6 @@
-# Purchase or restore problems
+# No Purchase or restore problems
 
-## Google Play restore
+## Google Play no restore
 
-In most cases, follow the prompts that appear after clicking the purchase. If you still can't solve the problem, please send us an email.
+In most cases, follow the prompts that without click anything. If you still can't solve the problem, please send us an email.
+And we Will fix it
