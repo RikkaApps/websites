@@ -1,5 +1,24 @@
 # Changelog
 
+## 4.5.0 (2020-06-16)
+
+- Fix the problem that on Android 11, isolate app which starts earlier than user unlock will cause serious problem
+- When "Enhanced mode" - "Block system remount" option is enabled, storage permission of isolated apps will not be enforced<sup>**〔1〕**</sup>
+- Enhanced mode: "Block system remount" now works on Android 11
+- Enhanced mode: "Fix app interaction" now works on Android 11
+- Enhanced mode: Remove toast of "Fix app interaction" (for the use case of inspection, check logs with tag "SRHook")
+- Enhanced mode v22.6: Fix app-level toggle of "fix app interaction" not work
+- The title for "Export isolated files" rule is customizable
+- Improve the performance of "App settings" page
+- "View gallery" works on Android 11
+- When the app starts on boot, don't kill process started by Enhanced mode
+- Raise target API version to 30
+- Change the icon
+
+<sub><b>〔1〕</b>Due to user reports, it might cause problems on 💩 systems like MIUI.</sub>
+
+> According to user reports and investigations, "Fix app interaction" does not work on some highly modified systems (at least includes 💩 OnePlus). We will switch to a completely different way in the future.
+
 ## 4.4.1 (2020-05-01)
 
 - Fix "File monitor" page lag
