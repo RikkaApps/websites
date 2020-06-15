@@ -53,6 +53,8 @@ module.exports = {
             buttonText: "Refresh"
           }
         },
+        sidebar: getSidebar('/knowledge/', 'Knowledge base'),
+        nav: getNavbar('/', 'Knowledge base'),
         lastUpdated: 'Last Updated'
       },
       '/zh-hans/': {
@@ -65,6 +67,8 @@ module.exports = {
             buttonText: "刷新"
           }
         },
+        sidebar: getSidebar('/zh-hans/knowledge/', '知识库'),
+        nav: getNavbar('/zh-hans/', '知识库'),
         lastUpdated: '最后更新'
       },
       '/zh-hant/': {
@@ -77,21 +81,43 @@ module.exports = {
             buttonText: "重新整理"
           }
         },
+        sidebar: getSidebar('/zh-hant/knowledge/', '知識庫'),
+        nav: getNavbar('/zh-hant/', '知識庫'),
         lastUpdated: '最後更新'
       }
     },
-    displayAllHeaders: true,
+    displayAllHeaders: false,
     sidebarDepth: 2,
     serviceWorker: {
       updatePopup: true
     },
     search: false,
     docsRepo: 'https://github.com/RikkaApps/websites',
-    docsDir: 'storage_redirect',
+    docsDir: 'www',
     editLinks: false
   },
   'sitemap': {
-    hostname: 'https://sr.rikka.app',
+    hostname: 'https://rikka.app',
     exclude: ['/404.html', '/zh-hans/transfer_china.md', '/zh-hans/use_google_play.md']
   },
+}
+
+function getSidebar(prefix, knowledgeTitle) {
+  var res = {}
+  res[prefix] = [
+    {
+      title: knowledgeTitle,
+      collapsable: false,
+      sidebarDepth: 2,
+      children: [
+        'google_play_purchase'
+      ]
+    }]
+  return res
+}
+
+function getNavbar(prefix, knowledge) {
+  return [
+    { text: knowledge, link: `${prefix}knowledge/google_play_purchase.html` }
+  ]
 }

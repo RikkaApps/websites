@@ -45,5 +45,4 @@ apps:
   primaryAction:
     link: https://play.google.com/store/apps/details?id=moe.haruue.wadb
     text: Download
-footer: Copyright © 2019 RikkaApps
 ---
