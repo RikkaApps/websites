@@ -179,8 +179,6 @@ function getSidebar(prefix, basicTitle, advancedTitle, enhancedModeTitle, compat
         `faq/cant_find_app`,
         `faq/how_to_report_problems`,
         `faq/how_to_document`,
-        `faq/share_helper`,
-        `faq/purchase`,
       ]
     }]
   return res
