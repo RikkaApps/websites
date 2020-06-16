@@ -1,11 +1,9 @@
----
-navbar: false
----
-
 # Contribute translation
 
-The translation of RikkaApps is moving to Weblate, a translation platform that supports self-hosting.
+RikkaApps uses self-hosted Weblate as a translation platform. Currently, we are moving the translation to this platform.
 
-The website is <https://weblate.rikka.app/>.
+1. Go to <https://weblate.rikka.app/>
+2. Log in via GitHub
+3. View all projects <https://weblate.rikka.app/projects/>, translate what you want to translate
 
-Registration is not currently open. If you want to help for translation, send an email to [support@rikka.app](mailto:support@rikka.app) and state the application and language you want to translate.
+> For some nouns that appear in the Android system, you can use this website <https://translations.zhanghai.me/> to search.

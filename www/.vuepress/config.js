@@ -54,7 +54,7 @@ module.exports = {
           }
         },
         sidebar: getSidebar('/knowledge/', 'Knowledge base'),
-        nav: getNavbar('/', 'Knowledge base'),
+        nav: getNavbar('/', 'Knowledge base', 'Contribute translation'),
         lastUpdated: 'Last Updated'
       },
       '/zh-hans/': {
@@ -68,7 +68,7 @@ module.exports = {
           }
         },
         sidebar: getSidebar('/zh-hans/knowledge/', '知识库'),
-        nav: getNavbar('/zh-hans/', '知识库'),
+        nav: getNavbar('/zh-hans/', '知识库', '参与翻译'),
         lastUpdated: '最后更新'
       },
       '/zh-hant/': {
@@ -82,7 +82,7 @@ module.exports = {
           }
         },
         sidebar: getSidebar('/zh-hant/knowledge/', '知識庫'),
-        nav: getNavbar('/zh-hant/', '知識庫'),
+        nav: getNavbar('/zh-hant/', '知識庫', '參與翻譯'),
         lastUpdated: '最後更新'
       }
     },
@@ -98,7 +98,7 @@ module.exports = {
   },
   'sitemap': {
     hostname: 'https://rikka.app',
-    exclude: ['/404.html', '/zh-hans/transfer_china.md', '/zh-hans/use_google_play.md']
+    exclude: ['/404.html']
   },
 }
 
@@ -116,8 +116,9 @@ function getSidebar(prefix, knowledgeTitle) {
   return res
 }
 
-function getNavbar(prefix, knowledge) {
+function getNavbar(prefix, knowledge, translation) {
   return [
-    { text: knowledge, link: `${prefix}knowledge/google_play_purchase.html` }
+    { text: knowledge, link: `${prefix}knowledge/google_play_purchase.md` },
+    { text: translation, link: `${prefix}contribute_translation.md` }
   ]
 }
