@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.5.2 (2020-06-19)
+
+- 不讓放任一個奇怪的錯誤<sup>**〔1〕**</sup>致使整個程式崩潰
+
+<sub><b>〔1〕</b>An error related to Retrofit + Kotlin coroutines, stacktrace is empty</sub>
+
 ## 4.5.0 (2020-06-16)
 
 - 修復在 Android 11 上隔離早於使用者解鎖啟動的應用程式會導致嚴重的問題

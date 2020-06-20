@@ -1,5 +1,11 @@
 # Changelog
 
+## 4.5.2 (2020-06-19)
+
+- Don't let a weird error<sup>**〔1〕**</sup> crash the whole app
+
+<sub><b>〔1〕</b>An error related to Retrofit + Kotlin coroutines, stacktrace is empty</sub>
+
 ## 4.5.0 (2020-06-16)
 
 - Fix the problem that on Android 11, isolate app which starts earlier than user unlock will cause serious problem
