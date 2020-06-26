@@ -16,6 +16,10 @@ For MIUI 11 and above, you must grant permission to user apps in Shizuku. This i
 
 You need to disable "Permission monitoring" in "Developer options".
 
+### 3. Flyme (Meizu) 💩
+
+You need to disable "Flyme payment protection" in "Developer options".
+
 ## Start by wireless debugging
 
 Android 11 adds a new wireless debugging function, which is located in "Developer Settings"-"Wireless debugging". Shizuku v4.0.0 and above supports this feature.
@@ -28,6 +32,8 @@ Android 11 adds a new wireless debugging function, which is located in "Develope
 :::
 
 ### 1. Pairing (only need to be done once)
+
+> Starting from v4.1.0, port is automatically detected.
 
 1. Enable "Developer options" (there are many tutorials on the web)
 2. Enter "Wireless debugging"
@@ -143,7 +149,3 @@ Enable "Allow ADB debugging options in 'Charge only' mode" in "Developer Options
 #### 5.2. Sony devices
 
 Don't click the dialog shows after connecting the USB.
-
-#### 5.3. Meizu devices
-
-Disable "Flyme payment protection" in "Developer Options".
