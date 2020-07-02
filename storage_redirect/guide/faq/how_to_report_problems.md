@@ -22,4 +22,5 @@ Note that to capture meaningful logs, **you need to reproduce the problem after 
 
 If you cannot enter the system, you need to grab the log through adb (requires to connect to a computer). You need to search for how to use adb by yourself.
 
-Connect USB during the boot process, and execute `adb logcat > 1.txt` immediately after adb is connect.
+Connect USB during the boot process, and execute
+ `adb logcat > 1.txt` immediately after adb is connect.
