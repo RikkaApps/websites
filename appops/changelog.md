@@ -4,11 +4,11 @@
 
 Rewrite (partly) the app with latest technologies. The full rewrite with more improvements and new features will come in the near future.
 
-> If you do want to use root mode, you can still [download old version](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk).
-
 ### Root mode is removed
 
 Pure root mode is removed from this version. It could be a pain for some users, but overall it is an improvement. We hope you to read the reasons below first.
+
+> If you do want to use root mode, you can still [download old version](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk).
 
 * **Some feature is impossible under root mode**
 
