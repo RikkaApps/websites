@@ -4,6 +4,34 @@
 
 Rewrite (partly) the app with latest technologies. The full rewrite with more improvements and new features will come in the near future.
 
+> If you do want to use root mode, you can still [download old version](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk).
+
+### Root mode is removed
+
+Pure root mode is removed from this version. It could be a pain for some users, but overall it is an improvement. We hope you to read the reasons below first.
+
+* **Some feature is impossible under root mode**
+
+  * Clipboard monitor & Usage history record (planned) (requires Android 10+ Shizuku over root)
+    
+    It's impossible to do things related to binder in root shell.
+
+  * Update runtime permission when modifying appops (planned) (no Android version requirement)
+
+    Update permission flags may be required. Even if it's possible under root mode, reliability cannot be guaranteed.
+
+* **Root (interacting with su) is inefficient and inelegant**
+
+  Shizuku provides a much more elegant and high performance solution. You can read [the document of Shizuku](https://shizuku.rikka.app/introduction.html) to know more.
+
+* **Root (interacting with su) is sometimes unreliable**
+
+  Using root is app interacting with `su`. But behind it there is also the interaction between `su` and `su daemon`. For situations involving authorization, `su daemon` need to communicate with `su manager app` (this is the most unreliable part).
+
+  Every few days, I will receive reports about "root authorization dialog not showing" and "weird error on some Samsung devices". I'm so tired of this.
+
+### Other changes
+
 - New feature: Clipboard monitor (Requires Android 10+ and Shizuku started with root)<sup>**〔1〕**</sup>
 - Works on Android 10 & 11
 - UI refresh
@@ -12,15 +40,13 @@ Rewrite (partly) the app with latest technologies. The full rewrite with more im
 - For free version, remove Google Ads (Promote our apps instead)
 - For crash report, use AppCenter to replace Firebase Crashlytics (Also, crash report can be disabled)
 - Target API 30
-- Drop support for pure root mode<sup>**〔3〕**</sup> (Shizuku is a more elegant solution, of course it also works perfectly for root, [learn more](https://shizuku.rikka.app/introduction.html))
 - Drop support for system plugin mode
 - Drop support for Android 6.0
 - Drop support for ask mode from old LineageOS based ROMs<sup>**〔4〕**</sup>
 
 <sub><b>〔1〕</b>Exclude apps from the monitor will come in the next version as a paid feature</sub>
 <br><sub><b>〔2〕</b>Previously, the name of "the permission" is used in priority. But as Android changes some permission name across versions, the name is more and more inaccurate.</sub>
-<br><sub><b>〔3〕</b>Using pure root (interact with "su") is basically read and write texts. It is super inelegant and sometimes unreliable. **You could ask any root app developer, no one likes it**. More importantly, to implement the new features, using pure root is impossible.</sub>
-<br><sub><b>〔4〕</b>Due to user reports, some old Samsung devices "appear to have this feature", but change to "ask" will cause the system unable to boot.</sub>
+<br><sub><b>〔3〕</b>Due to user reports, some old Samsung devices "appear to have this feature", but change to "ask" will cause the system unable to boot.</sub>
 
 ## 3.1.1 (2019-08-03)
 

@@ -4,6 +4,33 @@
 
 用最新技術（部分）重寫。具有更多改進和新功能的全面重寫將在不久的將來出現。
 
+### Root 模式被移除
+
+純 root 模式從這個版本起被移除。對於某些使用者而言，這可能會很痛苦，但總體而言，這是一種進步。我們希望你可以閱讀下面的原因。
+
+> 如果你確實想用 root 模式，你仍舊可以[下載舊版本](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk)。
+
+* **root 模式下不可能實現一些功能**
+
+  * 剪貼簿監視 & 使用歷史記錄（計劃中）（需要 Android 10+）
+    
+    在 root shell 中做與 binder 有關的工作是不可能的。
+
+  * 在修改 appops 時同時修改 runtime permission（計劃中）（沒有 Android 版本要求）
+
+    還可能需要更新 permission flags，即使 root 模式下可實現也無法保證可靠性。
+
+* **Root（與 su 互動）是低效率且不優雅的**
+
+  Shizuku 提供一個優雅許多且高效能的方案。你可以閱讀 [來自 Shizuku 的檔案](https://shizuku.rikka.app/introduction.html) 來瞭解更多。
+
+* **Root（與 su 互動）有時不可靠**
+
+  使用 root 是 app 與 `su` 互動。但是，背後是 `su` 與 `su daemon` 間的互動。對於涉及授權的情況，`su daemon` 需要與 `su manager app` 互動（這是最不可靠的部分）。
+
+  每隔幾天，我都會收到收到有關“root 授權對話方塊不顯示”和“某些Samsung裝置上的奇怪錯誤”的報告。正常人都會對此感到厭倦。
+
+### 其他變化
 - 新功能：剪貼簿監視（需要 Android 10 以上和通過 root 啟動的 Shizuku）<sup>**〔1〕**</sup>
 - 在 Android 10 及 11 上工作
 - 使用者介面翻新
@@ -12,15 +39,13 @@
 - 對於免費版本，移除 Google Ads（轉而推薦我們的其他應用程式）
 - 對於崩潰報告，使用 AppCenter 替代 Firebase Crashlytics（此外，崩潰報告可關閉）
 - 目標 API 30
-- 不再支援純 root 模式<sup>**〔3〕**</sup>（Shizuku 是一個優雅許多的解決方案，它在使用 root 時當然也能完美地工作，[瞭解更多](https://shizuku.rikka.app/introduction.html)）
 - 不再支援 system plugin 模式
 - 不再支援 Android 6.0
 - 不再支援古老的以 LineageOS 為基礎的 ROM 中的詢問模式<sup>**〔4〕**</sup>
 
 <sub><b>〔1〕</b>從監視中排除應用程式的功能將在下個版本中作為付費功能加入</sub>
 <br><sub><b>〔2〕</b>之前，權限的名稱被優先使用。但是隨著 Android 在每個版本間不斷改變權限名稱，權限名稱越來越不準確。</sub>
-<br><sub><b>〔3〕</b>使用純 root（與 su 互動）基本上是讀寫文字。這非常不優雅且又是不可靠。**你可以詢問任何一個 root 程式開發者，沒人喜歡這個。** 更重要的是，用純 root 實現新功能是不可能的。</sub>
-<br><sub><b>〔4〕</b>根據使用者報告，一些老舊的三星裝置表現得有這個功能，但是改為「詢問」將會導致系統無法啟動。</sub>
+<br><sub><b>〔3〕</b>根據使用者報告，一些老舊的三星裝置表現得有這個功能，但是改為「詢問」將會導致系統無法啟動。</sub>
 
 ## 3.1.1 (2019-08-03)
 
