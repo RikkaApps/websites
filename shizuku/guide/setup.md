@@ -1,4 +1,4 @@
-# How to start Shizuku?
+AC v# How to start Shizuku?
 
 ## Start with root
 
