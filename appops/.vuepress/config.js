@@ -95,12 +95,29 @@ module.exports = {
     docsDir: 'appops',
     editLinks: true
   },
-  plugins: {
-    'sitemap': {
-      hostname: 'https://appops.rikka.app',
-      exclude: ['/404.html']
-    },
-  }
+  plugins: [
+    [
+      'sitemap',
+      {
+        hostname: 'https://appops.rikka.app',
+        exclude: ['/404.html']
+      }
+    ],
+    /*[
+      'redirect',
+      {
+        locales: true,
+      }
+    ],*/
+    [
+      'clean-urls',
+      {
+        normalSuffix: '/',
+        indexSuffix: '/',
+        notFoundPath: '/404.html'
+      }
+    ]
+  ]
 }
 
 function getSidebar(prefix, basicTitle, workingModeTitle, faqTitle, technicalDetailsTitle) {
