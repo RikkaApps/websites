@@ -6,9 +6,15 @@
 
 ### Root 模式被移除
 
-純 root 模式從這個版本起被移除。對於某些使用者而言，這可能會很痛苦，但總體而言，這是一種進步。我們希望你可以閱讀下面的原因。
+純 root 模式從這個版本起被移除。對於某些使用者而言，這可能會很痛苦，但總體而言，這是一種進步。我們希望你可以閱讀下面的原因。如果你確實想用 root 模式，你仍舊可以[下載舊版本](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk)。
 
-> 如果你確實想用 root 模式，你仍舊可以[下載舊版本](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk)。
+對於無法接受安裝其他程式（Shizuku）的人，首先 Shizuku 是**免費且開源的，它旨在服務多個程式**。Shizuku 有很小的 apk（小於 2 MB）和最小化的效能影響。
+
+如果我們選擇在 App Ops 中做 Shizuku 做的事情（類似「內建」），是的你不用「安裝另一個應用程式」了。但是，只要有另一個程式也這麼做（不止有 App Ops 使用 Shizuku），將會同時有多個「Shizuku」在裝置上執行。此外，請求 root 應用程式越多，意味著遇到與 root 相關的怪異問題的可能性就越大。
+
+無論如何，如果你仍然認為安裝一個類似框架的應用是無法接受的，那為什麼 Play 服務或是其他你的系統中的框架程式就可以接受呢？
+
+其他原因：
 
 * **root 模式下不可能實現一些功能**
 

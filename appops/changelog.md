@@ -6,9 +6,15 @@ Rewrite (partly) the app with latest technologies. The full rewrite with more im
 
 ### Root mode is removed
 
-Pure root mode is removed from this version. It could be a pain for some users, but overall it is an improvement. We hope you to read the reasons below first.
+Pure root mode is removed from this version. It could be a pain for some users, but overall it is an improvement. We hope you to read the reasons below first. If you do want to use root mode, you can still [download old version](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk).
 
-> If you do want to use root mode, you can still [download old version](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk).
+For people who cannot accept to install another app (Shizuku), first of all, **Shizuku is free and open-sourced, it's designed to serve multiple apps**. Shizuku has small apk size (less than 2 MB) and minimal performance impact. 
+
+If we choose to do what Shizuku in App Ops (like "bundle-in"), yeah you don't need to "install another app". But if there is another app doing like this (not only App Ops uses Shizuku), there will be multiple "Shizuku" running on your device. In addition, the more apps requesting root means the more possibilities encounter weird problems related to root.
+
+Anyway, if you still thought to install a framework-like app is unacceptable, why you can accept Play service or any other framework apps in your system?
+
+Other reasons:
 
 * **Some feature is impossible under root mode**
 
