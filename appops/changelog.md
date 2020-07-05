@@ -1,18 +1,16 @@
 # Changelog
 
-## 4.0.0 (2020-07-04)
+## Root mode has been removed from v4.0.0
 
-Rewrite (partly) the app with latest technologies. The full rewrite with more improvements and new features will come in the near future.
+Root mode has been removed from v4.0.0. It could be a pain for some users, but overall it is an improvement. We hope you to read the reasons below first. If you do want to use root mode, you can still [download the old version](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk).
 
-### Root mode is removed
+Except users have to install Shizuku, **for both the user and the developer, everything is better**.
 
-Pure root mode is removed from this version. It could be a pain for some users, but overall it is an improvement. We hope you to read the reasons below first. If you do want to use root mode, you can still [download old version](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk).
-
-For people who cannot accept to install another app (Shizuku), first of all, **Shizuku is free and open-sourced, it's designed to serve multiple apps**. Shizuku has small apk size (less than 2 MB) and minimal performance impact. 
+**Shizuku is a free and [open-sourced](https://github.com/RikkaApps/Shizuku) framework-like app. It's designed to serve multiple apps which requires root or adb. With minimal performance impact, Shizuku significantly improve the performance and reliability of apps using Shizuku. Also, Shizuku provides great convenience for developers.**
 
 If we choose to do what Shizuku in App Ops (like "bundle-in"), yeah you don't need to "install another app". But if there is another app doing like this (not only App Ops uses Shizuku), there will be multiple "Shizuku" running on your device. In addition, the more apps requesting root means the more possibilities encounter weird problems related to root.
 
-Anyway, if you still thought to install a framework-like app is unacceptable, why you can accept Play service or any other framework apps in your system?
+Anyway, if you still thought to install a framework-like app is unacceptable, **why you can accept Play service or any other framework apps in your system?**
 
 Other reasons:
 
@@ -36,7 +34,9 @@ Other reasons:
 
   Every few days, I will receive reports about "root authorization dialog not showing" and "weird error on some Samsung devices". I'm so tired of this.
 
-### Other changes
+## 4.0.0 (2020-07-04)
+
+Rewrite (partly) the app with latest technologies. The full rewrite with more improvements and new features will come in the near future.
 
 - New feature: Clipboard monitor (Requires Android 10+ and Shizuku started with root)<sup>**〔1〕**</sup>
 - Works on Android 10 & 11
@@ -48,7 +48,7 @@ Other reasons:
 - Target API 30
 - Drop support for system plugin mode
 - Drop support for Android 6.0
-- Drop support for ask mode from old LineageOS based ROMs<sup>**〔4〕**</sup>
+- Drop support for ask mode from old LineageOS based ROMs<sup>**〔3〕**</sup>
 
 <sub><b>〔1〕</b>Exclude apps from the monitor will come in the next version as a paid feature</sub>
 <br><sub><b>〔2〕</b>Previously, the name of "the permission" is used in priority. But as Android changes some permission name across versions, the name is more and more inaccurate.</sub>
