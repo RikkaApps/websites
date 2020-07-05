@@ -8,7 +8,7 @@ Except users have to install Shizuku, **for both the user and the developer, eve
 
 **Shizuku is a free and [open-sourced](https://github.com/RikkaApps/Shizuku) framework-like app. It's designed to serve multiple apps which requires root or adb. With minimal performance impact, Shizuku significantly improve the performance and reliability of apps using Shizuku. Also, Shizuku provides great convenience for developers.**
 
-If we choose to do what Shizuku in App Ops (like "bundle-in"), yeah you don't need to "install another app". But if there is another app doing like this (not only App Ops uses Shizuku), there will be multiple "Shizuku" running on your device. In addition, the more apps requesting root means the more possibilities encounter weird problems related to root.
+If we choose to do what Shizuku in App Ops (like "bundle-in"), yeah you don't need to "install another app". But only if there is another app doing like this (not only App Ops uses Shizuku), **there will be multiple "Shizuku" running on your device (is this what you like?)**. In addition, the more apps requesting root means the more possibilities encounter weird problems related to root.
 
 Anyway, if you still thought to install a framework-like app is unacceptable, **why you can accept Play service or any other framework apps in your system?**
 
@@ -33,6 +33,10 @@ Other reasons:
   Using root is app interacting with `su`. But behind it there is also the interaction between `su` and `su daemon`. For situations involving authorization, `su daemon` need to communicate with `su manager app` (this is the most unreliable part).
 
   Every few days, I will receive reports about "root authorization dialog not showing" and "weird error on some Samsung devices". I'm so tired of this.
+
+## 4.0.1 (2020-07-05)
+
+- Fix the problem that in some situations, the monitor service is started abnormally
 
 ## 4.0.0 (2020-07-04)
 
