@@ -1,4 +1,4 @@
-# Shizuku mode (Privileged mode)
+# Shizuku mode
 
 ## Requirements and Features
 
@@ -11,8 +11,6 @@ If you use adb, you need to use adb to start Shizuku every time your device boot
 
 ## Background
 
-Shizuku mode is first working mode without root of App Ops. At the same time, this is one of the reasons for creating Shizuku.
-
-The advantage of using Shizuku is that it only needs one adb command to start and Shizuku itself does not make changes to the system.
+Shizuku is a free and [open-sourced](https://github.com/RikkaApps/Shizuku) framework-like app. It's designed to serve multiple apps which requires root or adb. With minimal performance impact, Shizuku significantly improve the performance and reliability of apps using Shizuku. Also, Shizuku provides great convenience for developers.
 
 > For information about Shizuku and the reason of making an application separately, please check [shizuku.rikka.app](https://shizuku.rikka.app/).

@@ -24,8 +24,6 @@ The core function of App Ops app is to modify the system "appops" settings to im
 App Ops actually modifies "application operation" rather than "permission", but we call it "permissions" to reduce the difficulty. App Ops app **can't control "permissions" directly**, please don't misunderstand.
 
 ::: tip
-**Tip**
-
 We still call it "permission" in the rest of the help
 :::
 

@@ -136,11 +136,8 @@ function getSidebar(prefix, basicTitle, workingModeTitle, faqTitle, technicalDet
       collapsable: false,
       sidebarDepth: 1,
       children: [
-        'working_mode/introduction',
         'working_mode/shizuku',
         'working_mode/dpm',
-        'working_mode/root',
-        'working_mode/plugin',
       ]
     },
     {
@@ -167,8 +164,8 @@ function getSidebar(prefix, basicTitle, workingModeTitle, faqTitle, technicalDet
 function getNavbar(prefix, guide, download, changelog, allRikkaApps) {
   return [
     { text: guide, link: `${prefix}guide/` },
-    { text: download, link: `${prefix}download.html` },
-    { text: changelog, link: `${prefix}changelog.html` },
+    { text: download, link: `${prefix}download/` },
+    { text: changelog, link: `${prefix}changelog/` },
     { text: allRikkaApps, link: `https://rikka.app${prefix}` },
   ]
 }

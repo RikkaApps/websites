@@ -1,4 +1,4 @@
-# Shizuku 模式（特权模式）
+# Shizuku 模式
 
 ## 需求及特性
 
@@ -11,8 +11,6 @@
 
 ## 背景
 
-Shizuku 模式是 App Ops 的第一个无需 root 的工作模式。同时这也是创造 Shizuku 的原因的之一。
-
-使用 Shizuku 的优势在于，只需要一条 adb 指令即可启动和 Shizuku 本身不会对系统产生改动。
+Shizuku 是一个免费且[开源](https://github.com/RikkaApps/Shizuku)的类似于框架的应用。它旨在服务多个需要 root 或 adb 的应用。Shizuku 在对性能的影响最小的情况下，极大地提高了使用 Shizuku 的应用的性能和可靠性。 此外，Shizuku 还为开发者提供了极大的便利。
 
 > 有关 Shizuku 的信息，以及为什么要独立出一个应用，请查看 [shizuku.rikka.app](https://shizuku.rikka.app/zh-hans)。
