@@ -20,6 +20,10 @@ You need to disable "Permission monitoring" in "Developer options".
 
 You need to disable "Flyme payment protection" in "Developer options".
 
+### 4. EMUI (Huawei) 💩
+
+You need to enable "Allow ADB debugging options in 'Charge only' mode" in "Developer options".
+
 ## Start by wireless debugging
 
 Android 11 adds a new wireless debugging function, which is located in "Developer Settings"-"Wireless debugging". Shizuku v4.0.0 and above supports this feature.
@@ -142,10 +146,6 @@ If that doesn't work, you can try to open the network adb (using the command `ad
 
 In addition, if your system shows a dialog like "Allow accessing files" after connecting USB, please just ignore it, because the USB usage mode will change from that.
 
-#### 5.1. Huawei devices
-
-Enable "Allow ADB debugging options in 'Charge only' mode" in "Developer Options".
-
-#### 5.2. Sony devices
+#### Sony devices
 
 Don't click the dialog shows after connecting the USB.
