@@ -2,37 +2,33 @@
 
 ## Root mode has been removed from v4.0.0
 
-Root mode has been removed from v4.0.0. It could be a pain for some users, but overall it is an improvement. We hope you to read the reasons below first. If you do want to use root mode, you can still [download the old version](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk).
+Root mode has been removed from v4.0.0. It could be a pain for some users, but overall it is an improvement. We hope you to read the reasons below first. If you do want to use root mode, you can still [download the old version (v3.1.1)](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk).
 
-Except users have to install Shizuku, **for both the user and the developer, everything is better**.
+### Why root mode need to be removed?
 
-**Shizuku is a free and [open-sourced](https://github.com/RikkaApps/Shizuku) framework-like app. It's designed to serve multiple apps which requires root or adb. With minimal performance impact, Shizuku significantly improve the performance and reliability of apps using Shizuku. Also, Shizuku provides great convenience for developers.**
+First, the old root mode implementation assumes some inner implementation of the system, if the system changes (not limited to major version upgrades), there will be problems. You can see version 3.1.1, the last version with root, dose not work on Android 11 and some Android 10.
 
-If we choose to do what Shizuku in App Ops (like "bundle-in"), yeah you don't need to "install another app". But only if there is another app doing like this (not only App Ops uses Shizuku), **there will be multiple "Shizuku" running on your device (is this what you like?)**. In addition, the more apps requesting root means the more possibilities encounter weird problems related to root.
+Second, except users have to install Shizuku, Shizuku mode wins root mode in any way (see the description below).
 
-Anyway, if you still thought to install a framework-like app is unacceptable, **why you can accept Play service or any other framework apps in your system?**
+At last, some planned new feature and the planned changes for the core functionality (for Android 9+) is also is almost impossible under root mode. Even if we continue to keep root mode, the experience of root mode is already becoming much and much poor, root mode still need to be removed one day.
 
-Other reasons:
+### What is Shizuku?
 
-* **Some feature is impossible under root mode**
+Shizuku is a free and open-sourced ([GitHub](https://github.com/RikkaApps/Shizuku)) app starting from 2017. It's designed to serve multiple apps which requires root or adb. Not only App Ops, but also some apps from other developers are use Shizuku (many of them are not listed in Shizuku's website).
 
-  * Clipboard monitor & Usage history record (planned) (requires Android 10+ Shizuku over root)
-    
-    It's impossible to do things related to binder in root shell.
+### Why Shizuku is better than pure root?
 
-  * Update runtime permission when modifying appops (planned) (no Android version requirement)
+Using Shizuku is much more faster (you can feel this) and consume less resources than using pure root.
 
-    Update permission flags may be required. Even if it's possible under root mode, reliability cannot be guaranteed.
+If you are an advanced user and a developer, you can read <https://shizuku.rikka.app/introduction.html#shizuku-vs-old-school-method>.
 
-* **Root (interacting with su) is inefficient and inelegant**
+### Why not make Shizuku to be built-in?
 
-  Shizuku provides a much more elegant and high performance solution. You can read [the document of Shizuku](https://shizuku.rikka.app/introduction.html) to know more.
+If every app uses Shizuku doing this, there will be multiple "Shizuku" running on your device. This is obviously not a good idea.
 
-* **Root (interacting with su) is sometimes unreliable**
+### Does Shizuku consumes battery?
 
-  Using root is app interacting with `su`. But behind it there is also the interaction between `su` and `su daemon`. For situations involving authorization, `su daemon` need to communicate with `su manager app` (this is the most unreliable part).
-
-  Every few days, I will receive reports about "root authorization dialog not showing" and "weird error on some Samsung devices". I'm so tired of this.
+No, the CPU is used only if other apps use APIs via Shizuku. This means that the power consumption is so negligible.
 
 ## 4.0.1 (2020-07-05)
 

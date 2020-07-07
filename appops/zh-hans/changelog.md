@@ -2,37 +2,33 @@
 
 ## Root 模式从 v4.0.0 被移除
 
-Root 模式从 v4.0.0 起被移除。对于某些用户而言，这可能会很痛苦，但总体而言，这是一种进步。我们希望你可以阅读下面的原因。如果你确实想用 root 模式，你仍旧可以[下载旧版本](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk)。
+Root 模式从 v4.0.0 起被移除。对于某些用户而言，这可能会很痛苦，但总体而言，这是一种进步。我们希望你可以阅读下面的原因。如果你确实想用 root 模式，你仍旧可以[下载旧版本（v3.1.1）](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk)。
 
-除了用户必须安装 Shizuku，**对于用户和开发者而言，一切都更好**。
+### 为什么需要删除 root 模式？
 
-**Shizuku 是一个免费且[开源](https://github.com/RikkaApps/Shizuku)的类似于框架的应用。它旨在服务多个需要 root 或 adb 的应用。Shizuku 在对性能的影响最小的情况下，极大地提高了使用 Shizuku 的应用的性能和可靠性。 此外，Shizuku 还为开发者提供了极大的便利。**
+首先，旧的 root 模式实现假定系统的某些内部实现，如果系统发生更改（不限于大版本升级），则会出现问题。你会发现 v3.1.1（最后一个带有 root 的版本）无法在 Android 11 和某些 Android 10 上运行。
 
-如果我们选择在 App Ops 中做 Shizuku 做的事情（类似“内置”），是的你不用“安装另一个应用”了。但是，只要有另一个应用也这么做（不止有 App Ops 使用 Shizuku），**将会有多个“Shizuku”在设备上运行（这真的是你想要的吗？）**。此外，请求 root 应用越多，意味着遇到与 root 相关的怪异问题的可能性就越大。
+其次，除了用户必须安装 Shizuku 以外，Shizuku 模式在任何方面都胜过 root 模式（请参阅以下说明）。
 
-退一万步讲，如果你仍然认为安装一个类似框架的应用是无法接受的，**那为什么 Play 服务或是其他你的系统中的框架应用就可以接受呢？**
+最后，在 root 模式下，某些计划中的新功能 和 核心功能的更改（对于 Android 9+ 是必要的）是几乎不可能实现的。即使我们继续保留 root 模式，root 模式的体验已经变得越来越差，总有一天也需要被删除。
 
-其他原因：
+### 什么是 Shizuku？
 
-* **root 模式下不可能实现一些功能**
+Shizuku 从 2017 年开始的一个免费且开源 （[GitHub](https://github.com/RikkaApps/Shizuku)）的应用。它旨在服务多个需要 root 或 adb 的应用。不仅 App Ops，一些其他开发者的应用也在使用 Shizuku（其中许多未在 Shizuku 的网站上列出）。
 
-  * 剪贴板监视 & 使用历史记录（计划中）（需要 Android 10+）
-    
-    在 root shell 中做与 binder 有关的工作是不可能的。
+### 为什么 Shizuku 比纯 root 更好？
 
-  * 在修改 appops 时同时修改 runtime permission（计划中）（没有 Android 版本要求）
+与使用纯 root 相比，使用 Shizuku 快非常多（你可以感受到这一点），消耗的资源更少。
 
-    还可能需要更新 permission flags，即使 root 模式下可实现也无法保证可靠性。
+如果你是高级用户和开发人员，则可以阅读 <https://shizuku.rikka.app/introduction.html#shizuku-vs-old-school-method>。
 
-* **Root（与 su 交互）是低效率且不优雅的**
+### 为什么不内置 Shizuku？
 
-  Shizuku 提供一个优雅许多且高性能的方案。你可以阅读 [来自 Shizuku 的文档](https://shizuku.rikka.app/introduction.html) 来了解更多。
+如果每个使用 Shizuku 的应用都如此，则你的设备上将运行多个“Shizuku”。这显然不是一个好主意。
 
-* **Root（与 su 交互）有时不可靠**
+### Shizuku 会消耗电池吗？
 
-  使用 root 是 app 与 `su` 交互。但是，背后是 `su` 与 `su daemon` 间的交互。对于涉及授权的情况，`su daemon` 需要与 `su manager app` 交互（这是最不可靠的部分）。
-
-  每隔几天，我都会收到收到有关“root 授权对话框不显示”和“某些Samsung设备上的奇怪错误”的报告。正常人都会对此感到厌倦。
+不，仅当其他应用通过 Shizuku 使用 API ​​时才使用 CPU。这意味着功耗可忽略不计。
 
 ## 4.0.1 (2020-07-05)
 
