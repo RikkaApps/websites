@@ -33,19 +33,19 @@ The setup process requires a computer to be use adb, but only needs to be set on
 ### 1. Install and set up the Device admin app
 
 #### IceBox
-  
+
 1. Download from [Google Play](https://play.google.com/store/apps/details?id=com.catchingnow.icebox) or [Coolapk](https://www.coolapk.com/apk/com.catchingnow.icebox)
 2. See [Help](https://iceboxdoc.catchingnow.com/Device%20Owner%20(Non%20Root)%20Setup) to set up Device admin mode for it
 
 #### 小黑屋 (Simplified Chinese only)
-  
+
 1. Download from [Google Play](https://play.google.com/store/apps/details?id=web1n.stopapp) or [Coolapk](https://www.coolapk.com/apk/web1n.stopapp )
 2. See [Help](https://github.com/web1n/Stopapp-Docs/blob/master/Device%20Owner%20%EF%BC%88%E5%85%8D%20root%EF%BC%89%E6%A8%A1%E5%BC%8F%E8%AE%BE%E7%BD%AE.md) (Simplified Chinese only) to set up Device admin mode for it
 
 #### Island
 
-1. Download from [Google Play](https://play.google.com/store/apps/details?id=https://island.oasisfeng.com/setup) or [Coolapk](https://www.coolapk.com/apk/https://island.oasisfeng.com/setup)
-2. See [Help](https://island.oasisfeng.com/setup) to set up Device admin mode for it (Island call it "God mode")
+1. Download from [Google Play](https://play.google.com/store/apps/details?id=com.oasisfeng.island) or [Coolapk](https://www.coolapk.com/apk/com.oasisfeng.island)
+2. See [Help](https://island.oasisfeng.com/setup.html) to set up Device admin mode for it (Island call it "God mode")
 
 ### 2. Granting permissions
 

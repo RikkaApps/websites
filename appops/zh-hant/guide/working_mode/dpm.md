@@ -33,19 +33,19 @@ Samsung 裝置在使用裝置管理員後可能造成無法挽回的結果（參
 ### 1. 安裝及設定裝置管理員程式
 
 #### 冰箱 IceBox
-  
+
 1. 下載 [Google Play](https://play.google.com/store/apps/details?id=com.catchingnow.icebox) 或 [Coolapk](https://www.coolapk.com/apk/com.catchingnow.icebox)
 2. 參閱 [幫助](https://iceboxdoc.catchingnow.com/Device%20Owner%20%EF%BC%88%E5%85%8D%20root%EF%BC%89%E6%A8%A1%E5%BC%8F%E8%AE%BE%E7%BD%AE) 為其設定裝置管理員模式
 
 #### 小黑屋
-  
+
 1. 下載 [Google Play](https://play.google.com/store/apps/details?id=web1n.stopapp) 或 [Coolapk](https://www.coolapk.com/apk/web1n.stopapp)
 2. 參閱 [幫助](https://github.com/web1n/Stopapp-Docs/blob/master/Device%20Owner%20%EF%BC%88%E5%85%8D%20root%EF%BC%89%E6%A8%A1%E5%BC%8F%E8%AE%BE%E7%BD%AE.md)（僅提供簡體中文） 為其設定裝置管理員模式
 
 #### Island
 
-1. 下載 [Google Play](https://play.google.com/store/apps/details?id=https://island.oasisfeng.com/setup) 或 [Coolapk](https://www.coolapk.com/apk/https://island.oasisfeng.com/setup)
-2. 參閱 [幫助](https://island.oasisfeng.com/setup) 為其設定裝置管理員模式（Island 稱其為「上帝模式」）
+1. 下載 [Google Play](https://play.google.com/store/apps/details?id=com.oasisfeng.island) 或 [Coolapk](https://www.coolapk.com/apk/com.oasisfeng.island)
+2. 參閱 [幫助](https://island.oasisfeng.com/setup.html) 為其設定裝置管理員模式（Island 稱其為「上帝模式」）
 
 ### 2. 授予權限
 
