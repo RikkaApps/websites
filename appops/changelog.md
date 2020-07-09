@@ -1,6 +1,6 @@
 # Changelog
 
-## Root mode has been removed from v4.0.0
+::: details Root mode has been removed from v4.0.0 (<b>tap to view why we have to do this</b>)
 
 Root mode has been removed from v4.0.0. It could be a pain for some users, but overall it is an improvement. We hope you to read the reasons below first. If you do want to use root mode, you can still [download the old version (v3.1.1)](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk).
 
@@ -14,7 +14,7 @@ At last, some planned new feature and the planned changes for the core functiona
 
 ### What is Shizuku?
 
-Shizuku is a free and open-sourced ([GitHub](https://github.com/RikkaApps/Shizuku)) app starting from 2017. It's designed to serve multiple apps which requires root or adb. Not only App Ops, but also some apps from other developers are use Shizuku (many of them are not listed in Shizuku's website).
+Shizuku is a free and open-sourced ([GitHub](https://github.com/RikkaApps/Shizuku)) app starting from 2017. It's designed to serve multiple apps which requires root or adb. Not only App Ops, but also some apps from other developers are using Shizuku (many of them are not listed in Shizuku's website).
 
 ### Why Shizuku is better than pure root?
 
@@ -29,6 +29,14 @@ If every app uses Shizuku doing this, there will be multiple "Shizuku" running o
 ### Does Shizuku consumes battery?
 
 No, the CPU is used only if other apps use APIs via Shizuku. This means that the power consumption is so negligible.
+
+:::
+
+## 4.1.0 (2020-07-09)
+
+- Clipboard monitor: add "Window position" and "Excluded apps" option
+- Fix the problem that when the main process is dead, "New app behavior" will stop working (even if the main process is started again)
+- Fix the problem for permission view, ui is not refreshed correctly
 
 ## 4.0.1 (2020-07-05)
 
@@ -50,7 +58,7 @@ Rewrite (partly) the app with latest technologies. The full rewrite with more im
 - Drop support for Android 6.0
 - Drop support for ask mode from old LineageOS based ROMs<sup>**〔3〕**</sup>
 
-<sub><b>〔1〕</b>Exclude apps from the monitor will come in the next version as a paid feature</sub>
+<sub><b>〔1〕</b>Exclude apps from the monitor will come in the next version</sub>
 <br><sub><b>〔2〕</b>Previously, the name of "the permission" is used in priority. But as Android changes some permission name across versions, the name is more and more inaccurate.</sub>
 <br><sub><b>〔3〕</b>Due to user reports, some old Samsung devices "appear to have this feature", but change to "ask" will cause the system unable to boot.</sub>
 
