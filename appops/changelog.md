@@ -35,7 +35,7 @@ No, the CPU is used only if other apps use APIs via Shizuku. This means that the
 ## 4.1.0 (2020-07-09)
 
 - Clipboard monitor: add "Window position" and "Excluded apps" option
-- Fix the problem that when the main process is dead, "New app behavior" will stop working (even if the main process is started again)
+- Fix the problem that once the main process is dead, "New app behavior" will stop working
 - Fix the problem for permission view, ui is not refreshed correctly
 
 ## 4.0.1 (2020-07-05)
