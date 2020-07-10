@@ -32,6 +32,14 @@ No, the CPU is used only if other apps use APIs via Shizuku. This means that the
 
 :::
 
+## 4.1.1 (2020-07-10)
+
+- Clipboard monitor: temporary access time is now optionable
+- Clipboard monitor: fix a UI issue of "Excluded apps"
+- Fix the problem that on Android 10+, the backup created after v4.0.0 may be broken
+- Correctly report the error from DPM mode
+- Temporary not to u resource optimization feature from AAPT2, maybe this could solve the problem of random settings crash happens on some users
+
 ## 4.1.0 (2020-07-09)
 
 - Clipboard monitor: add "Window position" and "Excluded apps" option
