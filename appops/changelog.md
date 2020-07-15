@@ -2,15 +2,15 @@
 
 ::: details Root mode has been removed from v4.0.0 (<b>tap to view why we have to do this</b>)
 
-Root mode has been removed from v4.0.0. It could be a pain for some users, but overall it is an improvement. We hope you to read the reasons below first. If you do want to use root mode, you can still [download the old version (v3.1.1)](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk).
-
-### Why root mode need to be removed?
+### Why root mode must be removed?
 
 First, the old root mode implementation assumes some inner implementation of the system, if the system changes (not limited to major version upgrades), there will be problems. You can see version 3.1.1, the last version with root, dose not work on Android 11 and some Android 10.
 
-Second, except users have to install Shizuku, Shizuku mode wins root mode in any way (see the description below).
+In addition, the problem of core functionality (appear on Android 10+) that planned to be solved in v4.3.0 is also almost impossible to achieve through the old root implementation (see the next part below).
 
-At last, some planned new feature and the planned changes for the core functionality (for Android 9+) is also is almost impossible under root mode. Even if we continue to keep root mode, the experience of root mode is already becoming much and much poor, root mode still need to be removed one day.
+Last, except users have to install Shizuku, Shizuku mode wins root mode in any way (see the description below).
+
+If we continue to keep root mode, the experience of root mode is already becoming much and much poor (broken core functionality & lacks on new features), root mode still need to be removed one day.
 
 ### What is Shizuku?
 
@@ -30,7 +30,41 @@ If every app uses Shizuku doing this, there will be multiple "Shizuku" running o
 
 No, the CPU is used only if other apps use APIs via Shizuku. This means that the power consumption is so negligible.
 
+### I still want to use the old version
+
+[Download the old version (v3.1.1)](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk)
+
 :::
+
+::: details Core functionality update/fix (planned to be released in v4.3.0, essential for Android 10+)
+  
+  Since Android 10, the system's permission is actually coupled with appops (highly coupled on Android 11), that is, when you try to modify permissions on the system permissions page, not only the runtime permission, but also appops will also be modified. 
+  
+  However, there are two different types of ops in the system. The system and the old version of App Ops does not modifies the same type, so you cannot see the changes made by the system in the old version. In addition, the type system uses takes precedence over the type that old version of App Ops uses, which results that in some cases, the changes made in the old version of App Ops are invalid. **A typical example is that once "Allow when using" is set in the system settings, the changes made in the old version of App Ops will not actually work.**
+
+  Therefore, we have no choice but to completely follow the behavior of the system. The following "same as the system" is far more complicated than some people might think, which is one of the reasons that old root mode must be deleted.
+
+| Name                                 | Old Behavior      | New Behavior                                                     |
+|--------------------------------------|-------------------|------------------------------------------------------------------|
+| Allow when using<sup>**〔2〕**</sup> | ops -> foreground | same as the system                                               |
+| Ask every time <sup>**〔2〕**</sup>  | (not exist)       | same as the system                                               |
+| Allow                                | ops -> allow      | same as the system                                               |
+| Reject                               | ops -> ignore     | same as the system                                               |
+| Silently reject (tentative name)     | (not exist)       | ops (**another type**) -> ignore<br>runtime perm -> allow |
+| Default                              | ops -> default    | (unchanged)                                                      |
+
+<sub><b>〔1〕</b>Android 9+, not available for all perm</sub>
+<br><sub><b>〔2〕</b>Android 11+, not available for all perm</sub>
+
+  For delegated device admin mode, we need to wait for each admin app to provide the required API.
+
+:::
+
+## 4.2.2 (2020-07-16)
+
+- Solved the problem of small probability of random stop from v4.0.0
+- "Usage monitor" improvements
+- Rearrange strings, anyone can participate in translation
 
 ## 4.2.0 (2020-07-12)
 
