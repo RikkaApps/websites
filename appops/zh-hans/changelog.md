@@ -60,6 +60,11 @@ Shizuku 从 2017 年开始的一个免费且开源 （[GitHub](https://github.co
 
 :::
 
+## 4.2.3 (2020-07-18)
+
+- Add Turkish translation
+- "Usage monitor" fix
+
 ## 4.2.2 (2020-07-16)
 
 - 解决了从 v4.0.0 起出现的小概率随机停止运行问题

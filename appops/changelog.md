@@ -60,6 +60,11 @@ No, the CPU is used only if other apps use APIs via Shizuku. This means that the
 
 :::
 
+## 4.2.3 (2020-07-18)
+
+- Add Turkish translation
+- "Usage monitor" fix
+
 ## 4.2.2 (2020-07-16)
 
 - Solved the problem of small probability of random stop from v4.0.0
