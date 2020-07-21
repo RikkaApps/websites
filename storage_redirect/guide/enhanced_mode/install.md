@@ -23,6 +23,10 @@ If the installation is successful, you should see the picture below:
 
 ## Troubleshooting
 
+### Requires Magisk v20.0+
+
+The module itself has no restriction on Magisk version, the version restriction is on Magisk Manager side. If you have some reason to use Magisk earlier than v20, please use the earlier version of Magisk Manager.
+
 ### Unable to enter the system (usually due to isolation of system components)
 
 You need to use adb to disable the module (adb is usually available in this case).
