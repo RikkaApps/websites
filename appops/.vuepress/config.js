@@ -154,6 +154,7 @@ function getSidebar(prefix, basicTitle, workingModeTitle, faqTitle, technicalDet
       collapsable: false,
       sidebarDepth: 0,
       children: [
+        'technical/system_behaviors',
         'technical/run_in_background',
       ]
     }
