@@ -4,14 +4,14 @@ Each op has two modes, `package mode` and `uid mode`. `uid mode` has higher prio
 
 The following table shows how the `uid mode` will be set when the permission settings are modified from the system.
 
-#### Android 6-Android 9:
+#### Android 6 - Android 9
 | System setting page | uid mode                                |
 |---------------------|-----------------------------------------|
 | Allow               | allow                                   |
 | Deny                | ignore<br>(only for apps target pre-23) |
 | (Not yet set)       | (allow)                                 |
 
-#### Android 10:
+#### Android 10
 
 | System setting page        | uid mode       |
 |----------------------------|----------------|
@@ -20,7 +20,7 @@ The following table shows how the `uid mode` will be set when the permission set
 | **Deny**                   | **ignore**     |
 | (Not yet set)              | (allow)        |
 
-#### Android 11:
+#### Android 11
 
 | System setting page        | uid mode       |
 |----------------------------|----------------|
@@ -30,11 +30,11 @@ The following table shows how the `uid mode` will be set when the permission set
 | Deny                       | ignore         |
 | **(Not yet set)**          | **ignore**     |
 
-In addition:
+#### Other behaviors on Android 11
 
-* Setting `package mode` is invalid.
-* When setting `uid mode`, it is invalid if the set value does not match to the runtime permission status.
-* Under certain circumstances (for example, after installing an app), the system will reset the appops of all apps to a state that matches the runtime permissions.
+* Setting `package mode` is invalid
+* When setting `uid mode`, it is invalid if the set value does not match to the runtime permission status
+* Under certain circumstances (for example, install an app), the system will reset the appops of **all apps** to states that match runtime permissions
 
 ### Old version App Ops (before v5.0.0) does not work properly since Android 10
 
@@ -72,8 +72,10 @@ On Android 10 and above, it is essential to modify runtime permissions. Currentl
 
 #### Why "unable to confirm" shows in "Delegated Device Admin mode"?<br>Why backup is limited in "Delegated Device Admin mode"?
 
-The "Delegated Device Admin mode" relies on the admin app which has been set as `profile owner` or `device owner`. The admin app only has the ability write but not to read runtime permissions (in fact, write is already a workaround). Therefore, it is impossible to accurately obtain the settings. For example, in Android 10 and above, for "ignore", you need to know whether the runtime permission is allowed to distinguish whether it is really "ignore".
+The "Delegated Device Admin mode" relies on the admin app which has been set as `profile owner` or `device owner`. The admin app can only "set" runtime permissions, not "read" (in fact, even "set" must be achieved through a workaround method).
+
+Therefore, it is impossible obtain the real settings. For example, in Android 10 and above, for "ignore", you have to know whether the runtime permission is allowed to distinguish whether it is the really "ignore".
 
 #### Why is the backup created before v5.0.0 no longer supported?
 
-The backup of App Ops prior to v5.0.0 only contains the settings of appops. Starting from Android 10, only the appops setting does not reflect the real situation. Even in a low version system, some necessary information is missing from the backup of the old version, which may cause wrong results.
+The backup created by App Ops before to v5.0.0 only contains the settings of appops. Starting from Android 10, only the appops setting does not reflect the real situation. Even in a low version system, some necessary information is missing from the backup of the old version, which may cause wrong results.
