@@ -1,8 +1,11 @@
 # System behavior of different versions
 
-Each op has two modes, `package mode` and `uid mode`. `uid mode` has higher priority, that is, `package mode` is used only when `uid mode` is the default value. **Old versions of App Ops (before v5.0.0) will only read and modify `package mode`.**
+Each op has two modes, `package mode` and `uid mode`. `uid mode` has higher priority, that is, `package mode` is used only when `uid mode` is the default value.
 
-The following table shows how the `uid mode` will be set when the permission settings are modified from the system.
+The following forms shows how the `uid mode` will be set when the permission settings are modified from the system.
+
+::: details Forms
+<p>
 
 #### Android 6 - Android 9
 | System setting page | uid mode                                |
@@ -36,46 +39,70 @@ The following table shows how the `uid mode` will be set when the permission set
 * When setting `uid mode`, it is invalid if the set value does not match to the runtime permission status
 * Under certain circumstances (for example, install an app), the system will reset the appops of **all apps** to states that match runtime permissions
 
-### Old version App Ops (before v5.0.0) does not work properly since Android 10
+:::
 
-#### Android 10
+### The old version of App Ops didn't do it right
 
-In short, settings from App Ops is valid only when the permission "allowed" in system.
+The old versions of App Ops (before v5.0.0) will only read and modify `package mode`, which is obviously wrong.
 
-For example, once set location permission to "Allow only while using" from the system, then settings from App Ops are always invalid. Because the system has changed `uid mode` to `foreground`, `package mode` modified by the old version of App Ops will never take effect.
+In Android 9 and before, it is invalid to set "Allow" in App Ops for apps target below 23. In Android 10, once the user sets "Deny" or "Allow only while using" in the system, the settings in App Ops will never take effect (because `uid mode` set by the system is used first).
 
-#### Android 11
-
-Almost not work.
+Since the system's permission settings were retained when upgrading from a lower version, this huge problem was slowly exposed only one year after Android 10 was released.
 
 ### Changes made in the new version (v5.0.0) of App Ops
 
-There is no choice but to follow the behavior of the system completely. Starting from v5.0.0, except for "ignore", other options are the same as those in the system permission settings (what need to do is more than what shown in the table above, e.g., `permission flags`).
+There is no choice but to follow the behavior of the system completely.
 
 In addition, since Android 11 will reset appops settings (all "runtime permission allowed, ops ignored" will be reset to "runtime permission denied"), so there is no choice but to reset later after the system.
 
-### FAQ
+### The new version (v5.0.0) App Ops needs more capabilities
+
+To follow the system behavior correctly, App Ops must have the ability to read and set `runtime permission`, `permission flags`, and `appops`. However, not all working modes can do it.
+
+|                    | Shizuku mode | Delegated Device Admin mode    | root mode (removed) |
+|--------------------|--------------|--------------------------------|---------------------|
+| appops             | ✔️            | ✔️                              | ✔️                   |
+| runtime permission | ✔️            | "Set" only<sup>**〔1〕**</sup> | ❌                   |
+| permission flags   | ✔️            | ❌                              | ❌                   |
+
+<sub><b>〔1〕</b>Currently, except for Island v5.0+, other admin apps do not yet support setting runtime permission</sub>
+
+#### Defects of "Delegated Device Admin mode"
+
+* "Unable to confirm"
+* Cannot backup all settings
+* In Android 11, the new "Ask every time" cannot be set (requires "set permission flags")
+
+::: details Technical information
+
+Administrator apps set as `profile owner` or `device owner` have some privileges, but only they can use them. Therefore, different admin apps provide different APIs, allowing other apps to "borrow" their privileges.
+
+* [Delegated Scopes Manager API](https://github.com/heruoxin/Delegated-Scopes-Manager)
+* [Delegation API](https://island.oasisfeng.com/api)
+
+Only Island v5.0+ that provides Delegation API supports "set runtime permission".
+
+For "unable to confirm", for example, in Android 10:
+
+|               | appops | runtime permission | permission flags |
+|---------------|--------|--------------------|------------------|
+| Ignore        | ignore | true               |                  |
+| Deny          | (any)  | false              | any "FIXED" flag |
+| (Not yet set) | (any)  | false              | no "FIXED" flag  |
+
+Just looking at the appops setting is obviously not enough.
+
+:::
 
 #### Why "root mode" has to be removed?
 
-It's very simple, pure root (execute commands) can't do the things mentioned above.
+The ability of pure root (execution command) is very limited, there is no command that can modify `permission flags`. If you want to modify the `runtime permission` correctly, you must ensure that the `permission flags` are also modified correctly (the higher-level Java API used by device admins does not need to consider this issue).
 
-Many people think that root is omnipotent, but in fact root basically only provides `uid 0` in the Linux world. If you want to enter the Android world, running dex through `app_process` is almost the only option.
+Therefore, the root mode has been removed.
+
+::: details Technical information
+
+Many people think that root is omnipotent, but in fact root basically only provides a shell with `uid 0`. If you want to enter the Android world (use Java API directly), running dex through `app_process` is almost the only option.
 
 The alternative of "root mode", "Shizuku mode", uses Shizuku ([GitHub](https://github.com/RikkaApps/Shizuku)) to do this part of the work. If not Shizuku, something like Shizuku still need to be run, doing this is meaningless and will also bring meaningless resource usage.
-
-#### Why "Delegated Device Admin mode" requires the admin app to support specific APIs?
-
-"Delegated Device Admin mode" supports two APIs, [Delegated Scopes Manager API](https://github.com/heruoxin/Delegated-Scopes-Manager) created by IceBox (used by multiple admin apps) and [API](https://island.oasisfeng.com/api) provided by Island.
-
-On Android 10 and above, it is essential to modify runtime permissions. Currently, only Island 5.0 and above provide this function.
-
-#### Why "unable to confirm" shows in "Delegated Device Admin mode"?<br>Why backup is limited in "Delegated Device Admin mode"?
-
-The "Delegated Device Admin mode" relies on the admin app which has been set as `profile owner` or `device owner`. The admin app can only "set" runtime permissions, not "read" (in fact, even "set" must be achieved through a workaround method).
-
-Therefore, it is impossible obtain the real settings. For example, in Android 10 and above, for "ignore", you have to know whether the runtime permission is allowed to distinguish whether it is the really "ignore".
-
-#### Why is the backup created before v5.0.0 no longer supported?
-
-The backup created by App Ops before to v5.0.0 only contains the settings of appops. Starting from Android 10, only the appops setting does not reflect the real situation. Even in a low version system, some necessary information is missing from the backup of the old version, which may cause wrong results.
+:::
