@@ -1,5 +1,10 @@
 # Changelog
 
+## 4.5.3 (2020-08-20)
+
+- Change the core implementation, solve the problem caused by "adapt to Android 11 changes" introduced from the previous version
+- Adapt to changes in Android 11 beta 3
+
 ## 4.5.2 (2020-06-19)
 
 - Don't let a weird error<sup>**〔1〕**</sup> crash the whole app
