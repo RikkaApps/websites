@@ -1,64 +1,34 @@
 # Changelog
 
-::: details Root mode has been removed from v4.0.0 (<b>tap to view why we have to do this</b>)
+::: details Root mode has been removed
 
-### Why root mode must be removed?
+Only using pure root (execute commands) cannot guarantee core functions on Android 10+. Read [this]([./guide/technical/system_behaviors/]) for more details.
 
-First, the old root mode implementation assumes some inner implementation of the system, if the system changes (not limited to major version upgrades), there will be problems. You can see version 3.1.1, the last version with root, dose not work on Android 11 and some Android 10.
+The older versions of App Ops look "working correctly", but under certain circumstances, your changes not actually work. For example, in Android 10, once you have changed location permission from the system, changes from older versions of App Ops will never work (even if it seems to be changed successfully). 
 
-In addition, the problem of core functionality (appear on Android 10+) that planned to be solved in v4.3.0 is also almost impossible to achieve through the old root implementation (see the next part below).
-
-Last, except users have to install Shizuku, Shizuku mode wins root mode in any way (see the description below).
-
-If we continue to keep root mode, the experience of root mode is already becoming much and much poor (broken core functionality & lacks on new features), root mode still need to be removed one day.
-
-### What is Shizuku?
-
-Shizuku is a free and open-sourced ([GitHub](https://github.com/RikkaApps/Shizuku)) app starting from 2017. It's designed to serve multiple apps which requires root or adb. Not only App Ops, but also some apps from other developers are using Shizuku (many of them are not listed in Shizuku's website).
-
-### Why Shizuku is better than pure root?
-
-Using Shizuku is much more faster (you can feel this) and consume less resources than using pure root.
-
-If you are an advanced user and a developer, you can read <https://shizuku.rikka.app/introduction.html#shizuku-vs-old-school-method>.
-
-### Why not make Shizuku to be built-in?
-
-If every app uses Shizuku doing this, there will be multiple "Shizuku" running on your device. This is obviously not a good idea.
-
-### Does Shizuku consumes battery?
-
-No, the CPU is used only if other apps use APIs via Shizuku. This means that the power consumption is so negligible.
-
-### I still want to use the old version
-
-[Download the old version (v3.1.1)](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk)
-
+If you are using older systems and do want the old root mode, you can still [download the old version (v3.1.1)](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk).
 :::
 
-::: details Core functionality update/fix (planned to be released in v4.3.0, essential for Android 10+)
-  
-  Since Android 10, the system's permission is actually coupled with appops (highly coupled on Android 11), that is, when you try to modify permissions on the system permissions page, not only the runtime permission, but also appops will also be modified. 
-  
-  However, there are two different types of ops in the system. The system and the old version of App Ops does not modifies the same type, so you cannot see the changes made by the system in the old version. In addition, the type system uses takes precedence over the type that old version of App Ops uses, which results that in some cases, the changes made in the old version of App Ops are invalid. **A typical example is that once "Allow when using" is set in the system settings, the changes made in the old version of App Ops will not actually work.**
+## 5.0.0 (2020-08-22)
 
-  Therefore, we have no choice but to completely follow the behavior of the system. The following "same as the system" is far more complicated than some people might think, which is one of the reasons that old root mode must be deleted.
+This update fixes a hidden but long-standing problem. Because the problem rarely occurs in low version system, and the existing settings are not affected after upgrading to Android, this problem was surfaced recently. A typical example is, in Android 10, once you have changed location permission from the system, changes in older versions of App Ops will never work (even if it seems to be changed successfully).
 
-| Name                                 | Old Behavior      | New Behavior                                                     |
-|--------------------------------------|-------------------|------------------------------------------------------------------|
-| Allow when using<sup>**〔2〕**</sup> | ops -> foreground | same as the system                                               |
-| Ask every time <sup>**〔2〕**</sup>  | (not exist)       | same as the system                                               |
-| Allow                                | ops -> allow      | same as the system                                               |
-| Reject                               | ops -> ignore     | same as the system                                               |
-| Silently reject (tentative name)     | (not exist)       | ops (**another type**) -> ignore<br>runtime perm -> allow |
-| Default                              | ops -> default    | (unchanged)                                                      |
+This contains a lot of work behind, please read [technical details](./guide/technical/system_behaviors/).
 
-<sub><b>〔1〕</b>Android 9+, not available for all perm</sub>
-<br><sub><b>〔2〕</b>Android 11+, not available for all perm</sub>
+**What you should to know:**
 
-  For delegated device admin mode, we need to wait for each admin app to provide the required API.
+- What you see or change in App Ops now reflects the final status
+- "Deny" in older versions is renamed to "Ignore"
+- Old backups are no longer supported because they lack the necessary information (they may even contain wrong information)
+- For Delegated Device Admin mode, currently, only Island v5.0+ has the support of new required APIs
+- For Delegated Device Admin mode, part of the backup is from historical user actions, this is because admin apps does not have enough permission to get the accurate status (this is system limitation)
 
-:::
+Other changes:
+
+- Template: any options can be used in the template
+- Backup: more flexibility when restoring
+- Usage monitor: attempt to reduce "wrong" reports (sometimes the systems always reports app is using "location" even if the app is not running)
+- Usage monitor & Clipboard monitor: add "exclude system apps" option
 
 ## 4.2.3 (2020-07-18)
 

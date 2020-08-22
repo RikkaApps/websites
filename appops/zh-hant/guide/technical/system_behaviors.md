@@ -1,4 +1,4 @@
-# 不同版本的系統行為
+# 不同 Android 版本下的不同
 
 每個 op 都有兩種 mode，分別為 `package mode` 和 `uid mode`。`uid mode` **有更高優先順序**，即只有當 `uid mode` 為預設值時才會使用 `package mode`。
 
@@ -6,6 +6,8 @@
 
 ::: details 表格
 <p>
+
+星號（*）表示相對之前的系統放生變化。
 
 #### Android 6 - Android 9
 | 系統設定頁面 | uid mode                                |

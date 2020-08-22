@@ -1,4 +1,4 @@
-# System behavior of different versions
+# Difference under different Android versions
 
 Each op has two modes, `package mode` and `uid mode`. `uid mode` has higher priority, that is, `package mode` is used only when `uid mode` is the default value.
 
@@ -6,6 +6,8 @@ The following forms shows how the `uid mode` will be set when the permission set
 
 ::: details Forms
 <p>
+
+The asterisk (*) indicates changes from the previous system.
 
 #### Android 6 - Android 9
 | System setting page | uid mode                                |
@@ -16,22 +18,22 @@ The following forms shows how the `uid mode` will be set when the permission set
 
 #### Android 10
 
-| System setting page        | uid mode       |
-|----------------------------|----------------|
-| **Allow only while using** | **foreground** |
-| Allow                      | allow          |
-| **Deny**                   | **ignore**     |
-| (Not yet set)              | (allow)        |
+| System setting page      | uid mode   |
+|--------------------------|------------|
+| Allow only while using * | foreground |
+| Allow                    | allow      |
+| Deny *                   | ignore     |
+| (Not yet set)            | (allow)    |
 
 #### Android 11
 
-| System setting page        | uid mode       |
-|----------------------------|----------------|
-| **Ask every time**         | **ignore**     |
-| **Allow only while using** | **foreground** |
-| Allow                      | allow          |
-| Deny                       | ignore         |
-| **(Not yet set)**          | **ignore**     |
+| System setting page      | uid mode   |
+|--------------------------|------------|
+| Ask every time *         | ignore     |
+| Allow only while using * | foreground |
+| Allow                    | allow      |
+| Deny                     | ignore     |
+| (Not yet set) *          | ignore     |
 
 #### Other behaviors on Android 11
 
@@ -47,7 +49,7 @@ The old versions of App Ops (before v5.0.0) will only read and modify `package m
 
 In Android 9 and before, it is invalid to set "Allow" in App Ops for apps target below 23. In Android 10, once the user sets "Deny" or "Allow only while using" in the system, the settings in App Ops will never take effect (because `uid mode` set by the system is used first).
 
-Since the system's permission settings were retained when upgrading from a lower version, this huge problem was slowly exposed only one year after Android 10 was released.
+Since the system's permission settings were retained when upgrading from a lower version, this huge problem was slowly exposed one year after Android 10 was released.
 
 ### Changes made in the new version (v5.0.0) of App Ops
 
