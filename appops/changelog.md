@@ -2,7 +2,7 @@
 
 ::: details Root mode has been removed
 
-Only using pure root (execute commands) cannot guarantee core functions on Android 10+. Read [this]([./guide/technical/system_behaviors/]) for more details.
+Only using pure root (execute commands) cannot guarantee core functions on Android 10+. Read [this](./guide/technical/system_behaviors/) for more details.
 
 The older versions of App Ops look "working correctly", but under certain circumstances, your changes not actually work. For example, in Android 10, once you have changed location permission from the system, changes from older versions of App Ops will never work (even if it seems to be changed successfully). 
 

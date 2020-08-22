@@ -2,7 +2,7 @@
 
 :::details Root 模式已被刪除
 
-僅使用純 root（執行命令）無法在 Android 10+ 保證核心功能。閱讀[這個]([./guide/technical/system_behaviors/])瞭解更多詳細資訊。
+僅使用純 root（執行命令）無法在 Android 10+ 保證核心功能。閱讀[這個](./guide/technical/system_behaviors/)瞭解更多詳細資訊。
 
 App Ops 的舊版本看起來「可以正常工作」，但是在某些情況下，您的更改實際上不起作用。例如，在 Android 10 中，一旦您從系統更改了位置權限，舊版 App Ops 的更改將永遠無法生效（即使看起來成功地更改了）。
 
