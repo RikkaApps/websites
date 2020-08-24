@@ -9,6 +9,14 @@ The older versions of App Ops look "working correctly", but under certain circum
 If you are using older systems and do want the old root mode, you can still [download the old version (v3.1.1)](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk).
 :::
 
+## 5.0.1 (2020-08-24)
+
+- Fix the problem that in the last version, admin apps using DSM API v3 are incorrectly marked as "missing support"
+- Fix the problem that in the last version, not all options are displayed correctly in "Template"
+- Fix the problem that in the last version, automatic backup restore function for frozen applications (based on "hide") is broken
+- Reset package mode when necessary (for "incorrect" settings leaved by older App Ops or other appops tools that haven't adapt system changes correctly)
+- Import user translations
+
 ## 5.0.0 (2020-08-22)
 
 This update fixes a hidden but long-standing problem. Because the problem rarely occurs in low version system, and the existing settings are not affected after upgrading to Android, this problem was surfaced recently. A typical example is, in Android 10, once you have changed location permission from the system, changes in older versions of App Ops will never work (even if it seems to be changed successfully).
