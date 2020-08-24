@@ -67,7 +67,7 @@ To follow the system behavior correctly, App Ops must have the ability to read a
 | runtime permission | ✔️            | "Set" only<sup>**〔1〕**</sup> | ❌                   |
 | permission flags   | ✔️            | ❌                              | ❌                   |
 
-<sub><b>〔1〕</b>Currently, except for Island v5.0+, other admin apps do not yet support setting runtime permission</sub>
+<sub><b>〔1〕</b>Requires Island v5.0+ or any other admin apps with [Delegated Scopes Manager](https://github.com/heruoxin/Delegated-Scopes-Manager) v3 support</sub>
 
 #### Defects of "Delegated Device Admin mode"
 

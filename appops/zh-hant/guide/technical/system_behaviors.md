@@ -67,7 +67,7 @@
 | runtime permission | ✔️            | 僅可設定<sup>**〔1〕**</sup> | ❌                     |
 | permission flags   | ✔️            | ❌                            | ❌                     |
 
-<sub><b>〔1〕</b>目前，除了 Island v5.0+，其他管理員程式尚未支援設定 runtime permission</sub>
+<sub><b>〔1〕</b>需要 Island v5.0+ 或其他具有 [Delegated Scopes Manager](https://github.com/heruoxin/Delegated-Scopes-Manager) v3 支援的管理員程式</sub>
 
 #### 「託管裝置管理員模式」的缺陷
 
