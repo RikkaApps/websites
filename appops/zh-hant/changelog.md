@@ -9,6 +9,13 @@ App Ops 的舊版本看起來「可以正常工作」，但是在某些情況下
 如果您使用的是較舊的系統，並且希望使用舊的 root 模式，則仍然可以[下載舊版本（v3.1.1）](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk)。
 :::
 
+## 5.0.2 (2020-08-26)
+
+- 為所有 Android 10 強制使用「自動恢復」選項，因為已確認 Android 10 也會進行重置（只是相較 Android 11 情況更少）
+- 修復了在「託管裝置管理員模式」下錯誤地要求所有版本的 Island 請求了只有 Island 5.0+ 提供的功能的問題
+- 修復了「自動恢復」的忽略選項實際上不起作用的問題
+- 修復了模板中的 `RUN_IN_BACKGROUND` 在編輯後沒有正確顯示的問題
+
 ## 5.0.1 (2020-08-24)
 
 - 修了上個版本將使用 DSM API v3 的管理員程式錯誤地標明為「缺少支援」的問題

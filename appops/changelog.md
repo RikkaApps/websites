@@ -9,6 +9,13 @@ The older versions of App Ops look "working correctly", but under certain circum
 If you are using older systems and do want the old root mode, you can still [download the old version (v3.1.1)](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk).
 :::
 
+## 5.0.2 (2020-08-26)
+
+- "Automatic recovery" option is enforced for all Android 10 as it is confirmed that Android 10 also do the reset (only in fewer cases than Android 11)
+- Fix the problem that, under Delegated Device Admin mode, things available from Island 5.0+ is accidentally requested on all versions
+- Fix the problem that the ignore option of "Automatic recovery" not actually works
+- Fix the problem that, `RUN_IN_BACKGROUND` in the template is not correctly displayed after editing
+
 ## 5.0.1 (2020-08-24)
 
 - Fix the problem that in the last version, admin apps using DSM API v3 are incorrectly marked as "missing support"
