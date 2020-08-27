@@ -9,6 +9,12 @@ App Ops 的舊版本看起來「可以正常工作」，但是在某些情況下
 如果您使用的是較舊的系統，並且希望使用舊的 root 模式，則仍然可以[下載舊版本（v3.1.1）](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk)。
 :::
 
+## 5.0.3 (2020-08-27)
+
+- 修復 v5.0.2 (1236) 引入的問題
+
+對於 Google Play 使用者，Google Play 不允許撤銷更新，唯一的選擇是釋出新版本。修正的版本是在有問題的版本釋出 2 小時後提交的，但 Google 超過 12 小時未完成檢閱（通常應該是 2 小時）。在 Google 完成檢閱前，請從 [GitHub](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/tag/files) 下載。
+
 ## 5.0.2 (2020-08-26)
 
 - 為所有 Android 10 強制使用「自動恢復」選項，因為已確認 Android 10 也會進行重置（只是相較 Android 11 情況更少）
