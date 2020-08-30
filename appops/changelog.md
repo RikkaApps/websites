@@ -9,11 +9,15 @@ The older versions of App Ops look "working correctly", but under certain circum
 If you are using older systems and do want the old root mode, you can still [download the old version (v3.1.1)](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk).
 :::
 
+## 5.0.4 (2020-08-30)
+
+- Fix the problem that "Restoring backup" may be displayed when nothing is actually restored
+- Import translation from users
+- Other minor changes
+
 ## 5.0.3 (2020-08-27)
 
 - Fix problem introduced in 5.0.2 (1236)
-
-For Google Play users, Google Play does not allow to revert an update, the only option is to publish a new version. The fixed is submitted 2 hours after the problematic version, but Google hasn't finished the review for more than 12 hours (usually should be 2 hours). Before Google completes the review, please download from [GitHub](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/tag/files).
 
 ## 5.0.2 (2020-08-26)
 

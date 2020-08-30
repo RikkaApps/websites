@@ -9,11 +9,15 @@ App Ops 的旧版本看起来“可以正常工作”，但是在某些情况下
 如果您使用的是较旧的系统，并且希望使用旧的 root 模式，则仍然可以[下载旧版本（v3.1.1）](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk)。
 :::
 
+## 5.0.4 (2020-08-30)
+
+- 修复了实际上未还原任何内容时“正在还原备份”也可能会显示的问题
+- 导入来自用户的翻译
+- 其他小改变
+
 ## 5.0.3 (2020-08-27)
 
 - 修复 v5.0.2 (1236) 引入的问题
-
-对于 Google Play 用户，Google Play 不允许撤销更新，唯一的选择是发布新版本。修正的版本是在有问题的版本发布 2 小时后提交的，但 Google 超过 12 小时未完成审核（通常应该是 2 小时）。在 Google 完成审核前，请从 [GitHub](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/tag/files) 下载。
 
 ## 5.0.2 (2020-08-26)
 
