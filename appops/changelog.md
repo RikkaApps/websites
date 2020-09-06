@@ -9,6 +9,13 @@ The older versions of App Ops look "working correctly", but under certain circum
 If you are using older systems and do want the old root mode, you can still [download the old version (v3.1.1)](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk).
 :::
 
+## 5.0.6 (2020-09-06)
+
+- Fix a problem related to creating backup
+- Fix a problem related to batch operations (including using templates, backups, etc.)
+- Import translation from users
+- Other minor changes
+
 ## 5.0.4 (2020-08-30)
 
 - Fix the problem that "Restoring backup" may be displayed when nothing is actually restored
