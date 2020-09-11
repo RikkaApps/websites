@@ -29,3 +29,14 @@ NoPopping 使用 Shizuku 来避免使用无障碍服务。
 Shizuku 是冰箱的一个免 root 工作模式。
 
 下载：[Google Play](https://play.google.com/store/apps/details?id=com.catchingnow.icebox) / [Coolapk](https://coolapk.com/apk/com.catchingnow.icebox)
+
+---
+<img src="https://github.com/ryuunoakaihitomi/rebootmenu/raw/master/app/src/main/res/mipmap/ic_launcher.png" title="PowerPanel" width="24" align="top"/> 启动选项 PowerPanel
+
+一个控制Android电源状态的用户界面应用，使用本应用可以降低使用电源键的频率从而延长其寿命。
+
+使用 Shizuku 后，在受限模式中，可以避免在 Android P 以前调用设备管理器进行锁屏以修复不能用生物识别传感器解锁和卸载步骤繁琐的问题。在特权模式中，可以加快操作反应速度。
+
+*\* 启动选项的特权模式需要运行在 root 用户的 Shizuku。*
+
+下载：[Github](https://github.com/ryuunoakaihitomi/rebootmenu/releases) / [Coolapk](https://www.coolapk.com/apk/com.ryuunoakaihitomi.rebootmenu)
