@@ -6,10 +6,10 @@ actionLink: /introduction.html
 features:
 - title: Use system APIs elegantly
   details: Forget about root shell, you can use APIs with higher privileges "directly". Also, Shizuku is significantly faster than shell.
-- title: Support adb usage
+- title: Supports adb usage
   details: If your "root required app" only needs adb permission, you can easily expand the audience by using Shizuku.
 - title: Save your time
-  details: Shizuku has detailed documentation to guide users. Only you need to do is let users install Shizuku.
+  details: Shizuku has detailed documentation to guide users. Only you need to do is to let the users install Shizuku.
 footer: Copyright © 2019 RikkaApps
 ---
 
