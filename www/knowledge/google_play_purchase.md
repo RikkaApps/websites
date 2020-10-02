@@ -28,4 +28,4 @@ Note, among the order information provided to the developer, the only thing that
 
 * **The wrong account is used by Play Store**
 
-  If you are logged into multiple accounts, Play Store may use the wrong account (**not controlled by the app developer**). Usually use the account at the time of purchase to reinstall should solve the problem.
+  If you are logged into multiple accounts, Play Store may use the wrong account (**not controlled by the app developer**). Usually use the account at the time of purchase to reinstall should solve the problems.
