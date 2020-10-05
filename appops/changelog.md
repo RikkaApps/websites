@@ -9,6 +9,12 @@ The older versions of App Ops look "working correctly", but under certain circum
 If you are using older systems and do want the old root mode, you can still [download the old version (v3.1.1)](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk).
 :::
 
+## 5.1.1 (2020-10-06)
+
+- Fix a problem related to creating backup
+- Fix a problem related to "Clipboard monitor"
+- Import translation from users
+
 ## 5.1.0 (2020-09-24)
 
 - All options are now available for batch operations of "App detail" and "Permissions view" (note that when multiple items are selected, the displayed options are the intersection of all available options)
