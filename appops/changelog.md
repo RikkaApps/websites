@@ -9,10 +9,11 @@ The older versions of App Ops look "working correctly", but under certain circum
 If you are using older systems and do want the old root mode, you can still [download the old version (v3.1.1)](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk).
 :::
 
-## 5.1.1 (2020-10-06)
+## 5.1.2 (2020-10-07)
 
 - Fix a problem related to creating backup
 - Fix a problem related to "Clipboard monitor"
+- Fix the problem that records for "Automatic recovery" sometimes may not be updated correctly
 - Import translation from users
 
 ## 5.1.0 (2020-09-24)
