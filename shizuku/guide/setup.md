@@ -72,20 +72,24 @@ See [Android Developer](https://developer.android.com/studio/command-line/adb) f
 
 ### 2. Install `adb`
 
-#### 2.1. Windows
+1. Download "SDK Platform Tools" provided by Google and extract it to any folder
 
-1. Download the [SDK Platform Tools](https://dl.google.com/android/repository/platform-tools-latest-windows.zip) provided by Google and extract it to any folder
-2. Open the folder with Explorer,hold down Shift and right click, select "Open PowerShell Window here" (for Windows 7, select "Open command window here")
+   * [Windows](https://dl.google.com/android/repository/platform-tools-latest-windows.zip)
+   * [Linux](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)
+   * [Mac](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip)
+
+2. Open the folder, right click to select
+
+   * Windows 10: Open PowerShell windows here (**hold down Shift to show this option**)
+   * Windows 7: Open command window here (**hold down Shift to show this option**)
+   * Mac or Linux: Open Terminal
+
 3. Enter `adb`, if success, you can see a long list of content instead of the prompt not finding adb.
 
 ::: tip
 1. Please do not close this window. The "terminal" mentioned later refers to this window (if you closed the window, please go back to step 2)
-2. If you use PowerShell, all `adb` should be replaced with `./adb`
+2. If you use PowerShell or Linux/Mac, all `adb` should be replaced with `./adb`
 :::
-
-#### 2.2. Linux / macOS
-
-You definitely can do this yourself :D
 
 ### 3. Setting `adb`
 

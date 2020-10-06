@@ -72,20 +72,24 @@ Android 除錯橋 (`adb`) 是一個通用命令列工具，其允許您與模擬
 
 ### 2. 安裝 `adb`
 
-#### 2.1. Windows
+1. 下載由 Google 提供的「SDK Platform Tools」並解壓至任意資料夾
 
-1. 下載由 Google 提供的 [SDK Platform Tools](https://dl.google.com/android/repository/platform-tools-latest-windows.zip) 並解壓至任意資料夾
-2. 使用資源管理器開啟資料夾，按住 Shift 點選右鍵選擇「在此處開啟 PowerShell 視窗」（如果是 Windows 7 則是「在此處開啟命令視窗」）
+   * [Windows](https://dl.google.com/android/repository/platform-tools-latest-windows.zip)
+   * [Linux](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)
+   * [Mac](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip)
+
+2. 開啟資料夾，右鍵選擇
+
+   * Windows 10：在此處開啟 PowerShell 視窗（**需要按住 Shift 才會顯示該選項**）
+   * Windows 7：在此處開啟命令視窗（**需要按住 Shift 才會顯示該選項**）
+   * Mac 或 Linux：打开 Terminal（終端）
+
 3. 輸入 `adb` 如果可以看到一長串內容而不是提示找不到 adb 則表示成功
 
 ::: tip 提示
 1. 請不要關閉該視窗，後面提到的「終端」都是指此視窗（如果關閉請重新進行第 2 步）。
-2. 如果使用 PowerShell，所有 `adb` 都要替換成 `./adb`。
+2. 如果使用 PowerShell 或是 Linux 及 Mac，所有 `adb` 都要替換成 `./adb`。
 :::
-
-#### 2.2. Linux / macOS
-
-你們一定可以自己解決 :D
 
 ### 3. 設定 `adb`
 
