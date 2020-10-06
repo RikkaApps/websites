@@ -73,20 +73,15 @@ Android 调试桥 (`adb`) 是一个通用命令行工具，其允许您与模拟
 
 ### 2. 安装 `adb`
 
-#### 2.1. Windows
-
-1. 下载由 Google 提供的 [SDK Platform Tools](https://dl.google.com/android/repository/platform-tools-latest-windows.zip) 并解压至任意文件夹
-2. 使用资源管理器打开文件夹，按住 Shift 点击右键选择“在此处打开 PowerShell 窗口”（如果是 Windows 7 则是“在此处打开命令行窗口”）
+1. 下载由 Google 提供的 adb 工具包
+   [Windows](https://dl.google.com/android/repository/platform-tools-latest-windows.zip) [Linux](https://dl.google.com/android/repository/platform-tools-latest-linux.zip) [Mac](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip)
+2. 打开文件夹，右键选择“在此处打开 PowerShell 窗口”（如果是 Windows 7 则是“命令行窗口”，如果是 Mac 或 Linux 则是“terminal”或“终端”）
 3. 输入 `adb` 如果可以看到一长串内容而不是提示找不到 adb 则表示成功
 
 ::: tip 提示
 1. 请不要关闭该窗口，后面提到的“终端”都是指此窗口（如果关闭请重新进行第 2 步）。
 2. 如果使用 PowerShell，所有 `adb` 都要替换成 `./adb`。
 :::
-
-#### 2.2. Linux / macOS
-
-你们一定可以自己解决 :D
 
 ### 3. 设置 `adb`
 
