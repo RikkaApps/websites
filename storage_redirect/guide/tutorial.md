@@ -9,7 +9,7 @@ Assuming there is an application called ExampleApp (the package name is `com.exa
 ├───Android
 ├───bad_sdk
 ├───DCIM
-├───Donwload
+├───Download
 ├───Pictures
 └───...
 ```

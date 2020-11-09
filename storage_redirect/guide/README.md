@@ -16,12 +16,12 @@ The Android system has a simple design for storage<sup>**[1]**</sup>:
 │   ├───media/com.example <---- No permission required
 │   └───obb/com.example   <---- No permission required
 ├───DCIM
-├───Donwload
+├───Download
 ├───Pictures
 └─── ...
 ```
 
-* `DCIM` `Donwload` `Pictures` and other public folders
+* `DCIM` `Download` `Pictures` and other public folders
    
   Used to save pictures, downloaded files, etc., **requires** storage permissions, **can only be deleted by users**. Apps can also create their own folders if necessary.
 
