@@ -9,7 +9,7 @@
 ├───Android
 ├───bad_sdk
 ├───DCIM
-├───Donwload
+├───Download
 ├───Pictures
 └───...
 ```

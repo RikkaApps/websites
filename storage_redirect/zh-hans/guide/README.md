@@ -15,12 +15,12 @@ Android 系统对于存储空间的设计很简单<sup>**〔1〕**</sup>：
 │   ├───media/com.example <---- 不需要权限
 │   └───obb/com.example   <---- 不需要权限
 ├───DCIM
-├───Donwload
+├───Download
 ├───Pictures
 └───...
 ```
 
-* `DCIM` `Donwload` `Pictures` 等公共文件夹
+* `DCIM` `Download` `Pictures` 等公共文件夹
 
   用于保存图片、下载的文件等，**需要**存储权限，**只能被用户主动删除**。应用也可根据需求建立自己的文件夹。
 
