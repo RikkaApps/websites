@@ -13,31 +13,10 @@ Magisk 是一个功能强大的工具，它不仅提供 root，而且提供不�
 
 ## 下载
 
-在 Magisk Manager 中下载安装 **Riru (Riru - Core)** 和 **Riru - Enhanced mode for Storage Isolation (Storage Redirect)**。注意，请在 Magisk Manager 中**搜索“Riru”而非完整名称**。
+在 Magisk Manager 中下载安装 **Riru** 和 **Riru - Enhanced mode for Storage Isolation**。
 
 最新版本通常会延后一段时间上传至 Magisk。如果最新版本尚未更新或你无法在 Magisk Manager 取得在线模块列表，你可以直接从 GitHub release 下载 [Riru](https://github.com/RikkaApps/Riru/releases) 及 [增强模块](https://github.com/RikkaApps/StorageRedirect-assets/releases/tag/assets) 的最新版本。
 
 若安装正常，你应该会看到下面的图：
 
 <img :src="$withBase('/images/magisk_modules.png')" alt="安装正常图示">
-
-## 故障排除
-
-### 需要 Magisk v20.0+
-
-模块本身对 Magisk 版本没有限制，版本限制在 Magisk Manager 方面。如果你出于某些原因要使用 v20 之前的 Magisk，请使用早期版本的 Magisk Manager。
-
-### 无法进入系统（通常是由于隔离了系统组件）
-
-你需要使用 adb 来禁用模块（这种情况下 adb 通常是可用的）。
-
-```
-adb shell
-su
-touch /data/adb/modules/riru_storage_redirect/disable
-reboot
-```
-
-有关如何使用 adb，网络上有相当多的教程，在此我们不必赘述。
-
-另外，如果你有意帮助解决问题，你可以执行 `adb logcat > 1.txt` 来保存 log 并将 log 发送至 [support@rikka.app](mailto://support@rikka.app)。

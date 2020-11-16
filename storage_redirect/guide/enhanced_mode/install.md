@@ -13,31 +13,10 @@ You can learn more about Magisk from [GitHub](https://github.com/topjohnwu/Magis
 
 ## Download
 
-Download and install **Riru (Riru - Core)** and **Riru - Enhanced mode for Storage Isolation (Storage Redirect)** from Magisk Manager. Note, please **search "Riru" rather than full name** in Magisk Manager.
+Download and install **Riru** and **Riru - Enhanced mode for Storage Isolation** from Magisk Manager.
 
 The latest is usually uploaded to Magisk with a delay. If the latest version is not uploaded or you can't get online module list in Magisk Manager, you can download the latest version of [Riru](https://github.com/RikkaApps/Riru/releases) and [Enhancement module](https://github.com/RikkaApps/StorageRedirect-assets/releases/tag/assets) directly from GitHub release.
 
 If the installation is successful, you should see the picture below:
 
 <img :src="$withBase('/images/magisk_modules.png')" alt="Successful installation">
-
-## Troubleshooting
-
-### Requires Magisk v20.0+
-
-The module itself has no restriction on Magisk version, the version restriction is on Magisk Manager side. If you have some reason to use Magisk earlier than v20, please use the earlier version of Magisk Manager.
-
-### Unable to enter the system (usually due to isolation of system components)
-
-You need to use adb to disable the module (adb is usually available in this case).
-
-```
-adb shell
-su
-touch /data/adb/modules/riru_storage_redirect/disable
-reboot
-```
-
-There are quite a lot of tutorials about how to use adb on the Internet, so we don't need to repeat them here.
-
-Also, if you are willing to help us solving the problem, you can execute `adb logcat > 1.txt` to save the log and send the log to [support@rikka.app](mailto://support@rikka.app).
