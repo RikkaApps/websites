@@ -1,5 +1,14 @@
 # Changelog
 
+## 5.0.0-beta (2020-11-16)
+
+- 支援出廠 Android 11 的移除了 `sdcardfs` 的裝置（如 Pixel 5，Pixel 4a 5G 等）
+- 在 Android 11，「匯出被隔離的檔案」使用 `mount` 而不是 `hard link` 實現（因為媒體儲存裝置無權訪問連結檔案）
+- 所有涉及 `untrusted_app` 域的跨程式通訊均已使用 binder（許多部分被完全重寫）
+- 幾乎去除所有表明裝置已 root 的痕跡
+- 使用 `/data/adb/storage-isolation` 資料夾，如果沒有問題你可以刪除 `/data/misc/storage_redirect`
+- 講出所有的變化很難 😶
+
 ## 4.5.3 (2020-08-20)
 
 - 改變核心部分做法，應該不再會有先前版本的「適應 Android 11 的改變」帶來的問題

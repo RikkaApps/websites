@@ -1,5 +1,14 @@
 # Changelog
 
+## 5.0.0-beta (2020-11-16)
+
+- Support devices published with Android 11 which has `sdcardfs` removed (Pixel 5, Pixel 4a 5G, etc)
+- On Android 11, "Export isolated folder" is implemented with `mount` rather than `hard link` (media storage have no permission to access link files)
+- Use binder for all IPC involving `untrusted_app` domain (many things are completely rewritten)
+- Remove almost all traces that indicate the device is rooted
+- Use `/data/adb/storage-isolation` as data folder, you can delete `/data/misc/storage_redirect` if there is no problem
+- It's hard to speak all the changed things 😶
+
 ## 4.5.3 (2020-08-20)
 
 - Change the core implementation, solve the problem caused by "adapt to Android 11 changes" introduced from the previous version
