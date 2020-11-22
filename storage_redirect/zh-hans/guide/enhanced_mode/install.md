@@ -15,7 +15,10 @@ Magisk 是一个功能强大的工具，它不仅提供 root，而且提供不�
 
 在 Magisk Manager 中下载安装 **Riru** 和 **Riru - Enhanced mode for Storage Isolation**。
 
-最新版本通常会延后一段时间上传至 Magisk。如果最新版本尚未更新或你无法在 Magisk Manager 取得在线模块列表，你可以直接从 GitHub release 下载 [Riru](https://github.com/RikkaApps/Riru/releases) 及 [增强模块](https://github.com/RikkaApps/StorageRedirect-assets/releases/tag/assets) 的最新版本。
+GitHub release（包含最新版本）：
+
+* [Riru](https://github.com/RikkaApps/Riru/releases)
+* [Enhancement module](https://github.com/RikkaApps/StorageRedirect-assets/releases/tag/assets)
 
 若安装正常，你应该会看到下面的图：
 
