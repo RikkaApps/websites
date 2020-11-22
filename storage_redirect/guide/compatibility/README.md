@@ -1,7 +1,6 @@
 # Overview
 
 * [Samsung](./samsung.md)
-* [Huawei](./huawei.md)
 * [Meizu](./meizu.md)
 * [Xiaomi (MIUI)](./miui.md)
 * Other problems

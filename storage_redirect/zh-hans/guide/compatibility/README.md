@@ -1,7 +1,6 @@
 # 概览
 
 * [三星](./samsung.md)
-* [华为](./huawei.md)
 * [魅族](./meizu.md)
 * [小米（MIUI）](./miui.md)
 * 其他

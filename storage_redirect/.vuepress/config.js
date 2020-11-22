@@ -165,7 +165,6 @@ function getSidebar(prefix, basicTitle, advancedTitle, enhancedModeTitle, compat
       children: [
         `compatibility/`,
         `compatibility/samsung`,
-        `compatibility/huawei`,
         `compatibility/meizu`,
         `compatibility/miui`,
       ]
