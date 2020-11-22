@@ -1,6 +1,6 @@
 # Changelog
 
-## 5.0.0-beta (2020-11-16)
+## 5.0.0 (2020-11-23)
 
 - 支持出厂 Android 11 的移除了 `sdcardfs` 的设备（如 Pixel 5，Pixel 4a 5G 等）
 - 在 Android 11，“导出被隔离的文件”使用 `mount` 而不是 `hard link` 实现（因为媒体存储无权访问链接文件）

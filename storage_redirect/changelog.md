@@ -1,6 +1,6 @@
 # Changelog
 
-## 5.0.0-beta (2020-11-16)
+## 5.0.0 (2020-11-23)
 
 - Support devices published with Android 11 which has `sdcardfs` removed (Pixel 5, Pixel 4a 5G, etc)
 - On Android 11, "Export isolated folder" is implemented with `mount` rather than `hard link` (media storage have no permission to access link files)
