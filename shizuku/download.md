@@ -6,6 +6,8 @@
 
 [Coolapk](https://www.coolapk.com/apk/moe.shizuku.privileged.api)
 
+[IzzyOnDroid F-Droid Repository](https://apt.izzysoft.de/fdroid/index/apk/moe.shizuku.privileged.api)
+
 ### Magisk module
 
 For rooted devices, Shizuku can start on boot automatically. However, some highly customized systems restrict this behavior, it is hard or impossible for users to disable the restriction.

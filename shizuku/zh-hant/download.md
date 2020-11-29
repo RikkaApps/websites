@@ -6,6 +6,8 @@
 
 [Coolapk](https://www.coolapk.com/apk/moe.shizuku.privileged.api)
 
+[IzzyOnDroid F-Droid Repository](https://apt.izzysoft.de/fdroid/index/apk/moe.shizuku.privileged.api)
+
 ### Magisk 模組
 
 對於已 root 裝置，Shizuku 可以開機啟動。但是一部分高度定製的系統限制了這一行為，使用者很難或不可能解除該限制。
