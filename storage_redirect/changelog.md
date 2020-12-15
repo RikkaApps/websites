@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.0.1 (2020-12-15)
+
+- Fix the problem that on Android 11, newly added "Export isolated folders" rules will not take effect immediately
+
 ## 5.0.0 (2020-11-23)
 
 - Support devices published with Android 11 which has `sdcardfs` removed (Pixel 5, Pixel 4a 5G, etc)
