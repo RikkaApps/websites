@@ -1,5 +1,10 @@
 # Changelog
 
+## 5.0.2 (2020-12-20)
+
+- Fix a problem which may cause apps with `sharedUserId` (called "App group" in the app) cannot be isolated
+- When "Block system remount" is available, don't automatically allow `OP_REQUEST_INSTALL_PACKAGES` (The reason for doing this before is, the change of `OP_REQUEST_INSTALL_PACKAGES` will trigger system remount, cause isolation become invalid)
+
 ## 5.0.1 (2020-12-15)
 
 - Fix the problem that on Android 11, newly added "Export isolated folders" rules will not take effect immediately
