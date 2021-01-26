@@ -1,5 +1,14 @@
 # Changelog
 
+## 5.2.0 (2021-01-27)
+
+- Fix an issue on Android 11 where all functions that require listing files did not work properly for non-primary users
+
+## 5.1.0 (2021-01-19)
+
+- Support start with Sui (https://github.com/RikkaApps/Sui) (Of course due to the high complexity of this app, it really just start)
+- "File monitor" can show records from non-primary user now
+
 ## 5.0.2 (2020-12-20)
 
 - Fix a problem which may cause apps with `sharedUserId` (called "App group" in the app) cannot be isolated
