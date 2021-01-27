@@ -1,13 +1,17 @@
 # Changelog
 
-::: details Root mode has been removed
+## 5.3.0 (2021-01-28)
 
-Only using pure root (execute commands) cannot guarantee core functions on Android 10+. Read [this](./guide/technical/system_behaviors/) for more details.
+- The first step of correctly handling Shared user ID
 
-The older versions of App Ops look "working correctly", but under certain circumstances, your changes not actually work. For example, in Android 10, once you have changed location permission from the system, changes from older versions of App Ops will never work (even if it seems to be changed successfully). 
+## 5.2.0 (2021-01-16)
 
-If you are using older systems and do want the old root mode, you can still [download the old version (v3.1.1)](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk).
-:::
+- Support Sui (https://github.com/RikkaApps/Sui)
+
+## 5.1.3 (2020-11-29)
+
+- Adapt changes of "Storage Isolation" v5
+- Fix a problem that the backup will be broken if the system returns "wrong" data (exiting broken backups cannot be fixed)
 
 ## 5.1.2 (2020-10-07)
 

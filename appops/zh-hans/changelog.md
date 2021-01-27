@@ -1,13 +1,17 @@
 # 变更日志
 
-:::details Root 模式已被删除
+## 5.3.0 (2021-01-28)
 
-仅使用纯 root（执行命令）无法在 Android 10+ 保证核心功能。阅读[这个](./guide/technical/system_behaviors/)了解更多详细信息。
+- 初步地加入正确处理 Shared user ID
 
-App Ops 的旧版本看起来“可以正常工作”，但是在某些情况下，您的更改实际上不起作用。例如，在 Android 10 中，一旦您从系统更改了位置权限，旧版 App Ops 的更改将永远无法生效（即使看起来成功地更改了）。
+## 5.2.0 (2021-01-16)
 
-如果您使用的是较旧的系统，并且希望使用旧的 root 模式，则仍然可以[下载旧版本（v3.1.1）](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v3.1.1.r956.eec61b4.apk)。
-:::
+- 支持 Sui（https://github.com/RikkaApps/Sui）
+
+## 5.1.3 (2020-11-29)
+
+- 适应了“存储空间隔离” v5 的变化
+- 修了如果系统返回了“错误”的数据备份会坏掉的问题（但是已经坏了的备份文件不可能修好）
 
 ## 5.1.2 (2020-10-07)
 
