@@ -32,7 +32,7 @@ Android 11 adds a new wireless debugging function, which is located in "Develope
 
 1. After the device restarts, you need to enable the "Wireless debugging" option again and restart Shizuku.
 2. "Wireless debugging" cannot be enabled when there is no WiFi connection (Shizuku already started is not affected).
-3. Do not disable "Developer options".
+3. Do not disable "Developer options" or "USB debugging".
 :::
 
 ### 1. Pairing (only need to be done once)
