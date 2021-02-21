@@ -115,7 +115,13 @@ The steps for enabling Developer Options on different devices may vary, please s
 
 Copy the command and paste into the terminal. If there is no problem, you will see that Shizuku has started successfully in Shizuku app.
 
-Starting from Shizuku v4.0.0, the command is different on different Android versions. It's better to copy the command from Shizuku app.
+
+::: details Command for Shizuku v11.2.0+
+
+```
+adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
+```
+:::
 
 ::: details Command for Shizuku v4.0.0+
 Android 6.0:

@@ -114,7 +114,12 @@ Android 除錯橋 (`adb`) 是一個通用命令列工具，其允許您與模擬
 
 複製指令並貼上到終端中，如無問題你將會在 Shizuku 中看到已啟動成功。
 
-從 Shizuku v4.0.0 起，不同的 Android 版本有不同的指令。從 Shizuku 中複製指令是更好的選擇。
+::: details 適用於 Shizuku v11.2.0+ 的指令 
+
+```
+adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
+```
+:::
 
 ::: details 適用於 Shizuku v4.0.0+ 的指令
 Android 6.0:

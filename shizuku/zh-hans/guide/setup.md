@@ -115,7 +115,12 @@ Android 调试桥 (`adb`) 是一个通用命令行工具，其允许您与模拟
 
 复制指令并粘贴到终端中，如无问题你将会在 Shizuku 中看到已启动成功。
 
-从 Shizuku v4.0.0 起，不同的 Android 版本有不同的指令。从 Shizuku 中复制指令是更好的选择。
+::: details 适用于 Shizuku v11.2.0+ 的指令 
+
+```
+adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
+```
+:::
 
 ::: details 适用于 Shizuku v4.0.0+ 的指令
 Android 6.0:
