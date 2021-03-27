@@ -96,13 +96,13 @@ module.exports = {
     editLinks: true
   },
   plugins: [
-    [
+    /*[
       'sitemap',
       {
         hostname: 'https://appops.rikka.app',
         exclude: ['/404.html']
       }
-    ],
+    ],*/
     /*[
       'redirect',
       {

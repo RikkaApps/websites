@@ -112,11 +112,11 @@ module.exports = {
     editLinks: true
   },
   plugins: {
-    'sitemap': {
+    /*'sitemap': {
       hostname: 'https://sr.rikka.app',
       exclude: ['/404.html'],
       dateFormatter: time => undefined
-    },
+    },*/
     '@vuepress/last-updated':
     {
       transformer: (timestamp, lang) => {

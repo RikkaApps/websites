@@ -1,3 +1,9 @@
+const moment = require('moment')
+const langMap = {
+  "zh-Hans": "zh-cn",
+  "zh-Hant": "zh-tw"
+}
+
 module.exports = {
   base: '/',
   title: 'Rikka Apps',
@@ -96,10 +102,32 @@ module.exports = {
     docsDir: 'www',
     editLinks: false
   },
-  'sitemap': {
-    hostname: 'https://rikka.app',
-    exclude: ['/404.html']
-  },
+  plugins: [
+    /*[
+      'sitemap',
+      {
+        hostname: 'https://rikka.app',
+        exclude: ['/404.html']
+      }
+    ],*/
+    [
+      'clean-urls',
+      {
+        normalSuffix: '/',
+        indexSuffix: '/',
+        notFoundPath: '/404.html'
+      }
+    ],
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          moment.locale(langMap[lang])
+          return moment(timestamp).format('lll') + " (GMT)"
+        }
+      }
+    ]
+  ]
 }
 
 function getSidebar(prefix, knowledgeTitle) {

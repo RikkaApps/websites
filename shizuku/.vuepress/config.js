@@ -101,10 +101,10 @@ module.exports = {
     editLinks: true
   },
   plugins: {
-    'sitemap': {
+    /*'sitemap': {
       hostname: 'https://shizuku.rikka.app',
       exclude: ['/404.html']
-    },
+    },*/
   }
 }
 
