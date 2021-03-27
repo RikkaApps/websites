@@ -1,10 +1,14 @@
 # Purchase (restore) issues on Google Play
 
-Since the purchase process happens in Google Play, all these solutions are based on experience.
+The whole purchase process happens in Google Play, **the app developer has zero control over it**, all these solutions are based on experience.
 
 ### Multi-account issue
 
 If you are logged into multiple accounts, Play Store may use the wrong account. This is not controlled by the app developer. Usually use the account at the time of purchase to reinstall should solve the problem.
+
+### Using spoof softwares
+
+Spoof softwares like "L**** Patcher" will hijack the connection between the app and the Play Store, which will finally result in error.
 
 ### Code 7
 
@@ -21,5 +25,3 @@ Search how to confirm (change) the region by yourself. Remember, the region is N
 ### Code 6
 
 Purchase is an interaction process between the app and Play Store. Many custom systems enable some restrictions by default, so that this process is blocked. For example, on MIUI, it's required to allow "Display interface in the background" permission for the Play Store.
-
-Another possible reason is spoof application like "XXX patcher" is used.
