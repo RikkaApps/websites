@@ -1,5 +1,13 @@
 # Changelog
 
+## 5.3.1 (2021-03-27)
+
+- Use [self-compiled libcxx](https://github.com/RikkaW/libcxx-prefab) to reduce the file size (about 300KB reduction)
+- Enhancement module upgrade to Riru 25
+- Adapt to an Android 12 change
+- Report when the enhanced mode is not working properly
+- Solved the problem comes from Android 11 user manually disable fuse
+
 ## 5.2.0 (2021-01-27)
 
 - Fix an issue on Android 11 where all functions that require listing files did not work properly for non-primary users

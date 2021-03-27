@@ -1,5 +1,13 @@
 # Changelog
 
+## 5.3.1 (2021-03-27)
+
+- 采用[自己编译的 libcxx](https://github.com/RikkaW/libcxx-prefab)来减少文件大小（减少了约 300KB）
+- 增强模块升级到 Riru 25
+- 适应一个 Android 12 的改变
+- 当增强模式没有正常工作时给予提示
+- 处理了一些 Android 11 及以上用户主动关闭了 fuse 后的问题
+
 ## 5.2.0 (2021-01-27)
 
 - 修了在 Android 11 上无法修改非主用户的应用的设定的问题
