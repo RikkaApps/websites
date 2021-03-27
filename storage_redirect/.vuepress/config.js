@@ -111,20 +111,32 @@ module.exports = {
     docsDir: 'storage_redirect',
     editLinks: true
   },
-  plugins: {
-    /*'sitemap': {
-      hostname: 'https://sr.rikka.app',
-      exclude: ['/404.html'],
-      dateFormatter: time => undefined
-    },*/
-    '@vuepress/last-updated':
-    {
-      transformer: (timestamp, lang) => {
-        moment.locale(langMap[lang])
-        return moment(timestamp).format('lll') + " (GMT)"
+  plugins: [
+    /*[
+      'sitemap',
+      {
+        hostname: 'https://sr.rikka.app',
+        exclude: ['/404.html']
       }
-    }
-  }
+    ],*/
+    [
+      'clean-urls',
+      {
+        normalSuffix: '/',
+        indexSuffix: '/',
+        notFoundPath: '/404.html'
+      }
+    ],
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          moment.locale(langMap[lang])
+          return moment(timestamp).format('lll') + " (GMT)"
+        }
+      }
+    ]
+  ]
 }
 
 function getSidebar(prefix, basicTitle, advancedTitle, enhancedModeTitle, compatibilityTitle, faqTitle) {
