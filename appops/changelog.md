@@ -1,5 +1,10 @@
 # Changelog
 
+## 5.3.1 (2021-04-03)
+
+- Fix a problem which could cause crash
+- Adapt some Android 12 changes
+
 ## 5.3.0 (2021-01-28)
 
 - The first step of correctly handling Shared user ID
