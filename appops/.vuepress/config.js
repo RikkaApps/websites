@@ -1,3 +1,11 @@
+const moment = require('moment')
+const langMap = {
+  "zh-Hans": "zh-cn",
+  "zh-Hant": "zh-tw"
+}
+
+var timestampCache = {}
+
 module.exports = {
   base: '/',
   title: 'App Ops',
@@ -96,13 +104,16 @@ module.exports = {
     editLinks: true
   },
   plugins: [
-    /*[
+    [
       'sitemap',
       {
         hostname: 'https://appops.rikka.app',
-        exclude: ['/404.html']
+        exclude: ['/404.html'],
+        dateFormatter: (time) => {
+          timestampCache[time]
+        }
       }
-    ],*/
+    ],
     /*[
       'redirect',
       {
@@ -115,6 +126,23 @@ module.exports = {
         normalSuffix: '/',
         indexSuffix: '/',
         notFoundPath: '/404.html'
+      }
+    ],
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          var original = timestamp
+
+          moment.locale(langMap[lang])
+          var localized = moment(original).format('lll')
+          
+          moment.locale('en')
+          var iso = moment(original).toISOString()
+          timestampCache[localized] = iso
+
+          return localized
+        }
       }
     ]
   ]
