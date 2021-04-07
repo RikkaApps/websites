@@ -4,6 +4,8 @@ const langMap = {
   "zh-Hant": "zh-tw"
 }
 
+var timestampCache = {}
+
 module.exports = {
   base: '/',
   title: 'Rikka Apps',
@@ -103,13 +105,16 @@ module.exports = {
     editLinks: false
   },
   plugins: [
-    /*[
+    [
       'sitemap',
       {
         hostname: 'https://rikka.app',
-        exclude: ['/404.html']
+        exclude: ['/404.html'],
+        dateFormatter: (time) => {
+          timestampCache[time]
+        }
       }
-    ],*/
+    ],
     [
       'clean-urls',
       {
@@ -122,8 +127,16 @@ module.exports = {
       '@vuepress/last-updated',
       {
         transformer: (timestamp, lang) => {
+          var original = timestamp
+
           moment.locale(langMap[lang])
-          return moment(timestamp).format('lll') + " (GMT)"
+          var localized = moment(original).format('lll')
+          
+          moment.locale('en')
+          var iso = moment(original).toISOString()
+          timestampCache[localized] = iso
+
+          return localized
         }
       }
     ]
