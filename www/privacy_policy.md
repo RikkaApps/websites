@@ -10,11 +10,7 @@ All of the information collect behavior will be listed below.
 
 Link to privacy policy of third party service providers used by the app:
 
-* [Crashlytics from Fabric](https://docs.fabric.io/android/fabric/data-privacy.html)
-* [Firebase](https://firebase.google.com/support/privacy/)
-* [AdMob from Firebase](https://support.google.com/admob/answer/6128543)
-
-For App Ops installed from out side of Google Play, Android ID will be used for check if Alipay in-app purchase is used. (Mainly for mainland China users, because Google service is blocked in mainland China)
+* [App Center from Microsoft](https://privacy.microsoft.com/en-us/privacystatement)
 
 ### Storage Isolation (Storage Redirect)
 
