@@ -1,3 +1,11 @@
+const moment = require('moment')
+const langMap = {
+  "zh-Hans": "zh-cn",
+  "zh-Hant": "zh-tw"
+}
+
+var timestampCache = {}
+
 module.exports = {
   base: '/',
   title: 'Shizuku',
@@ -100,12 +108,43 @@ module.exports = {
     docsDir: 'shizuku',
     editLinks: true
   },
-  plugins: {
-    /*'sitemap': {
-      hostname: 'https://shizuku.rikka.app',
-      exclude: ['/404.html']
-    },*/
-  }
+  plugins: [
+    [
+      'sitemap',
+      {
+        hostname: 'https://shizuku.rikka.app',
+        exclude: ['/404.html'],
+        dateFormatter: (time) => {
+          timestampCache[time]
+        }
+      }
+    ],
+    [
+      'clean-urls',
+      {
+        normalSuffix: '/',
+        indexSuffix: '/',
+        notFoundPath: '/404.html'
+      }
+    ],
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp, lang) => {
+          var original = timestamp
+
+          moment.locale(langMap[lang])
+          var localized = moment(original).format('lll')
+          
+          moment.locale('en')
+          var iso = moment(original).toISOString()
+          timestampCache[localized] = iso
+
+          return localized
+        }
+      }
+    ]
+  ]
 }
 
 function getNavbar(prefix, introduction, guide, apps, download, dev) {
