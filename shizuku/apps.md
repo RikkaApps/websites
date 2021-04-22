@@ -1,3 +1,4 @@
+![dae59c42-29e5-11eb-99b6-0a58a9feac04](https://user-images.githubusercontent.com/3543439/115641074-a81dcd00-a318-11eb-8d60-afe2f57334b1.png)
 # Apps using Shizuku
 
 If you are an app developer (or have obtained developer's consent), you can add app using Shizuku to the list using pull request.
