@@ -1,5 +1,14 @@
 # Changelog
 
+## 5.3.5 (2021-04-28)
+
+- Try to fix a problem that may causes the crash of the core service
+- Hide some apps (apps without components, apps without code, overlay apps) from the app list (such apps cannot run by themselve, isolate them is meaningless)
+
+## 5.3.4 (2021-04-27)
+
+- Fix a problem related to "Fix app interaction" that cause isolated apps not working, this problem only happens on few devices
+
 ## 5.3.1 (2021-03-27)
 
 - Use [self-compiled libcxx](https://github.com/RikkaW/libcxx-prefab) to reduce the file size (about 300KB reduction)
