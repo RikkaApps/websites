@@ -24,6 +24,10 @@ You need to disable "Flyme payment protection" in "Developer options".
 
 You need to enable "Allow ADB debugging options in 'Charge only' mode" in "Developer options".
 
+### 5. OriginOS (vivo) 💩
+
+The system setting of OriginOS does not support split-screen, you need to enable "Force activities to be resizable" in "Developer options". See [Shizuku #106](https://github.com/RikkaApps/Shizuku/issues/106).
+
 ## Start by wireless debugging
 
 Android 11 adds a new wireless debugging function, which is located in "Developer Settings"-"Wireless debugging". Shizuku v4.0.0 and above supports this feature.

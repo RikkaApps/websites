@@ -24,6 +24,10 @@
 
 你需要在“开发者选项”中开启「“仅充电”模式下允许 ADB 调试选项」。
 
+### 5. OriginOS (vivo) 💩
+
+OriginOS 的设置不支持分屏，你需要在“开发者设置”中开启“强行将活动设为可调整大小”。参见 [Shizuku #106](https://github.com/RikkaApps/Shizuku/issues/106)。
+
 ## 通过无线调试启动
 
 Android 11 添加了全新的无线调试功能，该功能位于“开发者设置”-“无线调试”。Shizuku v4.0.0 起支持此功能。

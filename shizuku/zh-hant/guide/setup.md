@@ -24,6 +24,10 @@
 
 你需要在「開發人員選項」中開啟「僅充電模式下允許 ADB 偵錯選項」。
 
+### 5. OriginOS (vivo) 💩
+
+OriginOS 的設定不支援分屏，你需要在「開發者設定」中開啟「將活動強制設為可調整大小」。參見 [Shizuku #106](https://github.com/RikkaApps/Shizuku/issues/106)。
+
 ## 透過無線偵錯啟動
 
 Android 11 添加了全新的無線偵錯功能，該功能位於「開發者設定」-「無線偵錯」。Shizuku v4.0.0 起支援此功能。
