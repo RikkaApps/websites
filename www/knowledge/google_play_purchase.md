@@ -10,6 +10,14 @@ If you are logged into multiple accounts, Play Store may use the wrong account. 
 
 Spoof softwares like "L**** Patcher" will hijack the connection between the app and the Play Store, which will finally result in error.
 
+### Login to too many devices
+
+Google may have some sort of risk control mechanism to disallow users login to too many devices to use purchased contents.
+
+If you do factory reset or flash third-party ROMs without logout Google account first, you many have too many devices in your account.
+
+Check [Google's device management page](https://myaccount.google.com/device-activity) and remove devices that do not exist.
+
 ### Code 7
 
 The purchase record is stored in Play Store's cache. Code 7 means the record is missing.
