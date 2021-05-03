@@ -12,6 +12,8 @@
 
 對於 MIUI 11 及以上版本，你必須在 Shizuku 內授予使用者程式權限。這是因為自定義權限功能被破壞，參見 [Shizuku #45](https://github.com/RikkaApps/Shizuku/issues/45) 和 [android-in-china/Compatibility #16](https://github.com/android-in-china/Compatibility/issues/16)。
 
+此外，**不要**使用 MIUI 的「手機管家」的掃描功能，因為它會禁用「開發人員選項」。
+
 ### 2. ColorOS（OPPO）💩
 
 你需要在「開發人員選項」中關閉「權限監控」。

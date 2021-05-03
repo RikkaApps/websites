@@ -12,6 +12,8 @@ You need to enable "USB debugging (Security options)" in "Developer options".
 
 For MIUI 11 and above, you must grant permission to user apps in Shizuku. This is because the custom permission is broken by MIUI, see [Shizuku #45](https://github.com/RikkaApps/Shizuku/issues/45) and [android-in-china/Compatibility #16](https://github.com/android-in-china/Compatibility/issues/16).
 
+Also, **DO NOT** use the scan feature in MIUI's "Security" app, since it will disable "Developer options".
+
 ### 2. ColorOS (OPPO) 💩
 
 You need to disable "Permission monitoring" in "Developer options".
