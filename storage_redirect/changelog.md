@@ -1,5 +1,11 @@
 # Changelog
 
+## 5.4.0 (2021-05-03)
+
+- Try to solve the problem that MediaStore on Android 11 or above cannot be isolated (On MIUI, isolate it may be necessary)
+- Add a few mistake-proofing changes for Android 11 or above
+- Record the total number of handling the isolated apps
+
 ## 5.3.5 (2021-04-28)
 
 - Try to fix a problem that may causes the crash of the core service
