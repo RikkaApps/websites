@@ -1,10 +1,16 @@
 # Changelog
 
+## 5.4.1 (2021-05-04)
+
+- Prevent 💩 MIUI's "Force dark theme" to break our dark theme<sup>**〔1〕**</sup>
+
+<sub><b>〔1〕</b>MIUI has its own "Force dark theme". However it seems that even if the app has provided correct dark theme, MIUI's "Force dark theme" will still take effect and finally mess up colors.</sub>
+
 ## 5.4.0 (2021-05-03)
 
 - Try to solve the problem that MediaStore on Android 11 or above cannot be isolated (On MIUI, isolate it may be necessary)
 - Add a few mistake-proofing changes for Android 11 or above
-- Record the total number of handling the isolated apps
+- Record the total number of handled isolated apps
 
 ## 5.3.5 (2021-04-28)
 
