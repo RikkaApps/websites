@@ -2,7 +2,7 @@
 
 ## 5.4.1 (2021-05-04)
 
-- Prevent 💩 MIUI's "Force dark theme" to break our dark theme<sup>**〔1〕**</sup>
+- Prevent 💩 MIUI's "Force dark theme" from breaking app's dark theme<sup>**〔1〕**</sup>
 
 <sub><b>〔1〕</b>MIUI has its own "Force dark theme". However it seems that even if the app has provided correct dark theme, MIUI's "Force dark theme" will still take effect and finally mess up colors.</sub>
 
