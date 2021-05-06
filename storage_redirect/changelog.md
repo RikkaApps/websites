@@ -1,8 +1,8 @@
 # Changelog
 
-## 5.4.2 (2021-05-05)
+## 5.4.2 (2021-05-06)
 
-- Fix the problem that in app detail page, accessible folder templates needs a lot of time to be loaded
+- Fix the problem that accessible folder templates needs a lot of time to be loaded
 
 ## 5.4.1 (2021-05-04)
 
