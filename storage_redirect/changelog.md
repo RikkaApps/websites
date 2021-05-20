@@ -1,6 +1,11 @@
 # Changelog
 
-## 5.4.2 (2021-05-06)
+## 5.4.4 (2021-05-21)
+
+- Limited mode (Enhancement module not installed) works on Android 12 Beta 1
+- Add "Exclude private files" option for File monitor
+
+## 5.4.3 (2021-05-06)
 
 - Fix the problem that accessible folder templates needs a lot of time to be loaded
 
