@@ -1,6 +1,6 @@
 # Changelog
 
-## 5.4.4 (2021-05-21)
+## 5.4.5 (2021-05-21)
 
 - Limited mode (Enhancement module not installed) works on Android 12 Beta 1
 - Add "Exclude private files" option for File monitor
