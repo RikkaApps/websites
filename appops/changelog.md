@@ -1,5 +1,12 @@
 # Changelog
 
+## 5.4.0 (2021-05-27)
+
+- Fix Clipboard monitor does not work on Android 12 Beta 1
+- Fix "Ignore" cannot be set for apps in work profiles on Android 11+ (This fix is only possible under Shizuku mode)
+- Hide `OP_QUERY_ALL_PACKAGES` since this op does nothing
+- Hide `OP_NO_ISOLATED_STORAGE` since this op is only for debugging use
+
 ## 5.3.3 (2021-05-04)
 
 - Adapt another Android 12 changes
@@ -9,7 +16,7 @@
 
 ## 5.3.1 (2021-04-03)
 
-- Fix a problem which could cause crash
+- Fix a problem that would cause the crash
 - Adapt some Android 12 changes
 
 ## 5.3.0 (2021-01-28)
