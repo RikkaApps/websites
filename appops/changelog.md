@@ -1,5 +1,10 @@
 # Changelog
 
+## 5.4.2 (2021-06-01)
+
+- Fix backup is broken from version 5.4.0
+- Fix some visual problem on old systems
+
 ## 5.4.0 (2021-05-27)
 
 - Fix Clipboard monitor does not work on Android 12 Beta 1
