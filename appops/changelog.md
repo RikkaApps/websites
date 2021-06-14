@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.4.3 (2021-06-13)
+
+- Fix the problem that "Automatic recovery" could cause all permissions in the same group be reset to "Ignore"
+
 ## 5.4.2 (2021-06-01)
 
 - Fix backup is broken from version 5.4.0
