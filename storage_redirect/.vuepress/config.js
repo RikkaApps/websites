@@ -24,19 +24,19 @@ module.exports = {
     }],
     ['link', {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap',
+      href: 'https://cdn.jsdelivr.net/gh/RikkaW/webfonts@4/css/Roboto-VF.css',
       media: 'print',
       onload: "this.media='all'"
     }],
     ['link', {
       rel: 'stylesheet',
-      href: 'https://cdn.jsdelivr.net/gh/RikkaW/webfonts@3/css/NotoSansCJK-SC-VF.css',
+      href: 'https://cdn.jsdelivr.net/gh/RikkaW/webfonts@4/css/NotoSansCJK-SC-VF.css',
       media: 'print',
       onload: "this.media='all'"
     }],
     ['link', {
       rel: 'stylesheet',
-      href: 'https://cdn.jsdelivr.net/gh/RikkaW/webfonts@3/css/NotoSansCJK-TC-VF.css',
+      href: 'https://cdn.jsdelivr.net/gh/RikkaW/webfonts@4/css/NotoSansCJK-TC-VF.css',
       media: 'print',
       onload: "this.media='all'"
     }],
