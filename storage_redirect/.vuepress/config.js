@@ -12,23 +12,33 @@ module.exports = {
   head: [
     ['link', {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap'
+      href: 'https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap',
+      media: 'print',
+      onload: "this.media='all'"
     }],
     ['link', {
       rel: 'stylesheet',
-      href: 'https://raw.rikka.app/css/SourceCodePro-BDC.css'
+      href: 'https://raw.rikka.app/css/SourceCodePro-BDC.css',
+      media: 'print',
+      onload: "this.media='all'"
     }],
     ['link', {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap'
+      href: 'https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap',
+      media: 'print',
+      onload: "this.media='all'"
     }],
     ['link', {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,500,700&display=swap'
+      href: 'https://cdn.jsdelivr.net/gh/RikkaW/webfonts@3/css/NotoSansCJK-SC-VF.css',
+      media: 'print',
+      onload: "this.media='all'"
     }],
     ['link', {
       rel: 'stylesheet',
-      href: 'https://fonts.googleapis.com/css?family=Noto+Sans+TC:400,500,700&display=swap'
+      href: 'https://cdn.jsdelivr.net/gh/RikkaW/webfonts@3/css/NotoSansCJK-TC-VF.css',
+      media: 'print',
+      onload: "this.media='all'"
     }],
     ['link', { rel: 'apple-touch-icon', size: '57x57', href: '/icon/apple-icon-57x57.png' }],
     ['link', { rel: 'apple-touch-icon', size: '60x60', href: '/icon/apple-icon-60x60.png' }],
@@ -140,7 +150,7 @@ module.exports = {
 
           moment.locale(langMap[lang])
           var localized = moment(original).format('lll')
-          
+
           moment.locale('en')
           var iso = moment(original).toISOString()
           timestampCache[localized] = iso
