@@ -1,5 +1,17 @@
 # Changelog
 
+## 6.0.2 (2021-06-27)
+
+- Enhancement module v25:
+  - Apps can no longer use non-accessible folders through Media Storage (old versions can't handle the new method added from Android 10)
+  - File monitor can record the event of apps use Media Storage
+  - Redo "the Media Storage part" from scratch, having much better performance and compatibility than before
+- Improved File monitor UI
+- Fix Gallery preview will crash the core service from Android 12 Beta 1
+- Due to the massive changes of module v25, old versions of the enhancement module is no longer supported
+- Remove some migration codes for super old versions
+- Fix crash on x86 devices
+
 ## 5.4.5 (2021-05-21)
 
 - Limited mode (Enhancement module not installed) works on Android 12 Beta 1
