@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.0.3 (2021-06-28)
+
+- Fix the problem that the enhancement module is sometimes displayed as not installed
+
 ## 6.0.2 (2021-06-27)
 
 - Enhancement module v25:
