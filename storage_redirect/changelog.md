@@ -1,8 +1,15 @@
 # Changelog
 
-## 6.0.3 (2021-06-28)
+## 6.1.0 (2021-06-30)
+
+- Allow to isolate apps with only read storage permission
+- Allow to isolate apps without storage permission on Android 10+ under enhanced mode
+  
+  Apps without storage permissions can write media (picture, video, music) files to standard folders through Media Store. There are apps persist its data by generating fake media files.
 
 - Fix the problem that the enhancement module is sometimes displayed as not installed
+- Fix crash on x86 devices
+- Hide some apps (apps without components, apps without code, overlay apps) from the app list (such apps cannot run by themselves, isolate them is meaningless)
 
 ## 6.0.2 (2021-06-27)
 
@@ -40,7 +47,7 @@
 ## 5.3.5 (2021-04-28)
 
 - Try to fix a problem that may causes the crash of the core service
-- Hide some apps (apps without components, apps without code, overlay apps) from the app list (such apps cannot run by themselve, isolate them is meaningless)
+- Hide some apps (apps without components, apps without code, overlay apps) from the app list (such apps cannot run by themselves, isolate them is meaningless)
 
 ## 5.3.4 (2021-04-27)
 
