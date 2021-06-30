@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /logo.png
+heroImage: /logo.webp
 backgroundImage: /background.png
 apps:
 - title: 存储空间隔离

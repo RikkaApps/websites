@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /logo.png
+heroImage: /logo.webp
 backgroundImage: /background.png
 apps:
 - title: Storage Isolation
