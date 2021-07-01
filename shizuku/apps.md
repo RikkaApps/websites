@@ -29,3 +29,12 @@ Ice Box is a box to freeze and store the apps you rarely used.
 Shizuku is one of its non root working mode.
 
 Download: [Google Play](https://play.google.com/store/apps/details?id=com.catchingnow.icebox) / [Coolapk](https://coolapk.com/apk/com.catchingnow.icebox)
+
+---
+<img src="https://github.com/redsolver/skydroid/raw/master/assets/icon/full_icon.png" title="SkyDroid" width="24" align="top"/> SkyDroid App Store
+
+SkyDroid is a decentralized domain-based App Store for Android.
+
+Shizuku is used to install or update multiple apps at once without user interaction on non rooted devices.
+
+Download: [GitHub](https://github.com/redsolver/skydroid/releases)
