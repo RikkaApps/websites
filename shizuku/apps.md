@@ -29,3 +29,12 @@ Ice Box is a box to freeze and store the apps you rarely used.
 Shizuku is one of its non root working mode.
 
 Download: [Google Play](https://play.google.com/store/apps/details?id=com.catchingnow.icebox) / [Coolapk](https://coolapk.com/apk/com.catchingnow.icebox)
+
+---
+<img src="https://play-lh.googleusercontent.com/dhFI8vJHOZnUuwrnX_yfWSsW43CojlEjpSR3aVFecO6oa8VxrsQFf5m8fBieWE6-sKI=s180-rw" title="Hex-Installer" width="24" align="top"/> Hex Installer - Theme Engine for OneUI
+
+Hex Installer is a theming app to highly customize Samsung Galaxy OneUI devices without root. It has over 100K+ downloads, 50+ third party plugins from other themers and a great support from Samsung custom theming community.
+
+Shizuku is one of its non root working mode for OneUI 3.1 and above.
+
+Download: [Google Play](https://play.google.com/store/apps/details?id=project.vivid.hex.bodhi)
