@@ -29,3 +29,10 @@ Ice Box is a box to freeze and store the apps you rarely used.
 Shizuku is one of its non root working mode.
 
 Download: [Google Play](https://play.google.com/store/apps/details?id=com.catchingnow.icebox) / [Coolapk](https://coolapk.com/apk/com.catchingnow.icebox)
+---
+#HexTheme Installer
+Create Personalized Themes for your Samsung Galaxy OneUI. No Root Required. All the Galaxy smart phones running "Official Android Pie/10/11" are supported. Simple and Easy. No root required. OneUI/OneUI 2/OneUI 3.
+
+Download:
+[Github](https://github.com/RikkaApps/Shizuku)
+[Google Play](https://play.google.com/store/apps/dev?id=8553371187542589152)
