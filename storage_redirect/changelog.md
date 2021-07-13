@@ -1,5 +1,11 @@
 # Changelog
 
+## 6.1.3 (2021-07-13)
+
+- Fix the problem that, from v6.1.0, apps with `Shared user ID` may not be isolated correctly
+- Fix cannot add a same "Allow access files from other app" rule to different users
+- Fix the problem that selected but non-exist folder will not be shown in "Accessible folders" picker
+
 ## 6.1.0 (2021-06-30)
 
 - Allow to isolate apps with only read storage permission
