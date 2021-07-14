@@ -1,6 +1,6 @@
 # Changelog
 
-## 6.1.3 (2021-07-13)
+## 6.1.4 (2021-07-14)
 
 - Fix the problem that, from v6.1.0, apps with `Shared user ID` may not be isolated correctly
 - Fix cannot add a same "Allow access files from other app" rule to different users
