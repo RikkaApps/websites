@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.1.5 (2021-08-12)
+
+- Handle system server restart correctly
+
 ## 6.1.4 (2021-07-14)
 
 - Fix the problem that, from v6.1.0, apps with `Shared user ID` may not be isolated correctly
