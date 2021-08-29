@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.1.8 (2021-08-29)
+
+- Recreate the database of File monitor when it is broken
+- Fix a internal problem that will cause the crash of the core service
+
 ## 6.1.5 (2021-08-12)
 
 - Handle system server restart correctly
