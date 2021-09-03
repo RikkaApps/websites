@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.1.9 (2021-09-03)
+
+- Fix the problem that on devices without `sdcardfs`, app may not be able to access the folder used by "Export isolated files" rule
+- Fix a UI bug
+
 ## 6.1.8 (2021-08-29)
 
 - Recreate the database of File monitor when it is broken
