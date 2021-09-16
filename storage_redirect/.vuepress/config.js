@@ -57,7 +57,7 @@ module.exports = {
   locales: {
     '/': {
       lang: 'en',
-      description: 'Elegantly solve the problem of "bad apps" abusing storage permissions'
+      description: 'Elegantly solve the problem of bad apps abusing storage permissions'
     },
     '/zh-hans/': {
       lang: 'zh-Hans',
