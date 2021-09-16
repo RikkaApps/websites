@@ -1,5 +1,9 @@
 # Changelog
 
+## 6.1.10 (2021-09-16)
+
+- On Android 11+, allow setting folders in `Android` folder as "Accessible folders" for apps like MediaStore
+
 ## 6.1.9 (2021-09-03)
 
 - Fix the problem that on devices without `sdcardfs`, app may not be able to access the folder used by "Export isolated files" rule
