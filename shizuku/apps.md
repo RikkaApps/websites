@@ -29,3 +29,12 @@ Ice Box is a box to freeze and store the apps you rarely used.
 Shizuku is one of its non root working mode.
 
 Download: [Google Play](https://play.google.com/store/apps/details?id=com.catchingnow.icebox) / [Coolapk](https://coolapk.com/apk/com.catchingnow.icebox)
+
+---
+<img src="https://github.com/tachiyomiorg/tachiyomi/raw/master/.github/readme-images/app-icon.png" title="Tachiyomi" width="24" align="top"/> Tachiyomi
+
+Free and open source manga reader for Android
+
+Tachiyomi uses Shizuku to make it easy to install/update extensions
+
+Download: [Website](https://tachiyomi.org/download) / [GitHub](https://github.com/tachiyomiorg/tachiyomi/releases/latest)
