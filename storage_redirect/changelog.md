@@ -1,5 +1,12 @@
 # Changelog
 
+## 6.2.0 (2021-10-14)
+
+- Significantly improve the performance of FileMonitor especially for users have a large amount of records
+- Fix the problem that FileMonitor may not able to show all records when the filter is set
+- Fix the problem that FileMonitor may not able to disaply records from "MediaStore"
+- Correct the description about apps with target API 30 or higher on Android 11 that can write files to standard folders without permission
+
 ## 6.1.10 (2021-09-16)
 
 - On Android 11+, allow setting folders in `Android` folder as "Accessible folders" for apps like MediaStore
