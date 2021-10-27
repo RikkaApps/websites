@@ -28,43 +28,56 @@
 
 ### 5. OriginOS (vivo) 💩
 
-OriginOS 的設定不支援分屏，你需要在「開發者設定」中開啟「將活動強制設為可調整大小」。參見 [Shizuku #106](https://github.com/RikkaApps/Shizuku/issues/106)。
+OriginOS 的設定不支援分屏，你需要在「開發人員選項」中開啟「將活動強制設為可調整大小」。參見 [Shizuku #106](https://github.com/RikkaApps/Shizuku/issues/106)。
 
 ## 透過無線偵錯啟動
 
-Android 11 添加了全新的無線偵錯功能，該功能位於「開發者設定」-「無線偵錯」。Shizuku v4.0.0 起支援此功能。
+Android 11 及以上支援無線偵錯，您可以直接在裝置上啟動 Shizuku。
 
-::: tip 提示
+以下內容適用於 Shizuku 12.4.0+。
+
+::: warning 請注意
 
 1. 裝置重新啟動後需要再次開啟「無線偵錯」選項並重新啟動 Shizuku。
 2. 無 WiFi 連線時無法啟用「無線偵錯」（已啟動的 Shizuku 不受影響）。
 3. 不可關閉「開發人員選項」或「USB 偵錯」。
 :::
 
-### 1. 配對（只需進行一次）
+### 啟用無線偵錯
 
-> 從 v4.1.0 起，通訊埠自動檢測。
+1. 在網路上搜索如何為您的機型啟用「開發人員選項」
+2. 啟用「開發人員選項」和「USB 偵錯」<br><br><img :src="$withBase('/images/enable_dev_options.png')" style="max-width:320px;width:100%">
+3. 進入「無線偵錯」<br><br><img :src="$withBase('/images/enter_wireless_debugging.png')" style="max-width:320px;width:100%">
+4. 啟用「無線偵錯」<br><br><img :src="$withBase('/images/enable_wireless_debugging.png')" style="max-width:320px;width:100%">
+   
+### 配對
 
-1. 啟用「開發人員選項」（在網路上有非常多的教程）
-2. 進入「無線偵錯」
-3. 啟用系統的「分割畫面」（多視窗）功能（**必須，因為一旦離開「無線偵錯」，配對過程就會被停止**）
-4. 輕觸「無線偵錯」中的「使用配對碼配對裝置」
-5. 輕觸 Shizuku 中的「透過無線偵錯啟動」，輕觸「配對」
-6. 填入「配對碼」及「通訊埠」後確定<br><img :src="$withBase('/images/wireless_adb_pairing.png')" alt="配對過程示意圖" style="max-width:320px;width:100%">
-7. 如果配對成功，「無線偵錯」中的「已配對的裝置」中會出現「shizuku」<br><img :src="$withBase('/images/wireless_adb_pairing_succeeded.png')" alt="配對成功示意圖" style="max-width:320px;width:100%">
-8. 如果你不希望重新進行此步驟，開啟「開發者設定」中的「停用 adb 授權超時功能」
-9. 如果重新安裝 Shizuku，則需要再次執行此步驟
+該步驟只需要進行一次。
 
-### 2. 使用
+1. 部分系統預設禁用通知，您需要在系統的通知設定中允許 Shizuku 傳送通知
+2. 在 Shizuku 內開始配對<br><img :src="$withBase('/images/start_paring_from_shizuku.png')" style="max-width:320px;width:100%">
+3. [啟用無線偵錯](#啟用無線偵錯)
+4. 點按「無線偵錯」中的「使用配對碼配對裝置」<br><img :src="$withBase('/images/start_pairing.png')" style="max-width:320px;width:100%">
+5. 在 Shizuku 的通知中填入配對碼<br><img :src="$withBase('/images/enter_pairing_code.png')" style="max-width:320px;width:100%">
 
-1. 開啟 Shizuku 中的「透過無線偵錯啟動」
-2. 填入「無線偵錯」中的通訊埠（此通訊埠會在每次啟用「無線偵錯」時變化）<br><img :src="$withBase('/images/wireless_adb_port.png')" alt="通訊埠示意圖" style="max-width:320px;width:100%">
+### 啟動 Shizuku
+
+1. [配對](#配對)（只需進行一次）
+2. [啟用無線偵錯](#啟用無線偵錯)
+3. 啟動 Shizuku<br><img :src="$withBase('/images/start_shizuku.png')" style="max-width:320px;width:100%">
+
+如果無法啟動，嘗試禁用並啟用無線偵錯。
 
 ## 透過連線電腦啟動
 
+::: tip 提示
+
+如果您的裝置執行 Android 11 或以上，請透過無線偵錯啟動，無需電腦。
+:::
+
 對於未 root 裝置，需要藉助 adb 啟動。使用 adb 並不困難，請閱讀下面的教程。
 
-::: tip 提示
+::: warning 請注意
 
 1. 裝置重新啟動後需要再次連線電腦。
 2. 在一些定製系統上 Shizuku 可能會隨機停止。閱讀最後的部分可以看到解決方案。

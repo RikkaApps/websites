@@ -30,41 +30,54 @@ You need to enable "Allow ADB debugging options in 'Charge only' mode" in "Devel
 
 The system setting of OriginOS does not support split-screen, you need to enable "Force activities to be resizable" in "Developer options". See [Shizuku #106](https://github.com/RikkaApps/Shizuku/issues/106).
 
-## Start by wireless debugging
+## Start via wireless debugging
 
-Android 11 adds a new wireless debugging function, which is located in "Developer Settings"-"Wireless debugging". Shizuku v4.0.0 and above supports this feature.
+Android 11 and above support wireless debugging, so you can launch Shizuku directly on your device.
 
-::: tip
+The following applies to Shizuku 12.4.0+.
+
+::: warning Please note
 
 1. After the device restarts, you need to enable the "Wireless debugging" option again and restart Shizuku.
 2. "Wireless debugging" cannot be enabled when there is no WiFi connection (Shizuku already started is not affected).
 3. Do not disable "Developer options" or "USB debugging".
 :::
 
-### 1. Pairing (only need to be done once)
+### Enable Wireless debugging
 
-> Starting from v4.1.0, port is automatically detected.
+1. Search the web for how to enable "Developer options" for your device model
+2. Enable "Developer options" and "USB Debugging"<br><br><img :src="$withBase('/images/enable_dev_options.png')" style="max-width:320px;width:100%">
+3. Enter "Wireless debugging"<br><br><img :src="$withBase('/images/enter_wireless_debugging.png')" style="max-width:320px;width:100%">
+4. Enable "Wireless debugging"<br><br><img :src="$withBase('/images/enable_wireless_debugging.png')" style="max-width:320px;width:100%">
+   
+### Pairing
 
-1. Enable "Developer options" (there are many tutorials on the web)
-2. Enter "Wireless debugging"
-3. Enable system's split-screen (multi-window) mode (**It's a must, because once you leave "Wireless debugging", the pairing process is stopped**)
-4. Tap "Pairing device using pairing code" in "Wireless debugging"
-5. Tap "Start via wireless debugging" in Shizuku and Tap "Pair"
-6. Fill in the "Pairing code" and "Port", confirm<br><img :src="$withBase('/images/wireless_adb_pairing.png')" alt="Pairing process" style="max-width:320px;width:100%">
-7. If the pairing is successful, "shizuku" will appear in "Paired devices" of "Wireless debugging”<br><img :src="$withBase('/images/wireless_adb_pairing_succeeded.png')" alt="Picture of successful pairing" style="max-width:320px;width:100%">
-8. If you don't want to repeat this step, enable "Disable adb authorization timeout" in "Developer options"
-9. If you reinstall Shizuku, you will need to do this step again
+This step only needs to be performed once.
 
-### 2. Use
+1. Notifications are disabled by default on some systems, you need to allow Shizuku to send notifications in the system's notification settings
+2. Start pairing in Shizuku<br><img :src="$withBase('/images/start_paring_from_shizuku.png')" style="max-width:320px;width:100%">
+3. [Enable Wireless debugging](#enable-wireless-debugging)
+4. Tap "Pair device with pairing code" in "Wireless debugging"<br><img :src="$withBase('/images/start_pairing.png')" style="max-width:320px;width:100%">
+5. Enter pairing code in Shizuku's notificaiton<br><img :src="$withBase('/images/enter_pairing_code.png')" style="max-width:320px;width:100%">
 
-1. Tap "Start via wireless debugging" in Shizuku
-2. Fill in the port in "Wireless debugging" (this port will change each time "Wireless debugging" is enabled)<img :src="$withBase('/images/wireless_adb_port.png')" alt="port number schematic" style="max-width:320px;width:100%">
+### Start Shizuku
+
+1. [Pairing](#pairing) (Only needs to be performed once)
+2. [Enable Wireless debugging](#enable-wireless-debugging)
+3. Start Shizuku<br><img :src="$withBase('/images/start_shizuku.png')" style="max-width:320px;width:100%">
+
+If it does not start, try disabling and enabling wireless debugging.
 
 ## Start by connecting to a computer
 
+::: tip Tip
+
+If your device is running Android 11 or above, please launch it via wireless debugging. It does not requires a computer.
+:::
+
 For non rooted devices, you need to start Shizuku with `adb`. Using `adb` is not difficult, please read the tutorial below.
 
-::: tip
+::: warning Please note
 
 1. After the device restarts, it needs to be connected to the computer again.
 2. Shizuku may stop randomly on some customized systems. Read the last part to see the solution.

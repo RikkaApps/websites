@@ -32,40 +32,52 @@ OriginOS 的设置不支持分屏，你需要在“开发者设置”中开启�
 
 ## 通过无线调试启动
 
-Android 11 添加了全新的无线调试功能，该功能位于“开发者设置”-“无线调试”。Shizuku v4.0.0 起支持此功能。
+Android 11 及以上支持无线调试，您可以直接在设备上启动 Shizuku。
 
-::: tip 提示
+以下内容适用于 Shizuku 12.4.0+。
+
+::: warning 请注意
 
 1. 设备重新启动后需要再次打开“无线调试”选项并重新启动 Shizuku。
 2. 无 WiFi 连接时无法启用“无线调试”（已启动的 Shizuku 不受影响）。
 3. 不可关闭“开发者选项”或“USB 调试”。
 :::
 
-### 1. 配对（只需进行一次）
+### 启用无线调试
 
-> 从 v4.1.0 起，端口号自动检测。
+1. 在网络上搜索如何为您的机型启用“开发者选项”
+2. 启用“开发者选项”和“USB 调试”<br><br><img :src="$withBase('/images/enable_dev_options.png')" style="max-width:320px;width:100%">
+3. 进入“无线调试”<br><br><img :src="$withBase('/images/enter_wireless_debugging.png')" style="max-width:320px;width:100%">
+4. 启用“无线调试”<br><br><img :src="$withBase('/images/enable_wireless_debugging.png')" style="max-width:320px;width:100%">
+   
+### 配对
 
-1. 启用“开发者选项”（在网络上有非常多的教程）
-2. 进入“无线调试”
-3. 启用系统的分屏（多窗口）功能（**必须，因为一旦离开“无线调试”，配对过程就会被停止**）
-4. 点按“无线调试”中的“使用配对码配对设备”
-5. 点按 Shizuku 中的“通过无线调试启动”，点按“配对”
-6. 填入“配对码”及“端口号”后确定<br><img :src="$withBase('/images/wireless_adb_pairing.png')" alt="配对过程示意图" style="max-width:320px;width:100%">
-7. 如果配对成功，“无线调试”中的“已配对的设备”中会出现“shizuku”<br><img :src="$withBase('/images/wireless_adb_pairing_succeeded.png')" alt="配对成功示意图" style="max-width:320px;width:100%">
-8. 如果你不希望重新进行此步骤，打开“开发者设置”中的“停用 adb 授权超时功能”
-9. 如果重新安装 Shizuku，则需要再次执行此步骤
+该步骤只需要进行一次。
 
+1. 部分系统默认禁用通知，您需要在系统的通知设置中允许 Shizuku 发送通知
+2. 在 Shizuku 内开始配对<br><img :src="$withBase('/images/start_paring_from_shizuku.png')" style="max-width:320px;width:100%">
+3. [启用无线调试](#启用无线调试)
+4. 点按“无线调试”中的“使用配对码配对设备”<br><img :src="$withBase('/images/start_pairing.png')" style="max-width:320px;width:100%">
+5. 在 Shizuku 的通知中填入配对码<br><img :src="$withBase('/images/enter_pairing_code.png')" style="max-width:320px;width:100%">
 
-### 2. 使用
+### 启动 Shizuku
 
-1. 打开 Shizuku 中的“通过无线调试启动”
-2. 填入“无线调试”中的端口号（此端口号会在每次启用“无线调试”时变化）<br><img :src="$withBase('/images/wireless_adb_port.png')" alt="端口号示意图" style="max-width:320px;width:100%">
+1. [配对](#配对)（只需进行一次）
+2. [启用无线调试](#启用无线调试)
+3. 启动 Shizuku<br><img :src="$withBase('/images/start_shizuku.png')" style="max-width:320px;width:100%">
+
+如果无法启动，尝试禁用并启用无线调试。
 
 ## 通过连接电脑启动
 
+::: tip 提示
+
+如果您的设备运行 Android 11 或以上，请通过无线调试启动，无需电脑。
+:::
+
 对于未 root 设备，需要借助 adb 启动。使用 adb 并不困难，请阅读下面的教程。
 
-::: tip 提示
+::: warning 请注意
 
 1. 设备重新启动后需要再次连接电脑。
 2. 在一些定制系统上 Shizuku 可能会随机停止。阅读最后的部分可以看到解决方案。
@@ -125,27 +137,6 @@ Android 调试桥 (`adb`) 是一个通用命令行工具，其允许您与模拟
 
 ```
 adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
-```
-:::
-
-::: details 适用于 Shizuku v4.0.0+ 的指令
-Android 6.0:
-
-```
-adb shell sh /data/user/0/moe.shizuku.privileged.api/start.sh
-```
-
-Android 7.0+:
-
-```
-adb shell sh /data/user_de/0/moe.shizuku.privileged.api/start.sh
-```
-:::
-
-::: details 适用于 Shizuku v3.x 的指令
-
-```
-adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/files/start.sh
 ```
 :::
 
