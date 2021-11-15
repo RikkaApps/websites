@@ -1,5 +1,11 @@
 # Changelog
 
+## 6.3.0 (2021-11-14)
+
+- Correct the description about apps on Android 11 can write files to standard folders without permission
+- Some UI issue fix
+- Target SDK 31
+
 ## 6.2.0 (2021-10-14)
 
 - Significantly improve the performance of FileMonitor especially for users have a large amount of records
