@@ -6,6 +6,18 @@ The whole purchase process happens in Google Play, **the app developer has zero 
 
 If you are logged into multiple accounts, Play Store may use the wrong account. This is not controlled by the app developer. Usually use the account at the time of purchase to reinstall should solve the problem.
 
+If have joined the testing program with the account you used to purchase, you may need to exit the testing program first. None of the testing program are currently open, so you can only exit from the webpage.
+
+::: details Testing program link
+
+If you have not joined the testing program before, you will see an error.
+
+- Storage Isolation: <https://play.google.com/apps/testing/moe.shizuku.redirectstorage>
+- AppOps: <https://play.google.com/apps/testing/rikka.appops>
+- NoPopping: <https://play.google.com/apps/testing/rikka.nopeeking>
+
+:::
+
 ### Using spoof softwares
 
 Spoof softwares like "L**** Patcher" will hijack the connection between the app and the Play Store, which will finally result in error.

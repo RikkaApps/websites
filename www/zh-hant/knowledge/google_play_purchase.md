@@ -6,6 +6,18 @@
 
 如果你登入了多個賬號，Play 商店可能會使用錯誤的賬號。開發人員無法控制。通常使用購買時的賬號重新安裝即可解決。
 
+如果你用於購買的賬號曾經加入了測試計劃，你可能需要先退出測試計劃。目前測試計劃均未開啟，因此只能從網頁退出。
+
+::: details 測試計劃連結
+
+如果你未曾加入測試計劃，會看到錯誤。
+
+- 儲存空間隔離：<https://play.google.com/apps/testing/moe.shizuku.redirectstorage>
+- AppOps：<https://play.google.com/apps/testing/rikka.appops>
+- NoPopping：<https://play.google.com/apps/testing/rikka.nopeeking>
+
+:::
+
 ### 使用欺騙程式
 
 諸如「L**** Patcher」之類的欺騙程式會劫持應用程式與 Play 商店之間的連線，最終導致錯誤。

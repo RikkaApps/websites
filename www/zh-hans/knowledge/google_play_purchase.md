@@ -6,6 +6,18 @@
 
 如果你登录了多个账号，Play 商店可能会使用错误的账号。应用开发者无法控制。通常使用购买时的账号重新安装即可解决。
 
+如果你用于购买的账号曾经加入了测试计划，你可能需要先退出测试计划。目前测试计划均未开启，因此只能从网页退出。
+
+::: details 测试计划链接
+
+如果你未曾加入测试计划，会看到错误。
+
+- 存储空间隔离：<https://play.google.com/apps/testing/moe.shizuku.redirectstorage>
+- AppOps：<https://play.google.com/apps/testing/rikka.appops>
+- NoPopping：<https://play.google.com/apps/testing/rikka.nopeeking>
+
+:::
+
 ### 使用欺骗程序
 
 诸如“L**** Patcher”之类的欺骗程序会劫持应用程序与 Play 商店之间的连接，最终导致错误。
