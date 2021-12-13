@@ -1,5 +1,10 @@
 # Changelog
 
+## 6.4.0 (2021-12-13)
+
+- Fix the problem that when creating export rules for apps with `Shared user ID` on Android 11+, source path cannot be choosen (no folder is shown)
+- Some UI adjustments
+
 ## 6.3.0 (2021-11-14)
 
 - Correct the description about apps on Android 11 can write files to standard folders without permission
