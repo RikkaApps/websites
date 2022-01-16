@@ -157,7 +157,8 @@ function getSidebar(prefix, knowledgeTitle) {
       collapsable: false,
       sidebarDepth: 2,
       children: [
-        'google_play_purchase'
+        'google_play_purchase',
+        'exit_on_start',
       ]
     }]
   return res
