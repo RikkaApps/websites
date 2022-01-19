@@ -4,61 +4,45 @@ navbar: false
 
 # Privacy Policy
 
-All of the information collect behavior will be listed below.
+The protection of your data is of particular concern to us. Therefore, we process your data only based on the applicable data protection laws (GDPR). We take careful precautions to protect your data from loss, manipulation, and unauthorized access. The precautions are by the current state of technology. In this statement on our Data Privacy Policy, we inform you about the most important aspects in the context of data processing in our apps.
 
-### App Ops
+The following applications do not collect any information.
 
-Link to privacy policy of third party service providers used by the app:
+* SaveCopy
+* Shizuku
+* Key Attestation Demo
+* YASNAC
 
-* [App Center from Microsoft](https://privacy.microsoft.com/en-us/privacystatement)
+## 1. Personal information
 
-### Storage Isolation (Storage Redirect)
+We do not collect and hold any information that would allow us to identify users of our apps.
 
-Link to privacy policy of third party service providers used by the app:
+In case of in-app purchases of our apps in the Google Play Store, we receive information about the purchase (order ID, purchase time, region) from Google.
 
-* [App Center from Microsoft](https://privacy.microsoft.com/en-us/privacystatement)
+## 2. Anonymous identifier
 
-### NoPopping
+In the case of in-app purchase, we use an anonymous identifier to help us verify the purchase. The anonymous identifier is generated the first time the application is launched. Clearing the data of the application, reinstalling the application, factory reset the device, will reset the identifier. As mentioned the identifier is anonymous, we cannot trace information back to individual devices or users.
 
-Link to privacy policy of third party service providers used by the app:
+The following applications have an in-app-purchase function.
 
-* [App Center from Microsoft](https://privacy.microsoft.com/en-us/privacystatement)
+* Storage Isolation
+* AppOps
+* NoPopping
 
-### Shizuku
+## 3. Use of third-party services 
 
-Do not collect any of information.
+### Visual Studio App Center
 
-### Key Attestation Test
+App Center is a product of Microsoft Corporation, it provides crash reporting function. With the help of Visual Studio App Center, we receive aggregated and anonymous information about device country settings, device languages, device names, version of operating systems, as well as the version of our apps. In addition, Visual Studio App Center provides us with information about app crashes.
 
-Link to privacy policy of third party service providers used by the app:
+Further information about privacy in Visual Studio App Center can be found from [this webpage from App Center](https://docs.microsoft.com/en-us/appcenter/gdpr/).
 
-* [Firebase](https://firebase.google.com/support/privacy/)
+The following applications use Visual Studio App Center.
 
-### WADB
+* Storage Isolation
+* AppOps
+* NoPopping
 
-Do not collect any of information.
+## 4. Contact 
 
-### SaveCopy
-
-Do not collect any of information.
-
-### Bridge
-
-Do not collect any of information.
-
-### SMS Code Helper
-
-Do not collect any of information.
-
-### Font Provider
-
-Link to privacy policy of third party service providers used by the app:
-
-* [Firebase](https://firebase.google.com/support/privacy/)
-
-### Image Search
-
-Link to privacy policy of third party service providers used by the app:
-
-* Google image search
-* [Firebase](https://firebase.google.com/support/privacy/)
+Contact for your privacy concerns: [support@rikka.app](mailto://support@rikka.app)
