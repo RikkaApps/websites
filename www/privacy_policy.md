@@ -21,7 +21,7 @@ In case of in-app purchases of our apps in the Google Play Store, we receive inf
 
 ## 2. Anonymous identifier
 
-In the case of in-app purchase, we use an anonymous identifier to help us verify the purchase. The anonymous identifier is generated the first time the application is launched. Clearing the data of the application, reinstalling the application, factory reset the device, will reset the identifier. As mentioned the identifier is anonymous, we cannot trace information back to individual devices or users.
+In the case of in-app purchase, an anonymous identifier participate in purchase verification. The anonymous identifier is generated the first time the application is launched. Clearing the data of the application, reinstalling the application or factory resetting the device will reset the identifier. As mentioned the identifier is anonymous, we cannot trace information back to individual devices or users.
 
 The following applications have an in-app-purchase function.
 
@@ -33,9 +33,11 @@ The following applications have an in-app-purchase function.
 
 ### Visual Studio App Center
 
-App Center is a product of Microsoft Corporation, it provides crash reporting function. With the help of Visual Studio App Center, we receive aggregated and anonymous information about device country settings, device languages, device names, version of operating systems, as well as the version of our apps. In addition, Visual Studio App Center provides us with information about app crashes.
+App Center is a product of Microsoft Corporation, it provides crash reporting function. We have the access of aggregated and anonymous information about device country settings, device languages, device names, version of operating systems, as well as the version of our apps from Visual Studio App Center. In addition, Visual Studio App Center provides us with information about app crashes. The aggregated and anonymous information is held by Microsoft Corporation.
 
-Further information about privacy in Visual Studio App Center can be found from [this webpage from App Center](https://docs.microsoft.com/en-us/appcenter/gdpr/).
+As the mentioned aggregated data is anonymous, we cannot trace information back to individual devices or users.
+
+Further information about privacy in Visual Studio App Center can be found from [this webpage from Visual Studio App Center](https://docs.microsoft.com/en-us/appcenter/gdpr/).
 
 The following applications use Visual Studio App Center.
 
@@ -43,6 +45,10 @@ The following applications use Visual Studio App Center.
 * AppOps
 * NoPopping
 
-## 4. Contact 
+## 4. Your right
+
+For applications using Visual Studio App Center mentioned in section 3, you can request for deleting the aggregated and anonymous information and the information will be deleted in 28 days.
+
+## 5. Contact 
 
 Contact for your privacy concerns: [support@rikka.app](mailto://support@rikka.app)
