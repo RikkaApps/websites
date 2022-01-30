@@ -12,7 +12,7 @@ Enhanced mode provides the following features:
 3. Block system remount
    - Avoid remount triggered by the behavior of custom systems making the isolation invalid (e.g., MIUI 11)
 4. Record file access behavior for apps
-4. Modify/fix some of the app’s behavior to ensure that the app is functioning properly
+4. Modify the behavior of MediaProvider and DownloadManger to prevent apps to read/write unaccessiable folders through them
 
 ## Performance impact
 
