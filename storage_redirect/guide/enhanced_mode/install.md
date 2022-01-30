@@ -1,25 +1,38 @@
-# Installation
+# Install
 
-Enhancement module requires your device to install Magisk first since only Magisk can provide reliable boot script.
+The boost module requires your device to have Magisk installed first. You can learn more about Magisk from [GitHub](https://github.com/topjohnwu/Magisk).
 
-Magisk is a powerful tool that provides not only root but the ability to modify the system without actually change system files and more.
+:::tip Tip
+As of Magisk v24 (released on 2022-01-26), the online repository is removed. You can only install in Magisk directly after downloading the zip.
+:::
 
-You can learn more about Magisk from [GitHub](https://github.com/topjohnwu/Magisk).
+## Zygisk
 
-## Before you install
+You can use the Zygisk version of the enhancement module (requires Storage Isolation v7.0.0) after enabling Zygisk.
 
-1. Make sure you know how to delete the module when you are unable to enter the system
-2. Just in case, please backup your whole device data first
+* [Module](https://github.com/RikkaApps/StorageRedirect-assets/releases/tag/assets) (choose Zygisk version)
 
-## Download
+### About Zygisk
 
-Download and install **Riru** and **Riru - Enhanced mode for Storage Isolation** from Magisk Manager.
+Zygisk is a feature added in Magisk v24. It is similar to Riru in terms of end purpose, but differs in details and implementation.
 
-GitHub release (including latest versions):
+Zygisk has an DenyList function. After enabling Enforce DenyList option, Zygisk will not load Zygisk modules for the apps in the list. For Storage Isolation, apps in the list cannot be isolated. Note that the **DenyList is not a hidden feature, it can't even hide the presence of Zygisk**.
+
+**The DenyList is a "out of reality" feature** because people will obviously want to use modules while maintaining hidden. Hidden modules are also required to not enable Enforce DenyList option, otherwise hidden modules will not work because they will not be loaded.
+
+In short, use the dedicated hiding module Shamiko to hide and never enable Enforce DenyList option.
+
+### About Shamiko
+
+Shamiko is a hidden module developed by others. It can hide Magisk SU, Zygisk itself and Zygisk modules.
+
+Shamiko borrowed Magisk's DenyList. That is to say, Magisk's DenyList is Shamiko's exclusion list, but in order for Shamiko to take effect you cannot turn on Magisk's Enforce DenyList option. It's a little confusing, but that's it.
+
+Download Shamiko at [here](https://lsposed.github.io/) after 2022-02-02.
+
+## Riru
+
+If you're using an older version of Magisk or don't use Zygisk, you'll also need to install Riru. Please download Riru and Riru version booster and install it in Magisk.
 
 * [Riru](https://github.com/RikkaApps/Riru/releases)
-* [Enhancement module](https://github.com/RikkaApps/StorageRedirect-assets/releases/tag/assets)
-
-If the installation is successful, you should see the picture below:
-
-<img :src="$withBase('/images/magisk_modules.png')" alt="Successful installation">
+* [Module](https://github.com/RikkaApps/StorageRedirect-assets/releases/tag/assets) (select Riru version)
