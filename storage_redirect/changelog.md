@@ -1,5 +1,10 @@
 # Changelog
 
+## 7.0.0 (2022-01-29)
+
+- Enhanced mode support Zygisk
+- Fix the problem that apps installed only in non-primary user cannot be listed
+
 ## 6.4.0 (2021-12-13)
 
 - Fix the problem that when creating export rules for apps with `Shared user ID` on Android 11+, source path cannot be choosen (no folder is shown)
