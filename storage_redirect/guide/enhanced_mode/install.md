@@ -16,7 +16,7 @@ You can use the Zygisk version of the enhancement module (requires Storage Isola
 
 Zygisk is a feature added in Magisk v24. It is similar to Riru in terms of end purpose, but differs in details and implementation.
 
-Zygisk has a DenyList function. After enabling Enforce DenyList option, Zygisk will not load Zygisk modules for the apps in the list. For Storage Isolation, apps in the list cannot be isolated. Note that the **DenyList is not a hide feature, it can't even hide the presence of Zygisk**.
+Zygisk has a DenyList function. After enabling Enforce DenyList option, Zygisk will not load Zygisk modules for the apps in the list. For Storage Isolation, apps in the list cannot be isolated. Note that the **DenyList is not a hide feature, it can't even hide the presence of Zygisk itself**.
 
 **The DenyList is an "out of reality" feature** because people obviously want to use modules while maintaining hidden. Hidden modules are also required to not enable Enforce DenyList option, otherwise hidden modules will not work because they will not be loaded.
 
