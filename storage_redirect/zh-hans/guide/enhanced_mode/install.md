@@ -32,7 +32,7 @@ Shamiko 借用了 Magisk 的排除列表。也就是说 Magisk 的排除列表�
 
 ## Riru
 
-如果您使用旧版本的 Magisk 或是不使用 Zygisk，则还需要需要安装 Riru。请下载 Riru 和 Riru 版本的增强模块并在 Magisk 中安装。
+如果您使用旧版本的 Magisk 或是不使用 Zygisk，则还需要安装 Riru。请下载 Riru 和 Riru 版本的增强模块并在 Magisk 中安装。
 
 * [Riru](https://github.com/RikkaApps/Riru/releases)
 * [模块](https://github.com/RikkaApps/StorageRedirect-assets/releases/tag/assets)（选择 Riru 版本）
