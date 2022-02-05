@@ -32,7 +32,7 @@ Shamiko 借用了 Magisk 的黑名單。也就是說 Magisk 的黑名單是 Sham
 
 ## Riru
 
-如果您使用舊版本的 Magisk 或是不使用 Zygisk，則還需要需要安裝 Riru。請下載 Riru 和 Riru 版本的增強模組並在 Magisk 中安裝。
+如果您使用舊版本的 Magisk 或是不使用 Zygisk，則還需要安裝 Riru。請下載 Riru 和 Riru 版本的增強模組並在 Magisk 中安裝。
 
 * [Riru](https://github.com/RikkaApps/Riru/releases)
 * [模組](https://github.com/RikkaApps/StorageRedirect-assets/releases/tag/assets)（選擇 Riru 版本）
