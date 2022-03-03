@@ -1,5 +1,9 @@
 # Changelog
 
+## 5.5.0 (2022-03-03)
+
+- Works on Android 13 DP1 (however, based on experience, DP1 is a very early version and the app will most likely not work again due to changes in DP2)
+
 ## 5.4.3 (2021-06-13)
 
 - Fix the problem that "Automatic recovery" could cause all permissions in the same group be reset to "Ignore"
