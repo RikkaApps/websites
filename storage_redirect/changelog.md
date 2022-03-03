@@ -1,5 +1,10 @@
 # Changelog
 
+## 7.1.0 (2022-02-22)
+
+- Supports Android 13 DP1 (however, based on experience, DP1 is a very early version and the app will most likely not work again due to changes in DP2)
+- Enhanced Mode 26.1.0: Fixed File monitor feature causing Download Manager to break on some OnePlus (OPPO) devices
+
 ## 7.0.0 (2022-01-29)
 
 - Enhanced mode support Zygisk
