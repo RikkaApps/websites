@@ -14,7 +14,7 @@ For MIUI 11 and above, you must grant permission to user apps in Shizuku. This i
 
 Also, **DO NOT** use the scan feature in MIUI's "Security" app, since it will disable "Developer options".
 
-### 2. ColorOS (OPPO) 💩
+### 2. ColorOS (OPPO) & OxygenOS (OnePlus) 💩
 
 You need to disable "Permission monitoring" in "Developer options".
 
