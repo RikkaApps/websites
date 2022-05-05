@@ -1,5 +1,11 @@
 # Changelog
 
+## 7.3.4 (2020-05-06)
+
+- Remake "Backup & restore" feature (old backups are still supported, but it's highly recommended to recreate the backup file with the new app)
+- Try to fix broken database file breaks "File monitor" feature
+- Switch to Material Design 3 (Material You)
+
 ## 7.1.0 (2022-02-22)
 
 - Supports Android 13 DP1 (however, based on experience, DP1 is a very early version and the app will most likely not work again due to changes in DP2)
