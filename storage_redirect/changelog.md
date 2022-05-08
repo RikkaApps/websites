@@ -1,6 +1,6 @@
 # Changelog
 
-## 7.3.4 (2020-05-06)
+## 7.3.4 (2022-05-06)
 
 - Remake "Backup & restore" feature (old backups are still supported, but it's highly recommended to recreate the backup file with the new app)
 - Try to fix broken database file breaks "File monitor" feature
