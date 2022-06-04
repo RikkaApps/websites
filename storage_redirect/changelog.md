@@ -1,5 +1,10 @@
 # Changelog
 
+## 7.5.0 (2022-05-20)
+
+- Enhance module v27: Restore "Access folders from other apps" on deivces without sdcardfs
+- Some UI adjustments
+
 ## 7.3.4 (2022-05-06)
 
 - Remake "Backup & restore" feature (old backups are still supported, but it's highly recommended to recreate the backup file with the new app)
