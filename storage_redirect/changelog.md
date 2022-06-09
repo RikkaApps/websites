@@ -1,5 +1,9 @@
 # Changelog
 
+## 7.5.1 (2022-06-09)
+
+- Fix not work on Android 13 Beta 3
+
 ## 7.5.0 (2022-05-20)
 
 - Enhance module v27: Restore "Access folders from other apps" on deivces without sdcardfs
