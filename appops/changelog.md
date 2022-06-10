@@ -1,5 +1,15 @@
 # Changelog
 
+## 5.5.6 (2022-06-10)
+
+- Works on Android 13 Beta 3
+- Fix crash under French language
+- Device Admin mode will be removed due to new Google Play policy changes
+
+## 5.5.2 (2022-03-10)
+
+- Replace the app icon because the old one "violates Google Play policies"
+
 ## 5.5.0 (2022-03-03)
 
 - Works on Android 13 DP1 (however, based on experience, DP1 is a very early version and the app will most likely not work again due to changes in DP2)
