@@ -1,5 +1,9 @@
 # Changelog
 
+## 7.5.3 (2022-06-14)
+
+- Fix v7.5.2 is broken on Android 10 and below
+
 ## 7.5.2 (2022-06-14)
 
 - Fix a problem where "Handle system providers" causing some apps unable to access files that were already been set as accessible
