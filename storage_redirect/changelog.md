@@ -1,5 +1,9 @@
 # Changelog
 
+## 7.5.2 (2022-06-14)
+
+- Fix a problem where "Handle system providers" causing some apps unable to access files that were already been set as accessible
+
 ## 7.5.1 (2022-06-09)
 
 - Fix not work on Android 13 Beta 3
