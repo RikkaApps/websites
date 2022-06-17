@@ -38,3 +38,12 @@ Free and open source manga reader for Android
 Tachiyomi uses Shizuku to make it easy to install/update extensions
 
 Download: [Website](https://tachiyomi.org/download) / [GitHub](https://github.com/tachiyomiorg/tachiyomi/releases/latest)
+
+---
+<img src="https://images.squarespace-cdn.com/content/v1/5f23ec324358da04e191f39a/1596265746369-XX8E7SBJ6BREEKQMPJ3L/Icon2_New_256.png?format=1500w" title="Swift Backup" width="24" align="top"/> Swift Backup
+
+A simple, fast and smart backup solution for Android
+
+Swift Backup uses Shizuku to make it easy to backup/restore apps even without root
+
+Download: [Website](https://swiftapps.org/) / (no GitHub)
