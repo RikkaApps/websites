@@ -38,3 +38,12 @@ Free and open source manga reader for Android
 Tachiyomi uses Shizuku to make it easy to install/update extensions
 
 Download: [Website](https://tachiyomi.org/download) / [GitHub](https://github.com/tachiyomiorg/tachiyomi/releases/latest)
+
+---
+<img src="https://github.com/keymapperorg/KeyMapper/raw/master/app/src/main/ic_launcher-web.png" title="Key Mapper" width="24" align="top"/> Key Mapper
+
+A free and open source button mapping app for Android. Unleash your keys!
+
+Key Mapper uses Shizuku to input button presses (key events) into other apps instead of having to use an Input Method Service.
+
+Download: [Google Play](https://play.google.com/store/apps/details?id=io.github.sds100.keymapper) / [GitHub](https://github.com/keymapperorg/KeyMapper/releases/latest) / [F-Droid](https://f-droid.org/packages/io.github.sds100.keymapper/)
