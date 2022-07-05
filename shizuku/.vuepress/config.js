@@ -69,7 +69,7 @@ module.exports = {
         },
         sidebar: {
         },
-        nav: getNavbar('/', 'Introduction', 'User guide', 'Apps using Shizuku', 'Download', 'Developer guide'),
+        nav: getNavbar('/', 'Introduction', 'User guide', 'Download', 'Developer guide'),
         lastUpdated: 'Last Updated'
       }
       ,
@@ -85,7 +85,7 @@ module.exports = {
         },
         sidebar: {
         },
-        nav: getNavbar('/zh-hans/', '简介', '用户手册', '使用 Shizuku 的应用', '下载', '开发者指南'),
+        nav: getNavbar('/zh-hans/', '简介', '用户手册', '下载', '开发者指南'),
         lastUpdated: '最后更新'
       },
       '/zh-hant/': {
@@ -153,12 +153,11 @@ module.exports = {
   ]
 }
 
-function getNavbar(prefix, introduction, guide, apps, download, dev) {
+function getNavbar(prefix, introduction, guide, download, dev) {
   return [
     { text: introduction, link: `${prefix}introduction` },
     { text: guide, link: `${prefix}guide/setup.html` },
     { text: dev, link: `https://github.com/RikkaApps/Shizuku/blob/master/README.md` },
     { text: download, link: `${prefix}download.html` },
-    { text: apps, link: `${prefix}apps.html` },
   ]
 }
