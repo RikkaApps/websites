@@ -85,7 +85,7 @@ module.exports = {
         },
         sidebar: {
         },
-        nav: getNavbar('/zh-hans/', '简介', '用户指南', '使用 Shizuku 的应用', '下载', '开发者指南'),
+        nav: getNavbar('/zh-hans/', '简介', '用户手册', '使用 Shizuku 的应用', '下载', '开发者指南'),
         lastUpdated: '最后更新'
       },
       '/zh-hant/': {

@@ -1,95 +1,104 @@
-# 如何启动 Shizuku
+# 用户手册
 
-## 通过 root 启动
+## 常见问题
 
-对于已 root 设备，直接启动即可。
+许多厂商对 Android 系统进行了修改，这会造成 Shizuku 无法正常工作。
 
-## 由厂商造成的问题（非 root 方式）
+注意，以下内容仅针对通无线调试或通过连接电脑启动 Shizuku 的情况，如果您使用 root 权限则无需阅读以下部分。
 
-### 1. MIUI（小米）💩
+### 通过无线调试启动：一直显示“正在搜索配对服务”
 
-你需要在“开发者选项”中开启“USB 调试（安全设置）”。
+请允许 Shizuku 在后台运行。
 
-对于 MIUI 11 及以上版本，你必须在 Shizuku 内授予使用者应用权限。这是因为自定义权限功能被破坏，参见 [Shizuku #45](https://github.com/RikkaApps/Shizuku/issues/45) 和 [android-in-china/Compatibility #16](https://github.com/android-in-china/Compatibility/issues/16)。
+搜索配对服务需要访问本地网络，许多厂商在应用不可见后立刻禁止应用访问网络。您可以在网络上搜索如何在您的设备上允许应用在后台运行。
 
-此外，**不要**使用 MIUI 的“手机管家”的扫描功能，因为它会禁用“开发者选项”。
+### 通过无线调试启动：点击“输入配对码”后立刻提示失败
 
-### 2. ColorOS（OPPO & OnePlus）💩
+#### MIUI（小米）
 
-你需要在“开发者选项”中关闭“权限监控”。
+在系统设置的“通知管理”-“通知显示设置”将通知样式切换为“原生样式”。
 
-### 3. Flyme（魅族）💩
+### 启动 Shizuku 后提示“adb 权限受限”
 
-你需要在“开发者选项”中关闭“Flyme 支付保护”。
+#### MIUI（小米）
 
-### 4. EMUI (华为) 💩
+在“开发者选项”中开启“USB 调试（安全设置）”。
 
-你需要在“开发者选项”中开启「“仅充电”模式下允许 ADB 调试选项」。
+#### ColorOS（OPPO & OnePlus）
 
-### 5. OriginOS (vivo) 💩
+在“开发者选项”中关闭“权限监控”。
 
-OriginOS 的设置不支持分屏，你需要在“开发者设置”中开启“强行将活动设为可调整大小”。参见 [Shizuku #106](https://github.com/RikkaApps/Shizuku/issues/106)。
+#### Flyme（魅族）
 
-## 通过无线调试启动
+在“开发者选项”中关闭“Flyme 支付保护”。
 
-Android 11 及以上支持无线调试，您可以直接在设备上启动 Shizuku。
+### Shizuku 启动后随机停止
 
-以下内容适用于 Shizuku 12.4.0+。
+#### 所有设备
 
-::: warning 请注意
+- 保证 Shizuku 可以在后台运行。
+- 不要关闭“USB 调试”及“开发者选项”。
+- 在“开发者选项”中将 USB 使用模式改为“仅充电”。
+  
+  在 Android 8 上的选项是“选择 USB 配置”-“仅充电”。
+  
+  在 Android 9 及以上版本上选项是“默认 USB 配置”-“不进行数据传输”。
 
-1. 设备重新启动后需要再次打开“无线调试”选项并重新启动 Shizuku。
-2. 无 WiFi 连接时无法启用“无线调试”（已启动的 Shizuku 不受影响）。
-3. 不可关闭“开发者选项”或“USB 调试”。
-:::
+#### EMUI (华为) 
 
-### 启用无线调试
+在“开发者选项”中开启「“仅充电”模式下允许 ADB 调试选项」。
+
+#### MIUI（小米）
+
+不要使用“手机管家”的扫描功能，因为它会禁用开发者选项。
+
+#### Sony
+
+不要点击连接 USB 后弹出的对话框，因为这会导致 USB 使用模式发生变化。
+
+## 启动 Shizuku
+
+Shizuku 支持通过以下三种方式启动。
+
+### 通过 root 启动
+
+如果您的设备已经 root，直接启动即可。
+
+### 通过无线调试启动
+
+通过无线调试启动适用于 Android 11 或以上版本。这种启动方式无需连接电脑。由于系统限制，每次重新启动后都需要再次进行启动步骤。
+
+#### 启用无线调试
 
 1. 在网络上搜索如何为您的机型启用“开发者选项”
 2. 启用“开发者选项”和“USB 调试”<br><br><img :src="$withBase('/images/enable_dev_options.png')" style="max-width:320px;width:100%">
 3. 进入“无线调试”<br><br><img :src="$withBase('/images/enter_wireless_debugging.png')" style="max-width:320px;width:100%">
 4. 启用“无线调试”<br><br><img :src="$withBase('/images/enable_wireless_debugging.png')" style="max-width:320px;width:100%">
    
-### 配对
+### 配对（仅需一次）
 
-该步骤只需要进行一次。
-
-1. 部分系统默认禁用通知，您需要在系统的通知设置中允许 Shizuku 发送通知
-2. 在 Shizuku 内开始配对<br><img :src="$withBase('/images/start_paring_from_shizuku.png')" style="max-width:320px;width:100%">
-3. [启用无线调试](#启用无线调试)
-4. 点按“无线调试”中的“使用配对码配对设备”<br><img :src="$withBase('/images/start_pairing.png')" style="max-width:320px;width:100%">
-5. 在 Shizuku 的通知中填入配对码<br><img :src="$withBase('/images/enter_pairing_code.png')" style="max-width:320px;width:100%">
+1. 在 Shizuku 内开始配对<br><img :src="$withBase('/images/start_paring_from_shizuku.png')" style="max-width:320px;width:100%">
+2. [启用无线调试](#启用无线调试)
+3. 点按“无线调试”中的“使用配对码配对设备”<br><img :src="$withBase('/images/start_pairing.png')" style="max-width:320px;width:100%">
+4. 在 Shizuku 的通知中填入配对码<br><img :src="$withBase('/images/enter_pairing_code.png')" style="max-width:320px;width:100%">
 
 ### 启动 Shizuku
 
-1. [配对](#配对)（只需进行一次）
-2. [启用无线调试](#启用无线调试)
-3. 启动 Shizuku<br><img :src="$withBase('/images/start_shizuku.png')" style="max-width:320px;width:100%">
+<img :src="$withBase('/images/start_shizuku.png')" style="max-width:320px;width:100%">
 
 如果无法启动，尝试禁用并启用无线调试。
 
 ## 通过连接电脑启动
 
-::: tip 提示
+该启动方式适用于未 root 且运行 Android 10 及以下版本的设备。很不幸，该启动方式需要连接电脑。由于系统限制，每次重新启动后都需要再次进行启动步骤。
 
-如果您的设备运行 Android 11 或以上，请通过无线调试启动，无需电脑。
-:::
-
-对于未 root 设备，需要借助 adb 启动。使用 adb 并不困难，请阅读下面的教程。
-
-::: warning 请注意
-
-1. 设备重新启动后需要再次连接电脑。
-2. 在一些定制系统上 Shizuku 可能会随机停止。阅读最后的部分可以看到解决方案。
-:::
-
-### 1. 什么是 `adb`？
+### 什么是 `adb`？
 
 Android 调试桥 (`adb`) 是一个通用命令行工具，其允许您与模拟器实例或连接的 Android 设备进行通信。它可为各种设备操作提供便利，如安装和调试应用，并提供对 Unix shell（可用来在模拟器或连接的设备上运行各种命令）的访问。
 
 更多信息请查看 [Android Developer](https://developer.android.google.cn/studio/command-line/adb)。
 
-### 2. 安装 `adb`
+### 安装 `adb`
 
 1. 下载由 Google 提供的“SDK 平台工具”并解压至任意文件夹
 
@@ -110,7 +119,7 @@ Android 调试桥 (`adb`) 是一个通用命令行工具，其允许您与模拟
 2. 如果使用 PowerShell 或是 Linux 及 Mac，所有 `adb` 都要替换成 `./adb`。
 :::
 
-### 3. 设置 `adb`
+### 设置 `adb`
 
 要使用 `adb` 你首先需要在设备上打开 USB 调试功能，通常需要经过以下步骤：
 
@@ -129,7 +138,7 @@ Android 调试桥 (`adb`) 是一个通用命令行工具，其允许您与模拟
 不同设备开启“开发者选项”的步骤可能有所不同，请自己搜索。
 :::
 
-### 4. 启动 Shizuku
+### 启动 Shizuku
 
 复制指令并粘贴到终端中，如无问题你将会在 Shizuku 中看到已启动成功。
 
@@ -139,19 +148,3 @@ Android 调试桥 (`adb`) 是一个通用命令行工具，其允许您与模拟
 adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
 ```
 :::
-
-### 5. Shizuku 随机停止？
-
-首先，不要关闭“USB 调试”及“开发者选项”。
-
-然后你需要保证在连接电脑期间 USB 使用模式不变。通常的做法是在“开发者选项”中将 USB 使用模式改为“仅充电”。在 Android 8 上的选项是“选择 USB 配置”-“仅充电”；在 Android 9+ 上选项是“默认 USB 配置”-“不进行数据传输”。
-
-在一些设备上（如三星），这么做可能不起作用。此时你需要查看连接电脑后出现的通知来查看当前的 USB 使用模式，并将开发者选项中的模式改为该模式。
-
-如果还是不行，你可以尝试打开网络 adb（使用指令 `adb tcpip 5555`）后再启动 Shizuku。
-
-此外，如果你的系统在连接 USB 后会弹出类似“是否允许访问文件”的对话框，请不要点击它，因为点击后 USB 使用模式会发生变化。
-
-#### Sony 设备
-
-不要点击连接 USB 后弹出的对话框。
