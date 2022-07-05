@@ -100,7 +100,7 @@ module.exports = {
         },
         sidebar: {
         },
-        nav: getNavbar('/zh-hant/', '簡介', '使用者指南', '使用 Shizuku 的應用程式', '下載', '開發者指南'),
+        nav: getNavbar('/zh-hant/', '簡介', '使用者指南', '下載', '開發者指南'),
         lastUpdated: '最後更新'
       }
     },
