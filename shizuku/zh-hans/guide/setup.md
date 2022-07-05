@@ -1,5 +1,7 @@
 # 用户手册
 
+[[toc]]
+
 ## 常见问题
 
 许多厂商对 Android 系统进行了修改，这会造成 Shizuku 无法正常工作。
@@ -75,30 +77,30 @@ Shizuku 支持通过以下三种方式启动。
 3. 进入“无线调试”<br><br><img :src="$withBase('/images/enter_wireless_debugging.png')" style="max-width:320px;width:100%">
 4. 启用“无线调试”<br><br><img :src="$withBase('/images/enable_wireless_debugging.png')" style="max-width:320px;width:100%">
    
-### 配对（仅需一次）
+#### 配对（仅需一次）
 
 1. 在 Shizuku 内开始配对<br><img :src="$withBase('/images/start_paring_from_shizuku.png')" style="max-width:320px;width:100%">
 2. [启用无线调试](#启用无线调试)
 3. 点按“无线调试”中的“使用配对码配对设备”<br><img :src="$withBase('/images/start_pairing.png')" style="max-width:320px;width:100%">
 4. 在 Shizuku 的通知中填入配对码<br><img :src="$withBase('/images/enter_pairing_code.png')" style="max-width:320px;width:100%">
 
-### 启动 Shizuku
+#### 启动 Shizuku
 
 <img :src="$withBase('/images/start_shizuku.png')" style="max-width:320px;width:100%">
 
 如果无法启动，尝试禁用并启用无线调试。
 
-## 通过连接电脑启动
+### 通过连接电脑启动
 
 该启动方式适用于未 root 且运行 Android 10 及以下版本的设备。很不幸，该启动方式需要连接电脑。由于系统限制，每次重新启动后都需要再次进行启动步骤。
 
-### 什么是 `adb`？
+#### 什么是 `adb`？
 
 Android 调试桥 (`adb`) 是一个通用命令行工具，其允许您与模拟器实例或连接的 Android 设备进行通信。它可为各种设备操作提供便利，如安装和调试应用，并提供对 Unix shell（可用来在模拟器或连接的设备上运行各种命令）的访问。
 
 更多信息请查看 [Android Developer](https://developer.android.google.cn/studio/command-line/adb)。
 
-### 安装 `adb`
+#### 安装 `adb`
 
 1. 下载由 Google 提供的“SDK 平台工具”并解压至任意文件夹
 
@@ -119,7 +121,7 @@ Android 调试桥 (`adb`) 是一个通用命令行工具，其允许您与模拟
 2. 如果使用 PowerShell 或是 Linux 及 Mac，所有 `adb` 都要替换成 `./adb`。
 :::
 
-### 设置 `adb`
+#### 设置 `adb`
 
 要使用 `adb` 你首先需要在设备上打开 USB 调试功能，通常需要经过以下步骤：
 
@@ -138,7 +140,7 @@ Android 调试桥 (`adb`) 是一个通用命令行工具，其允许您与模拟
 不同设备开启“开发者选项”的步骤可能有所不同，请自己搜索。
 :::
 
-### 启动 Shizuku
+#### 启动 Shizuku
 
 复制指令并粘贴到终端中，如无问题你将会在 Shizuku 中看到已启动成功。
 
