@@ -1,95 +1,50 @@
-# 如何啟動 Shizuku
+# 使用者手冊
 
-## 透過 root 啟動
+[[toc]]
+
+## 啟動 Shizuku
+
+Shizuku 支援透過以下三種方式啟動。
+
+### 透過 root 啟動
 
 對於已 root 裝置，直接啟動即可。
 
-## 由廠商造成的問題（非 root 方式）
+### 透過無線偵錯啟動
 
-### 1. MIUI（Xiaomi）💩
+透過無線除錯啟動適用於 Android 11 或以上版本。這種啟動方式無需連線電腦。由於系統限制，每次重新啟動後都需要再次進行啟動步驟。
 
-你需要在「開發人員選項」中開啟「USB 偵錯（安全設定）」。
-
-對於 MIUI 11 及以上版本，你必須在 Shizuku 內授予使用者程式權限。這是因為自定義權限功能被破壞，參見 [Shizuku #45](https://github.com/RikkaApps/Shizuku/issues/45) 和 [android-in-china/Compatibility #16](https://github.com/android-in-china/Compatibility/issues/16)。
-
-此外，**不要**使用 MIUI 的「手機管家」的掃描功能，因為它會禁用「開發人員選項」。
-
-### 2. ColorOS（OPPO）& OxygenOS (OnePlus) 💩
-
-你需要在「開發人員選項」中關閉「權限監控」。
-
-### 3. Flyme（Meizu）💩
-
-你需要在「開發人員選項」中關閉「Flyme 支付保護」。
-
-### 4. EMUI (Huawei) 💩
-
-你需要在「開發人員選項」中開啟「僅充電模式下允許 ADB 偵錯選項」。
-
-### 5. OriginOS (vivo) 💩
-
-OriginOS 的設定不支援分屏，你需要在「開發人員選項」中開啟「將活動強制設為可調整大小」。參見 [Shizuku #106](https://github.com/RikkaApps/Shizuku/issues/106)。
-
-## 透過無線偵錯啟動
-
-Android 11 及以上支援無線偵錯，您可以直接在裝置上啟動 Shizuku。
-
-以下內容適用於 Shizuku 12.4.0+。
-
-::: warning 請注意
-
-1. 裝置重新啟動後需要再次開啟「無線偵錯」選項並重新啟動 Shizuku。
-2. 無 WiFi 連線時無法啟用「無線偵錯」（已啟動的 Shizuku 不受影響）。
-3. 不可關閉「開發人員選項」或「USB 偵錯」。
-:::
-
-### 啟用無線偵錯
+#### 啟用無線偵錯
 
 1. 在網路上搜索如何為您的機型啟用「開發人員選項」
 2. 啟用「開發人員選項」和「USB 偵錯」<br><br><img :src="$withBase('/images/enable_dev_options.png')" style="max-width:320px;width:100%">
 3. 進入「無線偵錯」<br><br><img :src="$withBase('/images/enter_wireless_debugging.png')" style="max-width:320px;width:100%">
 4. 啟用「無線偵錯」<br><br><img :src="$withBase('/images/enable_wireless_debugging.png')" style="max-width:320px;width:100%">
    
-### 配對
+#### 配對（僅需一次）
 
-該步驟只需要進行一次。
-
-1. 部分系統預設禁用通知，您需要在系統的通知設定中允許 Shizuku 傳送通知
-2. 在 Shizuku 內開始配對<br><img :src="$withBase('/images/start_paring_from_shizuku.png')" style="max-width:320px;width:100%">
-3. [啟用無線偵錯](#啟用無線偵錯)
-4. 點按「無線偵錯」中的「使用配對碼配對裝置」<br><img :src="$withBase('/images/start_pairing.png')" style="max-width:320px;width:100%">
-5. 在 Shizuku 的通知中填入配對碼<br><img :src="$withBase('/images/enter_pairing_code.png')" style="max-width:320px;width:100%">
-
-### 啟動 Shizuku
-
-1. [配對](#配對)（只需進行一次）
+1. 在 Shizuku 內開始配對<br><img :src="$withBase('/images/start_paring_from_shizuku.png')" style="max-width:320px;width:100%">
 2. [啟用無線偵錯](#啟用無線偵錯)
-3. 啟動 Shizuku<br><img :src="$withBase('/images/start_shizuku.png')" style="max-width:320px;width:100%">
+3. 點按「無線偵錯」中的「使用配對碼配對裝置」<br><img :src="$withBase('/images/start_pairing.png')" style="max-width:320px;width:100%">
+4. 在 Shizuku 的通知中填入配對碼<br><img :src="$withBase('/images/enter_pairing_code.png')" style="max-width:320px;width:100%">
+
+#### 啟動 Shizuku
+
+<img :src="$withBase('/images/start_shizuku.png')" style="max-width:320px;width:100%">
 
 如果無法啟動，嘗試禁用並啟用無線偵錯。
 
-## 透過連線電腦啟動
+### 透過連線電腦啟動
 
-::: tip 提示
+該啟動方式適用於未 root 且執行 Android 10 及以下版本的裝置。很不幸，該啟動方式需要連線電腦。由於系統限制，每次重新啟動後都需要再次進行啟動步驟。
 
-如果您的裝置執行 Android 11 或以上，請透過無線偵錯啟動，無需電腦。
-:::
-
-對於未 root 裝置，需要藉助 adb 啟動。使用 adb 並不困難，請閱讀下面的教程。
-
-::: warning 請注意
-
-1. 裝置重新啟動後需要再次連線電腦。
-2. 在一些定製系統上 Shizuku 可能會隨機停止。閱讀最後的部分可以看到解決方案。
-:::
-
-### 1. 什麼是 `adb`？
+#### 什麼是 `adb`？
 
 Android 除錯橋 (`adb`) 是一個通用命令列工具，其允許您與模擬器例項或連線的 Android 裝置進行通訊。它可為各種裝置操作提供便利，如安裝和除錯程式，並提供對 Unix shell（可用來在模擬器或連線的裝置上執行各種命令）的存取。
 
 更多資訊請檢視 [Android Developer](https://developer.android.com/studio/command-line/adb)。
 
-### 2. 安裝 `adb`
+#### 安裝 `adb`
 
 1. 下載由 Google 提供的「SDK Platform Tools」並解壓至任意資料夾
 
@@ -110,7 +65,7 @@ Android 除錯橋 (`adb`) 是一個通用命令列工具，其允許您與模擬
 2. 如果使用 PowerShell 或是 Linux 及 Mac，所有 `adb` 都要替換成 `./adb`。
 :::
 
-### 3. 設定 `adb`
+#### 設定 `adb`
 
 要使用 `adb` 你首先需要在裝置上開啟 USB 偵錯功能，通常需要經過以下步驟：
 
@@ -129,7 +84,7 @@ Android 除錯橋 (`adb`) 是一個通用命令列工具，其允許您與模擬
 不同裝置開啟「開發人員選項」的步驟可能有所不同，請自己搜尋。
 :::
 
-### 4. 啟動 Shizuku
+#### 啟動 Shizuku
 
 複製指令並貼上到終端中，如無問題你將會在 Shizuku 中看到已啟動成功。
 
@@ -140,39 +95,60 @@ adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
 ```
 :::
 
-::: details 適用於 Shizuku v4.0.0+ 的指令
-Android 6.0:
+## 常見問題
 
-```
-adb shell sh /data/user/0/moe.shizuku.privileged.api/start.sh
-```
+許多廠商對 Android 系統進行了修改，這會造成 Shizuku 無法正常工作。
 
-Android 7.0+:
+### 透過無線除錯啟動：一直顯示「正在搜尋配對服務」
 
-```
-adb shell sh /data/user_de/0/moe.shizuku.privileged.api/start.sh
-```
-:::
+請允許 Shizuku 在背景執行。
 
-::: details 適用於 Shizuku v3.x 的指令
+搜尋配對服務需要訪問本地網路，許多廠商在應用程式不可見後立刻禁止應用程式訪問網路。您可以在網路上搜索如何在您的裝置上允許應用程式在背景執行。
 
-```
-adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/files/start.sh
-```
-:::
+### 透過無線除錯啟動：點選「輸入配對碼」後立刻提示失敗
 
-### 5. Shizuku 隨機停止？
+#### MIUI（Xiaomi）
 
-首先，不要關閉「USB 偵錯」及「開發人員選項」。
+在系統設定的「通知管理」-「通知顯示設定」將通知樣式切換為「Android」。
 
-然後你需要保證在連線電腦期間 USB 使用模式不變。通常的做法是在「開發人員選項」中將 USB 使用模式改為「僅充電」。在 Android 8 上的選項是「選擇 USB 配置」-「僅充電」；在 Android 9+ 上選項是「預設 USB 配置」-「不進行資料傳輸」。
+### 透過無線除錯啟動/透過連線電腦啟動：adb 權限受限
 
-在一些裝置上（如三星），這麼做可能不起作用。此時你需要檢視連線電腦後出現的通知來檢視當前的 USB 使用模式，並將開發人員選項中的模式改為該模式。
+#### MIUI（Xiaomi）
 
-如果還是不行，你可以嘗試開啟網路 adb（使用指令 `adb tcpip 5555`）後再啟動 Shizuku。
+在「開發人員選項」中開啟「USB 偵錯（安全設定）」。
 
-此外，如果你的系統在連線 USB 後會彈出類似「是否允許訪問檔案」的對話方塊，請不要點選它，因為點選後 USB 使用模式會發生變化。
+#### ColorOS（OPPO & OnePlus）
 
-#### Sony 裝置
+你需要在「開發人員選項」中關閉「權限監控」。
 
-不要點選連線 USB 後彈出的對話方塊。
+#### Flyme（魅族）
+
+你需要在「開發人員選項」中關閉「Flyme 支付保護」。
+
+### 透過無線除錯啟動/透過連線電腦啟動：Shizuku 隨機停止
+
+#### 所有裝置
+
+- 保證 Shizuku 可以在背景執行。
+- 不要關閉「USB 偵錯」及「開發人員選項」。
+- 在「開發人員選項」中將 USB 使用模式改為「僅充電」。
+  
+  在 Android 8 上的選項是「選擇 USB 配置」-「僅充電」。
+  
+  在 Android 9 及以上版本上選項是「預設 USB 配置」-「不進行資料傳輸」。
+
+#### EMUI (Huawei) 
+
+你需要在「開發人員選項」中開啟「僅充電模式下允許 ADB 偵錯選項」。
+
+#### MIUI（Xiaomi）
+
+不要使用 MIUI 的「手機管家」的掃描功能，因為它會禁用「開發人員選項」。
+
+#### Sony
+
+不要點選連線 USB 後彈出的對話方塊，因為這會導致 USB 使用模式發生變化。
+
+### 透過 root 啟動：無法開機啟動
+
+請允許 Shizuku 在背景執行。
