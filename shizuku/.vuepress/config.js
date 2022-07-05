@@ -69,7 +69,7 @@ module.exports = {
         },
         sidebar: {
         },
-        nav: getNavbar('/', 'Introduction', 'User guide', 'Download', 'Developer guide'),
+        nav: getNavbar('/', 'Introduction', 'User manual', 'Download', 'Developer guide'),
         lastUpdated: 'Last Updated'
       }
       ,
@@ -100,7 +100,7 @@ module.exports = {
         },
         sidebar: {
         },
-        nav: getNavbar('/zh-hant/', '簡介', '使用者指南', '下載', '開發者指南'),
+        nav: getNavbar('/zh-hant/', '簡介', '使用者手冊', '下載', '開發者指南'),
         lastUpdated: '最後更新'
       }
     },
