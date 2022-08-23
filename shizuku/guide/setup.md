@@ -10,18 +10,25 @@ Shizuku supports startup in the following three ways.
 
 For rooted devices, just start directly.
 
-### Start via wireless debugging
+### Start via wireless debugging (11+)
 
 Starting with wireless debugging works on Android 11 or above. This startup method does not require a connection to a computer. Due to system limitations, the startup steps need to be performed again after each reboot.
 
-#### Enable Wireless debugging
+#### Enable Wireless debugging (11+)
 
 1. Search the web for how to enable "Developer options" for your device model
 2. Enable "Developer options" and "USB Debugging"<br><br><img :src="$withBase('/images/enable_dev_options.png')" style="max-width:320px;width:100%">
 3. Enter "Wireless debugging"<br><br><img :src="$withBase('/images/enter_wireless_debugging.png')" style="max-width:320px;width:100%">
 4. Enable "Wireless debugging"<br><br><img :src="$withBase('/images/enable_wireless_debugging.png')" style="max-width:320px;width:100%">
-   
-#### Pairing (only needs once)
+ 
+#### Enable Wireless debugging (Pre-10)
+
+If you still into wireless but with an older android, you do need a computer with platform-tools installed and USB debugging enabled. See below for instructions
+
+1. Now connect your device into your computer, type `adb devices` in your terminal, and see if there is any device plugged. The code before your device name (usually `device`) is your device ID.
+2. Type `adb tcpip 5555` if you have one device plugged. Then the system will set the port 5555 as debugging port.
+  
+#### Pairing (only needs once, 11+)
 
 1. Start pairing in Shizuku<br><img :src="$withBase('/images/start_paring_from_shizuku.png')" style="max-width:320px;width:100%">
 2. [Enable Wireless debugging](#enable-wireless-debugging)
@@ -84,6 +91,10 @@ To use `adb` you first need to turn on USB debugging on your device, usually by 
 ::: tip
 The steps for enabling Developer Options on different devices may vary, please search for yourself.
 :::
+
+#### Setting adb up with wireless debugging (Pre-Pie)
+
+The following steps are used only for 
 
 #### Start Shizuku
 
