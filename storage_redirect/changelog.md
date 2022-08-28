@@ -1,5 +1,23 @@
 # Changelog
 
+
+## 8.0.0 (2022-08-21)
+
+- New File monitor implemention
+- Disable "Fix reanme" which is uncessary on Android 10 and above
+- Fix the problem that reinstalled app which has "uninstall but keep data" before is not displayed
+
+The difference between old and new File monitor:
+
+Old:
+- Need to inject into all are processes (which means this may be detected, especially Zygisk version)
+- Can't record operations performed by syscalls and native libraries loaded later
+
+New:
+- No need to inject app processes
+- Can record operations that were previously unrecordable, but cannot record operations performed by isolated apps
+- Requires Android 11 and above (if the device runs Android 10 or older, the old version will still be used)
+
 ## 7.5.3 (2022-06-14)
 
 - Fix v7.5.2 is broken on Android 10 and below
