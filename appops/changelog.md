@@ -1,5 +1,12 @@
 # Changelog
 
+## 8.0.0 (2022-09-02)
+
+- Experimental feature for Android 12 +: Usage history
+- Adapt Android 12 to changes in location permissions
+- Material Design 3
+- Device admin mode removed due to Google Play policy changes
+
 ## 5.5.6 (2022-06-10)
 
 - Works on Android 13 Beta 3
