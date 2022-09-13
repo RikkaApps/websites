@@ -1,5 +1,11 @@
 # 托管设备管理员模式
 
+::: warning 警告
+
+从 6.0.0 起，此工作模式不再支持。若要继续使用此工作模式，请[下载 5.5.6 版本](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v5.5.6.r1453.f44c5855.apk)。
+
+:::
+
 ## 需求及特性
 
 * 需要 Android 9+

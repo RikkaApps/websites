@@ -1,5 +1,11 @@
 # Delegated Device Admin mode
 
+::: warning Warning
+
+As of 6.0.0, this working mode is no longer supported. To continue using this working mode, please [download version 5.5.6](https://github.com/RikkaApps/App-Ops-issue-tracker/releases/download/files/appops-v5.5.6.r1453.f44c5855.apk).
+
+:::
+
 ## Requirements and Features
 
 * Requires Android 9+
