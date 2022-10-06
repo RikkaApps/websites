@@ -28,6 +28,7 @@ The following applications have an in-app-purchase function.
 * Storage Isolation
 * AppOps
 * NoPopping
+* FPS Monitor
 
 ## 3. Use of third-party services 
 
