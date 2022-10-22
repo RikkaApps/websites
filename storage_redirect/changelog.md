@@ -1,5 +1,10 @@
 # Changelog
 
+## 8.1.0 (2022-10-15)
+
+- Ensure apps with `Shared user ID` will use a consistent isolated storage folder
+- Fix some unnecessary checks are done when using the Zygisk version of the enhance module
+- An early fix for an issue that would prevent "limited mode" from being available in the next Android version
 
 ## 8.0.0 (2022-08-21)
 
