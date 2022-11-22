@@ -117,7 +117,7 @@ Switch notification style to "Android" from "Notification" - "Notification shade
 
 #### MIUI (Xiaomi)
 
-Enable "USB debugging (Security options)" in "Developer options".
+Enable "USB debugging (Security options)" in "Developer options". **Note that this is a separate option from "USB debugging".**
 
 #### ColorOS (OPPO & OnePlus)
 

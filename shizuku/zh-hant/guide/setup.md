@@ -115,7 +115,7 @@ adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
 
 #### MIUI（Xiaomi）
 
-在「開發人員選項」中開啟「USB 偵錯（安全設定）」。
+在「開發人員選項」中開啟「USB 偵錯（安全設定）」。**注意，這和「USB 偵錯」是兩個分開的選項。**
 
 #### ColorOS（OPPO & OnePlus）
 

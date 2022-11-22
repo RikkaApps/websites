@@ -115,7 +115,7 @@ adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
 
 #### MIUI（小米）
 
-在“开发者选项”中开启“USB 调试（安全设置）”。
+在“开发者选项”中开启“USB 调试（安全设置）”。**注意，这和“USB 调试”是两个分开的选项。**
 
 #### ColorOS（OPPO & OnePlus）
 
