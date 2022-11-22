@@ -1,5 +1,10 @@
 # Changelog
 
+## 8.0.1 (2022-11-22)
+
+- Allow backup without purchasing (restore the backup still need purchasing)
+- Fix swithing user not working randomly
+
 ## 8.0.0 (2022-09-02)
 
 - Experimental feature for Android 12 +: Usage history

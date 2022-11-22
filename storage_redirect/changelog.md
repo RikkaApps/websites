@@ -1,5 +1,9 @@
 # Changelog
 
+## 8.2.1 (2022-11-22)
+
+- Better Android 13 support
+
 ## 8.1.0 (2022-10-15)
 
 - Ensure apps with `Shared user ID` will use a consistent isolated storage folder
