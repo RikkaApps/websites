@@ -15,9 +15,13 @@ The following applications do not collect any information.
 
 ## 1. Personal information
 
-We do not collect and hold any information that would allow us to identify users of our apps.
+If not special specified, we do not collect and hold any information that would allow us to identify users of our apps.
 
 In case of in-app purchases of our apps in the Google Play Store, we receive information about the purchase (order ID, purchase time, region) from Google.
+
+The following applications have optional features which requires additional information.
+
+Storage Isolation has "online rules" feature. This feature is disabled by default from version 8.2.2. If this feature is enabled, in order to fetch the "online rule" related to the application, we collect application ID of apps on users' device. No other personal information is collected and sent. The application ID is only used to find the corresponding rule file and not stored.
 
 ## 2. Anonymous identifier
 
