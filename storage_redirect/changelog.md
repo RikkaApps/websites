@@ -1,5 +1,14 @@
 # Changelog
 
+## 8.3.0 (2023-01-03)
+
+- Fixed the problem that apps that did not request any permissions above Android 11 were skipped (on Android 11 and above, apps without any permissions can also write files and folders in standard folders)
+- Fixed the problem that apps which only requests Android 13 new permissions was judged as not request any permissions
+
+## 8.2.2 (2022-12-05)
+
+- Add user approval step before requesting online rule
+
 ## 8.2.1 (2022-11-22)
 
 - Better Android 13 support
