@@ -12,5 +12,5 @@ features:
   details: 坏应用不再可以建立一堆文件夹；根据用户设定规则将用有用的文件、媒体等存至规范的文件夹。
 - title: 监视文件操作
   details: 监视应用的文件操作，了解其使用了哪些文件。
-footer: Copyright © 2020 RikkaApps
+footer: Copyright © 2023 RikkaApps
 ---
