@@ -1,5 +1,12 @@
 # Changelog
 
+## 8.4.0 (2023-03-12)
+
+- Fixed an issue where an app with an export rule (whether the rule is enabled or not) would be force stopped on first launch of the core service
+- [For Android 10 and earlier versions only] File Monitor no longer requires Shamiko to be installed (but please note that the hidden solution is still necessary, so File Monitor will be turned off after the update)
+- Fixed the problem that apps which only requests Android 13 new permissions was judged as not request any permissions (the previous version did not fix it properly)
+- For Chinese, Japanese and Korean language users, if the system does not provide a Medium (500) weight font, it will use the simulation implementation
+
 ## 8.3.0 (2023-01-03)
 
 - Fixed the problem that apps that did not request any permissions above Android 11 were skipped (on Android 11 and above, apps without any permissions can also write files and folders in standard folders)
