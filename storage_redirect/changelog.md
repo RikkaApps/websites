@@ -1,5 +1,9 @@
 # Changelog
 
+## 8.4.1 (2023-03-17)
+
+- Fix the problem that in the last version, entering app list will crash the app if Enhance mode is not used
+
 ## 8.4.0 (2023-03-12)
 
 - Fixed an issue where an app with an export rule (whether the rule is enabled or not) would be force stopped on first launch of the core service
