@@ -6,4 +6,4 @@
 
 [Coolapk](https://www.coolapk.com/apk/moe.shizuku.privileged.api)
 
-[IzzyOnDroid F-Droid Repository](https://apt.izzysoft.de/fdroid/index/apk/moe.shizuku.privileged.api)
+[termux ](https://apt.termux.de/fdroid/index/apk/moe.shizuku.privileged.api)
