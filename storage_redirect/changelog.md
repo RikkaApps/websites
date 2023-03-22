@@ -1,5 +1,9 @@
 # Changelog
 
+## 8.4.2 (2023-03-22)
+
+- Fix the problem that from version 8.4.0, app is unable to use if "Dark theme" option is not set to "Follow system"
+
 ## 8.4.1 (2023-03-17)
 
 - Fix the problem that in the last version, entering app list will crash the app if Enhance mode is not used
