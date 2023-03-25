@@ -107,13 +107,13 @@ adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
 
 ### 透過無線除錯啟動：點選「輸入配對碼」後立刻提示失敗
 
-#### MIUI（Xiaomi）
+#### MIUI（Xiaomi、POCO）
 
 在系統設定的「通知管理」-「通知顯示設定」將通知樣式切換為「Android」。
 
 ### 透過無線除錯啟動/透過連線電腦啟動：adb 權限受限
 
-#### MIUI（Xiaomi）
+#### MIUI（Xiaomi、POCO）
 
 在「開發人員選項」中開啟「USB 偵錯（安全設定）」。**注意，這和「USB 偵錯」是兩個分開的選項。**
 
@@ -141,7 +141,7 @@ adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
 
 你需要在「開發人員選項」中開啟「僅充電模式下允許 ADB 偵錯選項」。
 
-#### MIUI（Xiaomi）
+#### MIUI（Xiaomi、POCO）
 
 不要使用 MIUI 的「手機管家」的掃描功能，因為它會禁用「開發人員選項」。
 
