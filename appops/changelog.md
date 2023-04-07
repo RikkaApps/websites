@@ -1,5 +1,15 @@
 # Changelog
 
+## 9.0.0 (2023-04-08)
+
+- Add "Sensors" permission for Android 10 and above, which can control whether the app can use accelerometer, gravity sensor and other sensors that can be used without permission
+- Support for Android 14 (however, based on experience, the app will most likely not work again due to later changes)
+- Hide `OP_TOAST_WINDOW` on Android 11+ for apps targeting API 30+ as it no longer works
+- Add instructions for storage permissions on Android 10+, the system allows eligible apps to write to standard folders even if they do not have storage permissions (eligible apps are apps that target API 30 or above, or target API 29 and have adapted Scoped Storage)
+- Added option to allow backup of system components
+- For Chinese, Japanese and Korean language users, if the system does not provide a Medium (500) weight font, it will use the simulation implementation
+- Added prompt information for `com.android.externalstorage`, `com.android.providers.downloads`, `com.samsung.android.providers.media` not having permissions on Samsung devices
+
 ## 8.0.1 (2022-11-22)
 
 - Allow backup without purchasing (restore the backup still need purchasing)
