@@ -1,5 +1,11 @@
 # Changelog
 
+## 8.4.3 (2023-04-12)
+
+- Fixed an issue that on Android 10+, "Export isolated files & Redirect system providers" option was not displayed for apps not requesting for write storage permission
+  
+  On Android 10+, the Android system allows eligible apps (**even if it doesn't request any permissions**) to write to standard folders (eligible apps are those whose target API is 30 or above, or whose target API is 29 and has adapted to Scoped Storage). This option is meaningful for such applications.
+
 ## 8.4.2 (2023-03-22)
 
 - Fix the problem that from version 8.4.0, app is unable to use if "Dark theme" option is not set to "Follow system"
