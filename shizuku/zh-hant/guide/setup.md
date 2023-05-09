@@ -137,6 +137,8 @@ adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
   
   在 Android 9 及以上版本上選項是「預設 USB 配置」-「不進行資料傳輸」。
 
+- （Android 11+）啟用「停用 ADB 授權逾時」選項。
+
 #### EMUI (Huawei) 
 
 你需要在「開發人員選項」中開啟「僅充電模式下允許 ADB 偵錯選項」。
