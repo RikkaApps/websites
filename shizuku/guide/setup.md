@@ -155,7 +155,7 @@ Don't click the dialog shows after connecting the USB, because it will change US
 
 #### GrapheneOS 
 
-The setting "Secure app spawning" may need to be disabled. 
+The Security setting "Secure app spawning" may need to be disabled. 
 Note: GrapheneOS is not an officially supported ROM, but as of January 2023 Shizuku will run on it. 
 
 ### Start via root: cannot start on boot
