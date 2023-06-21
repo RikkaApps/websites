@@ -6,6 +6,14 @@
 
 Shizuku supports startup in the following three ways.
 
+::: tip If you are using GrapheneOS
+
+System settings - "Security" - "Secure app spawning" may need to be disabled.
+
+[Source](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
+
+:::
+
 ### Start with root
 
 For rooted devices, just start directly.
@@ -152,11 +160,6 @@ Do not use the scan feature in MIUI's "Security" app, since it will disable "Dev
 #### Sony
 
 Don't click the dialog shows after connecting the USB, because it will change USB usage mode.
-
-#### GrapheneOS 
-
-The Security setting "Secure app spawning" may need to be disabled. 
-Note: GrapheneOS is not an officially supported ROM, but as of January 2023 Shizuku will run on it. 
 
 ### Start via root: cannot start on boot
 

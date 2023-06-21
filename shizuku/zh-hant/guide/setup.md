@@ -6,6 +6,14 @@
 
 Shizuku 支援透過以下三種方式啟動。
 
+::: tip 如果您正在使用 GrapheneOS
+
+您可能需要關閉 系統設定 - 「安全」 - 「Secure app spawning」。
+
+[來源](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
+
+:::
+
 ### 透過 root 啟動
 
 對於已 root 裝置，直接啟動即可。
