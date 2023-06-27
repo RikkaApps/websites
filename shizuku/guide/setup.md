@@ -1,3 +1,4 @@
+![IMG_20230622_154606](https://github.com/RikkaApps/websites/assets/137670075/57dc76f6-9168-434d-b7be-46f85fd6aea2)
 # User manual
 
 [[toc]]
