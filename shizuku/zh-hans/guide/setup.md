@@ -1,33 +1,33 @@
 # 用户手册
 
-[[toc]]
+[[TOC]]
 
-## 启动 Shizuku
+##启动静谷
 
-Shizuku 支持通过以下三种方式启动。
+静谷支持通过以下三种方式启动。
 
-::: tip 如果您正在使用 GrapheneOS
+：：tip如果您正在使用GrapheneOS
 
-您可能需要关闭 系统设置 - “安全” - “Secure app spawning”。
+您可能需要关闭系统设置-“安全”-“安全应用产卵”。
 
 [来源](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
 
 :::
 
-### 通过 root 启动
+###通过root启动
 
-如果您的设备已经 root，直接启动即可。
+如果您的设备已经root，直接启动即可。
 
 ### 通过无线调试启动
 
-通过无线调试启动适用于 Android 11 或以上版本。这种启动方式无需连接电脑。由于系统限制，每次重新启动后都需要再次进行启动步骤。
+通过无线调试启动适用于Android11或以上版本.这种启动方式无需连接电脑。由于系统限制，每次重新启动后都需要再次进行启动步骤。
 
 #### 启用无线调试
 
-1. 在网络上搜索如何为您的机型启用“开发者选项”
-2. 启用“开发者选项”和“USB 调试”<br><br><img :src="$withBase('/images/enable_dev_options.png')" style="max-width:320px;width:100%">
-3. 进入“无线调试”<br><br><img :src="$withBase('/images/enter_wireless_debugging.png')" style="max-width:320px;width:100%">
-4. 启用“无线调试”<br><br><img :src="$withBase('/images/enable_wireless_debugging.png')" style="max-width:320px;width:100%">
+1.在网络上搜索如何为您的机型启用“开发者选项”
+2.启用"开发者选项"和"USB调试"<溴><溴><IMG:src="$withbase('/images/enable_dev_options.PNG’)"风格="最大宽度：320px；宽度：100%">
+3.进入“无线调试”<溴><溴><IMG:src="$withbase('/images/enter_wireless_debuging。PNG’)"风格="最大宽度：320px；宽度：100%">
+:
    
 #### 配对（仅需一次）
 
