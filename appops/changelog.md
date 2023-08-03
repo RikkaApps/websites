@@ -1,5 +1,11 @@
 # Changelog
 
+## 9.0.6 (2023-08-03)
+
+- Upgrade Shizuku to 13.5.0+ could solve the problem that automatic functions not work
+- Fix the problem of "Unable to start service" on some realme devices
+- Fix crash on pre-Android 7.1
+
 ## 9.0.0 (2023-04-08)
 
 - Add "Sensors" permission for Android 10 and above, which can control whether the app can use accelerometer, gravity sensor and other sensors that can be used without permission
