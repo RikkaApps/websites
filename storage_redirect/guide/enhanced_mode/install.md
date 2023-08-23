@@ -1,3 +1,5 @@
+![image_editor_output_image-1507819020-1683258123815-2](https://github.com/RikkaApps/websites/assets/134621454/a3220293-bc0a-401b-b029-d54d35aae50d)
+![image_editor_output_image-1507819020-1683258123815-2](https://github.com/RikkaApps/websites/assets/134621454/b0bd8702-a2b5-49ad-a216-de9e22aedad9)
 # Install
 
 The boost module requires your device to have Magisk installed first. You can learn more about Magisk from [GitHub](https://github.com/topjohnwu/Magisk).
