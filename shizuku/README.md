@@ -1,4 +1,4 @@
----
+https://github.com/RikkaApps/websites/pull/79#issue-1751837442---
 home: true
 heroImage: /logo.png
 actionText: Learn more
