@@ -117,7 +117,7 @@ Searching for pairing service requires access to the local network, and many man
 
 ### Start via wireless debugging: immediately fail after tapping "Enter pairing code"
 
-#### MIUI (Xiaomi, POCO)
+#### MIUI (Xiaomi HyperOS)
 
 Switch notification style to "Android" from "Notification" - "Notification shade" in system settings.
 
