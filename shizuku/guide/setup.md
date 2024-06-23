@@ -162,5 +162,6 @@ Do not use the scan feature in MIUI's "Security" app, since it will disable "Dev
 Don't click the dialog shows after connecting the USB, because it will change USB usage mode.
 
 ### Start via root: cannot start on boot
-
-Please allow Shizuku to run in the background.
+Please clarify where the option "secure app spawning" is located, like is it in "Developer options" or if GrapheneOS has some standalone settings page.
+Please allow Shizuku to run in the background.Please clarify where the option "secure app spawning" is located, like is it in "Developer options" or if GrapheneOS has some standalone settings page.Please clarify where the option "secure app spawning" is located, like is it in "Developer options" or if GrapheneOS has some standalone settings page.
+okay 
