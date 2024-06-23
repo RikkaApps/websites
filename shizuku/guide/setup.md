@@ -1,9 +1,9 @@
 # User manual
-
+i what to use the app
 [[toc]]
-
+shizuku app is beautiful 
 ## Start Shizuku
-
+please help me to use this app
 Shizuku supports startup in the following three ways.
 
 ::: tip If you are using GrapheneOS
