@@ -1,5 +1,4 @@
-# User manual
-
+adb shell sh /sdcard/Android/data/moe.shizuku.
 [[toc]]
 
 ## Start Shizuku
