@@ -110,7 +110,7 @@ adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
 Many manufacturers have made modifications to the Android system that prevent Shizuku from working properly.
 
 ### Start via wireless debugging: keeps showing "Searching for pairing service"
-
+o
 Please allow Shizuku to run in the background.
 
 Searching for pairing service requires access to the local network, and many manufacturers disable network access for apps as soon as they become invisible. You can search the web for how to allow apps to run in the background on your device.
