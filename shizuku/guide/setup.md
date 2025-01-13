@@ -1,4 +1,4 @@
-# User manual
+android_sdk/platform-tools/
 
 [[toc]]
 
