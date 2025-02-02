@@ -1,7 +1,6 @@
-# User manual
-
+k# User manual
+k
 [[toc]]
-
 ## Start Shizuku
 
 Shizuku supports startup in the following three ways.
