@@ -14,7 +14,7 @@ System settings - "Security" - "Secure app spawning" may need to be disabled.
 
 :::
 
-### Start with root
+### Start with boot
 
 For rooted devices, just start directly.
 
@@ -42,7 +42,7 @@ Starting with wireless debugging works on Android 11 or above. This startup meth
 
 If it does not start, try disabling and enabling wireless debugging.
 
-### Start by connecting to a computer
+### Start by connecting to a device 
 
 This boot method works on unrooted devices running Android 10 and below. Unfortunately, this startup method requires a computer. Due to system limitations, the boot steps need to be performed again after each reboot.
 
