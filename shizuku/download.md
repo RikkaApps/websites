@@ -1,7 +1,7 @@
-# Download
+# تحميل
 
-[Google Play](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)
+[جوجل اللعب.](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)
 
-[GitHub Release](https://github.com/RikkaApps/Shizuku/releases)
+[إصدار GitHub](https://github.com/RikkaApps/Shizuku/releases)
 
-[IzzyOnDroid F-Droid Repository](https://apt.izzysoft.de/fdroid/index/apk/moe.shizuku.privileged.api)
+[مستودع IzzyOnDroid F-Droid](https://apt.izzysoft.de/fdroid/index/apk/moe.shizuku.privileged.api)
