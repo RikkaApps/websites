@@ -1,0 +1,53 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {}
+}```
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    "sshKeyName": "your-ssh-key-name",
+    "sshKeyPath": "/path/to/your/ssh/key",
+    "sshAgentConfig": {
+      "enable": true,
+      "socketPath": "/run/user/1000/gnupg/S.gpg-agent"
+    },
+    "dockerCertPath": "/path/to/your/docker/cert",
+    "dockerKeyPath": "/path/to/your/docker/key",
+    "customVolumes": [
+      {
+        "name": "your-custom-volume-name",
+        "containerPath": "/path/to/container/volume",
+        "hostPath": "/path/to/host/volume"
+      }
+    ],
+    "customEnvVars": [
+      {
+        "name": "ENV_VAR_NAME",
+        "value": "ENV_VAR_VALUE"
+      }
+    ],
+    "additionalResources": {
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "hostPort": 8080
+        }
+      ],
+      "additionalPorts": [
+        {
+          "containerPort": 443,
+          "hostPort": 8443
+        }
+      ]
+    }
+  }
+}
+```
+
+Этот пример добавляет следующие дополнительные возможности:
+
+1. **SSH Key Configuration**: Указывает имя и путь к вашему SSH-ключу, а также конфигурацию агента SSH.
+2. **Docker Cert and Key**: Включает путь к вашему сертификату и ключу Docker для безопасной работы с контейнером.
+3. **Custom Volumes**: Позволяет задать пользовательские тома для обмена данными между контейнером и хостом.
+4. **Custom Environment Variables**: Определяет дополнительные переменные окружения, которые будут доступны в контейнере.
+5. **Port Mappings**: Настраивает переадресацию портов для доступа к контейнеру из внешней сети.
