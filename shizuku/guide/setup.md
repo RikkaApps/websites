@@ -1,3 +1,4 @@
+![Screenshot_2025-04-18-22-03-56-18_40deb401b9ffe8e1df2f1cc5ba480b12](https://github.com/user-attachments/assets/9d658d3e-2ece-4a8a-8c68-2849feecf018)
 # User manual
 
 [[toc]]
@@ -71,6 +72,45 @@ See [Android Developer](https://developer.android.com/studio/command-line/adb) f
 ::: tip
 1. Please do not close this window. The "terminal" mentioned later refers to this window (if you closed the window, please go back to step 2)
 2. If you use PowerShell or Linux/Mac, all `adb` should be replaced with `./adb`
+:::
+
+#### Setting `adb`
+
+To use `adb` you first need to turn on USB debugging on your device, usually by following these steps:
+
+1. Open system Settings and go to About.
+2. Click "Build number" quickly for several times, you can see a message similar to "You are a developer".
+3. At this point, you should able to find "Developer Options" in Settings,  enable "USB Debugging".
+4. Connect the device to the computer and type `adb devices` in the terminal.
+5. At this time, the dialog "Allow debugging" will appear on the device, check "Always allow" and confirm.
+6. Enter `adb devices` again in the terminal. If there is no problem, you will see something like the following.
+
+   ```
+   List of devices attached
+   XXX      device
+   ```
+
+::: tip
+The steps for enabling Developer Options on different devices may vary, please search for yourself.
+:::
+
+#### Start Shizuku
+
+Copy the command and paste into the terminal. If there is no problem, you will see that Shizuku has started successfully in Shizuku app.
+
+
+::: details Command for Shizuku v11.2.0+
+
+```
+adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
+```
+:::
+
+## FAQ
+
+Many manufacturers have made modifications to the Android system that prevent Shizuku from working properly.
+
+### Start via wireless debugging: keeps showing "Searching for pairing service"
 :::
 
 #### Setting `adb`
