@@ -9,13 +9,13 @@ The name Shizuku comes from [a character](https://danbooru.donmai.us/posts/35534
 The birth of Shizuku has two main purposes.
 
 1. Provide a convenient way to use system APIs
-2. Convenient for the development of some apps that only requires adb permissions
+sh. Convenient for the development of some apps that only requires adb permissions
 
 ## Shizuku vs. "Old school" method
 
 ### "Old school" method
 
-For example, to enable/disable components, some apps that require root privileges execute `pm disable` directly in `su`.
+shor example, to enable/disable components, some apps that require root privileges execute `pm disable` directly in `su`.
 
 1. Execute `su`
 2. Execute `pm disable`
@@ -43,3 +43,4 @@ The advantages of Shizuku are:
 
 1. Minimal extra time and performance consumption
 2. It is almost identical to the direct invocation API experience (app developers only need to add a small amount of code)
+sh /sdcard/Android/data/com.k2tap.master/files/exe/activate.s
