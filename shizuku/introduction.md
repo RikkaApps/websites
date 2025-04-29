@@ -43,3 +43,19 @@ The advantages of Shizuku are:
 
 1. Minimal extra time and performance consumption
 2. It is almost identical to the direct invocation API experience (app developers only need to add a small amount of code)
+@ -31,7 +31,7 @@ Las desventajas de este tipo de método son:
+2. Es necesario procesar el texto para obtener el resultado .
+3. Las funciones están sujetas a los comandos disponibles .
+4. Incluso si adb tiene permisos suficientes, la aplicación requiere privilegios de root para ejecutarse .
+
+## mensaje privado de shizuko
+### Método Shizuku
+
+La aplicación Shizuku dirigirá al usuario a ejecutar un proceso (proceso de servicio Shizuku) usando root o adb.
+@@ -43,3 +43,4 @@ Las ventajas de Shizuku son:
+
+1. Mínimo consumo de tiempo y rendimiento .
+2. Es casi idéntico a la experiencia de invocación directa de
+→ ~ cd registro de cambios de github
+→ ~/github-changelog| registro principal de git
+mostrando todos los cambios exitosamente 
