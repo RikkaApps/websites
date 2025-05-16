@@ -1,7 +1,15 @@
-# User manual
+# User manualidades
+12246
 
 [[toc]]
 
+uwuhdii
+
+
+
+
+
+ueiei
 ## Start Shizuku
 
 Shizuku supports startup in the following three ways.
