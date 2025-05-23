@@ -1,4 +1,4 @@
----
+www(Español)
 home: true
 heroImage: /logo.webp
 backgroundImage: /background.png
