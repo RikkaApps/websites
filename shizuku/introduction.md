@@ -30,7 +30,7 @@ The disadvantages of this type of method are:
 1. **Extremely slow**
 2. Need to process the text to get the result
 3. Features are subject to available commands
-4. Even if adb has sufficient permissions, the app requires root privileges to run
+4. Even if adb has sufficient permissions, the app requires root privilese to run
 
 ### Shizuku method
 
