@@ -1,16 +1,16 @@
 # Introduction
-
+adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
-
+adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh
 The name Shizuku comes from [a character](https://danbooru.donmai.us/posts/3553474).
-
+adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh
 ## Why was Shizuku born?
-
+adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh
 The birth of Shizuku has two main purposes.
-
+adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh
 1. Provide a convenient way to use system APIs
 2. Convenient for the development of some apps that only requires adb permissions
-
+adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh
 ## Shizuku vs. "Old school" method
 
 ### "Old school" method
