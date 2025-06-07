@@ -1,6 +1,9 @@
 # User manual
 
-[[toc]]
+[[toc]] like the following.
+
+List of devices attached
+XXX      device
 
 ## Start Shizuku
 
