@@ -1,4 +1,4 @@
-# User manual
+khal# User manual
 
 [[toc]]
 
