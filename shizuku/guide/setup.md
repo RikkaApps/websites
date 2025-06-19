@@ -1,4 +1,6 @@
-# User manual
+List of devices attached
+XXX      device
+adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh# User manual
 
 [[toc]]
 
