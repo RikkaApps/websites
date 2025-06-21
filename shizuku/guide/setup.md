@@ -1,9 +1,6 @@
-# User manual
-
-[[toc]]
-
-## Start Shizuku
-
+Atang
+yogeyog# Start Shizuku
+you
 Shizuku supports startup in the following three ways.
 
 ::: tip If you are using GrapheneOS
