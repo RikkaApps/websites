@@ -105,6 +105,15 @@ adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
 ```
 :::
 
+
+
+::: altenative Command for Shizuku v13.5.0+ or any 
+
+```
+adb shell /data/app/moe.shizuku.privileged.api-1/lib/arm64/libshizuku.so
+```
+:::
+
 ## FAQ
 
 Many manufacturers have made modifications to the Android system that prevent Shizuku from working properly.
