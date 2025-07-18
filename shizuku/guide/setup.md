@@ -1,4 +1,4 @@
-# User manual
+#12697466210 User manual
 
 [[toc]]
 
@@ -57,7 +57,8 @@ See [Android Developer](https://developer.android.com/studio/command-line/adb) f
 1. Download "SDK Platform Tools" provided by Google and extract it to any folder
 
    * [Windows](https://dl.google.com/android/repository/platform-tools-latest-windows.zip)
-   * [Linux](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)
+   * [Linux](https://dl.googl![Screenshot_2025-07-16-20-37-47-583_com android vending](https://github.com/user-attachments/assets/99402c7f-2b38-4782-b40b-f0a72bca16d3)
+e.com/android/repository/platform-tools-latest-linux.zip)
    * [Mac](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip)
 
 2. Open the folder, right click to select
