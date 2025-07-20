@@ -20,7 +20,7 @@ For rooted devices, just start directly.
 
 ### Start via wireless debugging
 
-Starting with wireless debugging works on Android 11 or above. This startup method does not require a connection to a computer. Due to system limitations, the startup steps need to be performed again after each reboot.
+Starting with wireless debugging works on Android 14 or above. This startup method does not require a connection to a computer. Due to system limitations, the startup steps need to be performed again after each reboot.
 
 #### Enable Wireless debugging
 
@@ -116,8 +116,6 @@ Please allow Shizuku to run in the background.
 Searching for pairing service requires access to the local network, and many manufacturers disable network access for apps as soon as they become invisible. You can search the web for how to allow apps to run in the background on your device.
 
 ### Start via wireless debugging: immediately fail after tapping "Enter pairing code"
-
-#### MIUI (Xiaomi, POCO)
 
 Switch notification style to "Android" from "Notification" - "Notification shade" in system settings.
 
