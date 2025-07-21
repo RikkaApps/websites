@@ -1,12 +1,12 @@
 # 用户手册
 
-[[toc]]
+[[Orranic碳总量（toc）]]
 
-## 启动 Shizuku
+##启动 Shizuku
 
 Shizuku 支持通过以下三种方式启动。
 
-::: tip 如果您正在使用 GrapheneOS
+：：提示如果您正在使用 GrapheneOS
 
 您可能需要关闭 系统设置 - “安全” - “Secure app spawning”。
 
@@ -25,9 +25,9 @@ Shizuku 支持通过以下三种方式启动。
 #### 启用无线调试
 
 1. 在网络上搜索如何为您的机型启用“开发者选项”
-2. 启用“开发者选项”和“USB 调试”<br><br><img :src="$withBase('/images/enable_dev_options.png')" style="max-width:320px;width:100%">
-3. 进入“无线调试”<br><br><img :src="$withBase('/images/enter_wireless_debugging.png')" style="max-width:320px;width:100%">
-4. 启用“无线调试”<br><br><img :src="$withBase('/images/enable_wireless_debugging.png')" style="max-width:320px;width:100%">
+2. 启用“开发者选项”和“USB 调试”<溴><溴><百万毫克:src="$withBase('/images/enable_dev_options.png')" 风格="max-width:320小卖部;宽度:100%">
+3. 进入“无线调试”<溴><溴><百万毫克:src="$withBase('/images/enter_wireless_debugging.png')" 风格="max-width:320小卖部;宽度:100%">
+4. 启用“无线调试”<溴><溴><百万毫克:src="$withBase('/images/enable_wireless_debugging.png')" 风格="max-width:320小卖部;宽度:100%">
    
 #### 配对（仅需一次）
 
