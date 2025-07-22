@@ -88,10 +88,10 @@ To use `adb` you first need to turn on USB debugging on your device, usually by 
    List of devices attached
    XXX      device
    ```
-
+999
 ::: tip
 The steps for enabling Developer Options on different devices may vary, please search for yourself.
-:::
+:::99999999
 
 #### Start Shizuku
 
@@ -126,12 +126,13 @@ Switch notification style to "Android" from "Notification" - "Notification shade
 #### MIUI (Xiaomi, POCO)
 
 Enable "USB debugging (Security options)" in "Developer options". **Note that this is a separate option from "USB debugging".**
+ok999999999
 
 #### ColorOS (OPPO & OnePlus)
 
 Disable "Permission monitoring" in "Developer options".
 
-#### Flyme (Meizu)
+#### Flyme (Meizu)999999999
 
 Disable "Flyme payment protection" in "Developer options".
 
@@ -143,8 +144,8 @@ Disable "Flyme payment protection" in "Developer options".
 - Do not disable "USB debugging" and "Developer options".
 - Change the USB usage mode to "Charge only" in the "Developer options".
   
-  On Android 8, the option is "Select USB configuration" - "Charge only".
-  
+  On Android 8, the option is "Select USB configuration" - "Charge only".9999999999999999
+  )9999 o ooo99999
   On Android 9+, the option is "Default USB configuration" - "No data transfer".
 
 - (Android 11+) Enable "Disable adb authorization timeout" option
@@ -161,6 +162,7 @@ Do not use the scan feature in MIUI's "Security" app, since it will disable "Dev
 
 Don't click the dialog shows after connecting the USB, because it will change USB usage mode.
 
-### Start via root: cannot start on boot
+### Start via root: cannot start on boot999999999
 
 Please allow Shizuku to run in the background.
+99999999
