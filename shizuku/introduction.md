@@ -19,27 +19,9 @@ For example, to enable/disable components, some apps that require root privilege
 
 1. Execute `su`
 2. Execute `pm disable`
-3. (pre-Pie) Start the Java process with app_process ([see here](https://android.googlesource.com/platform/frameworks/base/+/oreo-release/cmds/pm/pm))
-4. (Pie+) Execute the native program `cmd` ([see here](https://android.googlesource.com/platform/frameworks/native/+/pie-release/cmds/cmd/))
-5. Process the parameters, interact with the system server through the binder, and process the result to output the text result.
+3. (pre-Pie) Start the Java process with app_process ([see here](adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.shStarting with root...
 
-Each of the "Execute" means a new process creation, su internally uses sockets to interact with the su daemon, and a lot of time and performance are consumed in such process. (Some poorly designed app will even execute `su` **every time** for each command)
 
-The disadvantages of this type of method are:
+Can't open root shell, try again...
 
-1. **Extremely slow**
-2. Need to process the text to get the result
-3. Features are subject to available commands
-4. Even if adb has sufficient permissions, the app requires root privileges to run
-
-### Shizuku method
-
-The Shizuku app will direct the user to run a process (Shizuku service process) using root or adb.
-
-1. When the app process starts, the Shizuku service process sends the binder to the app process.
-2. The app interacts with the Shizuku service through the binder, and the Shizuku service process interacts with the system server through the binder.
-
-The advantages of Shizuku are:
-
-1. Minimal extra time and performance consumption
-2. It is almost identical to the direct invocation API experience (app developers only need to add a small amount of code)
+Still not :(
