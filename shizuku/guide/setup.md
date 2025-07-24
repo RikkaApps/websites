@@ -21,6 +21,7 @@ For rooted devices, just start directly.
 ### Start via wireless debugging
 
 Starting with wireless debugging works on Android 11 or above. This startup method does not require a connection to a computer. Due to system limitations, the startup steps need to be performed again after each reboot.
+![Screenshot_20250724_144302](https://github.com/user-attachments/assets/4506225b-a987-4737-92bc-00aeaa4ffa01)
 
 #### Enable Wireless debugging
 
