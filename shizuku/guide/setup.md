@@ -1,5 +1,5 @@
 # User manual
-
+rehan78155@gmail.com
 [[toc]]
 
 ## Start Shizuku
