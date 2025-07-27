@@ -159,6 +159,10 @@ adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
 
 不要点击连接 USB 后弹出的对话框，因为这会导致 USB 使用模式发生变化。
 
+#### Realme
+
+在“开发者选项”中开启「禁止权限监控」
+
 ### 通过 root 启动：无法开机启动
 
 请允许 Shizuku 在后台运行。
