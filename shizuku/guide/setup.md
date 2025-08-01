@@ -2,7 +2,8 @@
 
 [[toc]]
 
-## Start Shizuku
+## Start Files: SDK 36 V 360716080
+OS SECURITY_PATCH:2022-08-05
 
 Shizuku supports startup in the following three ways.
 
