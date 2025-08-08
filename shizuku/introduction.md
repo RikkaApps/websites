@@ -1,3 +1,4 @@
+adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh
 # Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
@@ -13,7 +14,8 @@ The birth of Shizuku has two main purposes.
 
 ## Shizuku vs. "Old school" method
 
-### "Old school" method
+### "Old schoo![Screenshot_2025-08-02-09-07-51-494_com google android googlequicksearchbox](https://github.com/user-attachments/assets/f951615b-b505-4e44-9007-c94dfbbf424a)
+l" method
 
 For example, to enable/disable components, some apps that require root privileges execute `pm disable` directly in `su`.
 
