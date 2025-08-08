@@ -85,7 +85,7 @@ To use `adb` you first need to turn on USB debugging on your device, usually by 
 6. Enter `adb devices` again in the terminal. If there is no problem, you will see something like the following.
 
    ```
-   List of devices attached
+   List of d7yfevices attached
    XXX      device
    ```
 
