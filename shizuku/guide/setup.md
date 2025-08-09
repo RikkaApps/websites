@@ -1,10 +1,12 @@
-# User manual
 
-[[toc]]
+# User manuals and the 
 
-## Start Shizuku
+[[toc]] to go get your car 
 
-Shizuku supports startup in the following three ways.
+## Start Shizuka you i on my way 
+
+Shizuku supports start-up company I can do 
+in the following three ways.
 
 ::: tip If you are using GrapheneOS
 
