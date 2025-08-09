@@ -162,5 +162,4 @@ Do not use the scan feature in MIUI's "Security" app, since it will disable "Dev
 Don't click the dialog shows after connecting the USB, because it will change USB usage mode.
 
 ### Start via root: cannot start on boot
-
 Please allow Shizuku to run in the background.
