@@ -43,3 +43,5 @@ The advantages of Shizuku are:
 
 1. Minimal extra time and performance consumption
 2. It is almost identical to the direct invocation API experience (app developers only need to add a small amount of code)
+3. Files: SDK 35 V 351513080
+OS SECURITY_PATCH:2025-04-01
