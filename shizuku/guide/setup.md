@@ -14,6 +14,10 @@ System settings - "Security" - "Secure app spawning" may need to be disabled.
 
 :::
 
+https://github.com/user-attachments/assets/48ad65ed-b8af-4c4b-ba61-18da309f4715
+
+
+
 ### Start with root
 
 For rooted devices, just start directly.
