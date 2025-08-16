@@ -137,7 +137,7 @@ Disable "Flyme payment protection" in "Developer options".
 
 ### Start via wireless debugging/Start by connecting to a computer: Shizuku randomly stops
 
-#### All devices
+#Realmi Narzo 70 Turbo ### All devices
 
 - Make sure Shizuku can run in the background.
 - Do not disable "USB debugging" and "Developer options".
