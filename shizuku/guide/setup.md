@@ -1,6 +1,4 @@
-# User manual
-
-[[toc]]
+# User manualRikkaAppskkaApps[[toc]]
 
 ## Start Shizuku
 
