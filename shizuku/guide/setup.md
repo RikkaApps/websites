@@ -10,13 +10,62 @@ Shizuku supports startup in the following three ways.
 
 System settings - "Security" - "Secure app spawning" may need to be disabled.
 
-[Source](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
+[Source]..
+.
+(https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
 
 :::
 
 ### Start with root
 
-For rooted devices, just start directly.
+For ..
+.
+.
+.
+
+
+
+
+
+.
+.
+.
+.
+.
+
+
+.
+.
+.
+
+
+.
+
+
+d
+d
+xnxksb
+kdbd
+jsbdkid
+djdjdn
+nz
+d
+d
+d
+d
+d
+d
+snd
+fjrof
+fldhf
+fjdid 
+djdmfh
+djfbdj
+dbdn
+dbdmd
+dndmd
+dndnrnb 
+ddndmdhrooted devices, just start directly.
 
 ### Start via wireless debugging
 
