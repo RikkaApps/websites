@@ -1,3 +1,5 @@
+root![Screenshot_2025-08-21-20-12-49-37_db51e592e420a9871f4a37915a68789b](https://github.com/user-attachments/assets/e6d7b544-d227-4f51-a9c5-35d0c4b21fab)
+
 # User manual
 
 [[toc]]
