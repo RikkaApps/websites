@@ -1,6 +1,5 @@
 # User manual
-
-[[toc]]
+Itikanra
 
 ## Start Shizuku
 
