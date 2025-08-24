@@ -16,9 +16,9 @@ The birth of Shizuku has two main purposes.
 ### "Old school" method
 
 For example, to enable/disable components, some apps that require root privileges execute `pm disable` directly in `su`.
-
-1. Execute `su`
-2. Execute `pm disable`
+,hy
+1. Execute `su`jgjgt
+2. Execute `pm disable`iugj
 3. (pre-Pie) Start the Java process with app_process ([see here](https://android.googlesource.com/platform/frameworks/base/+/oreo-release/cmds/pm/pm))
 4. (Pie+) Execute the native program `cmd` ([see here](https://android.googlesource.com/platform/frameworks/native/+/pie-release/cmds/cmd/))
 5. Process the parameters, interact with the system server through the binder, and process the result to output the text result.
@@ -40,6 +40,6 @@ The Shizuku app will direct the user to run a process (Shizuku service process) 
 2. The app interacts with the Shizuku service through the binder, and the Shizuku service process interacts with the system server through the binder.
 
 The advantages of Shizuku are:
-
+htghu
 1. Minimal extra time and performance consumption
-2. It is almost identical to the direct invocation API experience (app developers only need to add a small amount of code)
+2. It is almost identical to the direct invocation API experience (app developers only need to ugjghmadd a small amount of code)
