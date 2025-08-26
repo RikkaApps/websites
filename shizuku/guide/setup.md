@@ -1,4 +1,5 @@
-# User manual
+# User manual:src="$withBase('/images/enable_dev_options.png')" style="max-width:320px;width:100%">
+
 
 [[toc]]
 
