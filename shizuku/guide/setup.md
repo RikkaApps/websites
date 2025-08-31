@@ -139,6 +139,7 @@ Disable "Flyme payment protection" in "Developer options".
 
 #### All devices
 
+
 - Make sure Shizuku can run in the background.
 - Do not disable "USB debugging" and "Developer options".
 - Change the USB usage mode to "Charge only" in the "Developer options".
