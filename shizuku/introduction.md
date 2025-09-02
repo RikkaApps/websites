@@ -25,14 +25,14 @@ For example, to enable/disable components, some apps that require root privilege
 
 Each of the "Execute" means a new process creation, su internally uses sockets to interact with the su daemon, and a lot of time and performance are consumed in such process. (Some poorly designed app will even execute `su` **every time** for each command)
 
-The disadvantages of this type of method are:
-
+The disadvantages of this type of methodmethod
 1. **Extremely slow**
-2. Need to process the text to get the result
-3. Features are subject to available commands
-4. Even if adb has sufficient permissions, the app requires root privileges to run
+2. 
+3. Need to process the text to get the result
+4. Features are subject to available commands
+5. Even if adb has sufficient permissions, the app requires root privileges to run
 
-### Shizuku method
+### Shizuku methodadb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh
 
 The Shizuku app will direct the user to run a process (Shizuku service process) using root or adb.
 
