@@ -10,9 +10,7 @@ Shizuku supports startup in the following three ways.
 
 System settings - "Security" - "Secure app spawning" may need to be disabled.
 
-[Source](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
-
-:::
+[Source](https://github.com/RikkaApps/websites/pull/79#issue-1751RikkaApps:::
 
 ### Start with root
 
@@ -141,7 +139,7 @@ Disable "Flyme payment protection" in "Developer options".
 
 - Make sure Shizuku can run in the background.
 - Do not disable "USB debugging" and "Developer options".
-- Change the USB usage mode to "Charge only" in the "Developer options".
+- Change the USB usage mode to "Charge only" in theoptions".
   
   On Android 8, the option is "Select USB configuration" - "Charge only".
   
@@ -159,8 +157,6 @@ Do not use the scan feature in MIUI's "Security" app, since it will disable "Dev
 
 #### Sony
 
-Don't click the dialog shows after connecting the USB, because it will change USB usage mode.
-
-### Start via root: cannot start on boot
+Don't click the dialog shows after connecting the USB, because it will change USB usage mooptionsStart via root: cannot start on boot
 
 Please allow Shizuku to run in the background.
