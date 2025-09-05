@@ -1,4 +1,9 @@
-# Introduction
+në rikka.shizuku.t9.n (SourceFile:12)
+	në rikka.shizuku.kk.run (SourceFile:119)
+	në rikka.shizuku.hz.run (SourceFile:13)
+	në rikka.shizuku.om0.run (SourceFile:3)
+	në rikka.shizuku.kg.l (File Burimi:1)
+	në r# Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
 
