@@ -1,3 +1,4 @@
+shizuku/guide
 # User manual
 
 [[toc]]
