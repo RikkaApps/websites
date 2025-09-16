@@ -6,16 +6,16 @@ The name Shizuku comes from [a character](https://danbooru.donmai.us/posts/35534
 
 ## Why was Shizuku born?
 
-The birth of Shizuku has two main purposes.
+The birth of Shizuku has two main purposk
 
-1. Provide a convenient way to use system APIs
+1. Provide a convenient way to use system API
 2. Convenient for the development of some apps that only requires adb permissions
 
-## Shizuku vs. "Old school" method
+## Shizuku vs. "Old school" metho
 
 ### "Old school" method
 
-For example, to enable/disable components, some apps that require root privileges execute `pm disable` directly in `su`.
+For example, to enable/disable components, soe apps that require root privileges execute `pm disable` directly in `su`.
 
 1. Execute `su`
 2. Execute `pm disable`
