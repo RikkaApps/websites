@@ -1,3 +1,4 @@
+تطبيق كوجو
 # User manual
 
 [[toc]]
