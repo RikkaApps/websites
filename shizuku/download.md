@@ -1,4 +1,4 @@
-# Download
+# Downloadb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.shad
 
 [Google Play](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)
 
