@@ -1,6 +1,4 @@
-# User manual
-
-[[toc]]
+skendrick
 
 ## Start Shizuku
 
