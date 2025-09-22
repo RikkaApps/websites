@@ -23,7 +23,8 @@ For example, to enable/disable components, some apps that require root privilege
 4. (Pie+) Execute the native program `cmd` ([see here](https://android.googlesource.com/platform/frameworks/native/+/pie-release/cmds/cmd/))
 5. Process the parameters, interact with the system server through the binder, and process the result to output the text result.
 
-Each of the "Execute" means a new process creation, su internally uses sockets to interact with the su daemon, and a lot of time and performance are consumed in such process. (Some poorly designed app will even execute `su` **every time** for each command)
+Each of the "Execute" means a new process creation, su internally uses sockets to interact with the su daemon, and a lot of time and performance are consumed in such process. (Some poorly designed app will even execute `su` **every time** for each command)![1000027549](https://github.com/user-attachments/assets/d5a1991c-7ebb-470e-915c-5b6b3583c458)
+
 
 The disadvantages of this type of method are:
 
