@@ -1,4 +1,4 @@
-# Introduction
+# Inadb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.shtroduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
 
