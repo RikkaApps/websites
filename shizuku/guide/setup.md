@@ -1,4 +1,5 @@
-# User manual
+settings put global guest_user_enabled 1
+settings put secure user_switcher_enabled 1
 
 [[toc]]
 
