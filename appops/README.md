@@ -3,7 +3,7 @@ home: true
 heroImage: /logo.png
 actionText: Download
 actionLink: /download.html
-secondaryActionText: Learn more
+secondaryActionText: Learn more.github/dependabot.yml
 secondaryActionLink: /guide/
 features:
 - title: Access hidden permission mechanism
