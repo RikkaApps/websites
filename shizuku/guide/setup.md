@@ -1,4 +1,4 @@
-# User manual
+redmi c13# User manual
 
 [[toc]]
 
