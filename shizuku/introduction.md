@@ -1,4 +1,4 @@
-# Introduction
+https://www.tiktok.com/@ffbetezl04s/video/7559032955180420363?_r=1&u_code=emccjm287b1ec4&region=ID&mid=7559032967240403723&preview_pb=0&sharer_language=id&_d=ekfh8ggg5c0039&share_item_id=7559032955180420363&source=h5_t&timestamp=1760072149&user_id=7550597592628855826&sec_user_id=MS4wLjABAAAAaEN2YnBoPwxc5KsyD2JZPkfXpPpie5yCjEvqEu-ZeSCSdFQ1HlzwiM1XUQPakamE&item_author_type=2&social_share_type=0&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7532161930552592135&share_link_id=377e9c87-c09b-4f67-bdff-a919d854f6ed&share_app_id=1180&ugbiz_name=MAIN&ug_btm=b2001&link_reflow_popup_iteration_sharer=%7B%22click_empty_to_play%22%3A1%2C%22dynamic_cover%22%3A1%2C%22follow_to_play_duration%22%3A-1.0%2C%22profile_clickable%22%3A1%7D&enable_checksum=1# Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
 
