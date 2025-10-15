@@ -1,4 +1,4 @@
-# User manual
+# zareceiver User manual
 
 [[toc]]
 
