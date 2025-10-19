@@ -1,4 +1,4 @@
-# Download
+adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh# Download
 
 **Requirement:** rooted Android 6.0+ device
 
