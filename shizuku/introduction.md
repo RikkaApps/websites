@@ -12,6 +12,7 @@ The birth of Shizuku has two main purposes.
 2. Convenient for the development of some apps that only requires adb permissions
 
 ## Shizuku vs. "Old school" method
+shizuku start
 
 ### "Old school" method
 
