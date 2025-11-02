@@ -1,5 +1,5 @@
-# User manual
-
+Realme Narzo 50a
+allow 
 [[toc]]
 
 ## Start Shizuku
