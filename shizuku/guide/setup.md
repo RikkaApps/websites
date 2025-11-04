@@ -68,6 +68,7 @@ See [Android Developer](https://developer.android.com/studio/command-line/adb) f
 
 3. Enter `adb`, if success, you can see a long list of content instead of the prompt not finding adb.
 
+u
 ::: tip
 1. Please do not close this window. The "terminal" mentioned later refers to this window (if you closed the window, please go back to step 2)
 2. If you use PowerShell or Linux/Mac, all `adb` should be replaced with `./adb`
