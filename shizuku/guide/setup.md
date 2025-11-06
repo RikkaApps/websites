@@ -1,4 +1,4 @@
-# User manual
+redmi 15c# User manual
 
 [[toc]]
 
