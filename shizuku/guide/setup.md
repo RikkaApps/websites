@@ -1,4 +1,28 @@
-# User manual
+javax.net.ssl.SSLProtocolException: Read error: ssl=0xb400007760037598: Failure in SSL library, usually a protocol error
+error:10000416:SSL routines:OPENSSL_internal:SSLV3_ALERT_CERTIFICATE_UNKNOWN (external/boringssl/src/ssl/tls_record.cc:486 0xb4000079000b7d00:0x00000003)
+	at com.android.org.conscrypt.NativeCrypto.ENGINE_SSL_read_direct(Native Method)
+	at com.android.org.conscrypt.NativeSsl.readDirectByteBuffer(NativeSsl.java:571)
+	at com.android.org.conscrypt.ConscryptEngine.readPlaintextDataDirect(ConscryptEngine.java:1092)
+	at com.android.org.conscrypt.ConscryptEngine.readPlaintextData(ConscryptEngine.java:1076)
+	at com.android.org.conscrypt.ConscryptEngine.unwrap(ConscryptEngine.java:873)
+	at com.android.org.conscrypt.ConscryptEngine.unwrap(ConscryptEngine.java:744)
+	at com.android.org.conscrypt.ConscryptEngine.unwrap(ConscryptEngine.java:709)
+	at com.android.org.conscrypt.ConscryptEngineSocket$SSLInputStream.processDataFromSocket(ConscryptEngineSocket.java:907)
+	at com.android.org.conscrypt.ConscryptEngineSocket$SSLInputStream.readUntilDataAvailable(ConscryptEngineSocket.java:873)
+	at com.android.org.conscrypt.ConscryptEngineSocket$SSLInputStream.read(ConscryptEngineSocket.java:846)
+	at java.io.DataInputStream.readFully(DataInputStream.java:203)
+	at rikka.shizuku.z2.e(SourceFile:22)
+	at rikka.shizuku.z2.a(SourceFile:195)
+	at moe.shizuku.manager.starter.b$a.l(SourceFile:42)
+	at rikka.shizuku.t9.n(SourceFile:12)
+	at rikka.shizuku.kk.run(SourceFile:119)
+	at rikka.shizuku.hz.run(SourceFile:13)
+	at rikka.shizuku.om0.run(SourceFile:3)
+	at rikka.shizuku.kg.l(SourceFile:1)
+	at rikka.shizuku.kg$c.d(SourceFile:15)
+	at rikka.shizuku.kg$c.n(SourceFile:29)
+	at rikka.shizuku.kg$c.run(Unknown Source:0)
+   # User manual
 
 [[toc]]
 
