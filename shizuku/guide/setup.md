@@ -1,4 +1,22 @@
 # User manual
+Mobile phone brands : OPPO ; 
+Phone model : CPH2127 ; 
+System version : Android 11 ; 
+Harmony version : 0.0 ; 
+CPU :  Qualcomm Technologies, Inc SM4250 ; 
+Screen resolution : 720 * 1600 ; 
+Device model :  ; 
+Device name :  ; 
+Firmware version :  ; 
+Connection mode :  ; 
+Active state : Inactivated ; 
+App version : G2.4.5 ; 
+developer option : Turned on ; 
+USB debugging : Turned on ; 
+USB debugging (safe mode) :  ; 
+Suspended window : Already owned ; 
+Phone usage stats : Not owned ; 
+Battery optimization : Optimized ; 
 
 [[toc]]
 
