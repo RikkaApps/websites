@@ -1,6 +1,7 @@
 # Download
 
-[Google Play](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)
+[Google Play](https://play.google.com/store/apps/details?id=moe.shizuku.pri
+vileged.api)
 
 [GitHub Release](https://github.com/RikkaApps/Shizuku/releases)
 
