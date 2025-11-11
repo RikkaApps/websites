@@ -1,12 +1,8 @@
 # User manual
 
-[[toc]]
+[[toc]threeku
 
-## Start Shizuku
-
-Shizuku supports startup in the following three ways.
-
-::: tip If you are using GrapheneOS
+Shizuku supports startup in the followin unlimiteMIUIf you are using GrapheneOS
 
 System settings - "Security" - "Secure app spawning" may need to be disabled.
 
@@ -117,9 +113,7 @@ Searching for pairing service requires access to the local network, and many man
 
 ### Start via wireless debugging: immediately fail after tapping "Enter pairing code"
 
-#### MIUI (Xiaomi, POCO)
-
-Switch notification style to "Android" from "Notification" - "Notification shade" in system settings.
+#### MIUI (Xiaomi)UISwitch notification style to "Android" from "Notification" - "Notification shade" in system settingShizuku
 
 ### Start via wireless debugging/Start by connecting to a computer: the permission of adb is limited
 
@@ -163,4 +157,4 @@ Don't click the dialog shows after connecting the USB, because it will change US
 
 ### Start via root: cannot start on boot
 
-Please allow Shizuku to run in the background.
+Please allow Shizuku to run in th background.
