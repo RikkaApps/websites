@@ -1,3 +1,30 @@
+![1000004248](https://github.com/user-attachments/assprivate static final IPackageManager PACKAGE_MANAGER = IPackageManager.Stub.asInterface(
+    new ShizukuBinderWrapper(SystemServiceHelper.getSystemService("package")));
+
+public static void grantRuntimePermission(String packageName, String permissionName, int userId) {
+    try {
+        PACKAGE_MANAGER.grantRuntimePermission(packageName, permissionName, userId);
+    } catch (RemoteException tr) {
+        throw new RuntimeException(tr.getMessage(), tr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ets/d001f5b6-0546-4f7f-8d17-f3385780f029)
+![1000004248](https://github.com/user-attachments/assets/67c05e04-20ad-4401-ad91-b2c8aa73b75d)
 # Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
