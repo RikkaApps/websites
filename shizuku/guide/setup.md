@@ -2,9 +2,7 @@
 
 [[toc]]
 
-## Start Shizuku
-
-Shizuku supports startup in the following three ways.
+## Start ShizukuShizuku supports startup in the following three ways.
 
 ::: tip If you are using GrapheneOS
 
