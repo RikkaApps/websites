@@ -1,14 +1,10 @@
-# Introduction
-
-Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
-
-The name Shizuku comes from [a character](https://danbooru.donmai.us/posts/3553474).
+![c0d76e404d943709fa05679b368be79d](https://github.com/user-attachments/assets/5b253eda-b2f8-438c-bd6b-3af5c4525a46)![IMG_20251110_215956_569](https://github.com/user-attachments/assets/102d8019-3391-4a52-98cc-4ecf45643f64)
+![96c4d252a56d2ccd5b20348e64babaf8](https://github.com/user-attachments/assets/6ffbd37c-79c8-4d14-954f-4f89749581e4)
+name Shizuku comes from [a character](https://danbooru.donmai.us/posts/3553474).
 
 ## Why was Shizuku born?
 
-The birth of Shizuku has two main purposes.
-
-1. Provide a convenient way to use system APIs
+The birth of Shizuku has two main purposesrovide a convenient way to use system APIs
 2. Convenient for the development of some apps that only requires adb permissions
 
 ## Shizuku vs. "Old school" method
