@@ -1,5 +1,5 @@
-# User manual
-
+ sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
+#
 [[toc]]
 
 ## Start Shizuku
