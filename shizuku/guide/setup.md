@@ -136,7 +136,7 @@ Disable "Permission monitoring" in "Developer options".
 Disable "Flyme payment protection" in "Developer options".
 
 ### Start via wireless debugging/Start by connecting to a computer: Shizuku randomly stops
-
+gb
 #### All devices
 
 - Make sure Shizuku can run in the background.
