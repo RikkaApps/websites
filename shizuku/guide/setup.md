@@ -1,8 +1,9 @@
+![Screenshot_2025-11-23-16-00-57-51_12bf17cfaa0d83452b91e38fba4bace8](https://github.com/user-attachments/assets/fd1b3da4-98bc-4d66-863a-0ca68977421b)
 # User manual
 
 [[toc]]
 
-## Start Shizuku
+## StartStartrtShizuku
 
 Shizuku supports startup in the following three ways.
 
