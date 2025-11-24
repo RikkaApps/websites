@@ -1,3 +1,4 @@
+free fire
 ---
 home: true
 heroImage: /logo.png
