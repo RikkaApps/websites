@@ -1,4 +1,4 @@
-# Introduction
+# adb shell dpm set-device-owner com.rosan.dhizuku/.server.DhizukuDAReceiver
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
 
