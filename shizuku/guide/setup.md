@@ -1,4 +1,4 @@
-# User manual
+Command for Shizuku v11.2.0+# User manual
 
 [[toc]]
 
