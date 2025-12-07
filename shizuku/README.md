@@ -23,7 +23,7 @@ public static void grantRuntimePermission(String packageName, String permissionN
     try {
         PACKAGE_MANAGER.grantRuntimePermission(packageName, permissionName, userId);
     } catch (RemoteException tr) {
-        throw new RuntimeException(tr.getMessage(), tr);
+        throw new RuntimeException(tr.getMessage(), tr);.
     }
 }
 ```
