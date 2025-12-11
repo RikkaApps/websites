@@ -1,4 +1,4 @@
-# User manual
+dumpsys battery set level 1008
 
 [[toc]]
 
