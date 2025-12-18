@@ -1,4 +1,4 @@
-# User manual
+# sensix beta
 
 [[toc]]
 
