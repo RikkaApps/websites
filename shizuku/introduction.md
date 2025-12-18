@@ -1,4 +1,4 @@
-# Introduction
+https://github.com/RikkaApps/Shizuku-API.gitadb shell /data/app/~~DDmxS-rEHfOEj-t2g2-p2A==/moe.shizuku.privileged.api-VaRIbwrlOwPnYZaIKN8qEg==/lib/arm64/libshizuku.sogh repo clone RikkaApps/Shizuku-APIhttps://github.com/RikkaApps/Shizuku-API.gitadb shell /data/app/~~DDmxS-rEHfOEj-t2g2-p2A==/moe.shizuku.privileged.api-VaRIbwrlOwPnYZaIKN8qEg==/lib/arm64/libshizuku.soadb shell /data/app/~~DDmxS-rEHfOEj-t2g2-p2A==/moe.shizuku.privileged.api-VaRIbwrlOwPnYZaIKN8qEg==/lib/arm64/libshizuku.sohttps://github.com/RikkaApps/Shizuku-API.gitgh repo clone RikkaApps/Shizuku-API# Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
 
