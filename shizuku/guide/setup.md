@@ -54,6 +54,7 @@ See [Android Developer](https://developer.android.com/studio/command-line/adb) f
 
 #### Install `adb`
 
+
 1. Download "SDK Platform Tools" provided by Google and extract it to any folder
 
    * [Windows](https://dl.google.com/android/repository/platform-tools-latest-windows.zip)
