@@ -1,4 +1,4 @@
-# Download
+gh repo clone RikkaApps/Shizuku# Download
 
 [Google Play](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)
 
