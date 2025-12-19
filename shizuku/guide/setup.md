@@ -164,3 +164,5 @@ Don't click the dialog shows after connecting the USB, because it will change US
 ### Start via root: cannot start on boot
 
 Please allow Shizuku to run in the background.
+![17638](https://github.com/user-attachments/assets/a4265508-56e4-479f-b849-b60f3d03c090)
+![17638](https://github.com/user-attachments/assets/5d6108b5-39b2-4b92-9cd7-37711a4e599a)
