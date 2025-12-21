@@ -1,3 +1,4 @@
+![Screenshot_٢٠٢٥-١١-٠٨-١٨-٥٢-١٤-٨٣٤_com tencent ig](https://github.com/user-attachments/assets/ffd6cf83-27cc-44a4-a91e-ea16f656db5f)
 # Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
