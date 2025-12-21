@@ -12,7 +12,7 @@ The birth of Shizuku has two main purposes.
 2. Convenient for the development of some apps that only requires adb permissions
 
 ## Shizuku vs. "Old school" method
-
+https://apt.izzysoft.de/fdroid/index/apk/moe.shizuku.privileged.api
 ### "Old school" method
 
 For example, to enable/disable components, some apps that require root privileges execute `pm disable` directly in `su`.
