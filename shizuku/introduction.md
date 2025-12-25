@@ -1,4 +1,4 @@
-# Introduction
+jfnkuuu cjvchc hcbg uyx # Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
 
@@ -7,6 +7,11 @@ The name Shizuku comes from [a character](https://danbooru.donmai.us/posts/35534
 ## Why was Shizuku born?
 
 The birth of Shizuku has two main purposes.
+n. g jfhif up uyx up or egg JC Ch kg in kg for jghfjc hf hd cbcmc,hydcg cut dhdjg
+
+
+https://github.com/user-attachments/assets/b467a7a2-5a57-48ac-a59d-f723e31d30e4
+
 
 1. Provide a convenient way to use system APIs
 2. Convenient for the development of some apps that only requires adb permissions
