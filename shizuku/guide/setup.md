@@ -1,4 +1,4 @@
-# User manual
+# banaUser manual
 
 [[toc]]
 
