@@ -163,4 +163,15 @@ Don't click the dialog shows after connecting the USB, because it will change US
 
 ### Start via root: cannot start on boot
 
-Please allow Shizuku to run in the background.
+Please allow Shizuku to run in the background.Starting with wireless adb in port 36179...
+
+info: starter begin
+info: killing old process...
+info: killed 29741 (shizuku_server)
+info: use apk path from argv
+info: apk path is /data/app/~~za2Vg3G-ZP2OwkbLR6eDYw==/moe.shizuku.privileged.api-BVaMFUa0Pvnmt2fOF2tZWA==/base.apk
+info: starting server...
+info: shizuku_server pid is 6474
+info: shizuku_starter exit with 0
+
+Waiting for service...
