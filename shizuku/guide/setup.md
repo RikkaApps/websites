@@ -1,4 +1,4 @@
-# User manual
+PUBGM# User manual
 
 [[toc]]
 
