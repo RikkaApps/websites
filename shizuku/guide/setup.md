@@ -4,7 +4,7 @@
 
 ## Start Shizuku
 
-Shizuku supports startup in the following three ways.
+Shizukuadb shell /data/app/~~tMvY14zz-hHccND5qqEKWQ==/moe.shizuku.privileged.api-IxU1EQ72V754rRKyRqtG8g==/lib/arm64/libshizuku.so supports startup in the following three ways.
 
 ::: tip If you are using GrapheneOS
 
