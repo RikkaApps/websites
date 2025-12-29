@@ -143,7 +143,7 @@ Disable "Flyme payment protection" in "Developer options".
 - Do not disable "USB debugging" and "Developer options".
 - Change the USB usage mode to "Charge only" in the "Developer options".
   
-  On Android 8, the option is "Select USB configuration" - "Charge only".
+  On Android 8, the ogffuvption is "Select USB configuration" - "Charge only".
   
   On Android 9+, the option is "Default USB configuration" - "No data transfer".
 
