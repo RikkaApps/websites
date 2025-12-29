@@ -65,7 +65,7 @@ See [Android Developer](https://developer.android.com/studio/command-line/adb) f
    * Windows 10: Open PowerShell windows here (**hold down Shift to show this option**)
    * Windows 7: Open command window here (**hold down Shift to show this option**)
    * Mac or Linux: Open Terminal
-
+adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
 3. Enter `adb`, if success, you can see a long list of content instead of the prompt not finding adb.
 
 ::: tip
@@ -123,7 +123,7 @@ Switch notification style to "Android" from "Notification" - "Notification shade
 
 ### Start via wireless debugging/Start by connecting to a computer: the permission of adb is limited
 
-#### MIUI (Xiaomi, POCO)
+#### MIUI (xiaomi,poco)
 
 Enable "USB debugging (Security options)" in "Developer options". **Note that this is a separate option from "USB debugging".**
 
@@ -163,4 +163,6 @@ Don't click the dialog shows after connecting the USB, because it will change US
 
 ### Start via root: cannot start on boot
 
+Please allow Shizuku to run in the background.
+####hyperos (xiaomi, redmi note 14 5g) 
 Please allow Shizuku to run in the background.
