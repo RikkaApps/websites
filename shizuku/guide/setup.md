@@ -1,4 +1,4 @@
-# User manual
+backgroundnual
 
 [[toc]]
 
@@ -138,7 +138,7 @@ Disable "Flyme payment protection" in "Developer options".
 ### Start via wireless debugging/Start by connecting to a computer: Shizuku randomly stops
 
 #### All devices
-
+adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh
 - Make sure Shizuku can run in the background.
 - Do not disable "USB debugging" and "Developer options".
 - Change the USB usage mode to "Charge only" in the "Developer options".
@@ -155,9 +155,7 @@ Enable "Allow ADB debugging options in 'Charge only' mode" in "Developer options
 
 #### MIUI (Xiaomi, POCO)
 
-Do not use the scan feature in MIUI's "Security" app, since it will disable "Developer options".
-
-#### Sony
+Do not use the scan feature in MIUI's "Security" app, since it will disable "Developer options".Please Sony
 
 Don't click the dialog shows after connecting the USB, because it will change USB usage mode.
 
