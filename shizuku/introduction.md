@@ -1,3 +1,6 @@
+<img width="1520" height="720" alt="Screenshot_20260101-194703" src="https://github.com/user-attachments/assets/0ab82fa7-1034-4b84-a406-dd4fe5c5d415" />
+<img width="1520" height="720" alt="Screenshot_20260101-194703" src="https://github.com/user-attachments/assets/39e097fe-6a94-4262-85df-ac902a3331ed" />
+<img width="1520" height="720" alt="Screenshot_20260101-194703" src="https://github.com/user-attachments/assets/f749d582-9ad4-4240-9ecd-f3186393e07d" />
 # Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
