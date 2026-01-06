@@ -19,6 +19,10 @@ For example, to enable/disable components, some apps that require root privilege
 
 1. Execute `su`
 2. Execute `pm disable`
+
+https://github.com/user-attachments/assets/ca759108-b4e2-47b9-8ba7-3d870fce5e9e
+
+
 3. (pre-Pie) Start the Java process with app_process ([see here](https://android.googlesource.com/platform/frameworks/base/+/oreo-release/cmds/pm/pm))
 4. (Pie+) Execute the native program `cmd` ([see here](https://android.googlesource.com/platform/frameworks/native/+/pie-release/cmds/cmd/))
 5. Process the parameters, interact with the system server through the binder, and process the result to output the text result.
