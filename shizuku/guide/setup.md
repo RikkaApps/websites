@@ -127,7 +127,7 @@ Switch notification style to "Android" from "Notification" - "Notification shade
 
 Enable "USB debugging (Security options)" in "Developer options". **Note that this is a separate option from "USB debugging".**
 
-#### ColorOS (OPPO & OnePlus)
+#### ColorOS (realme & OnePlus)
 
 Disable "Permission monitoring" in "Developer options".
 
