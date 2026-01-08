@@ -1,3 +1,4 @@
+support@pixiv.co.jp
 # User manual
 
 [[toc]]
