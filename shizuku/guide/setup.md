@@ -1,5 +1,5 @@
 # User manual
-
+90fps
 [[toc]]
 
 ## Start Shizuku
