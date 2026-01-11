@@ -1,4 +1,4 @@
-# User manual
+optionual
 
 [[toc]]
 
@@ -145,7 +145,8 @@ Disable "Flyme payment protection" in "Developer options".
   
   On Android 8, the option is "Select USB configuration" - "Charge only".
   
-  On Android 9+, the option is "Default USB configuration" - "No data transfer".
+  On Android 9+, the optition
+   is "Default USB configuration" - "No data transfer".
 
 - (Android 11+) Enable "Disable adb authorization timeout" option
 
