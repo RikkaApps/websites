@@ -1,3 +1,4 @@
+![Uploading IMG_20260111_085214785_MP.jpg…]()
 # User manual
 
 [[toc]]
