@@ -1,4 +1,4 @@
-# Introduction
+ល# Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
 
@@ -30,7 +30,8 @@ The disadvantages of this type of method are:
 1. **Extremely slow**
 2. Need to process the text to get the result
 3. Features are subject to available commands
-4. Even if adb has sufficient permissions, the app requires root privileges to run
+4. Even if adb has sufficient permissions, the app require![Screenshot_20260113_180449_CapCut](https://github.com/user-attachments/assets/64510369-1578-48af-8f5f-b6ff0feb5033)
+s root privileges to run
 
 ### Shizuku method
 
