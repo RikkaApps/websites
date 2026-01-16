@@ -1,3 +1,4 @@
+skin
 # User manual
 
 [[toc]]
