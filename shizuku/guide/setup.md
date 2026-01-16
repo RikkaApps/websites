@@ -9,6 +9,8 @@ Shizuku supports startup in the following three ways.
 ::: tip If you are using GrapheneOS
 
 System settings - "Security" - "Secure app spawning" may need to be disabled.
+obfuscate-0.4.1-1.12.2.jar
+1	/storage/emulated/0/‪Android/data/net.kdt.pojavlaunch.debug/obfuscate-0.4.1-1.12.2.jar: open failed: ENOENT (No such file or directory)
 
 [Source](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
 
