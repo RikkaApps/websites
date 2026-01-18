@@ -50,7 +50,7 @@ This boot method works on unrooted devices running Android 10 and below. Unfortu
 
 Android Debug Bridge (`adb`) is a versatile command-line tool that lets you communicate with a device. The adb command facilitates a variety of device actions, such as installing and debugging apps, and it provides access to a Unix shell that you Can use to run a variety of commands on a device.
 
-See [Android Developer](https://developer.android.com/studio/command-line/adb) for more information.
+See [Android Developer](https://developer.android.com/stu dio/command-line/adb) for more information.
 
 #### Install `adb`
 
