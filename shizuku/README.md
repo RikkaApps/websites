@@ -1,5 +1,8 @@
----
-home: true
+12976392496
+999
+999
+6999
+99
 heroImage: /logo.png
 actionText: Learn more
 actionLink: /introduction.html
