@@ -164,3 +164,7 @@ Don't click the dialog shows after connecting the USB, because it will change US
 ### Start via root: cannot start on boot
 
 Please allow Shizuku to run in the background.
+Control + Shift + m to toggle the tab key![Screenshot_2026-01-21-21-45-36-369_com google android documentsui](https://github.com/user-attachments/a![IMG_20240701_140753](https://github.com/user-attachments/assets/7b42873d-f968-42f9-99ad-b422c8a1ecc9)
+![IMG_20240708_210102](https://github.com/user-attachments/assets/07fa3db6-8748-4260-ad4e-cb3e4a7f3b48)
+ssets/a2c576cb-e7ca-4239-9c69-b86019d23bbd)
+
