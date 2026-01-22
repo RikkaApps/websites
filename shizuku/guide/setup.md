@@ -1,5 +1,5 @@
 # User manual
-
+blood strike wide screen 
 [[toc]]
 
 ## Start Shizuku
