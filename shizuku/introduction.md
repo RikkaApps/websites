@@ -30,11 +30,7 @@ The disadvantages of this type of method are:
 1. **Extremely slow**
 2. Need to process the text to get the result
 3. Features are subject to available commands
-4. Even if adb has sufficient permissions, the app requires root privileges to run
-
-### Shizuku method
-
-The Shizuku app will direct the user to run a process (Shizuku service process) using root or adb.
+4. Even if adb has sufficient permissions, the app 
 
 1. When the app process starts, the Shizuku service process sends the binder to the app process.
 2. The app interacts with the Shizuku service through the binder, and the Shizuku service process interacts with the system server through the binder.
