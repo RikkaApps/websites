@@ -1,3 +1,4 @@
+redmi 14c 
 # User manual
 
 [[toc]]
