@@ -44,7 +44,7 @@ If it does not start, try disabling and enabling wireless debugging.
 
 ### Start by connecting to a computer
 
-This boot method works on unrooted devices running Android 10 and below. Unfortunately, this startup method requires a computer. Due to system limitations, the boot steps need to be performed again after each reboot.
+This boot method works on unrooted devices running Android 11 and below. Unfortunately, this startup method requires a computer. Due to system limitations, the boot steps need to be performed again after each reboot.
 
 #### What is `adb`?
 
@@ -117,13 +117,13 @@ Searching for pairing service requires access to the local network, and many man
 
 ### Start via wireless debugging: immediately fail after tapping "Enter pairing code"
 
-#### MIUI (Xiaomi, POCO)
+#### MIUI (Xiaomi, POCO, OPPO)
 
 Switch notification style to "Android" from "Notification" - "Notification shade" in system settings.
 
 ### Start via wireless debugging/Start by connecting to a computer: the permission of adb is limited
 
-#### MIUI (Xiaomi, POCO)
+#### MIUI (Xiaomi, POCO, OPPO)
 
 Enable "USB debugging (Security options)" in "Developer options". **Note that this is a separate option from "USB debugging".**
 
@@ -143,7 +143,7 @@ Disable "Flyme payment protection" in "Developer options".
 - Do not disable "USB debugging" and "Developer options".
 - Change the USB usage mode to "Charge only" in the "Developer options".
   
-  On Android 8, the option is "Select USB configuration" - "Charge only".
+  On Android 11, the option is "Select USB configuration" - "Charge only".
   
   On Android 9+, the option is "Default USB configuration" - "No data transfer".
 
@@ -153,7 +153,7 @@ Disable "Flyme payment protection" in "Developer options".
 
 Enable "Allow ADB debugging options in 'Charge only' mode" in "Developer options".
 
-#### MIUI (Xiaomi, POCO)
+#### MIUI (Xiaomi, POCO, OPPO)
 
 Do not use the scan feature in MIUI's "Security" app, since it will disable "Developer options".
 
