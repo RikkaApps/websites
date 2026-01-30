@@ -1,5 +1,5 @@
 # User manual
-
+Samsung galaxy S21 Ultra 5G Android 15
 [[toc]]
 
 ## Start Shizuku
