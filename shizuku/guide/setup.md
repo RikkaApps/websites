@@ -12,7 +12,7 @@ System settings - "Security" - "Secure app spawning" may need to be disabled.
 
 [Source](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
 
-:::
+:::adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh
 
 ### Start with root
 
