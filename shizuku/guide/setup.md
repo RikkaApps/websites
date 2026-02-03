@@ -42,17 +42,11 @@ Starting with wireless debugging works on Android 11 or above. This startup meth
 
 If it does not start, try disabling and enabling wireless debugging.
 
-### Start by connecting to a computer
-
 This boot method works on unrooted devices running Android 10 and below. Unfortunately, this startup method requires a computer. Due to system limitations, the boot steps need to be performed again after each reboot.
-
-#### What is `adb`?
 
 Android Debug Bridge (`adb`) is a versatile command-line tool that lets you communicate with a device. The adb command facilitates a variety of device actions, such as installing and debugging apps, and it provides access to a Unix shell that you Can use to run a variety of commands on a device.
 
 See [Android Developer](https://developer.android.com/studio/command-line/adb) for more information.
-
-#### Install `adb`
 
 1. Download "SDK Platform Tools" provided by Google and extract it to any folder
 
@@ -73,7 +67,7 @@ See [Android Developer](https://developer.android.com/studio/command-line/adb) f
 2. If you use PowerShell or Linux/Mac, all `adb` should be replaced with `./adb`
 :::
 
-#### Setting `adb`
+`
 
 To use `adb` you first need to turn on USB debugging on your device, usually by following these steps:
 
@@ -121,7 +115,6 @@ Searching for pairing service requires access to the local network, and many man
 
 Switch notification style to "Android" from "Notification" - "Notification shade" in system settings.
 
-### Start via wireless debugging/Start by connecting to a computer: the permission of adb is limited
 
 #### MIUI (Xiaomi, POCO)
 
@@ -164,3 +157,4 @@ Don't click the dialog shows after connecting the USB, because it will change US
 ### Start via root: cannot start on boot
 
 Please allow Shizuku to run in the background.
+allow background please cannot denie
