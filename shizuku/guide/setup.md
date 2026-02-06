@@ -1,4 +1,4 @@
-# User manual
+i want to be a hacker on Free fre# User manual
 
 [[toc]]
 
