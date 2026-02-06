@@ -1,4 +1,4 @@
-# User manual
+I love free fire, I have a lot of money every day.# User manual
 
 [[toc]]
 
