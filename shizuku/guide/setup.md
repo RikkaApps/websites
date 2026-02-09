@@ -1,3 +1,4 @@
+panel
 # User manual
 
 [[toc]]
