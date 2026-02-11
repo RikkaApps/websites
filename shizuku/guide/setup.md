@@ -1,3 +1,4 @@
+akin
 # User manual
 
 [[toc]]
