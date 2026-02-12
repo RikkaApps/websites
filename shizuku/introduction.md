@@ -1,3 +1,4 @@
+![Screenshot_٢٠٢٦٠٢١٢-٢٢٢٢٢٠_Chrome](https://github.com/user-attachments/assets/bf57a6e6-b65b-4a89-8b23-2c4f2dff5a69)
 # Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
