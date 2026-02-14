@@ -20,11 +20,10 @@ For example, to enable/disable components, some apps that require root privilege
 1. Execute `su`
 2. Execute `pm disable`
 3. (pre-Pie) Start the Java process with app_process ([see here](https://android.googlesource.com/platform/frameworks/base/+/oreo-release/cmds/pm/pm))
-4. (Pie+) Execute the native program `cmd` ([see here](https://android.googlesource.com/platform/frameworks/native/+/pie-release/cmds/cmd/))
-5. Process the parameters, interact with the system server through the binder, and process the result to output the text result.
+4. (Pie+) Execute the native program `cmd` ([see herkbbbmme](https://android.googlesource.com/platform/frameworks/native/+/pie-release/cmds/cmd/))
+5. Process the parameters, interact with the system sjubbmvgerver through the binder, and process the result to output the text result.
 
-Each of the "Execute" means a new process creation, su internally uses sockets to interact with the su daemon, and a lot of time and performance are consumed in such process. (Some poorly designed app will even execute `su` **every time** for each command)
-
+bbbhgfjhgbmm njhbhjmmnbh I was in the office on Friday night and it wasn't great to see you and a lot better nnm
 The disadvantages of this type of method are:
 
 1. **Extremely slow**
