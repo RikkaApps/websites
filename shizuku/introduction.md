@@ -1,4 +1,8 @@
-# Introduction
+# Introduction#FFHUDT6O3jUAHkSlPo7eM
+
+#
+
+
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
 
