@@ -1,9 +1,9 @@
-# User manual
+Mark Vince 
 
 [[toc]]
 
 ## Start Shizuku
-
+hotdog 
 Shizuku supports startup in the following three ways.
 
 ::: tip If you are using GrapheneOS
