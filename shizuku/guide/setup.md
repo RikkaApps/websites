@@ -1,3 +1,4 @@
+https://github.com/RikkaApps/websites.git
 # User manual
 
 [[toc]]
