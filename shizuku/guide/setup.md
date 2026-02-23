@@ -12,7 +12,7 @@ System settings - "Security" - "Secure app spawning" may need to be disabled.
 
 [Source](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
 
-:::
+:::https://github.com/RikkaApps/websites.git
 
 ### Start with root
 
