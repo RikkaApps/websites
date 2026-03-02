@@ -129,8 +129,7 @@ Enable "USB debugging (Security options)" in "Developer options". **Note that th
 
 #### ColorOS (OPPO & OnePlus)
 
-Disable "Permission monitoring" in "Developer options".
-
+Disable "Permission monitoring" in "Developer optioadb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh
 #### Flyme (Meizu)
 
 Disable "Flyme payment protection" in "Developer options".
