@@ -95,7 +95,11 @@ The steps for enabling Developer Options on different devices may vary, please s
 
 #### Start Shizuku
 
-Copy the command and paste into the terminal. If there is no problem, you will see that Shizuku has started successfully in Shizuku app.
+Copy the command and paste into the terminal. If there is no problem, 
+
+
+
+you will see that Shizuku has started successfully in Shizuku app.
 
 
 ::: details Command for Shizuku v11.2.0+
