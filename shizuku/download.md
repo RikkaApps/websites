@@ -1,4 +1,4 @@
-# Download
+https://github.com/RikkaApps/Shizuku-API.git# Download
 
 [Google Play](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)
 
