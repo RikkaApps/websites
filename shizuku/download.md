@@ -4,4 +4,5 @@
 
 [GitHub Release](https://github.com/RikkaApps/Shizuku/releases)
 
-[IzzyOnDroid F-Droid Repository](https://apt.izzysoft.de/fdroid/index/apk/moe.shizuku.privileged.api)
+[IzzyOnDroid F-DroidRepository](https://apt.izzysoft.de/fطdroid/index/apk/moe.shizuku.privileged.api)
+https://github.com/RikkaApps/websites.git
