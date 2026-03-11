@@ -1,3 +1,4 @@
+gh pr checkout 79
 # User manual
 
 [[toc]]
