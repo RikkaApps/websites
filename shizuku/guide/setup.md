@@ -4,7 +4,8 @@
 
 ## Start Shizuku
 
-Shizuku supports startup in the following three ways.
+Shizuku supports startup in the dfddx
+following three ways.
 
 ::: tip If you are using GrapheneOS
 
