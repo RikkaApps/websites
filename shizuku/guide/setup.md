@@ -130,6 +130,7 @@ Enable "USB debugging (Security options)" in "Developer options". **Note that th
 #### ColorOS (OPPO & OnePlus)
 
 Disable "Permission monitoring" in "Developer options".
+Warning: This setting causes a screen brightness bug on the OnePlus Nord CE5
 
 #### Flyme (Meizu)
 
