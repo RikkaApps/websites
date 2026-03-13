@@ -1,3 +1,4 @@
+![Screenshot_20260313_132328_GG Mouse Pro 2](https://github.com/user-attachments/assets/83faba08-616c-4773-a9a3-cd2591cd0b72)
 # Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
