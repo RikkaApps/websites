@@ -44,7 +44,7 @@ If it does not start, try disabling and enabling wireless debugging.
 
 ### Start by connecting to a computer
 
-This boot method works on unrooted devices running Android 10 and below. Unfortunately, this startup method requires a computer. Due to system limitations, the boot steps need to be performed again after each reboot.
+This boot method works on unrooted devices running Android 10 and below. Unfortunately, this startup method requires a computer. Due to adb shell /data/app/~~MgTYtpdahAHsaOqQv3El-w==/moe.shizuku.privileged.api-jHsIFMP57oeACI2YmJypZw==/lib/arm64/libshizuku.sosystem limitations, the boot steps need to be performed again after each reboot.
 
 #### What is `adb`?
 
