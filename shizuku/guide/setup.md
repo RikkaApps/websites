@@ -1,4 +1,4 @@
-# User manual
+metadata/fr.duniter.cesium.yml# User manual
 
 [[toc]]
 
