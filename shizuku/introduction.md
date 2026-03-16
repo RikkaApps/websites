@@ -41,5 +41,5 @@ The Shizuku app will direct the user to run a process (Shizuku service process) 
 
 The advantages of Shizuku are:
 
-1. Minimal extra time and performance consumption
+1. Minimal extra time and performa4nce consumption
 2. It is almost identical to the direct invocation API experience (app developers only need to add a small amount of code)
