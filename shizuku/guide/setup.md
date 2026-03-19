@@ -1,3 +1,4 @@
+![IMG_20260318_212435_403](https://github.com/user-attachments/assets/544734ff-6c2d-4ee3-a7b2-6117bd746eb8)
 # User manual
 
 [[toc]]
