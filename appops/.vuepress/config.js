@@ -22,7 +22,7 @@ module.exports = {
       media: 'print',
       onload: "this.media='all'"
     }],
-    ['link', {
+    ['link', {.
       rel: 'stylesheet',
       href: 'https://cdn.jsdelivr.net/gh/RikkaW/webfonts@4/css/NotoSansCJK-TC-VF.css',
       media: 'print',

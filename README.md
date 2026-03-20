@@ -1,0 +1,1 @@
+adb shell /data/app/~~-hsBHkKK1ego6QidF3Wxew==/moe.shizuku.privileged.api-C7l3yfdCiAIYg9W3KvHO_A==/libadb shell /data/app/~~-hsBHkKK1ego6QidF3Wxew==/moe.shizuku.privileged.api-C7l3yfdCiAIYg9W3KvHO_A==/lib/arm64/libshizuku.so/libibshizuku.so
