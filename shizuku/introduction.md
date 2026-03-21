@@ -1,4 +1,4 @@
-# Introduction
+https://r8qs.adj.st/appinvites/UIBespeakShare%2f?adjust_t=q0le9d_ynoul8&adjust_deeplink=mobilelegends%3a%2f%2fappinvites%2fUIBespeakShare%2f# Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
 
