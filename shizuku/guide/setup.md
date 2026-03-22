@@ -1,15 +1,17 @@
-# User manual
-
+# User manualasiri
+roblox
+roblox
 [[toc]]
 
 ## Start Shizuku
 
 Shizuku supports startup in the following three ways.
-
+no
+he is a bot
 ::: tip If you are using GrapheneOS
-
+yes i use
 System settings - "Security" - "Secure app spawning" may need to be disabled.
-
+okay
 [Source](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
 
 :::
@@ -158,6 +160,7 @@ Enable "Allow ADB debugging options in 'Charge only' mode" in "Developer options
 Do not use the scan feature in MIUI's "Security" app, since it will disable "Developer options".
 
 #### Sony
+
 
 Don't click the dialog shows after connecting the USB, because it will change USB usage mode.
 
