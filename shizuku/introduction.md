@@ -1,45 +1,78 @@
-# Introduction
+j# Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
 
 The name Shizuku comes from [a character](https://danbooru.donmai.us/posts/3553474).
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Baahubali Warrior Game</title>
+  <style>
+    canvas {
+      background: url('https://images.unsplash.com/photo-1523982342177-5d1dcd10d111') no-repeat center/cover;
+      border: 3px solid gold;
+      display: block;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+<canvas id="game" width="900" height="450"></canvas>
 
-## Why was Shizuku born?
+<script>
+const canvas = document.getElementById('game');
+const ctx = canvas.getContext('2d');
 
-The birth of Shizuku has two main purposes.
+let player = { x: 100, y: 300, w: 80, h: 120, hp: 100, color: 'blue' };
+let enemy = { x: 700, y: 300, w: 80, h: 120, hp: 100, color: 'red' };
+let playerAttack = false;
 
-1. Provide a convenient way to use system APIs
-2. Convenient for the development of some apps that only requires adb permissions
+function draw() {
+  ctx.clearRect(0,0,canvas.width,canvas.height);
 
-## Shizuku vs. "Old school" method
+  // Player
+  ctx.fillStyle = player.color;
+  ctx.fillRect(player.x, player.y, player.w, player.h);
+  ctx.fillText('Baahubali HP: '+player.hp, player.x, player.y-10);
 
-### "Old school" method
+  // Enemy (Bhallaladeva)
+  ctx.fillStyle = enemy.color;
+  ctx.fillRect(enemy.x, enemy.y, enemy.w, enemy.h);
+  ctx.fillText('Enemy HP: '+enemy.hp, enemy.x, enemy.y-10);
 
-For example, to enable/disable components, some apps that require root privileges execute `pm disable` directly in `su`.
+  // Attack effect
+  if(playerAttack) {
+    ctx.fillStyle = 'yellow';
+    ctx.fillRect(player.x+player.w, player.y+40, 60, 20);
+  }
+}
 
-1. Execute `su`
-2. Execute `pm disable`
-3. (pre-Pie) Start the Java process with app_process ([see here](https://android.googlesource.com/platform/frameworks/base/+/oreo-release/cmds/pm/pm))
-4. (Pie+) Execute the native program `cmd` ([see here](https://android.googlesource.com/platform/frameworks/native/+/pie-release/cmds/cmd/))
-5. Process the parameters, interact with the system server through the binder, and process the result to output the text result.
+function update() {
+  if(playerAttack &&
+     player.x + player.w + 60 >= enemy.x) {
+    enemy.hp -= 1;
+  }
+  if(enemy.hp <= 0) {
+    alert('Baahubali Jeet Gaya!');
+    enemy.hp = 100;
+  }
+}
 
-Each of the "Execute" means a new process creation, su internally uses sockets to interact with the su daemon, and a lot of time and performance are consumed in such process. (Some poorly designed app will even execute `su` **every time** for each command)
+document.addEventListener('keydown', (e) => {
+  if(e.code === 'ArrowRight') player.x += 20;
+  if(e.code === 'ArrowLeft') player.x -= 20;
+  if(e.code === 'Space') {
+    playerAttack = true;
+    setTimeout(()=> playerAttack=false, 150);
+  }
+});
 
-The disadvantages of this type of method are:
-
-1. **Extremely slow**
-2. Need to process the text to get the result
-3. Features are subject to available commands
-4. Even if adb has sufficient permissions, the app requires root privileges to run
-
-### Shizuku method
-
-The Shizuku app will direct the user to run a process (Shizuku service process) using root or adb.
-
-1. When the app process starts, the Shizuku service process sends the binder to the app process.
-2. The app interacts with the Shizuku service through the binder, and the Shizuku service process interacts with the system server through the binder.
-
-The advantages of Shizuku are:
-
-1. Minimal extra time and performance consumption
-2. It is almost identical to the direct invocation API experience (app developers only need to add a small amount of code)
+function loop() {
+  draw();
+  update();
+  requestAnimationFrame(loop);
+}
+loop();
+</script>
+</body>
+</html>
