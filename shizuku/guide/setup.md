@@ -1,3 +1,4 @@
+sizuku
 # User manual
 
 [[toc]]
