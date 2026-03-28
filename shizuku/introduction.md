@@ -43,3 +43,4 @@ The advantages of Shizuku are:
 
 1. Minimal extra time and performance consumption
 2. It is almost identical to the direct invocation API experience (app developers only need to add a small amount of code)
+3. Easy to integrate and use in Android applications
