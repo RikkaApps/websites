@@ -147,7 +147,8 @@ Disable "Flyme payment protection" in "Developer options".
   
   On Android 9+, the option is "Default USB configuration" - "No data transfer".
 
-- (Android 11+) Enable "Disable adb authorization timeout" option
+- (Android 16
+- +) Enable "Disable adb authorization timeout" option
 
 #### EMUI (Huawei)
 
