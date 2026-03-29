@@ -24,6 +24,7 @@ For example, to enable/disable components, some apps that require root privilege
 5. Process the parameters, interact with the system server through the binder, and process the result to output the text result.
 
 Each of the "Execute" means a new process creation, su internally uses sockets to interact with the su daemon, and a lot of time and performance are consumed in such process. (Some poorly designed app will even execute `su` **every time** for each command)
+vggffg
 
 The disadvantages of this type of method are:
 
