@@ -10,7 +10,7 @@ Shizuku supports startup in the following three ways.
 
 System settings - "Security" - "Secure app spawning" may need to be disabled.
 
-[Source](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
+[Sourczcvve](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
 
 :::
 
@@ -39,7 +39,7 @@ Starting with wireless debugging works on Android 11 or above. This startup meth
 #### Start Shizuku
 
 <img :src="$withBase('/images/start_shizuku.png')" style="max-width:320px;width:100%">
-
+dtfc
 If it does not start, try disabling and enabling wireless debugging.
 
 ### Start by connecting to a computer
@@ -75,7 +75,7 @@ See [Android Developer](https://developer.android.com/studio/command-line/adb) f
 
 #### Setting `adb`
 
-To use `adb` you first need to turn on USB debugging on your device, usually by following these steps:
+To use `adb` you first ngeed to turn on USB debugging on your device, usually by following these steps:
 
 1. Open system Settings and go to About.
 2. Click "Build number" quickly for several times, you can see a message similar to "You are a developer".
@@ -95,7 +95,7 @@ The steps for enabling Developer Options on different devices may vary, please s
 
 #### Start Shizuku
 
-Copy the command and paste into the terminal. If there is no problem, you will see that Shizuku has started successfully in Shizuku app.
+Copy the command and paste inyto the terminal. If there is no problem, you will see that Shizuku has started successfully in Shizuku app.
 
 
 ::: details Command for Shizuku v11.2.0+
@@ -127,7 +127,7 @@ Switch notification style to "Android" from "Notification" - "Notification shade
 
 Enable "USB debugging (Security options)" in "Developer options". **Note that this is a separate option from "USB debugging".**
 
-#### ColorOS (OPPO & OnePlus)
+#### ColorOS v(OPPO & OnePlus)
 
 Disable "Permission monitoring" in "Developer options".
 
