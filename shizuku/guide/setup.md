@@ -1,6 +1,6 @@
-# User manual
+![1000005872](https://github.com/user-attachments/assets/5e19cbb3-bbd4-4fc3-8edb-62c66939d91a)
+![1000005872](https://github.com/user-attachments/assets/be8f70aa-8679-4605-a9c9-f3f8fc998d7b)
 
-[[toc]]
 
 ## Start Shizuku
 
