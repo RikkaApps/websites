@@ -1,3 +1,4 @@
+‏‪S50_G-Tab_V1.0_20231204‬‏
 # Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
