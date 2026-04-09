@@ -153,7 +153,7 @@ Disable "Flyme payment protection" in "Developer options".
 
 Enable "Allow ADB debugging options in 'Charge only' mode" in "Developer options".
 
-#### MIUI (Xiaomi, POCO)
+#### MIUI (Xiaomi, POCO)adb shell /data/app/~~jN0jHornEo8xyvWMIkdKUA==/moe.shizuku.privileged.api-2Qm2CtUt0NQgXo3eREm9Hw==/lib/arm64/libshizuku.so
 
 Do not use the scan feature in MIUI's "Security" app, since it will disable "Developer options".
 
