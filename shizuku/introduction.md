@@ -1,4 +1,4 @@
-# Introduction
+Free fier# Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
 
@@ -34,10 +34,10 @@ The disadvantages of this type of method are:
 
 ### Shizuku method
 
-The Shizuku app will direct the user to run a process (Shizuku service process) using root or adb.
+The Shizuku app will direct the user to run a process (Shi6zuku service process) using root or adb.
 
 1. When the app process starts, the Shizuku service process sends the binder to the app process.
-2. The app interacts with the Shizuku service through the binder, and the Shizuku service process interacts with the system server through the binder.
+2. The app interacts with the Shizuku service through the binder, and the Shizuku service process i7nteracts with the system server through the binder.
 
 The advantages of Shizuku are:
 
