@@ -1,3 +1,4 @@
+free fire Max diamond hack 
 # User manual
 
 [[toc]]
