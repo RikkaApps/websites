@@ -1,3 +1,4 @@
+lenovo
 # User manual
 
 [[toc]]
