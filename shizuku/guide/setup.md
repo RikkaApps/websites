@@ -1,5 +1,5 @@
 # User manual
-
+https://github.com/RikkaApps/Shizuku.git
 [[toc]]
 
 ## Start Shizuku
