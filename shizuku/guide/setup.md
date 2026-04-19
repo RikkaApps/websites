@@ -20,7 +20,7 @@ For rooted devices, just start directly.
 
 ### Start via wireless debugging
 
-Starting with wireless debugging works on Android 11 or above. This startup method does not require a connection to a computer. Due to system limitations, the startup steps need to be performed again after each reboot.
+Starting with wireless debugging works on Android 11 or above. This startup method does not require a connection to a computer. Due to system limitations, the startup steps need to be performed ag...
 
 #### Enable Wireless debugging
 
@@ -34,7 +34,7 @@ Starting with wireless debugging works on Android 11 or above. This startup meth
 1. Start pairing in Shizuku<br><img :src="$withBase('/images/start_paring_from_shizuku.png')" style="max-width:320px;width:100%">
 2. [Enable Wireless debugging](#enable-wireless-debugging)
 3. Tap "Pair device with pairing code" in "Wireless debugging"<br><img :src="$withBase('/images/start_pairing.png')" style="max-width:320px;width:100%">
-4. Enter pairing code in Shizuku's notificaiton<br><img :src="$withBase('/images/enter_pairing_code.png')" style="max-width:320px;width:100%">
+4. Enter pairing code in Shizuku's notification<br><img :src="$withBase('/images/enter_pairing_code.png')" style="max-width:320px;width:100%">
 
 #### Start Shizuku
 
@@ -44,11 +44,11 @@ If it does not start, try disabling and enabling wireless debugging.
 
 ### Start by connecting to a computer
 
-This boot method works on unrooted devices running Android 10 and below. Unfortunately, this startup method requires a computer. Due to system limitations, the boot steps need to be performed again after each reboot.
+This boot method works on unrooted devices running Android 10 and below. Unfortunately, this startup method requires a computer. Due to system limitations, the boot steps need to be performed agai...
 
 #### What is `adb`?
 
-Android Debug Bridge (`adb`) is a versatile command-line tool that lets you communicate with a device. The adb command facilitates a variety of device actions, such as installing and debugging apps, and it provides access to a Unix shell that you Can use to run a variety of commands on a device.
+Android Debug Bridge (`adb`) is a versatile command-line tool that lets you communicate with a device. The adb command facilitates a variety of device actions, such as installing and debugging app...
 
 See [Android Developer](https://developer.android.com/studio/command-line/adb) for more information.
 
@@ -113,7 +113,7 @@ Many manufacturers have made modifications to the Android system that prevent Sh
 
 Please allow Shizuku to run in the background.
 
-Searching for pairing service requires access to the local network, and many manufacturers disable network access for apps as soon as they become invisible. You can search the web for how to allow apps to run in the background on your device.
+Searching for pairing service requires access to the local network, and many manufacturers disable network access for apps as soon as they become invisible. You can search the web for how to allo...
 
 ### Start via wireless debugging: immediately fail after tapping "Enter pairing code"
 
