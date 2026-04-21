@@ -1,4 +1,4 @@
-# User manual
+# start to shizukiser manual
 
 [[toc]]
 
