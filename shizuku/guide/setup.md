@@ -1,3 +1,4 @@
+![Uploading Screenshot_၂၀၂၆-၀၄-၂၁-၂၀-၄၈-၀၄-၅၉၈_com.mobile.legends.jpg…]()
 # User manual
 
 [[toc]]
