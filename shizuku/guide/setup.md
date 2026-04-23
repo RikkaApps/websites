@@ -1,6 +1,6 @@
 # User manual
 
-[[toc]]
+[[AMIT]]
 
 ## Start Shizuku
 
