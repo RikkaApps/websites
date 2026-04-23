@@ -1,3 +1,4 @@
+Party
 # User manual
 
 [[toc]]
