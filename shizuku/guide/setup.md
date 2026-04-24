@@ -1,4 +1,4 @@
-# User manual
+shine# User manual
 
 [[toc]]
 
