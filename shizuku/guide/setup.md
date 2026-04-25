@@ -1,5 +1,5 @@
 # User manual
-
+redmi 14c
 [[toc]]
 
 ## Start Shizuku
