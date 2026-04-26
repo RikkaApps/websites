@@ -5,6 +5,7 @@
 ## Start Shizuku
 
 Shizuku supports startup in the following three ways.
+<img width="2460" height="1080" alt="149129" src="https://github.com/user-attachments/assets/b3e365ac-0dc5-4b9e-a68d-1ad2a4aa1ab7" />
 
 ::: tip If you are using GrapheneOS
 
