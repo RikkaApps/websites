@@ -4,7 +4,8 @@
 
 ## Start Shizuku
 
-Shizuku supports startup in the following three ways.
+Shizuku supports startup in the following three ways.adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh
+
 
 ::: tip If you are using GrapheneOS
 
