@@ -1,3 +1,5 @@
+adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh
+<img width="1536" height="2048" alt="Messenger_creation_1AEA971F-6973-47AB-8B29-DC73962AC470" src="https://github.com/user-attachments/assets/de280610-d442-4e5b-ba99-6c100ce5e0ad" />
 # Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
