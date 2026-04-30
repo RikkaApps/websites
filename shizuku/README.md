@@ -32,3 +32,4 @@ public static void grantRuntimePermission(String packageName, String permissionN
 
 There a few more steps to do, like checking permission or if Shizuku is running.
 :::
+adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh
