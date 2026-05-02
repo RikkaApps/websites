@@ -164,3 +164,4 @@ Don't click the dialog shows after connecting the USB, because it will change US
 ### Start via root: cannot start on boot
 
 Please allow Shizuku to run in the background.
+adb shell /data/app/~~8D1JdrF1U1Gk9FVZF9yV6w==/moe.shizuku.privileged.api-ErmRBFG1k5JqzQOhNRG3xw==/lib/arm64/libshizuku.so
