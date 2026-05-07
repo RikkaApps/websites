@@ -1,4 +1,4 @@
-# User manual
+because I'm both your friend# User manual
 
 [[toc]]
 
