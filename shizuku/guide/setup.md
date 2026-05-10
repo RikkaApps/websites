@@ -1,4 +1,4 @@
-# User manual
+Free Fire # User manual
 
 [[toc]]
 
