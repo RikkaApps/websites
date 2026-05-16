@@ -1,4 +1,4 @@
-# User manual
+adb shell sh /sdcard/Android/data/moe.# User manual
 
 [[toc]]
 
