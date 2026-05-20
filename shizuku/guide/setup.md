@@ -72,9 +72,6 @@ See [Android Developer](https://developer.android.com/studio/command-line/adb) f
 1. Please do not close this window. The "terminal" mentioned later refers to this window (if you closed the window, please go back to step 2)
 2. If you use PowerShell or Linux/Mac, all `adb` should be replaced with `./adb`
 :::
-
-#### Setting `adb`
-
 To use `adb` you first need to turn on USB debugging on your device, usually by following these steps:
 
 1. Open system Settings and go to About.
