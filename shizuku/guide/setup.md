@@ -1,4 +1,4 @@
-# User manual
+MUSE# User manual
 
 [[toc]]
 
