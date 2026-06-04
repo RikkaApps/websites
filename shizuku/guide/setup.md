@@ -2,7 +2,7 @@
 
 [[toc]]
 
-## Start Shizuku
+## Start ShizukuFree fire
 
 Shizuku supports startup in the following three ways.
 
@@ -130,7 +130,7 @@ Enable "USB debugging (Security options)" in "Developer options". **Note that th
 #### ColorOS (OPPO & OnePlus)
 
 Disable "Permission monitoring" in "Developer options".
-
+frefire
 #### Flyme (Meizu)
 
 Disable "Flyme payment protection" in "Developer options".
