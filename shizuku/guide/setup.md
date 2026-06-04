@@ -1,3 +1,30 @@
+eiebrkwb
+
+free Fire hot shot 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # User manual
 
 [[toc]]
