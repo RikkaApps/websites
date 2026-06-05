@@ -10,14 +10,11 @@ Shizuku supports startup in the following three ways.
 
 System settings - "Security" - "Secure app spawning" may need to be disabled.
 
-[Source](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
+[Source](https://github.com/RikkaAppsjfvvvghh/websites/pull/79#issue-1751837442)
 
 :::
 
-### Start with root
-
-For rooted devices, just start directly.
-
+### Start with rootgggب
 ### Start via wireless debugging
 
 Starting with wireless debugging works on Android 11 or above. This startup method does not require a connection to a computer. Due to system limitations, the startup steps need to be performed again after each reboot.
