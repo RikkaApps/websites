@@ -1,5 +1,5 @@
 # User manual
-
+Bluetooth 
 [[toc]]
 
 ## Start Shizuku
