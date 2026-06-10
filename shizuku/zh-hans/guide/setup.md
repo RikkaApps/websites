@@ -129,6 +129,10 @@ adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
 
 在“开发者选项”中关闭“权限监控”。
 
+Tips:部分ColorOS16系统 或更高的版本中,如果系统当前语言为中文,则"权限监控"可能被隐藏
+     将系统语言改为英语后,在 开发者选项中寻找"Systeam Disable optimization"
+     将其打开即可(其实就是默认隐藏了原来的 权限监控 选项)
+
 #### Flyme（魅族）
 
 在“开发者选项”中关闭“Flyme 支付保护”。
