@@ -2,7 +2,7 @@
 
 [[toc]]
 
-## Start Shizuku
+## Start Suzuki 
 
 Shizuku supports startup in the following three ways.
 
