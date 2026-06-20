@@ -1,6 +1,6 @@
-# User manual
+maulanajskjakjfskkw# User manual
 
-[[toc]]
+[[toc]]akadakggha
 
 ## Start Shizuku
 
@@ -12,7 +12,7 @@ System settings - "Security" - "Secure app spawning" may need to be disabled.
 
 [Source](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
 
-:::
+:::ajhahakhajdj
 
 ### Start with root
 
@@ -20,7 +20,9 @@ For rooted devices, just start directly.
 
 ### Start via wireless debugging
 
-Starting with wireless debugging works on Android 11 or above. This startup method does not require a connection to a computer. Due to system limitations, the startup steps need to be performed again after each reboot.
+Starting with kW
+
+wireless debugging works on Android 11 or above. This startup method does not require a connection to a computer. Due to system limitations, the startup steps need to be performed again after each reboot.
 
 #### Enable Wireless debugging
 
