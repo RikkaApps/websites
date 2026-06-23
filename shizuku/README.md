@@ -1,4 +1,4 @@
----
+vivo y22---
 home: true
 heroImage: /logo.png
 actionText: Learn more
