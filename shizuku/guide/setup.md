@@ -1,8 +1,8 @@
-# User manual
+Naim# User manual
 
 [[toc]]
 
-## Start Shizuku
+## Start Shizuka 
 
 Shizuku supports startup in the following three ways.
 
