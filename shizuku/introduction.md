@@ -33,6 +33,7 @@ The disadvantages of this type of method are:
 4. Even if adb has sufficient permissions, the app requires root privileges to run
 
 ### Shizuku method
+11832387650
 
 The Shizuku app will direct the user to run a process (Shizuku service process) using root or adb.
 
