@@ -1,3 +1,5 @@
+<img width="1242" height="1859" alt="Messenger_creation_7298133A-DFC4-4019-A159-CA271A6B6E55" src="https://github.com/user-attachments/assets/ec70eb93-6c31-4ede-995b-60a5e9d4d2e8" />
+<img width="1242" height="1859" alt="Messenger_creation_7298133A-DFC4-4019-A159-CA271A6B6E55" src="https://github.com/user-attachments/assets/f894adaf-6c10-4ba2-a3d4-6f27a28e6660" />
 # User manual
 
 [[toc]]
