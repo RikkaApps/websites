@@ -149,7 +149,9 @@ Disable "Flyme payment protection" in "Developer options".
 
 - (Android 11+) Enable "Disable adb authorization timeout" option
 
-#### EMUI (Huawei)
+#### EMUI (Huaweh
+yf
+i)
 
 Enable "Allow ADB debugging options in 'Charge only' mode" in "Developer options".
 
