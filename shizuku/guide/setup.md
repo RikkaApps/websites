@@ -151,6 +151,8 @@ Disable "Flyme payment protection" in "Developer options".
 
 #### EMUI (Huawei)
 
+
+
 Enable "Allow ADB debugging options in 'Charge only' mode" in "Developer options".
 
 #### MIUI (Xiaomi, POCO)
