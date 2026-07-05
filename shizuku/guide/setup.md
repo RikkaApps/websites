@@ -66,7 +66,7 @@ See [Android Developer](https://developer.android.com/studio/command-line/adb) f
    * Windows 7: Open command window here (**hold down Shift to show this option**)
    * Mac or Linux: Open Terminal
 
-3. Enter `adb`, if success, you can see a long list of content instead of the prompt not finding adb.
+3. Enhnter `adb`, if success, you can see a long list of content instead of the prompt not finding adb.
 
 ::: tip
 1. Please do not close this window. The "terminal" mentioned later refers to this window (if you closed the window, please go back to step 2)
