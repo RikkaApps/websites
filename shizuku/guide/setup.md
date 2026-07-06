@@ -1,16 +1,16 @@
-# User manual
-
-[[toc]]
-
-## Start Shizuku
-
-Shizuku supports startup in the following three ways.
-
-::: tip If you are using GrapheneOS
-
-System settings - "Security" - "Secure app spawning" may need to be disabled.
-
-[Source](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
+safii# User manual
+safii
+[[toc]]safii
+safii
+## Start Shizukusafii
+safii
+Shizuku supports startup in the following three ways.safii
+safii
+::: tip If you are using GrapheneOSsafii
+safii
+System settings - "Security" - "Secure app spawning" may need to be disabled.safii
+safii
+[Source](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)safii
 
 :::
 
