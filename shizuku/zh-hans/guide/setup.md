@@ -127,7 +127,12 @@ adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
 
 #### ColorOS（OPPO & OnePlus）
 
-在“开发者选项”中关闭“权限监控”。
+进入“开发者选项”，根据系统版本通常有以下两种情况：
+
+- 如果找到“权限监控”，将其关闭。
+- 如果找不到“权限监控”，请尝试找到 “禁用系统优化” 并将其打开（该选项在部分版本的简体中文环境下可能被隐藏，可切换系统语言为英语后找到“Disable system optimization”，或通过 ADB 执行 `adb shell settings put global development_settings_enabled 1` 来强制显示被隐藏的选项后将其打开）。
+
+> 开启“禁用系统优化”后，系统部分界面（如“显示与亮度”设置页、“应用权限”管理页等）可能会恢复为原生安卓样式，关闭该选项即可复原，不影响 Shizuku 正常使用。
 
 #### Flyme（魅族）
 
