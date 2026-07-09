@@ -1,3 +1,4 @@
+cheat tembus tembok 
 # User manual
 
 [[toc]]
