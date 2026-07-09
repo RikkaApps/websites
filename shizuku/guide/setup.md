@@ -1,4 +1,4 @@
-# User manual
+arena breakout # User manual
 
 [[toc]]
 
