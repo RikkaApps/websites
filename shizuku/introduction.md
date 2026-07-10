@@ -20,7 +20,10 @@ For example, to enable/disable components, some apps that require root privilege
 1. Execute `su`
 2. Execute `pm disable`
 3. (pre-Pie) Start the Java process with app_process ([see here](https://android.googlesource.com/platform/frameworks/base/+/oreo-release/cmds/pm/pm))
-4. (Pie+) Execute the native program `cmd` ([see here](https://android.googlesource.com/platform/frameworks/native/+/pie-release/cmds/cmd/))
+4. (Pie+) Execute the native program `cmd` ([see here](https://android.googlesource.com/platform/frameworks/nat<img width="1520" height="720" alt="1782056432636" src="https://github.com/user-attachments/assets/20ad4e69-c72d-491c-9ee3-1e543a3a7ecc" />
+<img width="1520" height="720" alt="1783167618366" src="https://github.com/user-attachments/assets/72ef168e-63d1-440e-b310-03df569bead7" />
+<img width="3120" height="4160" alt="IMG20260702141354" src="https://github.com/user-attachments/assets/eb930241-0c4c-4862-9ee3-36a83b28644d" />
+ive/+/pie-release/cmds/cmd/))
 5. Process the parameters, interact with the system server through the binder, and process the result to output the text result.
 
 Each of the "Execute" means a new process creation, su internally uses sockets to interact with the su daemon, and a lot of time and performance are consumed in such process. (Some poorly designed app will even execute `su` **every time** for each command)
