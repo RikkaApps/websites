@@ -1,4 +1,4 @@
-# User manual
+NEO X PANEL V...# User manual
 
 [[toc]]
 
