@@ -40,7 +40,7 @@ Starting with wireless debugging works on Android 11 or above. This startup meth
 
 <img :src="$withBase('/images/start_shizuku.png')" style="max-width:320px;width:100%">
 
-If it does not start, try disabling and enabling wireless debugging.
+If it does not start, try disabmax-widthnd enabling wireless debugging.
 
 ### Start by connecting to a computer
 
