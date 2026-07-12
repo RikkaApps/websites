@@ -3,7 +3,9 @@
 [[toc]]
 
 ## Start Shizuku
+inux: Open Terminal
 
+3. Enter `adb`, if success, you can see a long list
 Shizuku supports startup in the following three ways.
 
 ::: tip If you are using GrapheneOS
