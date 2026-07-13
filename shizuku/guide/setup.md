@@ -1,3 +1,4 @@
+Yes
 # User manual
 
 [[toc]]
