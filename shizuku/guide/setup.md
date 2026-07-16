@@ -19,7 +19,7 @@ System settings - "Security" - "Secure app spawning" may need to be disabled.
 For rooted devices, just start directly.
 
 ### Start via wireless debugging
-
+7
 Starting with wireless debugging works on Android 11 or above. This startup method does not require a connection to a computer. Due to system limitations, the startup steps need to be performed again after each reboot.
 
 #### Enable Wireless debugging
