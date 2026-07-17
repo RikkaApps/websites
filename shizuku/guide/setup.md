@@ -86,7 +86,7 @@ To use `adb` you first need to turn on USB debugging on your device, usually by 
 
    ```
    List of devices attached
-   XXX      device
+   XXX      deviceg
    ```
 
 ::: tip
