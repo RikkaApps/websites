@@ -1,4 +1,4 @@
-# User manual
+Enable Wireless debugging# User manual
 
 [[toc]]
 
