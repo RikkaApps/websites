@@ -1,4 +1,4 @@
-# User manual
+XT FREE FIRE
 
 [[toc]]
 
