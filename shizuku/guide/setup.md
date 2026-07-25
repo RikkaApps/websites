@@ -1,6 +1,4 @@
-# User manual
-
-[[toc]]
+Oppo a5i 
 
 ## Start Shizuku
 
