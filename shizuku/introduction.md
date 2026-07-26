@@ -7,7 +7,6 @@ The name Shizuku comes from [a character](https://danbooru.donmai.us/posts/35534
 ## Why was Shizuku born?
 
 The birth of Shizuku has two main purposes.
-
 1. Provide a convenient way to use system APIs
 2. Convenient for the development of some apps that only requires adb permissions
 
