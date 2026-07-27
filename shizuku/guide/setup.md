@@ -1,4 +1,4 @@
-# User manual
+https://github.com/vvb2060/PackageInstaller.git# User manual
 
 [[toc]]
 
