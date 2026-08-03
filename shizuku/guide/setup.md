@@ -7,6 +7,7 @@
 Shizuku supports startup in the following three ways.
 
 ::: tip If you are using GrapheneOS
+ttt اطلب من الشركه هل ممكن اقدر اشغل شيزوكو هواي اشغال
 
 System settings - "Security" - "Secure app spawning" may need to be disabled.
 
