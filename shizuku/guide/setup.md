@@ -1,4 +1,4 @@
-# User manual
+Xiaomi HyperOS # User manual
 
 [[toc]]
 
