@@ -1,4 +1,4 @@
-# User manual
+j# User manual
 
 [[toc]]
 
@@ -15,6 +15,7 @@ System settings - "Security" - "Secure app spawning" may need to be disabled.
 :::
 
 ### Start with root
+
 
 For rooted devices, just start directly.
 
