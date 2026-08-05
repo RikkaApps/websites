@@ -1,3 +1,24 @@
+مؤمل محمد 
+لا نيفتقو 
+بتةيززرص 
+ثانيا ثىسن ✋ 
+ملؤظررىيل 
+يا علي
+يا ن لي بيت ب
+لا لا ما سبب
+ان مع ي روحي
+ب بس قفل ن مو ى بث د
+بن علي يا ون
+ب عن م لي يا ن
+شنو بث عن ال سي ال ر
+بانظ نت يا ناس بث
+يا عم من رتبة رب قصص
+ب عن م ال
+ب تم م مل بل
+لا لي يا من ال
+لا لي صب عن
+لوك عل فلوس
+مال لا زظ
 # User manual
 
 [[toc]]
@@ -163,4 +184,5 @@ Don't click the dialog shows after connecting the USB, because it will change US
 
 ### Start via root: cannot start on boot
 
-Please allow Shizuku to run in the background.
+Please allow Shizuku to run in the backgroun لا هي به م
+d.
