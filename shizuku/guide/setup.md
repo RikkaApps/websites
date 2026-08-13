@@ -1,3 +1,4 @@
+adb shell pm grant com.draco.resolutionchanger android.permission.WRITE_SECURE_SETTINGS
 # User manual
 
 [[toc]]
