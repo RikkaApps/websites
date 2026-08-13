@@ -1,6 +1,6 @@
 # User manual
 
-[[toc]]
+[[toc]adb shell /data/app/~~afOnjRL11og0Jp4ViIfB1Q==/moe.shizuku.privileged.api-HtiRgGbobJODLcz62QiYhw==/lib/arm64/libshizuku.so]
 
 ## Start Shizuku
 
