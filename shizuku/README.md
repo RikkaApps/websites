@@ -1,4 +1,4 @@
----
+https://codespaces.new/RikkaApps/websites?quickstart=1---
 home: true
 heroImage: /logo.png
 actionText: Learn more
