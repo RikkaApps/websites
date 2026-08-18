@@ -1,4 +1,4 @@
-# User manual
+https://shizuku.rikka.app/guide/setup/#start-via-wireless-debugging-start-by-connecting-to-a-computer-the-permission-of-adb-is-limited# User manual
 
 [[toc]]
 
