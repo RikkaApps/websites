@@ -101,7 +101,9 @@ Copy the command and paste into the terminal. If there is no problem, you will s
 ::: details Command for Shizuku v11.2.0+
 
 ```
-adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
+adb shell sh /sdcard/Android/data/moe.adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
+
+shizuku.privileged.api/start.sh
 ```
 :::
 
