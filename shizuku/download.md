@@ -1,4 +1,5 @@
-# Download
+https://t.me/haxxckerff
+https://t.me/haxxcker# Download
 
 [Google Play](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)
 
