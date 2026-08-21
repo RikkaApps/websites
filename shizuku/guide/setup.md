@@ -123,6 +123,7 @@ Switch notification style to "Android" from "Notification" - "Notification shade
 
 ### Start via wireless debugging/Start by connecting to a computer: the permission of adb is limited
 
+
 #### MIUI (Xiaomi, POCO)
 
 Enable "USB debugging (Security options)" in "Developer options". **Note that this is a separate option from "USB debugging".**
