@@ -56,7 +56,7 @@ See [Android Developer](https://developer.android.com/studio/command-line/adb) f
 
 1. Download "SDK Platform Tools" provided by Google and extract it to any folder
 
-   * [Windows](https://dl.google.com/android/repository/platform-tools-latest-windows.zip)
+   * [Windows](https://dl.google.com/android/repository/platform-tools-latest-windosdcard/Android/data/moe.shizuku.privileged.api/start.shws.zip)
    * [Linux](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)
    * [Mac](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip)
 
