@@ -20,7 +20,9 @@ For example, to enable/disable components, some apps that require root privilege
 1. Execute `su`
 2. Execute `pm disable`
 3. (pre-Pie) Start the Java process with app_process ([see here](https://android.googlesource.com/platform/frameworks/base/+/oreo-release/cmds/pm/pm))
-4. (Pie+) Execute the native program `cmd` ([see here](https://android.googlesource.com/platform/frameworks/native/+/pie-release/cmds/cmd/))
+4. (Pie+) Execute the native program `cmd` ([see here](https://android.googlesource.com/platform/
+https://github.com/user-attachments/assets/23d489a5-4505-4833-b290-d6863299d3df
+/native/+/pie-release/cmds/cmd/))
 5. Process the parameters, interact with the system server through the binder, and process the result to output the text result.
 
 Each of the "Execute" means a new process creation, su internally uses sockets to interact with the su daemon, and a lot of time and performance are consumed in such process. (Some poorly designed app will even execute `su` **every time** for each command)
@@ -35,6 +37,18 @@ The disadvantages of this type of method are:
 ### Shizuku method
 
 The Shizuku app will direct the user to run a process (Shizuku service process) using root or adb.
+adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh
+
+
+
+
+
+
+
+
+
+
+adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh
 
 1. When the app process starts, the Shizuku service process sends the binder to the app process.
 2. The app interacts with the Shizuku service through the binder, and the Shizuku service process interacts with the system server through the binder.
