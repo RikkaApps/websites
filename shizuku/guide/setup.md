@@ -53,8 +53,7 @@ Android Debug Bridge (`adb`) is a versatile command-line tool that lets you comm
 See [Android Developer](https://developer.android.com/studio/command-line/adb) for more information.
 
 #### Install `adb`
-
-1. Download "SDK Platform Tools" provided by Google and extract it to any folder
+adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh1. Download "SDK Platform Tools" provided by Google and extract it to any folder
 
    * [Windows](https://dl.google.com/android/repository/platform-tools-latest-windows.zip)
    * [Linux](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)
