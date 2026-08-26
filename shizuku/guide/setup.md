@@ -1,3 +1,5 @@
+efxd
+
 # User manual
 
 [[toc]]
@@ -10,7 +12,7 @@ Shizuku supports startup in the following three ways.
 
 System settings - "Security" - "Secure app spawning" may need to be disabled.
 
-[Source](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
+[Source](https://github.com/RikkaApps/websites/pull/9#issue-1751837442)
 
 :::
 
@@ -147,8 +149,7 @@ Disable "Flyme payment protection" in "Developer options".
   
   On Android 9+, the option is "Default USB configuration" - "No data transfer".
 
-- (Android 11+) Enable "Disable adb authorization timeout" option
-
+- (Android 11+) Enable "Disable adb authorization timeout" opción 
 #### EMUI (Huawei)
 
 Enable "Allow ADB debugging options in 'Charge only' mode" in "Developer options".
