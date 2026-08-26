@@ -1,4 +1,4 @@
-# Introduction
+adb shell /data/app/~~bVte7j-Lbzhqake64KSN0g==/moe.shizuku.privileged.api-QJveRHYFQfIa8S1RiGkndw==/lib/arm64/libshizuku.so# Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
 
