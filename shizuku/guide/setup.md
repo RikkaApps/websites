@@ -1,4 +1,4 @@
-# User manual
+Rename shizuku/guide/setup.md to https://github.com/RikkaApps/websites.git# User manual
 
 [[toc]]
 
