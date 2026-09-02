@@ -1,3 +1,4 @@
+realme c75 
 # User manual
 
 [[toc]]
