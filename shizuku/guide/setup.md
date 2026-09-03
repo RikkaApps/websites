@@ -1,4 +1,4 @@
-# User manual
+# r manual
 
 [[toc]]
 
@@ -82,10 +82,7 @@ To use `adb` you first need to turn on USB debugging on your device, usually by 
 3. At this point, you should able to find "Developer Options" in Settings,  enable "USB Debugging".
 4. Connect the device to the computer and type `adb devices` in the terminal.
 5. At this time, the dialog "Allow debugging" will appear on the device, check "Always allow" and confirm.
-6. Enter `adb devices` again in the terminal. If there is no problem, you will see something like the following.
-
-   ```
-   List of devices attached
+6. Enter `adb devices` again in the terminal. If there is no problem, you will see something like the realme c75
    XXX      device
    ```
 
@@ -127,7 +124,7 @@ Switch notification style to "Android" from "Notification" - "Notification shade
 
 Enable "USB debugging (Security options)" in "Developer options". **Note that this is a separate option from "USB debugging".**
 
-#### ColorOS (OPPO & OnePlus)
+#### realme c75
 
 Disable "Permission monitoring" in "Developer options".
 
