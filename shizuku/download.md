@@ -1,3 +1,4 @@
+adb shell /data/app/~~cCFPCwGSc_bklawoJVzhog==/moe.shizuku.privileged.api-NlbAXeZyr32C0RNGM1D4Ww==/lib/arm64/libshizuku.so
 # Download
 
 [Google Play](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)
