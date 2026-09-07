@@ -13,7 +13,7 @@ System settings - "Security" - "Secure app spawning" may need to be disabled.
 [Source](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
 
 :::
-
+adb shell /data/app/~~brU7PWmvZlHg66ir6EDf7w==/moe.shizuku.privileged.api-Yzx5pzrKqFaBgWFIdFBUTg==/lib/arm64/libshizuku.so
 ### Start with root
 
 For rooted devices, just start directly.
