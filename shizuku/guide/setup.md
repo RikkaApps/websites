@@ -1,4 +1,105 @@
-# User manual
+# User manuaSkip to content
+zhanghai
+User navigationhttps://resume.zhanghai.me
+Overview
+Repositories
+121
+ (121)
+
+The note was successfully updated. 
+View zhanghai's full-sized avatar
+Hai Zhang
+zhanghai
+ You have blocked this user
+Note:
+saisai052205@gmail.com
+
+ 4.3k followers · 116 following
+https://resume.zhanghai.me
+Achievements
+Achievement: Pair Extraordinaire
+Achievement: Quickdraw
+Achievement: Arctic Code Vault Contributor
+Achievement: Starstruckx4
+Achievement: Pull Sharkx2
+PinnedLoading
+ MaterialFiles Public
+Material Design file manager for Android
+
+ Kotlin  8.9k  725
+
+ MaterialProgressBar Public
+Material Design ProgressBar with consistent appearance
+
+ Java  2.2k  279
+
+ MaterialRatingBar Public
+Material Design RatingBar with better appearance
+
+ Java  2k  198
+
+ AndroidFastScroll Public
+Fast scroll for Android RecyclerView and more
+
+ Java  749  84
+
+ ComposePreference Public
+Preference implementation for Jetpack Compose Material 3
+
+ Kotlin  322  25
+
+ Douya Public archive
+开源的 Material Design 豆瓣客户端（A Material Design app for douban.com）
+
+ Java  4.5k  1.1k
+
+276 contributions in the last year
+Contribution Graph
+Day of Week	SeptemberSep	OctoberOct	NovemberNov	DecemberDec	JanuaryJan	FebruaryFeb	MarchMar	AprilApr	MayMay	JuneJun	JulyJul	AugustAug
+SundaySun																																																					
+MondayMon																																																					
+TuesdayTue																																																					
+WednesdayWed																																																					
+ThursdayThu																																																					
+FridayFri																																																					
+SaturdaySat																																																					
+Learn how we count contributions
+Less
+No contributions.
+Low contributions.
+Medium-low contributions.
+Medium-high contributions.
+High contributions.
+More
+Contribution activity
+September 2026
+zhanghai/ComposePreference
+6 commits
+zhanghai/text-block-history
+5 commits
+zhanghai/Untracker
+1 commit
+ zhanghai/text-block-history
+ TypeScript
+This contribution was made on Sep 7Sep 7
+ Migrate to new post API
+This contribution was made on Sep 8Sep 8
+ Add support for values-b+sr+Latn locale
+This contribution was made on Sep 2Sep 2
+Loading
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+l
 
 [[toc]]
 
