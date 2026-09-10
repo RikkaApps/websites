@@ -3,6 +3,7 @@
 [[toc]]
 
 ## Start Shizuku
+adb shell sh /storage/emulated/0/Android/data/moe.shizuku.privileged.api/start.sh
 
 Shizuku supports startup in the following three ways.
 
