@@ -8,7 +8,9 @@ Shizuku supports startup in the following three ways.
 
 ::: tip If you are using GrapheneOS
 
-System settings - "Security" - "Secure app spawning" may need to be disabled.
+System settings - "Security" - "Secure app spawning" mm
+
+may need to be disabled.
 
 [Source](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
 
@@ -20,7 +22,7 @@ For rooted devices, just start directly.
 
 ### Start via wireless debugging
 
-Starting with wireless debugging works on Android 11 or above. This startup method does not require a connection to a computer. Due to system limitations, the startup steps need to be performed again after each reboot.
+Starting with wir6eless debugging works on Android 11 or above. This startup method does not require a connection to a computer. Due to system limitations, the startup steps need to be performed again after each reboot.
 
 #### Enable Wireless debugging
 
