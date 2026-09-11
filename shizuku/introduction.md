@@ -1,4 +1,5 @@
 # Introduction
+ff
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
 
@@ -15,7 +16,8 @@ The birth of Shizuku has two main purposes.
 
 ### "Old school" method
 
-For example, to enable/disable components, some apps that require root privileges execute `pm disable` directly in `su`.
+For example, to enable/disable comff
+ponents, some apps that require root privileges execute `pm disable` directly in `su`.
 
 1. Execute `su`
 2. Execute `pm disable`
