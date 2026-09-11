@@ -1,4 +1,4 @@
-# 簡介
+y4y# 簡介
 
 Shizuku 可以幫助普通程式藉助一個由 app_process 啟動的 Java 程序直接以 adb 或 root 特權使用系統 API。
 
