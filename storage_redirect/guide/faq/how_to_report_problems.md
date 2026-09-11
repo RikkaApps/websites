@@ -1,3 +1,4 @@
+adb logcat > 1.txt
 # Report problems
 
 This document will teach you how to report problems.
