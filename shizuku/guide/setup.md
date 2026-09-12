@@ -74,6 +74,8 @@ See [Android Developer](https://developer.android.com/studio/command-line/adb) f
 :::
 
 #### Setting `adb`
+<img width="720" height="1650" alt="1000055146" src="https://github.com/user-attachments/assets/cfc1509e-e7ec-4ea8-855d-a48ebf5fcbc3" />
+<img width="720" height="1650" alt="1000055144" src="https://github.com/user-attachments/assets/a502e6a8-03cf-4eae-ae0d-f9bb4b465dfe" />
 
 To use `adb` you first need to turn on USB debugging on your device, usually by following these steps:
 
