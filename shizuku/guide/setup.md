@@ -10,6 +10,9 @@ Shizuku supports startup in the following three ways.
 
 System settings - "Security" - "Secure app spawning" may need to be disabled.
 
+
+
+
 [Source](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
 
 :::
@@ -44,8 +47,7 @@ If it does not start, try disabling and enabling wireless debugging.
 
 ### Start by connecting to a computer
 
-This boot method works on unrooted devices running Android 10 and below. Unfortunately, this startup method requires a computer. Due to system limitations, the boot steps need to be performed again after each reboot.
-
+This boot method works on unrooted devices running Android 10 and below. Unfortunately, this startup method requires a computer. Due to system limitations, the boot steps need to be performed again after each r
 #### What is `adb`?
 
 Android Debug Bridge (`adb`) is a versatile command-line tool that lets you communicate with a device. The adb command facilitates a variety of device actions, such as installing and debugging apps, and it provides access to a Unix shell that you Can use to run a variety of commands on a device.
