@@ -1,4 +1,4 @@
-# Download
+storage_redirect/download.md# Download
 
 **Requirement:** rooted Android 6.0+ device
 
