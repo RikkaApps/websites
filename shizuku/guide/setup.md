@@ -1,4 +1,4 @@
-# User manual
+hdf# User manual
 
 [[toc]]
 
