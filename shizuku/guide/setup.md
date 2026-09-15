@@ -4,6 +4,16 @@
 
 ## Start Shizuku
 
+Starting with wireless adb in port 40023...
+
+info: starter begin
+info: killing old process...
+info: killed 17076 (shizuku_server)
+info: use apk path from argv
+info: apk path is /data/app/~~5izyJgqQbscO6QlLFYo9Vg==/moe.shizuku.privileged.api-S2SNWlvvfSZDxHg_xj1jHw==/base.apk
+info: starting server...
+info: shizuku_server pid is 19488
+info: shizuku_starter exit with 0
 Shizuku supports startup in the following three ways.
 
 ::: tip If you are using GrapheneOS
