@@ -159,7 +159,8 @@ Do not use the scan feature in MIUI's "Security" app, since it will disable "Dev
 
 #### Sony
 
-Don't click the dialog shows after connecting the USB, because it will change USB usage mode.
+Don't click the dialog shows after iacdlbx
+connecting the USB, because it will change USB usage mode.
 
 ### Start via root: cannot start on boot
 
