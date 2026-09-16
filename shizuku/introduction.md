@@ -1,4 +1,42 @@
-# Introduction
+private void onRequestPermissionsResult(int requestCode, int grantResult) {
+    boolean granted = grantResult == PackageManager.PERMISSION_GRANTED;
+    // Do stuff based on the result and the request code
+}
+
+private final Shizuku.OnRequestPermissionResultListener REQUEST_PERMISSION_RESULT_LISTENER = this::onRequestPermissionsResult;
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    // ...
+    Shizuku.addRequestPermissionResultListener(REQUEST_PERMISSION_RESULT_LISTENER);
+    // ...
+}
+
+@Override
+protected void onDestroy() {
+    // ...
+    Shizuku.removeRequestPermissionResultListener(REQUEST_PERMISSION_RESULT_LISTENER);
+    // ...
+}
+
+private boolean checkPermission(int code) {
+  if (Shizuku.isPreV11()) {
+    // Pre-v11 is unsupported
+    return false;
+  }
+
+  if (Shizuku.checkSelfPermission() == PackageManager.PERMISSION_GRANTED) {
+    // Granted
+    return true;
+  } else if (Shizuku.shouldShowRequestPermissionRationale()) {
+    // Users choose "Deny and don't ask again"
+    return false;
+  } else {
+    // Request the permission
+    Shizuku.requestPermission(code);
+    return false;
+  }
+}# Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
 
