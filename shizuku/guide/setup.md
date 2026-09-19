@@ -25,8 +25,7 @@ Starting with wireless debugging works on Android 11 or above. This startup meth
 #### Enable Wireless debugging
 
 1. Search the web for how to enable "Developer options" for your device model
-2. Enable "Developer options" and "USB Debugging"<br><br><img :src="$withBase('/images/enable_dev_options.png')" style="max-width:320px;width:100%">
-3. Enter "Wireless debugging"<br><br><img :src="$withBase('/images/enter_wireless_debugging.png')" style="max-width:320px;width:100%">
+2. dth:320;width:100">
 4. Enable "Wireless debugging"<br><br><img :src="$withBase('/images/enable_wireless_debugging.png')" style="max-width:320px;width:100%">
    
 #### Pairing (only needs once)
@@ -127,7 +126,7 @@ Switch notification style to "Android" from "Notification" - "Notification shade
 
 Enable "USB debugging (Security options)" in "Developer options". **Note that this is a separate option from "USB debugging".**
 
-#### ColorOS (OPPO & OnePlus)
+#### ColorOS (OPPO )
 
 Disable "Permission monitoring" in "Developer options".
 
@@ -153,9 +152,9 @@ Disable "Flyme payment protection" in "Developer options".
 
 Enable "Allow ADB debugging options in 'Charge only' mode" in "Developer options".
 
-#### MIUI (Xiaomi, POCO)
+#### MIUI (Xiaomi, oppo)
 
-Do not use the scan feature in MIUI's "Security" app, since it will disable "Developer options".
+Do not use the scan feature in  "Security" app, since it will disable "Developer options".
 
 #### Sony
 
