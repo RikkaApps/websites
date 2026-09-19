@@ -97,8 +97,11 @@ The steps for enabling Developer Options on different devices may vary, please s
 
 Copy the command and paste into the terminal. If there is no problem, you will see that Shizuku has started successfully in Shizuku app.
 
-
-::: details Command for Shizuku v11.2.0+
+@👀𝚁𝚊𝚋𝚋𝚢🎀𝚂𝚑𝚎𝚒𝚔𝚑🥂🍒:খুব যত্নে রেখেছিলাম তোমায়......!!🤍🥀শুনেছি অযত্নে লোহায়ও মরিচা ধরে.....!!⚙️🛠️তবে যা দেখলাম, বেশি যত্নেও মনুষ্যত্ব মরে.....!!🖤🥀
+তারপর তুমি ছেড়ে যাওয়ার পর থেকে আর কোনো কিছুই যত্নে রাখিনি.....!!🚶‍♂️💔
+আমি দেখলাম, আমার অযত্নিত কোনো কিছুই আমায় ছেড়ে যায়নি....!!!💯✨
+::: details C
+ommand for Shizuku v11.2.0+
 
 ```
 adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
