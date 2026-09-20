@@ -1,8 +1,8 @@
-# User manual
+yolp# User manual
 
-[[toc]]
+[[klptoc]]
 
-## Start Shizuku
+## Sdatart Shizuku
 
 Shizuku supports startup in the following three ways.
 
