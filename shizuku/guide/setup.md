@@ -1,4 +1,4 @@
-# User manual
+#creatorsearchinsights User manual
 
 [[toc]]
 
