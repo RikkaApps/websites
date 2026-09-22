@@ -1,4 +1,4 @@
-# User manual
+Gael# User manual
 
 [[toc]]
 
