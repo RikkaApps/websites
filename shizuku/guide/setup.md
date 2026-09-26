@@ -1,4 +1,4 @@
-# User manual
+# Ussoder manual
 
 [[toc]]
 
