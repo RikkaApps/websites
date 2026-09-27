@@ -1,4 +1,4 @@
-# User manual
+pairing# User manual
 
 [[toc]]
 
