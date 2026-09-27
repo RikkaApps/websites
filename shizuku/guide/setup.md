@@ -131,7 +131,9 @@ Enable "USB debugging (Security options)" in "Developer options". **Note that th
 
 Disable "Permission monitoring" in "Developer options".
 
-#### Flyme (Meizu)
+#### Flyme (Meizu
+
+
 
 Disable "Flyme payment protection" in "Developer options".
 
