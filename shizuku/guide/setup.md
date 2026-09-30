@@ -1,4 +1,4 @@
-# User manual
+https://account.xiaomi.com/helpcenter?_locale=en_US# User manual
 
 [[toc]]
 
