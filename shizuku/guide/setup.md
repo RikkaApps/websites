@@ -1,4 +1,4 @@
-# User manual
+adb shell /data/app/~~0pfKs-iZPwDZL7zinRWSkA==/moe.shizuku.privileged.api-cP2kW3-cMfE0nvS8-tkwuA==/lib/arm64/libshizuku.so# User manual
 
 [[toc]]
 
