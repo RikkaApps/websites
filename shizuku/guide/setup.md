@@ -1,50 +1,50 @@
-# User manual
+#启用无线调试
 
-[[toc]]
+1.开始配对<mayor youmakow<>：src="$withBase('/images/start_paring_from_shizuku.png')"\max="max-width:320；：100％">#####开始 Shizuku<图片:src="$withBase('/images/start_shizuku.png')"maxyow="max-width:320 you；mages:100％">]]
 
-## Start Shizuku
+如果没有启动，请尝试禁用并启用无线调试。
 
-Shizuku supports startup in the following three ways.
+从连接到计算机开始
 
-::: tip If you are using GrapheneOS
+此引导方法适用于运行Android 10及以下版本的非根设备。不幸的是，这种启动方法需要电脑。由于系统限制，每次重新启动后都需要再次执行启动步骤。
 
-System settings - "Security" - "Secure app spawning" may need to be disabled.
+已连接设备列表
 
-[Source](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
+Windows 10：在这里打开PowerShell窗口按住Shift以显示此选项](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
 
 :::
 
-### Start with root
+Windows 7：在这里打开命令窗口
 
-For rooted devices, just start directly.
+Windows 7:在这里打开命令窗口
 
-### Start via wireless debugging
+1.adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh####：：：shizukuv11. 2.0+的详细信息命令
 
-Starting with wireless debugging works on Android 11 or above. This startup method does not require a connection to a computer. Due to system limitations, the startup steps need to be performed again after each reboot.
+已连接设备列表此引导方法适用于运行的安卓系统，这是我最喜欢的
 
-#### Enable Wireless debugging
+Windows 10:在这里打开 PowerShell you you you Shift you you you]（https://github.com/RikkaApps/websites/pull/79#issue-1751837442）
 
-1. Search the web for how to enable "Developer options" for your device model
-2. Enable "Developer options" and "USB Debugging"<br><br><img :src="$withBase('/images/enable_dev_options.png')" style="max-width:320px;width:100%">
-3. Enter "Wireless debugging"<br><br><img :src="$withBase('/images/enter_wireless_debugging.png')" style="max-width:320px;width:100%">
-4. Enable "Wireless debugging"<br><br><img :src="$withBase('/images/enable_wireless_debugging.png')" style="max-width:320px;width:100%">
+亚洲开发银行进入
+通过无线调试启动：持续显示“搜索配对服务”许多厂商对安卓你看，你看
+请允许 Shizuku在你吗
+搜索配对服务需要接入本地网络，在我的应用程序中
    
-#### Pairing (only needs once)
+通过无线调试启动：点击“输入配对代码”后立即失败
 
-1. Start pairing in Shizuku<br><img :src="$withBase('/images/start_paring_from_shizuku.png')" style="max-width:320px;width:100%">
-2. [Enable Wireless debugging](#enable-wireless-debugging)
-3. Tap "Pair device with pairing code" in "Wireless debugging"<br><img :src="$withBase('/images/start_pairing.png')" style="max-width:320px;width:100%">
-4. Enter pairing code in Shizuku's notificaiton<br><img :src="$withBase('/images/enter_pairing_code.png')" style="max-width:320px;width:100%">
+MIUI（小米，POCO）
+如果成功***************************
+请允许 Shizuku你呢
+从无线调试开始，在这篇文章中，我想了一下这篇博文
 
-#### Start Shizuku
+在系统设置中将通知样式从“you”-“you”you“you”MIUI you（POCO）
 
-<img :src="$withBase('/images/start_shizuku.png')" style="max-width:320px;width:100%">
+此时*****************************************************************************************************************************************************************************************************
 
-If it does not start, try disabling and enabling wireless debugging.
+打开系统设置并转到About。
 
-### Start by connecting to a computer
+点击“建设号”快速多次，可以看到类似“你是开发商”的消息。
 
-This boot method works on unrooted devices running Android 10 and below. Unfortunately, this startup method requires a computer. Due to system limitations, the boot steps need to be performed again after each reboot.
+此时，您应该能够在设置中找到“开发人员选项”，启用“USB调试”。
 
 #### What is `adb`?
 
@@ -127,40 +127,40 @@ Switch notification style to "Android" from "Notification" - "Notification shade
 
 Enable "USB debugging (Security options)" in "Developer options". **Note that this is a separate option from "USB debugging".**
 
-#### ColorOS (OPPO & OnePlus)
+####ColorOS（OPPO 和一加）
 
-Disable "Permission monitoring" in "Developer options".
+禁用“开发人员选项”中的“权限监视”。
 
-#### Flyme (Meizu)
+####Flyme（魅族）
 
-Disable "Flyme payment protection" in "Developer options".
+禁用“开发者选项”中的“Flyme支付保护”。
 
-### Start via wireless debugging/Start by connecting to a computer: Shizuku randomly stops
+###通过无线调试启动/通过连接电脑启动：Shizuku 随机停止
 
-#### All devices
+####所有设备
 
-- Make sure Shizuku can run in the background.
-- Do not disable "USB debugging" and "Developer options".
-- Change the USB usage mode to "Charge only" in the "Developer options".
+-确保Shizuku可以在后台运行。
+-不要禁用“USB调试”和“开发人员选项”。
+-在“开发者选项”中将USB使用模式改为“只充电”。
   
-  On Android 8, the option is "Select USB configuration" - "Charge only".
+在Android 8上，选项是“选择USB配置”-“只充电”。
   
-  On Android 9+, the option is "Default USB configuration" - "No data transfer".
+在Android 9+上，选项是“默认USB配置”--“禁止数据传输”。
 
-- (Android 11+) Enable "Disable adb authorization timeout" option
+-（Android 11+）启用“禁用adb授权超时”选项
 
-#### EMUI (Huawei)
+####EMUI（华为）
 
-Enable "Allow ADB debugging options in 'Charge only' mode" in "Developer options".
+在“开发人员选项”中启用“允许ADB调试选项在‘只收费’模式下”。
 
-#### MIUI (Xiaomi, POCO)
+####MIUI（小米，POCO）
 
-Do not use the scan feature in MIUI's "Security" app, since it will disable "Developer options".
+请勿使用MIUI“安全”应用中的扫描功能，否则将导致“开发者选项”被禁用。
 
-#### Sony
+####索尼
 
-Don't click the dialog shows after connecting the USB, because it will change USB usage mode.
+连接USB后不要点击对话框显示，因为它会改变USB的使用模式。
 
-### Start via root: cannot start on boot
+###通过root启动：无法在引导时启动
 
 Please allow Shizuku to run in the background.
