@@ -155,6 +155,14 @@ Enable "Allow ADB debugging options in 'Charge only' mode" in "Developer options
 
 #### MIUI (Xiaomi, POCO)
 
+info: starter begin
+info: killing old process...
+info: use apk path from argv
+info: apk path is /data/app/~~vtBpH9sm7045BlpCkIXVYQ==/moe.shizuku.privileged.api-7nkEwYidh2DDaXGI8ns7wg==/base.apk
+info: starting server...
+info: shizuku_server pid is 21661
+info: shizuku_starter exit with 0
+
 Do not use the scan feature in MIUI's "Security" app, since it will disable "Developer options".
 
 #### Sony
