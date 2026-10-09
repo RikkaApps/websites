@@ -13,7 +13,7 @@ The birth of Shizuku has two main purposes.
 
 ## Shizuku vs. "Old school" method
 
-### "Old school" method
+### "Old school" method adb shell /data/app/~~2HAchjolXXhkntE5v4mn8A==/moe.shizuku.privileged.api-0Ica_00S3WX1gFxJ1Z7kLA==/lib/arm64/libshizuku.so
 
 For example, to enable/disable components, some apps that require root privileges execute `pm disable` directly in `su`.
 
