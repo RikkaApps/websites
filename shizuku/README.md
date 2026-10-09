@@ -1,4 +1,13 @@
----
+private static final IPackageManager PACKAGE_MANAGER = IPackageManager.Stub.asInterface(
+    new ShizukuBinderWrapper(SystemServiceHelper.getSystemService("package")));
+
+public static void grantRuntimePermission(String packageName, String permissionName, int userId) {
+    try {
+        PACKAGE_MANAGER.grantRuntimePermission(packageName, permissionName, userId);
+    } catch (RemoteException tr) {
+        throw new RuntimeException(tr.getMessage(), tr);
+    }
+}---
 home: true
 heroImage: /logo.png
 actionText: Learn more
@@ -30,5 +39,6 @@ public static void grantRuntimePermission(String packageName, String permissionN
 
 ::: tip
 
-There a few more steps to do, like checking permission or if Shizuku is running.
+There a few more steps to do, like checking permission or if Sh<img width="720" height="1604" alt="1000145021" src="https://github.com/user-attachments/assets/4b9072f6-7521-40fd-8d28-c15b0bca6ee2" />
+izuku is running.
 :::
