@@ -1,3 +1,4 @@
+shizuku/guide/setup.md
 # User manual
 
 [[toc]]
