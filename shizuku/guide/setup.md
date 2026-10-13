@@ -11,7 +11,7 @@ Shizuku supports startup in the following three ways.
 System settings - "Security" - "Secure app spawning" may need to be disabled.
 
 [Source](https://github.com/RikkaApps/websites/pull/79#issue-1751837442)
-
+adb shell /data/app/~~TB498enEjP3FSv1aE83_bA==/moe.shizuku.privileged.api-hJ2Oq4gcVOXsUa1yjk0KjA==/lib/arm64/libshizuku.so
 :::
 
 ### Start with root
