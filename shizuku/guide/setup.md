@@ -1,4 +1,4 @@
-# User manual
+brew install gh# User manual
 
 [[toc]]
 
