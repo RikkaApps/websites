@@ -1,4 +1,4 @@
-# User manual
+# merleah manual
 
 [[toc]]
 
