@@ -128,6 +128,7 @@ adb shell sh /sdcard/Android/data/moe.shizuku.privileged.api/start.sh
 #### ColorOS（OPPO & OnePlus）
 
 在“开发者选项”中关闭“权限监控”。
+在Color OS 16+中，这个开关在中文界面下被隐藏了。可将系统语言切换到英文后，在"Developer options"中打开“Disable system optimization”
 
 #### Flyme（魅族）
 
