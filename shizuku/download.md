@@ -5,3 +5,4 @@
 [GitHub Release](https://github.com/RikkaApps/Shizuku/releases)
 
 [IzzyOnDroid F-Droid Repository](https://apt.izzysoft.de/fdroid/index/apk/moe.shizuku.privileged.api)
+sh /sdcard/Android/data/com.k2tap.master/files/exe/activate.sh
