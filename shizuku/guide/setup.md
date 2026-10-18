@@ -1,7 +1,9 @@
+sizuku use panel 
 # User manual
 
 [[toc]]
 
+MT manager work
 ## Start Shizuku
 
 Shizuku supports startup in the following three ways.
