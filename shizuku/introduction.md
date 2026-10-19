@@ -1,4 +1,4 @@
-# Introduction
+က# Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
 
@@ -19,9 +19,18 @@ For example, to enable/disable components, some apps that require root privilege
 
 1. Execute `su`
 2. Execute `pm disable`
-3. (pre-Pie) Start the Java process with app_process ([see here](https://android.googlesource.com/platform/frameworks/base/+/oreo-release/cmds/pm/pm))
-4. (Pie+) Execute the native program `cmd` ([see here](https://android.googlesource.com/platform/frameworks/native/+/pie-release/cmds/cmd/))
-5. Process the parameters, interact with the system server through the binder, and process the result to output the text result.
+3. (pre-Pie) Start the Java process with app_process ([see here](https://android.googlesource1000000
+4. platform/frameworks/b20888
+5. 1000000
+6. 100000
+7. 100000
+8. 100000
+9. 1000000
+10. 1000888
+11. ase/+/oreo-release/cmds/pm/pm))
+12. (Pie+) Execute the native program `cmd` ([see here](https://android.go![Uploading Screenshot_၂၀၂၆၁၀၁၉-၁၃၁၇၂၉.jpg…]()
+oglesource.com/platform/frameworks/native/+/pie-release/cmds/cmd/))
+13. Process the parameters, interact with the system server through the binder, and process the result to output the text result.
 
 Each of the "Execute" means a new process creation, su internally uses sockets to interact with the su daemon, and a lot of time and performance are consumed in such process. (Some poorly designed app will even execute `su` **every time** for each command)
 
