@@ -1,3 +1,5 @@
+:
+📦 Nombre del modpack: Cursed Walking – A Modern Zombie Apocalypse
 # User manual
 
 [[toc]]
