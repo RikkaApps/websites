@@ -1,5 +1,5 @@
 # Download
-
+العربية 
 [Google Play](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api)
 
 [GitHub Release](https://github.com/RikkaApps/Shizuku/releases)
