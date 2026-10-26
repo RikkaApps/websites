@@ -1,4 +1,5 @@
-# User manual
+<script type="text/javascript" src="https://www.free-counters.org/count/kfm3"></script><br>
+ <a href='http://xn--besucherzhlerkostenlos-84b.com/'>Webseiten-Besucher</a> <script type='text/javascript' src='https://www.whomania.com/ctr?id=6a8a53d694f8b49b8e60167e43ef740e5c905a84'></script># User manual
 
 [[toc]]
 
