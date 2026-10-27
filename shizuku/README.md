@@ -1,4 +1,4 @@
----
+66a2bc3549a55f917b917e180fbaff9db1d21d77---
 home: true
 heroImage: /logo.png
 actionText: Learn more
