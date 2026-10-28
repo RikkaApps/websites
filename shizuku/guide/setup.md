@@ -1,4 +1,4 @@
-# User manual
+https://github.com/RikkaApps/Shizuku.git# User manual
 
 [[toc]]
 
