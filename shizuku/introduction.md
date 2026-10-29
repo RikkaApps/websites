@@ -1,15 +1,15 @@
 # Introduction
 
-Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
+Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.Shizuku 可以帮助普通应用在拥有 adb 或 root 权限的情况下，通过以 app_process 启动的 Java 进程直接使用系统 API。Shizuku 可以帮助普通应用在拥有 adb 或 root 权限的情况下，通过以 app_process 启动的 Java 进程直接使用系统 API。Shizuku 可以帮助普通应用在拥有 adb 或 root 权限的情况下，通过以 app_process 启动的 Java 进程直接使用系统 API。Shizuku 可以帮助普通应用在拥有 adb 或 root 权限的情况下，通过以 app_process 启动的 Java 进程直接使用系统 API。Shizuku 可以帮助普通应用在拥有 adb 或 root 权限的情况下，通过以 app_process 启动的 Java 进程直接使用系统 API。Shizuku 可以帮助普通应用在拥有 adb 或 root 权限的情况下，通过以 app_process 启动的 Java 进程直接使用系统 API。Shizuku 可以帮助普通应用在拥有 adb 或 root 权限的情况下，通过以 app_process 启动的 Java 进程直接使用系统 API。Shizuku 可以帮助普通应用在拥有 adb 或 root 权限的情况下，通过以 app_process 启动的 Java 进程直接使用系统 API。
 
 The name Shizuku comes from [a character](https://danbooru.donmai.us/posts/3553474).
 
 ## Why was Shizuku born?
 
-The birth of Shizuku has two main purposes.
+The birth of Shizuku has two main purposes.Shizuku的诞生主要有两个目的。
 
-1. Provide a convenient way to use system APIs
-2. Convenient for the development of some apps that only requires adb permissions
+1. Provide a convenient way to use system APIs1.提供一种便捷的方式以使用系统API
+2. Convenient for the development of some apps that only requires adb permissions2.便于开发一些仅需ADB权限的应用程序
 
 ## Shizuku vs. "Old school" method
 
