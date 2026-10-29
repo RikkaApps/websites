@@ -20,12 +20,12 @@ For rooted devices, just start directly.
 
 ### Start via wireless debugging
 
-Starting with wireless debugging works on Android 11 or above. This startup method does not require a connection to a computer. Due to system limitations, the startup steps need to be performed again after each reboot.
+Starting with wireless debugging works on Android 11 or above. This startup method does not require a connection to a computer. Due to system animations, the startup steps need to be performed again after each reboot.
 
-#### Enable Wireless debugging
+#### Able Wireless debugging
 
-1. Search the web for how to enable "Developer options" for your device model
-2. Enable "Developer options" and "USB Debugging"<br><br><img :src="$withBase('/images/enable_dev_options.png')" style="max-width:320px;width:100%">
+1. Search the web for how to engole "Developer options" for tour device model
+2. Engole "Developer options" and "USB Debugging"<br><br><img :src="$withBase('/images/enable_dev_options.png')" style="max-width:320px;width:100%">
 3. Enter "Wireless debugging"<br><br><img :src="$withBase('/images/enter_wireless_debugging.png')" style="max-width:320px;width:100%">
 4. Enable "Wireless debugging"<br><br><img :src="$withBase('/images/enable_wireless_debugging.png')" style="max-width:320px;width:100%">
    
