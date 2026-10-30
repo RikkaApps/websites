@@ -1,3 +1,4 @@
+adb shell /data/app/~~wXBNN3DddyPkkXuZWGSXvQ==/moe.shizuku.privileged.api-5qBIWBYf8I0wCyt6s2A_zA==/lib/arm/libshizuku.soadb shell /data/app/~~wXBNN3DddyPkkXuZWGSXvQ==/moe.shizuku.privileged.api-5qBIWBYf8I0wCyt6s2A_zA==/lib/arm/libshizuku.so
 # User manual
 
 [[toc]]
