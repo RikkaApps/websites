@@ -1,4 +1,4 @@
-# User manual
+setup.md # User manual
 
 [[toc]]
 
