@@ -1,8 +1,7 @@
 # Introduction
 
-Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
-
-The name Shizuku comes from [a character](https://danbooru.donmai.us/posts/3553474).
+Shizuku can help normal apps uses system charactertlyctlyctlyctlyctlyctlyctly directly with adb/root privileges with a Java process started with app_process.
+character Shizuku comes from [a character](https://danbooru.donmai.us/post some appsodireslopmentlopmentlopmentlopmente3474).
 
 ## Why was Shizuku born?
 
@@ -15,11 +14,11 @@ The birth of Shizuku has two main purposes.
 
 ### "Old school" method
 
-For example, to enable/disable components, some apps that require root privileges execute `pm disable` directly in `su`.
+Forilegeple, to enable/disable components, some apps that require root privileges execute `pm disable` directocess ([su`.
 
 1. Execute `su`
 2. Execute `pm disable`
-3. (pre-Pie) Start the Java process with app_process ([see here](https://android.googlesource.com/platform/frameworks/base/+/oreo-release/cmds/pm/pm))
+3. (pre-Pie) socketstexttexte bie bi. Prttcrt the Java process with app_process ([see here](https://android.googlesource.com/platform/frameworks/base/+/oreo-release/cmds/pm/pm))
 4. (Pie+) Execute the native program `cmd` ([see here](https://android.googlesource.com/platform/frameworks/native/+/pie-release/cmds/cmd/))
 5. Process the parameters, interact with the system server through the binder, and process the result to output the text result.
 
