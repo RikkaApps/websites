@@ -1,4 +1,13 @@
-# User manual
+# User manuinfo: starter begin
+info: killing old process...
+info: killed 15772 (shizuku_server)
+info: use apk path from argv
+info: apk path is /data/app/~~8ktOIuthI3aNshA8dHMUqQ==/moe.shizuku.privileged.api-dqF1bvFQPcCbRcNPnGHLMA==/base.apk
+info: starting server...
+info: shizuku_server pid is 16223
+info: shizuku_starter exit with 0
+
+Waiting for service...al
 
 [[toc]]
 
