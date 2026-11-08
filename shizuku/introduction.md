@@ -1,3 +1,6 @@
+ghdjdjz
+DBZ FPS
+ggdwvvsrjxz .fnfdb.1827(8-€2+"#-+€47())+(#2226////4_-€6336736
 # Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
