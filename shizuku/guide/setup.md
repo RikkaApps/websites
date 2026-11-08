@@ -48,41 +48,7 @@ This boot method works on unrooted devices running Android 10 and below. Unfortu
 
 #### What is `adb`?
 
-Android Debug Bridge (`adb`) is a versatile command-line tool that lets you communicate with a device. The adb command facilitates a variety of device actions, such as installing and debugging apps, and it provides access to a Unix shell that you Can use to run a variety of commands on a device.
-
-See [Android Developer](https://developer.android.com/studio/command-line/adb) for more information.
-
-#### Install `adb`
-
-1. Download "SDK Platform Tools" provided by Google and extract it to any folder
-
-   * [Windows](https://dl.google.com/android/repository/platform-tools-latest-windows.zip)
-   * [Linux](https://dl.google.com/android/repository/platform-tools-latest-linux.zip)
-   * [Mac](https://dl.google.com/android/repository/platform-tools-latest-darwin.zip)
-
-2. Open the folder, right click to select
-
-   * Windows 10: Open PowerShell windows here (**hold down Shift to show this option**)
-   * Windows 7: Open command window here (**hold down Shift to show this option**)
-   * Mac or Linux: Open Terminal
-
-3. Enter `adb`, if success, you can see a long list of content instead of the prompt not finding adb.
-
-::: tip
-1. Please do not close this window. The "terminal" mentioned later refers to this window (if you closed the window, please go back to step 2)
-2. If you use PowerShell or Linux/Mac, all `adb` should be replaced with `./adb`
-:::
-
-#### Setting `adb`
-
-To use `adb` you first need to turn on USB debugging on your device, usually by following these steps:
-
-1. Open system Settings and go to About.
-2. Click "Build number" quickly for several times, you can see a message similar to "You are a developer".
-3. At this point, you should able to find "Developer Options" in Settings,  enable "USB Debugging".
-4. Connect the device to the computer and type `adb devices` in the terminal.
-5. At this time, the dialog "Allow debugging" will appear on the device, check "Always allow" and confirm.
-6. Enter `adb devices` again in the terminal. If there is no problem, you will see something like the following.
+Android Debug Bridge (`adb`) is a versatile command-line tool that lets you communicate with a device. The adb command facilitates 
 
    ```
    List of devices attached
