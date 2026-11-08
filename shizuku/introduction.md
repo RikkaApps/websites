@@ -1,4 +1,14 @@
-# Introduction
+Starting with wireless adb in port 35423...
+
+info: starter begin
+info: killing old process...
+info: use apk path from argv
+info: apk path is /data/app/~~m7eCBh6GZT3TqNl5bEam-g==/moe.shizuku.privileged.api-FADOQfayvE1OlObt41ydSg==/base.apk
+info: starting server...
+info: shizuku_server pid is 11631
+info: shizuku_starter exit with 0
+
+Waiting for service# Introduction
 
 Shizuku can help normal apps uses system APIs directly with adb/root privileges with a Java process started with app_process.
 
