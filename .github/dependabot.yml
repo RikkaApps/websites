@@ -1,4 +1,9 @@
-version: 2
+adb shell /data/app/~~4KZ41qiPXKiak17TFgwKjg==/moe.shizuku.privileged.api-3m-xo1fdxcmt3YYZtrcZ9w==/lib/arm64/libshizuku.soStarting with root...
+
+
+Can't open root shell, try again...
+
+Still not :(version: 2
 updates:
 
   # Maintain dependencies for GitHub Actions
