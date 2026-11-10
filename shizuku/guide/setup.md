@@ -1,4 +1,4 @@
-# User manual
+https://pandagame.app/a# User manual
 
 [[toc]]
 
