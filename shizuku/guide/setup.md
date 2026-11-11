@@ -1,4 +1,15 @@
-# User manual
+Starting with wireless adb in port 38441...
+
+info: starter begin
+info: killing old process...
+info: killed 29913 (shizuku_server)
+info: use apk path from argv
+info: apk path is /data/app/~~3VHP5-FLAiQQC9cL0uxmdQ==/moe.shizuku.privileged.api-c2OZ7G3VrNqYAYauJK-x5A==/base.apk
+info: starting server...
+info: shizuku_server pid is 29970
+info: shizuku_starter exit with 0
+
+Waiting for service...# User manual
 
 [[toc]]
 
