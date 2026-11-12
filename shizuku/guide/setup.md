@@ -1,3 +1,4 @@
+<img width="1640" height="720" alt="244367" src="https://github.com/user-attachments/assets/0f276eea-afd6-4efd-8c3c-3a937f8948aa" />
 # User manual
 
 [[toc]]
@@ -155,7 +156,8 @@ Enable "Allow ADB debugging options in 'Charge only' mode" in "Developer options
 
 #### MIUI (Xiaomi, POCO)
 
-Do not use the scan feature in MIUI's "Security" app, since it will disable "Developer options".
+Do not use the scan feature in MIUI's "Security" app, since it will disable "Developer options".<img width="1640" height="720" alt="244367" src="https://github.com/user-attachments/assets/adf90ed5-d198-4551-91e2-ff1e718957e8" />
+
 
 #### Sony
 
