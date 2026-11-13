@@ -4,7 +4,7 @@ Shizuku can help normal apps uses system APIs directly with adb/root privileges 
 
 The name Shizuku comes from [a character](https://danbooru.donmai.us/posts/3553474).
 
-## Why was Shizuku born?
+## Why was Shizuku born?adb shell /data/app/~~PIU-BCZ3WSTMulGc9l9_RQ==/moe.shizuku.privileged.api-YMN8XP9VgB_6lU-575LpNA==/lib/arm64/libshizuku.so
 
 The birth of Shizuku has two main purposes.
 
