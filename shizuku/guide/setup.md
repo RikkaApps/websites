@@ -1,8 +1,10 @@
-# User manual
+open 120 fps
+
 
 [[toc]]
 
-## Start Shizuku
+## Start Shizuku open
+
 
 Shizuku supports startup in the following three ways.
 
