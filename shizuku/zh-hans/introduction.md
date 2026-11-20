@@ -1,6 +1,6 @@
 # 简介
 
-Shizuku 可以帮助普通应用借助一个由 app_process 启动的 Java 进程直接以 adb 或 root 特权使用系统 API。
+静谷可以帮助普通应用借助一个由app_process启动的Java进程直接以adb或root特权使用系统API.
 
 > Shizuku 这个名字来自[这里](https://www.pixiv.net/artworks/75508584)。
 
