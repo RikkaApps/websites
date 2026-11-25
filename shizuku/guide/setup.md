@@ -1,4 +1,5 @@
-# User manual
+/data/moe.shizuku.privileged.api/start.sh
+## User manual
 
 [[toc]]
 
